@@ -32,7 +32,7 @@ public class ProjectRepository {
 		List<Project> response = new ArrayList<Project>();
 		
 		for (Document e : collection.find()) {
-			Project pro = new Project(e.get("_id").toString(),e.getString("name"),e.getString("description"));
+			Project pro = new Project(e.get("id").toString(),e.getString("name"),e.getString("description"));
 			response.add(pro);
 		}
 		return response;
@@ -70,7 +70,7 @@ public class ProjectRepository {
 		} catch (Exception e) {
 			response = "Insertion Failed. Please try again.";
 		}
-		
+		return response;
 	}
 
 }
