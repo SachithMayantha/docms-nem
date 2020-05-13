@@ -51,6 +51,26 @@ public class ProjectRepository {
 	public List<Project> delete() {
 		// TODO Auto-generated method stub
 		return null;
+	} 
+
+	public String save(Project pro) {
+		MongoClient mongoClient = getClient();
+		MongoDatabase database = mongoClient.getDatabase("doc-ms");
+		MongoCollection<Document> collection = database.getCollection("Projects");
+		
+		Document pro1 = new Document();
+		pro1.append("id", pro.getId());
+		pro1.append("name", pro.getName());
+		pro1.append("description", pro.getDescription());
+		
+		String response;
+		try {
+			collection.insertOne(pro1);
+			response = "Successfully Added.!";
+		} catch (Exception e) {
+			response = "Insertion Failed. Please try again.";
+		}
+		
 	}
 
 }

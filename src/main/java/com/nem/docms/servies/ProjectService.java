@@ -19,9 +19,9 @@ public class ProjectService {
 		return repository.getAll();
 	}
 
-	public List<Project> add() {
+	public String add(Project pro) {
 		// TODO Auto-generated method stub
-		return repository.add();
+		return repository.save(pro);
 	}
 
 	public List<Project> update() {

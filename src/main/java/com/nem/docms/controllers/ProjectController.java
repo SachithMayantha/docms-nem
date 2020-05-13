@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -25,8 +26,8 @@ public class ProjectController {
 		return service.getAll();
 	}
 	@PostMapping("/")
-	public List<Project> add(){
-		return service.add();
+	public String  add(@RequestBody Project pro){
+		return service.add(pro);
 	}
 	@PutMapping("/")
 	public List<Project> update(){
