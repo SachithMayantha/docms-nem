@@ -2,13 +2,24 @@ package com.nem.docms.entities;
 
 import org.springframework.data.annotation.Id;
 
-public class Project {
+import lombok.Data;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.NonNull;
+import lombok.RequiredArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@RequiredArgsConstructor
+public @Data class Project {
 	
 	@Id
-	private String id;
-	private String name;
-	private String description;
-	public Project(String id, String name, String description) {
+	private @NonNull String id;
+	private @NonNull String name; 
+	private @NonNull String description;
+	/*public Project(String id, String name, String description) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -32,5 +43,5 @@ public class Project {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-
+*/
 }
