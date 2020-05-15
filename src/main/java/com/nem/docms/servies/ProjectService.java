@@ -1,4 +1,4 @@
-package com.nem.docms.servies;
+  package com.nem.docms.servies;
 
 import java.util.List;
 
@@ -24,14 +24,14 @@ public class ProjectService {
 		return repository.save(pro);
 	}
 
-	public List<Project> update() {
+	public String update(Project pro) {
 		// TODO Auto-generated method stub
-		return repository.update();
+		return repository.update(pro);
 	}
 
-	public List<Project> delete() {
+	public String delete(String id) {
 		// TODO Auto-generated method stub
-		return repository.delete();
+		return repository.delete(id);
 	}
 
 }

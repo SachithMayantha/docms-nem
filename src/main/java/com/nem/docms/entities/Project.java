@@ -1,14 +1,12 @@
 package com.nem.docms.entities;
 
-import org.springframework.data.annotation.Id;
-
 import lombok.Data;
 import lombok.NonNull;
 
+//Data annotation with lombok to reduce code lines
 public @Data class Project {
 	
-	@Id
-	private @NonNull String id;
+	private @NonNull String id; 
 	private @NonNull String name; 
 	private @NonNull String description;
 	
