@@ -12,26 +12,26 @@ import com.nem.docms.repositories.ProjectRepository;
 public class ProjectService {
 	
 	@Autowired
-	ProjectRepository repository;
+	ProjectRepository projectRepository;
 
 	public List<Project> getAll() {
 		// TODO Auto-generated method stub
-		return repository.getAll();
+		return projectRepository.findAll();
 	}
 
-	public String add(Project pro) {
+	public Project addProject(Project pro) {
 		// TODO Auto-generated method stub
-		return repository.save(pro);
+		return projectRepository.insert(pro);
 	}
 
-	public String update(Project pro) {
+	public Project update(Project pro) {
 		// TODO Auto-generated method stub
-		return repository.update(pro);
+		return projectRepository.save(pro);
 	}
 
-	public String delete(String id) {
+	public void delete(String id) {
 		// TODO Auto-generated method stub
-		return repository.delete(id);
+		projectRepository.deleteById(id);
 	}
 
 }

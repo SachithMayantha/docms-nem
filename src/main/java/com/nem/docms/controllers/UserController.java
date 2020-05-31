@@ -13,35 +13,31 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.nem.docms.entities.Project;
-import com.nem.docms.servies.ProjectService;
+import com.nem.docms.entities.User;
+import com.nem.docms.servies.UserService;
 
+@RequestMapping
 @RestController
-@RequestMapping("/project")
-public class ProjectController {
+public class UserController {
+	/*@Autowired
+	UserService service;
 	
-	@Autowired
-	ProjectService projectService;
-	
-	@GetMapping("/")
-	public List<Project> getAll(){
-		return projectService.getAll();
+	@GetMapping("/getUser")
+	public List<User> getAll(){
+		return service.getAll();
 	}
-	
-	@PostMapping("/")
+	@PostMapping("/addUser")
 	//RequestBody for bind request HTTP body with a domain object 
-	public Project  addProject(@RequestBody Project pro){
-		return projectService.addProject(pro);
+	public String  add(@RequestBody User user){
+		return service.add(user);
 	}
-	
-	@PutMapping("/{id}")
-	public Project update(@RequestBody Project pro){
-		return projectService.update(pro);
+	@PutMapping("/updateUser")
+	public String update(@RequestBody User user){
+		return service.update(user);
 	}
-	
-	@DeleteMapping("/")
+	@DeleteMapping("/deleteUser")
 	//PathParam for map variable URI path to method call
-	public void delete(@PathParam("id") String id){
-		projectService.delete(id);
-	}
+	public String delete(@PathParam("id") String id){
+		return service.delete(id);
+	}*/
 }
