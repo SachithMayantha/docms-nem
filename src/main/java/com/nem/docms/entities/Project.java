@@ -3,8 +3,7 @@ package com.nem.docms.entities;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-//Data annotation with lombok to reduce code lines
-@Document
+@Document(collection = "Projects")
 public class Project {
 	
 	@Id

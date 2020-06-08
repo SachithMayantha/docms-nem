@@ -8,6 +8,4 @@ import com.nem.docms.entities.Project;
 @Repository
 public interface ProjectRepository extends MongoRepository<Project, String> {
 	
-	
-
 }

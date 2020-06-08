@@ -18,6 +18,11 @@ public class ProjectService {
 		// TODO Auto-generated method stub
 		return projectRepository.findAll();
 	}
+	
+	public Project getProject(String id) {
+		// TODO Auto-generated method stub
+		return projectRepository.findById(id).get();
+	}
 
 	public Project addProject(Project pro) {
 		// TODO Auto-generated method stub
