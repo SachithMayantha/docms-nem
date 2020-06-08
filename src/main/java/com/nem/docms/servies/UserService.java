@@ -10,26 +10,31 @@ import com.nem.docms.repositories.UserRepository;
 
 @Service
 public class UserService {
-	/*@Autowired
-	UserRepository repository;
+	@Autowired
+	UserRepository userRepository;
 
 	public List<User> getAll() {
 		// TODO Auto-generated method stub
-		return repository.getAll();
+		return userRepository.findAll();
+	}
+	
+	public User getUser(String id) {
+		// TODO Auto-generated method stub
+		return userRepository.findById(id).get();
 	}
 
-	public String add(User user) {
+	public User addUser(User user) {
 		// TODO Auto-generated method stub
-		return repository.save(user);
+		return userRepository.insert(user);
 	}
 
-	public String update(User user) {
+	public User update(User user) {
 		// TODO Auto-generated method stub
-		return repository.update(user);
+		return userRepository.save(user);
 	}
 
-	public String delete(String id) {
+	public void delete(String id) {
 		// TODO Auto-generated method stub
-		return repository.delete(id);
-	}*/
+		userRepository.deleteById(id);
+	}
 }
