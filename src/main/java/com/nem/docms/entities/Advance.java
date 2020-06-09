@@ -8,28 +8,29 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
 @Document(collection = "Ad_payment")
-public class Ad_Payment {
+public class Advance {
 	
 	@Id
 	private String id;
 	private Long amount;
+	//give a standard format and remove time
 	@JsonFormat(pattern = "yyyy-MM-dd")
-	private Date ef_date;
+	private Date effective;
 	@JsonFormat(pattern = "yyyy-MM-dd")
-	private Date ex_date;
+	private Date expire;
 	private String status;
 	
-	public Ad_Payment() {
+	public Advance() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public Ad_Payment(String id, Long amount, Date ef_date, Date ex_date, String status) {
+	public Advance(String id, Long amount, Date effective, Date expire, String status) {
 		super();
 		this.id = id;
 		this.amount = amount;
-		this.ef_date = ef_date;
-		this.ex_date = ex_date;
+		this.effective = effective;
+		this.expire = expire;
 		this.status = status;
 	}
 
@@ -49,20 +50,20 @@ public class Ad_Payment {
 		this.amount = amount;
 	}
 
-	public Date getEf_date() {
-		return ef_date;
+	public Date getEffective() {
+		return effective;
 	}
 
-	public void setEf_date(Date ef_date) {
-		this.ef_date = ef_date;
+	public void setEffective(Date effective) {
+		this.effective = effective;
 	}
 
-	public Date getEx_date() {
-		return ex_date;
+	public Date getExpire() {
+		return expire;
 	}
 
-	public void setEx_date(Date ex_date) {
-		this.ex_date = ex_date;
+	public void setExpire(Date expire) {
+		this.expire = expire;
 	}
 
 	public String getStatus() {
@@ -72,8 +73,6 @@ public class Ad_Payment {
 	public void setStatus(String status) {
 		this.status = status;
 	}
-	
-	
 	
 	
 }

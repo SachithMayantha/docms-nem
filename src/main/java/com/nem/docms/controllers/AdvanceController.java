@@ -13,41 +13,40 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.nem.docms.entities.Ad_Payment;
-import com.nem.docms.servies.Ad_PaymentService;
+import com.nem.docms.entities.Advance;
+import com.nem.docms.servies.AdvanceService;
 
 @RestController
-@RequestMapping("/ad_payment")
-public class Ad_PaymentController {
+@RequestMapping("/advance")
+public class AdvanceController {
 	
 	@Autowired
-	Ad_PaymentService adService;
+	AdvanceService advanceService;
 	
-	@GetMapping("/allAd_Payment")
-	public List<Ad_Payment> getAll(){
-		return adService.getAll();
+	@GetMapping("/allAdvance")
+	public List<Advance> getAll(){
+		return advanceService.getAll();
 	}
 	
-	@GetMapping("/getProject/{id}")
-	public Ad_Payment getAd_Payment(@PathVariable("id") String id) {
-		return adService.getAd_Payment(id);
+	@GetMapping("/getAdvance/{id}")
+	public Advance getAdvance(@PathVariable("id") String id) {
+		return advanceService.getAdvance(id);
 	}
 	
-	@PostMapping("/addProject")
+	@PostMapping("/addAdvance")
 	//RequestBody for bind request HTTP body with a domain object 
-	public Ad_Payment  addAd_Payment(@RequestBody Ad_Payment ad){
-		return adService.addAd_Payment(ad);
+	public Advance  addAdvance(@RequestBody Advance ad){
+		return advanceService.addAdvance(ad);
 	}
 	
 	@PutMapping("/update/{id}") 
-	public Ad_Payment update(@RequestBody Ad_Payment ad){
-		return adService.update(ad);
+	public Advance update(@RequestBody Advance ad){
+		return advanceService.update(ad);
 	}
 	
 	@DeleteMapping("/delete")
 	//PathParam for map variable URI path to method call
 	public void delete(@RequestParam String id){
-		adService.delete(id);
+		advanceService.delete(id);
 	}
-	
 }
