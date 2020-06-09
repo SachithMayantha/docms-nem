@@ -5,13 +5,17 @@ import java.util.Date;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document
+import com.fasterxml.jackson.annotation.JsonFormat;
+
+@Document(collection = "Ad_payment")
 public class Ad_Payment {
 	
 	@Id
 	private String id;
 	private Long amount;
+	@JsonFormat(pattern = "yyyy-MM-dd")
 	private Date ef_date;
+	@JsonFormat(pattern = "yyyy-MM-dd")
 	private Date ex_date;
 	private String status;
 	
