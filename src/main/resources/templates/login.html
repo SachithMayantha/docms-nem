@@ -7,6 +7,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/3.3.7/css/bootstrap.min.css}"/>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
@@ -17,23 +18,23 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
         integrity="sha384-PmY9l28YgO4JwMKbTvgaS7XNZJ30MK9FAZjjzXtlqyZCqBY6X6bXIkM++IkyinN+" crossorigin="anonymous">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="/images/DocMS.png" th:href="@{/images/DocMS.png}">
+    <link rel="shortcut icon" type="image/x-icon" href="/img/DocMS.png" href="@{/img/DocMS.png}">
     <!-- Font Awesome -->
     <link href="CSS/font-awesome.css" rel="stylesheet">
     <!-- Bootstrap -->
-    <link rel="stylesheet" type="text/css" href="CSS/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick.css" th:href="@{/css/slick.css}"/>
     <!-- Fancybox slider -->
-    <link rel="stylesheet" href="CSS/jquery.fancybox.css" type="text/css"
+    <link rel="stylesheet" href="css/jquery.fancybox.css" th:href="@{/css/jquery.fancybox.css}" type="text/css"
         media="screen" />
     <!-- Animate css -->
-    <link rel="stylesheet" type="text/css" href="CSS\animate.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" th:href="@{/css/animate.css}"/>
     <!-- Progress bar -->
-    <link rel="stylesheet" type="text/css" href="CSS/bootstrap-progressbar-3.3.4.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-progressbar-3.3.4.css" th:href="@{/css/bootstrap-progressbar-3.3.4.css}"/>
     <!-- Theme color -->
-    <link id="switcher" href="CSS/theme-color/default-theme.css" rel="stylesheet">
+    <link id="switcher" href="css/theme-color/default-theme.css" th:href="@{/css/theme-color/default-theme.css}" rel="stylesheet">
 
     <!-- Main Style -->
-    <link href="CSS/style.css" rel="stylesheet">
+    <link type="text/css" href="css/style.css" th:href="@{/css/style.css}">
 
     <!-- Fonts -->
     <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'
@@ -2908,27 +2909,29 @@ img {
     <!-- End slider -->
 
     <!-- jQuery library -->
+    <script type="text/javascript" th:src="@{/webjars/jquery/3.2.1/jquery.min.js/}"></script>
+    <script type="text/javascript" th:src="@{/webjars/bootstrap/3.3.7/js/bootstrap.min.js}"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <!-- Bootstrap -->
-    <script src="http://192.243.108.248/mms/assets/js/bootstrap.js"></script>
+    <script th:src="@{/js/bootstrap.js}"></script>
     <!-- Slick Slider -->
-    <script type="text/javascript" src="http://192.243.108.248/mms/assets/js/slick.js"></script>
+    <script type="text/javascript" th:src="@{/js/slick.js}"></script>
     <!-- mixit slider -->
-    <script type="text/javascript" src="http://192.243.108.248/mms/assets/js/jquery.mixitup.js"></script>
+    <script type="text/javascript" th:src="@{/js/jquery.mixitup.js}"></script>
     <!-- Add fancyBox -->
-    <script type="text/javascript" src="http://192.243.108.248/mms/assets/js/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" th:src="@{/js/jquery.fancybox.pack.js}"></script>
     <!-- counter -->
-    <script src="http://192.243.108.248/mms/assets/js/waypoints.js"></script>
-    <script src="http://192.243.108.248/mms/assets/js/jquery.counterup.js"></script>
+    <script th:src="@{/js/waypoints.js}"></script>
+    <script th:src="@{/js/jquery.counterup.js}"></script>
     <!-- Wow animation -->
-    <script type="text/javascript" src="http://192.243.108.248/mms/assets/js/wow.js"></script>
+    <script type="text/javascript" th:src="@{/js/wow.js}"></script>
     <!-- progress bar   -->
-    <script type="text/javascript" src="http://192.243.108.248/mms/assets/js/bootstrap-progressbar.js"></script>
+    <script type="text/javascript" th:src="@{/js/bootstrap-progressbar.js}"></script>
 
 
     <!-- Custom js -->
-    <script type="text/javascript" src="http://192.243.108.248/mms/assets/js/custom.js"></script>
+    <script type="text/javascript" th:src="@{/js/custom.js} "></script>
 
     <script>
     var timeout = 2000; // in miliseconds (3*1000)
