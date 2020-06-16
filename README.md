@@ -1,2 +1,1 @@
-# docms
-Back-end for Document Management System
+# Document Management System
