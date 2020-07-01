@@ -3,6 +3,7 @@ package com.nem.docms.config;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
+import org.springframework.web.servlet.config.annotation.ViewResolverRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
@@ -16,7 +17,7 @@ public class WebConfig implements WebMvcConfigurer {
                 "/img/**",
                 "/css/**",
                 "/js/**",
-                "/fonts/**")
+                "/fonts/**") 
                 .addResourceLocations(
                         "classpath:/META-INF/resources/webjars/",
                         "classpath:/static/img/",
@@ -24,5 +25,10 @@ public class WebConfig implements WebMvcConfigurer {
                         "classpath:/static/js/",
                         "classpath:/static/fonts/");
     }
+    
+    @Override
+    public void configureViewResolvers(final ViewResolverRegistry registry) {
+        registry.jsp("/WEB-INF/jsp/", ".jsp");
+    } 
 
 }
