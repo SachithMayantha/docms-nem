@@ -2,6 +2,7 @@ package com.nem.docms.config;
 
 
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 
@@ -11,7 +12,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		
-		http
+		http.antMatcher("/resources/**")
 			.authorizeRequests()
 			.anyRequest().authenticated()
 			.and()
@@ -20,5 +21,12 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 			.permitAll()
 			;
 	}
+	
+	@Override
+	public void configure(WebSecurity web) throws Exception {
+	    web.ignoring().antMatchers("/resources/**");
+	}
+	
+	
 
 }
