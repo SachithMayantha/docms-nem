@@ -12,9 +12,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		
-		http.antMatcher("/resources/**")
+		http.antMatcher("/resources/**") 
 			.authorizeRequests()
-			.anyRequest().authenticated()
+			.anyRequest().authenticated() 
 			.and()
 			.formLogin()
 			.loginPage("/login")

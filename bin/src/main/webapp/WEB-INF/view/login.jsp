@@ -2,6 +2,7 @@
     contentType="text/html; charset=windows-1256"
     pageEncoding="windows-1256"
 %>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 "http://www.w3.org/TR/html4/loose.dtd">
 
@@ -24,20 +25,20 @@
 			<a class="login-trigger" href="#" data-target="#login" data-toggle="modal">Enter</a>
 			</div>
 		</div>
-		<form action="/login" method="post">
 				<div id="login" class="modal fade" role="dialog">
 				  <div class="modal-dialog">  
 				    <div class="modal-content">
 				      <div class="modal-body">
 				        <button data-dismiss="modal" class="close">&times;</button>
 				        <h4>Login</h4>
+				        <form>
 				          <input type="text" name="username" class="username form-control" placeholder="Username"/>
 				          <input type="password" name="password" class="password form-control" placeholder="Password"/>
 				          <input class="btn login" type="submit" value="Login"/>
+				        </form>
 				      </div>
 				  </div>
 			</div>  
 		</div>
-		</form>
 	</body>
 </html>
