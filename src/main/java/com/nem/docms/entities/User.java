@@ -1,5 +1,7 @@
 package com.nem.docms.entities;
 
+import java.util.Set;
+
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection = "Users")
@@ -8,19 +10,19 @@ public class User {
 	private String id;
 	private String username;
 	private String password;
-	private String role;
+	
+    private Set<Role> roles;
 	
 	public User() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public User(String id, String username, String password, String role) {
+	public User(String id, String username, String password) {
 		super();
 		this.id = id;
 		this.username = username;
 		this.password = password;
-		this.role = role;
 	}
 
 	public String getId() {
@@ -47,12 +49,14 @@ public class User {
 		this.password = password;
 	}
 
-	public String getRole() {
-		return role;
+	public Set<Role> getRoles() {
+		return roles;
 	}
 
-	public void setRole(String role) {
-		this.role = role;
+	public void setRoles(Set<Role> roles) {
+		this.roles = roles;
 	}
+
+	
 		
 }

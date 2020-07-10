@@ -1,8 +1,10 @@
 package com.nem.docms.servies;
 
-import org.springframework.stereotype.Service;
+import com.nem.docms.entities.User;
 
-@Service
-public class LoginService {
+public interface LoginService {
 
+	void save(User user);
+
+    User findByUsername(String username);
 }
