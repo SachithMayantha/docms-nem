@@ -925,7 +925,7 @@ $(function() {
 
                                                 <a class="zoomInDown mg-t">
                                                     <button type="button" class="btn btn-link" href="#"
-                                                        data-toggle="modal" data-target="#zoomInDown2" disabled>
+                                                        data-toggle="modal" data-target="#zoomInDown4" disabled>
                                                     <img src="../images/delete.png"><br> Delete</button></a>
                                                 <a>
                                                     <button type="submit" class="btn btn-link" value = "Refresh" onclick="history.go(0)">
@@ -1097,16 +1097,16 @@ $(function() {
                                                                                              class="product-payment-inner-st">
                                                                                              <ul id="myTabedu1"
                                                                                                  class="tab-review-design">
-                                                                                                 <li class="active">
+            <li class="active">
                                                                                                                                                                                                           <a href="#View"><i
-                                                                                            class="fas fa-search"></i>
-                                                                                                         View</a>
+       class="fas fa-search"></i>
+         View</a>
                                                                                                                                                                                                       </li>
-                                                                                                 <li>
+       <li>
                                                                                                                                                                                                       </li>
-                                                                                                 <li>
+         <li>
                                                                                                                                                                                                       </li>
-                                                                                             </ul>
+      </ul>
    <div id="myTabContent" class="tab-content custom-product-edit"> 
 
    <div class="product-tab-list tab-pane fade active in" id="View">
@@ -1177,7 +1177,7 @@ $(function() {
             <div class="review-content-section">
                 <div class="row">
 
-                    <form method="post" action="../Project/updatedata" class="project_Edit">
+                    <form method="post" action="/project/update" class="project_Edit">
 
 
                         <div class="form-group-inner">
@@ -1273,7 +1273,7 @@ $(function() {
             <div class="review-content-section">
                 <div class="row">
 
-                    <form action="http://192.243.108.248/mms/index.php/Project/deletedata" method="post" accept-charset="utf-8">
+                    <form action="/project/delete" method="post" accept-charset="utf-8">
 
                     <div class="form-group-inner">
                         <div class="row">
@@ -1300,11 +1300,6 @@ $(function() {
                             </div>
                         </div>
                     </div>
-
-
-
-
-
                     <div class="form-group-inner">
                         <div class="row">
                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
@@ -1316,10 +1311,7 @@ $(function() {
                             </div>
                         </div>
                     </div>
-
-
-
-                    <div class="login-btn-inner dropup">
+     <div class="login-btn-inner dropup">
                         <div class="row">
                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                             </div>
@@ -1399,9 +1391,8 @@ $(function() {
                                                 <li class="active">
                                                 <li><li>
                                                 </li></ul>
-                                            <div id="myTabContent" class="tab-content custom-product-edit">
-
-                                            <div class="product-tab-list tab-pane fade" id="View1">
+        <div id="myTabContent" class="tab-content custom-product-edit">
+                 <div class="product-tab-list tab-pane fade" id="View1">
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="review-content-section">
@@ -1467,7 +1458,7 @@ $(function() {
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="review-content-section">
                 <div class="row">
-                    <form method="post" action="../Project/updatedata" class="projectE_Edit">
+                    <form method="post" action="/project/update" class="projectE_Edit">
   
                         <div class="form-group-inner">
                             <div class="row">
@@ -1476,7 +1467,7 @@ $(function() {
                                 </div>
                                 <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                     <input type="hidden" class="form-control" placeholder="Enter Project Code"
-                                        id="E_E_H_ProjectCode" name="ProjectCode" />
+                                        id="E_E_H_ProjectCode" name="id" />
                                     <input type="text" class="form-control" placeholder="Enter Project Code"
                                         id="E_E_ProjectCode" name="ProjectCode" readonly />
                                 </div>
@@ -1489,11 +1480,11 @@ $(function() {
                                     <label class="login2">Project Name</label>
                                 </div>
                                 <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                    <input type="text" class="form-control" id="E_E_ProjectName" readonly />
+                                    <input type="text" class="form-control" id="E_E_H_ProjectName"/>
                                 </div>
                                 <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                    <input type="hidden" class="form-control" name="ProjectName"
-                                        id="E_E_H_ProjectName" />
+                                    <input type="hidden" class="form-control" name="name"
+                                        id="E_E_ProjectName" />
                                 </div>
                             </div>
                         </div>
@@ -1506,7 +1497,7 @@ $(function() {
                                 </div>
                                 <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                     <input type="text" class="form-control" placeholder="Enter Description"
-                                        name="Description" id="E_E_Description" />
+                                        name="description" id="E_E_Description" />
 
                                 </div>
                             </div>
@@ -1564,7 +1555,7 @@ $(function() {
             <div class="review-content-section">
                 <div class="row">
 
-                    <form action="http://192.243.108.248/mms/index.php/Project/deletedata" method="post" accept-charset="utf-8">
+                    <form action="/project/delete" method="post" accept-charset="utf-8">
 
                     <div class="form-group-inner">
                         <div class="row">
@@ -1771,7 +1762,7 @@ $(function() {
                 <div class="row">
 
 
-                    <form method="post" action="../Project/updatedata" class="projectD_Edit">
+                    <form method="post" action="/project/update" class="projectD_Edit">
 
                         <div class="form-group-inner">
                             <div class="row">
@@ -1782,7 +1773,7 @@ $(function() {
                                     <input type="hidden" class="form-control" placeholder="Enter Project Code"
                                         id="D_E_H_ProjectCode" name="ProjectCode" />
                                     <input type="text" class="form-control" placeholder="Enter Project Code"
-                                        id="D_E_ProjectCode" name="ProjectCode" readonly />
+                                        id="D_E_ProjectCode" name="id" readonly />
                                 </div>
                             </div>
                         </div>
@@ -1797,7 +1788,7 @@ $(function() {
                                     <input type="text" class="form-control" id="D_E_ProjectName" readonly />
                                 </div>
                                 <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                    <input type="hidden" class="form-control" name="ProjectName"
+                                    <input type="hidden" class="form-control" name="name"
                                         id="D_E_H_ProjectName" />
                                 </div>
                             </div>
@@ -1810,7 +1801,7 @@ $(function() {
                                 </div>
                                 <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                     <input type="text" class="form-control" placeholder="Enter Description"
-                                        name="Description" id="D_E_Description" />
+                                        name="description" id="D_E_Description" />
 
                                 </div>
                             </div>
@@ -1865,7 +1856,7 @@ $(function() {
             <div class="review-content-section">
                 <div class="row">
 
-                    <form action="http://192.243.108.248/mms/index.php/Project/deletedata" method="post" accept-charset="utf-8">
+                    <form action="project/delete" method="post" accept-charset="utf-8">
 
                     <div class="form-group-inner">
                         <div class="row">
@@ -1873,7 +1864,7 @@ $(function() {
                                 <label class="login2">Project Code</label>
                             </div>
                             <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                <input type="text" class="form-control" name="ProjectCode" id="D_D_ProjectCode"
+                                <input type="text" class="form-control" name="id" id="D_D_ProjectCode"
                                     readonly />
                             </div>
                         </div>
@@ -1887,7 +1878,7 @@ $(function() {
                             </div>
                             <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                 <input type="text" class="form-control" id="D_D_ProjectName" readonly />
-                                <input type="hidden" class="form-control" name="ProjectName" id="D_D_H_ProjectName"
+                                <input type="hidden" class="form-control" name="name" id="D_D_H_ProjectName"
                                     required />
                             </div>
                         </div>
@@ -1900,7 +1891,7 @@ $(function() {
                                 <label class="login2">Description</label>
                             </div>
                             <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                <input type="text" class="form-control" id="D_D_Description" name="Description"
+                                <input type="text" class="form-control" id="D_D_Description" name="description"
                                     readonly />
                             </div>
                         </div>
@@ -1926,7 +1917,7 @@ $(function() {
                                         </li>
                                         <li>
                                             <center><button type="submit" class="btn btn-sm btn-primary login-submit-cs"
-                                                    name="delete" id="btnSubmit">Yes</button>
+                                                   name="delete" id="btnSubmit">Yes</button>
 
                                                 <button type="button"
                                                     class="btn btn-sm btn-primary login-submit-cs">No</button>

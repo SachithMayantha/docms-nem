@@ -23,7 +23,7 @@ public class BidBondController {
 	@Autowired
 	BidBondService bidBondService;
 
-	@GetMapping("/allAdvance")
+	@GetMapping("/allBidBonds")
 	public List<BidBond> getAll(){
 		return bidBondService.getAll();
 	}
