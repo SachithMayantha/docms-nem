@@ -16,6 +16,7 @@ public class ProjectService {
 
 	public List<Project> getAll() {
 		// TODO Auto-generated method stub
+		System.out.println("project list service called");
 		return projectRepository.findAll();
 	}
 	

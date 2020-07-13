@@ -27,4 +27,9 @@ public class MainController {
 		System.out.println("logout success");
 		return "login";
 	}
+//	@GetMapping("/project/allProjects")
+//	public String projects() {
+//		System.out.println("Main Controller projects()");
+//		return "projects";
+//	}
 }
