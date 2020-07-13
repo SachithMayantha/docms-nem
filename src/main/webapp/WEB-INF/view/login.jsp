@@ -95,7 +95,7 @@
     <!-- END PRELOADER -->
 
     <!-- SCROLL TOP BUTTON -->
-    <a class="scrollToTop" href="/jsp/main.jsp"><i class="fa fa-angle-up"></i></a>
+    <a class="scrollToTop"><i class="fa fa-angle-up"></i></a>
     <!-- END SCROLL TOP BUTTON -->
 
     <!-- Start login modal window -->
@@ -111,7 +111,7 @@
                     <h4 class="modal-title"><i class="fa fa-unlock-alt"></i>Login</h4>
                 </div>
                 <div class="modal-body">
-                    <form action="jsp/main.jsp" method="POST" accept-charset="utf-8">
+                    <form method="POST" action="main" accept-charset="utf-8">
                     <span>${message}</span>
 	                    <div class="form-group">
 	                        <input type="text" placeholder="User Name" class="form-control" name="username" required>
@@ -168,7 +168,7 @@
                                         <br>
                                         <a style="color:#ff9900; font-size:26px" class="login modal-form"
                                             data-target="#login-form" data-toggle="modal"
-                                            href="/html/main.html">
+                                            href="#login-form">
                                             ENTRY
                                         </a>
 

@@ -2,7 +2,7 @@ package com.nem.docms.controllers;
 
 //import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -44,19 +44,21 @@ public class LoginController {
         return "redirect:/welcome";
     }*/
 
-    @GetMapping("/login")
+    @PostMapping("/login")
     public String login(Model model, String error, String logout) {
+    	System.out.println("Login Controller login()");
         if (error != null)
             model.addAttribute("error", "Your username and password is invalid.");
 
         if (logout != null)
             model.addAttribute("message", "You have been logged out successfully.");
 
-        return "login";
+        return "main";
     }
 
     /*@GetMapping({"/", "/welcome"})
     public String welcome(Model model) {
         return "welcome";
     }*/
+    
 }

@@ -1,32 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-
-<!-- page header -->
-<!doctype html>
-<html class="no-js" lang="en">
-<style>
-@media print {
-
-    .pageBreak {
-        page-break-before: always;
-    }
-
-    .QR,
-    .QR1,
-    .QR2,
-    .QR3,
-    .QR4,
-    #doc,
-    #back,
-    #printButton,
-    #settings,
-    #hr,
-    #qrp {
-        display: none;
-    }
-}
-</style>
-
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
 <!-- Table Header Color -->
 <style>
 thead th {
@@ -43,15 +20,15 @@ thead th {
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>NEM Constructions</title>
+    <title>NEM Constructions:Home</title>
     <meta name="description" content="">
 
     <link rel="shortcut icon" type="image/x-icon" href="../images/DocMS.png">
     
-    <script src="../js/lib/jquery.js"></script>
-    <script src="../js/lib/jquery.mockjax.js"></script>
-    <script src="../js/lib/jquery.form.js"></script>
-    <script src="../js/dist/jquery.validate.js"></script>
+    <script src="http://192.243.108.248/mms/assets/new/js/lib/jquery.js"></script>
+    <script src="http://192.243.108.248/mms/assets/new/js/lib/jquery.mockjax.js"></script>
+    <script src="http://192.243.108.248/mms/assets/new/js/lib/jquery.form.js"></script>
+    <script src="http://192.243.108.248/mms/assets/new/js/dist/jquery.validate.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'
@@ -63,47 +40,47 @@ thead th {
 
     <!-- favicon
 		============================================ -->
-    <link rel="shortcut icon" type="image/x-icon" href="../images/DocMS.png">
+    <link rel="shortcut icon" type="image/x-icon" href="images/DocMS.png">
     <!-- Google Fonts
 		============================================ -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet">
     <!-- Bootstrap CSS
 		============================================ -->
-    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="http://192.243.108.248/mms/assets/new/css/bootstrap.min.css" type="text/css">
     <!-- Bootstrap CSS
 		============================================ -->
-    <link rel="stylesheet" href="../css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="http://192.243.108.248/mms/assets/new/css/font-awesome.min.css" type="text/css">
     <!-- owl.carousel CSS
 		============================================ -->
-    <link rel="stylesheet" href="../css/owl_carousel.css" type="text/css">
-    <link rel="stylesheet" href="../css/owl_theme.css" type="text/css">
-    <link rel="stylesheet" href="../css/owl_transitions.css" type="text/css">
+    <link rel="stylesheet" href="http://192.243.108.248/mms/assets/new/css/owl_carousel.css" type="text/css">
+    <link rel="stylesheet" href="http://192.243.108.248/mms/assets/new/css/owl_theme.css" type="text/css">
+    <link rel="stylesheet" href="http://192.243.108.248/mms/assets/new/css/owl_transitions.css" type="text/css">
     <!-- animate CSS
 		============================================ -->
-    <link rel="stylesheet" href="../css/animate.css" type="text/css">
+    <link rel="stylesheet" href="http://192.243.108.248/mms/assets/new/css/animate.css" type="text/css">
     <!-- normalize CSS
 		============================================ -->
-    <link rel="stylesheet" href="../css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="http://192.243.108.248/mms/assets/new/css/normalize.css" type="text/css">
     <!-- meanmenu icon CSS
 		============================================ -->
-    <link rel="stylesheet" href="../css/meanmenu.min.css" type="text/css">
+    <link rel="stylesheet" href="http://192.243.108.248/mms/assets/new/css/meanmenu.min.css" type="text/css">
     <!-- main CSS
 		============================================ -->
-    <link rel="stylesheet" href="../css/main.css" type="text/css">  
+    <link rel="stylesheet" href="css/main.css" type="text/css">  
     <!-- educate icon CSS
 		============================================ -->
-    <link rel="stylesheet" href="../css/educate-custon-icon.css" type="text/css">
+    <link rel="stylesheet" href="http://192.243.108.248/mms/assets/new/css/educate-custon-icon.css" type="text/css">
     <!-- morrisjs CSS
 		============================================ -->
-    <link rel="stylesheet" href="../css/morrisjs/morris.css" type="text/css">
+    <link rel="stylesheet" href="http://192.243.108.248/mms/assets/new/css/morrisjs/morris.css" type="text/css">
     <!-- mCustomScrollbar CSS
 		============================================ -->
-    <link rel="stylesheet" href="../css/scrollbar/jquery.mCustomScrollbar.min.css"
+    <link rel="stylesheet" href="http://192.243.108.248/mms/assets/new/css/scrollbar/jquery.mCustomScrollbar.min.css"
         type="text/css">
     <!-- metisMenu CSS
 		============================================ -->
-    <link rel="stylesheet" href="../css/metisMenu/metisMenu.min.css" type="text/css">
-    <link rel="stylesheet" href="../css/metisMenu/metisMenu-vertical.css"
+    <link rel="stylesheet" href="http://192.243.108.248/mms/assets/new/css/metisMenu/metisMenu.min.css" type="text/css">
+    <link rel="stylesheet" href="http://192.243.108.248/mms/assets/new/css/metisMenu/metisMenu-vertical.css"
         type="text/css">
     <!-- calendar CSS
 		============================================ -->
@@ -111,20 +88,20 @@ thead th {
 
     <!-- x-editor CSS
 		============================================ -->
-    <link rel="stylesheet" href="../css/editor/select2.css" type="text/css">
+    <link rel="stylesheet" href="http://192.243.108.248/mms/assets/new/css/editor/select2.css" type="text/css">
     <!-- normalize CSS
 		============================================ -->
 
 
     <!-- style CSS
 		============================================ -->
-    <link rel="stylesheet" href="../css/new/style.css" type="text/css">
+    <link rel="stylesheet" href="http://192.243.108.248/mms/assets/new/style.css" type="text/css">
     <!-- responsive CSS
 		============================================ -->
-    <link rel="stylesheet" href="../css/responsive.css" type="text/css">
+    <link rel="stylesheet" href="http://192.243.108.248/mms/assets/new/css/responsive.css" type="text/css">
     <!-- modernizr JS
 		============================================ -->
-    <script type="text/javascript" src="../js/vendor/modernizr-2.8.3.min.js"></script>
+    <script type="text/javascript" src="http://192.243.108.248/mms/assets/new/js/vendor/modernizr-2.8.3.min.js"></script>
 
 
 
@@ -133,58 +110,58 @@ thead th {
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet">
     <!-- Bootstrap CSS
 		============================================ -->
-    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="http://192.243.108.248/mms/assets/new/css/bootstrap.min.css" type="text/css">
     <!-- Bootstrap CSS
 		============================================ -->
-    <link rel="stylesheet" href="../css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="http://192.243.108.248/mms/assets/new/css/font-awesome.min.css" type="text/css">
     <!-- owl.carousel CSS
 		============================================ -->
 
     <!-- animate CSS
 		============================================ -->
-    <link rel="stylesheet" href="../css/animate.css" type="text/css">
+    <link rel="stylesheet" href="http://192.243.108.248/mms/assets/new/css/animate.css" type="text/css">
     <!-- normalize CSS
 		============================================ -->
-    <link rel="stylesheet" href="../css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="http://192.243.108.248/mms/assets/new/css/normalize.css" type="text/css">
     <!-- meanmenu icon CSS
 		============================================ -->
-    <link rel="stylesheet" href="../css/meanmenu.min.css" type="text/css">
+    <link rel="stylesheet" href="http://192.243.108.248/mms/assets/new/css/meanmenu.min.css" type="text/css">
     <!-- main CSS
 		============================================ -->
-    <link rel="stylesheet" href="../css/main.css" type="text/css">
+    <link rel="stylesheet" href="http://192.243.108.248/mms/assets/new/css/main.css" type="text/css">
     <!-- educate icon CSS
 		============================================ -->
-    <link rel="stylesheet" href="../css/educate-custon-icon.css" type="text/css">
+    <link rel="stylesheet" href="http://192.243.108.248/mms/assets/new/css/educate-custon-icon.css" type="text/css">
     <!-- morrisjs CSS
 		============================================ -->
-    <link rel="stylesheet" href="../css/morrisjs/morris.css" type="text/css">
+    <link rel="stylesheet" href="http://192.243.108.248/mms/assets/new/css/morrisjs/morris.css" type="text/css">
     <!-- mCustomScrollbar CSS
 		============================================ -->
-    <link rel="stylesheet" href="../css/scrollbar/jquery.mCustomScrollbar.min.css"
+    <link rel="stylesheet" href="http://192.243.108.248/mms/assets/new/css/scrollbar/jquery.mCustomScrollbar.min.css"
         type="text/css">
     <!-- metisMenu CSS
 		============================================ -->
-    <link rel="stylesheet" href="../css/metisMenu/metisMenu.min.css" type="text/css">
-    <link rel="stylesheet" href="../css/metisMenu/metisMenu-vertical.css"
+    <link rel="stylesheet" href="http://192.243.108.248/mms/assets/new/css/metisMenu/metisMenu.min.css" type="text/css">
+    <link rel="stylesheet" href="http://192.243.108.248/mms/assets/new/css/metisMenu/metisMenu-vertical.css"
         type="text/css">
     <!-- calendar CSS
 		============================================ -->
 
     <!-- modals CSS
 		============================================ -->
-    <link rel="stylesheet" href="../css/modals.css" type="text/css">
+    <link rel="stylesheet" href="http://192.243.108.248/mms/assets/new/css/modals.css" type="text/css">
     <!-- forms CSS
 		============================================ -->
 
     <!-- style CSS
 		============================================ -->
-    <link rel="stylesheet" href="../css/new/style.css" type="text/css">
+    <link rel="stylesheet" href="http://192.243.108.248/mms/assets/new/style.css" type="text/css">
     <!-- responsive CSS
 		============================================ -->
-    <link rel="stylesheet" href="../css/responsive.css" type="text/css">
+    <link rel="stylesheet" href="http://192.243.108.248/mms/assets/new/css/responsive.css" type="text/css">
     <!-- modernizr JS
 		============================================ -->
-    <script type="text/javascript" src="../js/vendor/modernizr-2.8.3.min.js"></script>
+    <script type="text/javascript" src="http://192.243.108.248/mms/assets/new/js/vendor/modernizr-2.8.3.min.js"></script>
 
 
 
@@ -552,7 +529,7 @@ display:none;
                         
                         <li>
                             <a href="adPay.html"
-                                 aria-expanded="false"></span>
+                                 aria-expanded="false">
                                 <img src="../images/payment.png" style="height:25px;">
                                 <span class="mini-click-non" style='font-size:12px;'>Advance Payments</span></a>
                         </li>
@@ -584,7 +561,7 @@ display:none;
                         </li>
                         
                         <li>
-                            <a href="main.html" style="color:#337ab7;border:outset" ></span>
+                            <a href="main.html" style="color:#337ab7;border:outset" >
                                 <img src="../images/Home.png">
                                 <span class="mini-click-non" style='font-size:12px;'>Home</span></a>
                         </li>
@@ -597,12 +574,9 @@ display:none;
                     </ul>
                 </nav>
             </div>
-        </nav>
-
 
     </div>
-</div>
-
+  
     <!-- End Left menu area -->
 
     <!-- Start Welcome area -->
@@ -770,13 +744,13 @@ display:none;
                                                                 Password
                                                             </label>
                                                         </div>
-                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                             <input type="password" class="form-control"
                                                                 name="re_password" id="password2"
                                                                 placeholder="Confirm Password" required />
                                                             <input type="hidden" class="form-control" name="current_url"
                                                                 placeholder="Confirm Password"
-                                                                value="./index.html" required />
+                                                                value="http://192.243.108.248/mms/index.php/Home/MmsHome" required />
                                                         </div>
                                                     </div>
                                                 </div>
@@ -784,19 +758,16 @@ display:none;
                                                 <div class="login-btn-inner dropup">
                                                     <div class="row">
                                                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                                        </div>
+             </div>
                                                         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                             <div class="login-horizental">
                                                                 <button type="button"
                                                                     class="btn btn-sm btn-primary login-submit-cs"
-                                                                    data-toggle="dropdown">Save
-
-                                                                </button>
+                                                                    data-toggle="dropdown">Save</button>
                                                                 <ul class="dropdown-menu btn-dropdown-menu dropdown-menu-up"
                                                                     role="menu" style="min-width:130px;font-size:20px">
                                                                     <li>
-                                                                        <center>
-                                                                            
+                                                                        <center>   
                                                                             Are
                                                                             You
                                                                             sure to change the password?
@@ -831,9 +802,6 @@ display:none;
             </div>
         </div>
     </div>
-    </div>
-    </div>
-
 
     <!-- change password modal end -->
 
@@ -905,7 +873,7 @@ display:none;
                                                         Change Password</a>
                                                     </li>
 
-                                                    <li><a href="index.html"><span class="edu-icon edu-locked author-log-ic"></span>Log
+                                                    <li><a href="/logout"><span class="edu-icon edu-locked author-log-ic"></span>Log
                                                             Out</a>
                                                     </li>
                                             </div>
@@ -961,7 +929,7 @@ display:none;
     <div class="col-lg-9 col-md-8 col-sm-7 col-xs-12"></div>
     <div class="col-lg-3 col-md-4 col-sm-5 col-xs-12">
         <center>
-            <img class="main-logo" src="../images/nem_logo.jpg" alt="nem_logo.jpg" style="height:100px" />
+            <img class="main-logo" src="http://192.243.108.248/mms/assets/new/img/logo/nem_logo.jpg" alt="nem_logo.jpg" style="height:100px" />
             <h5>NEM Construction (PVT) Ltd <br>
                 Document Management System</h5>
 
@@ -999,52 +967,52 @@ display:none;
 
 <!-- jquery
 		============================================ -->
-<script type="text/javascript" src="../js/vendor/jquery-1.12.4.min.js">
+<script type="text/javascript" src="http://192.243.108.248/mms/assets/new/js/vendor/jquery-1.12.4.min.js">
 </script>
 <!-- bootstrap JS
 		============================================ -->
-<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://192.243.108.248/mms/assets/new/js/bootstrap.min.js"></script>
 <!-- wow JS
 		============================================ -->
-<script type="text/javascript" src="../js/wow.min.js"></script>
+<script type="text/javascript" src="http://192.243.108.248/mms/assets/new/js/wow.min.js"></script>
 <!-- price-slider JS
 		============================================ -->
 
 <!-- meanmenu JS
 		============================================ -->
-<script type="text/javascript" src="../js/jquery.meanmenu.js"></script>
+<script type="text/javascript" src="http://192.243.108.248/mms/assets/new/js/jquery.meanmenu.js"></script>
 <!-- owl.carousel JS
 		============================================ -->
 
 <!-- sticky JS
 		============================================ -->
-<script type="text/javascript" src="../js/jquery.sticky.js"></script>
+<script type="text/javascript" src="http://192.243.108.248/mms/assets/new/js/jquery.sticky.js"></script>
 <!-- scrollUp JS
 		============================================ -->
-<script type="text/javascript" src="../js/jquery.scrollUp.min.js"></script>
+<script type="text/javascript" src="http://192.243.108.248/mms/assets/new/js/jquery.scrollUp.min.js"></script>
 <!-- mCustomScrollbar JS
 		============================================ -->
 <script type="text/javascript"
-    src="../js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
-<script type="text/javascript" src="../js/scrollbar/mCustomScrollbar-active.js">
+    src="http://192.243.108.248/mms/assets/new/js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript" src="http://192.243.108.248/mms/assets/new/js/scrollbar/mCustomScrollbar-active.js">
 </script>
 <!-- metisMenu JS
 		============================================ -->
-<script type="text/javascript" src="../js/metisMenu/metisMenu.min.js"></script>
-<script type="text/javascript" src="../js/metisMenu/metisMenu-active.js">
+<script type="text/javascript" src="http://192.243.108.248/mms/assets/new/js/metisMenu/metisMenu.min.js"></script>
+<script type="text/javascript" src="http://192.243.108.248/mms/assets/new/js/metisMenu/metisMenu-active.js">
 </script>
 <!-- data table JS
 		============================================ -->
-<script type="text/javascript" src="../js/data-table/bootstrap-table.js">
+<script type="text/javascript" src="http://192.243.108.248/mms/assets/new/js/data-table/bootstrap-table.js">
 </script>
 
-<script type="text/javascript" src="../js/data-table/data-table-active.js">
+<script type="text/javascript" src="http://192.243.108.248/mms/assets/new/js/data-table/data-table-active.js">
 </script>
 
 
-<script type="text/javascript" src="../js/data-table/bootstrap-table-resizable.js">
+<script type="text/javascript" src="http://192.243.108.248/mms/assets/new/js/data-table/bootstrap-table-resizable.js">
 </script>
-<script type="text/javascript" src="../js/data-table/colResizable-1.5.source.js">
+<script type="text/javascript" src="http://192.243.108.248/mms/assets/new/js/data-table/colResizable-1.5.source.js">
 </script>
 
 <!--  editable JS
@@ -1061,13 +1029,13 @@ display:none;
 
 <!-- tab JS
 		============================================ -->
-<script type="text/javascript" src="../js/tab.js"></script>
+<script type="text/javascript" src="http://192.243.108.248/mms/assets/new/js/tab.js"></script>
 <!-- plugins JS
 		============================================ -->
-<script type="text/javascript" src="../js/plugins.js"></script>
+<script type="text/javascript" src="http://192.243.108.248/mms/assets/new/js/plugins.js"></script>
 <!-- main JS
 		============================================ -->
-<script type="text/javascript" src="../js/main.js"></script>
+<script type="text/javascript" src="http://192.243.108.248/mms/assets/new/js/main.js"></script>
 
 
 <!--  Excel JS
@@ -1083,9 +1051,9 @@ display:none;
 
 <!-- form validate JS
 		============================================ -->
-<script src="../js/form-validation/jquery.form.min.js"></script>
-<script src="../js/form-validation/jquery.validate.min.js"></script>
-<script src="../js/form-validation/form-active.js"></script>
+<script src="http://192.243.108.248/mms/assets/new/js/form-validation/jquery.form.min.js"></script>
+<script src="http://192.243.108.248/mms/assets/new/js/form-validation/jquery.validate.min.js"></script>
+<script src="http://192.243.108.248/mms/assets/new/js/form-validation/form-active.js"></script>
 
 
 
