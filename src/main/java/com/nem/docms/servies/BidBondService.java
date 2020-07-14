@@ -15,7 +15,7 @@ public class BidBondService {
 	BidBondRepository bidBondRepository;
 	
 	public List<BidBond> getAll() {
-		// TODO Auto-generated method stub
+		
 		return bidBondRepository.findAll();
 	}
 	

@@ -24,10 +24,11 @@ public class ProjectController{
 	
 	@GetMapping("/allProjects")
 	public String getAll(Model model){
+		
 		System.out.println("Project List Controller called");
 		List<Project> listProjects = projectService.getAll();
 		model.addAttribute("listProjects",listProjects);
-//		System.out.println(listProjects.get(0));
+		
 		return "projects";
 	}
 	

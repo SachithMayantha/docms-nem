@@ -536,33 +536,33 @@ display:none;
 
 
                         <li>
-                            <a href="projects.html" >
+                            <a href="${pageContext.request.contextPath}/project/allProjects">
                                 <img src="../images/project.png" style="height:25px;">
                                 <span class="mini-click-non" style='font-size:12px;'>Projects</span>
                             </a>
 
                         </li>
                                                                         <li>
-                            <a href="bidbond.html"  aria-expanded="false">
+                            <a href="${pageContext.request.contextPath}/bidBond/allBidBonds"  aria-expanded="false">
                                 <img src="../images/bidbond.png" style="height:25px;"> <span
                                     class="mini-click-non" style='font-size:12px;'>Bid Bonds</span></a>
                         </li>
                         
                         <li>
-                            <a href="adPay.html"
+                            <a href="${pageContext.request.contextPath}/advance/allAdvance"
                                  aria-expanded="false"></span>
                                 <img src="../images/payment.png" style="height:25px;">
                                 <span class="mini-click-non" style='font-size:12px;'>Advance Payments</span></a>
                         </li>
                         <li>
-                            <a href="perPay.html"  aria-expanded="false">
+                            <a href="${pageContext.request.contextPath}/performance/allPerformance"  aria-expanded="false">
                                 <img src="../images/payment.png" style="height:25px;">
                                 <span class="mini-click-non" style='font-size:12px;'>Performance Payments</span></a>
 
                         </li>
                         
                         <li>
-                            <a href="retention.html" >
+                            <a href="${pageContext.request.contextPath}/retention/allRetention">
                                 <img src="../images/retention.png" style="height:25px;">
                                 <span class="mini-click-non" style='font-size:12px;'>Retentions</span>
                             </a>
@@ -575,23 +575,20 @@ display:none;
                         </li>
 
                         <li>
-                            <a href="users.html"  aria-expanded="false">
+                            <a href="${pageContext.request.contextPath}/user/allUsers" aria-expanded="false">
                                 <img src="../images/users.png" style="height:25px;">
                                 <span class="mini-click-non" style='font-size:12px;'>Users</span></a>
 
                         </li>
                         
                         <li>
-                            <a href="main.html" style="color:#337ab7;border:outset" ></span>
+                            <a href="${pageContext.request.contextPath}/main" style="color:#337ab7;border:outset" ></span>
                                 <img src="../images/Home.png">
                                 <span class="mini-click-non" style='font-size:12px;'>Home</span></a>
                         </li>
                         <li>
                            <br>
                         </li>
-
-
-
                     </ul>
                 </nav>
             </div>
@@ -630,7 +627,7 @@ display:none;
                                         <ul class="mobile-menu-nav">
 
                                                 <li><a data-toggle="collapse" data-target="#Charts"
-                                                    href="${contextPath}/projects>Projects
+                                                    href="/project/allProjects">Projects
                                                     <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
                                                 <ul class="collapse dropdown-header-top">
 
@@ -903,7 +900,7 @@ display:none;
                                                         Change Password</a>
                                                     </li>
 
-                                                    <li><a href="index.html"><span class="edu-icon edu-locked author-log-ic"></span>Log
+                                                    <li><a href="${pageContext.request.contextPath}/login"><span class="edu-icon edu-locked author-log-ic"></span>Log
                                                             Out</a>
                                                     </li>
                                             </div>

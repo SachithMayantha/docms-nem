@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!-- page header -->
 <!doctype html>
 <html class="no-js" lang="en">
@@ -48,7 +47,7 @@ thead th {
 
     <script src="../js/lib/jquery.js"></script>
     <script src="../js/lib/jquery.mockjax.js"></script>
-    <script src="http://192.243.108.248/mms/assets/new/js/lib/jquery.form.js"></script>
+    <script src="../js/lib/jquery.form.js"></script>
     <script src="../js/dist/jquery.validate.js"></script>
     <!--  -->
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
@@ -114,7 +113,7 @@ thead th {
 
     <!-- style CSS
 		============================================ -->
-    <link rel="stylesheet" href="../css/new/style.css" type="text/css">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
     <!-- responsive CSS
 		============================================ -->
     <link rel="stylesheet" href="../css/responsive.css" type="text/css">
@@ -546,8 +545,7 @@ display:none;
         <div class="">
             <nav class="sidebar-nav left-sidebar-menu-pro">
                 <ul class="metismenu" id="menu1">
-
-                    <li>
+<li>
                             <a href="${pageContext.request.contextPath}/project/allProjects">
                                 <img src="../images/project.png" style="height:25px;">
                                 <span class="mini-click-non" style='font-size:12px;'>Projects</span>
@@ -601,6 +599,7 @@ display:none;
                         <li>
                            <br>
                         </li>
+
                 </ul>
             </nav>
         </div>
@@ -920,7 +919,7 @@ $(function() {
 
                                                 <a class="zoomInDown mg-t">
                                                     <button type="button" class="btn btn-link" href="#"
-                                                        data-toggle="modal" data-target="#zoomInDown4" disabled>
+                                                        data-toggle="modal" data-target="#zoomInDown2" disabled>
                                                     <img src="../images/delete.png"><br> Delete</button></a>
                                                 <a>
                                                     <button type="submit" class="btn btn-link" value = "Refresh" onclick="history.go(0)">
@@ -972,7 +971,7 @@ $(function() {
 
 
                                                                          <form method="post"
-                                                                             action="/project/addProject"
+                                                                             action="../Project/register"
                                                                              class="projectAdd">
 
                                                                              <div class="form-group-inner">
@@ -987,7 +986,7 @@ $(function() {
                                                                                          <input type="text"
                                                                                              class="form-control"
                                                                                              placeholder="Enter Project Code"
-                                                                                             name="id"
+                                                                                             name="projectcode"
                                                                                              id="projectcode1"
                                                                                              required />
                                                                                      </div>
@@ -1006,12 +1005,34 @@ $(function() {
                                                                                          <input type="text"
                                                                                              class="form-control"
                                                                                              placeholder="Enter Project Name"
-                                                                                             name="name"
+                                                                                             name="projectname"
                                                                                              id="projectname1"
                                                                                              required />
                                                                                      </div>
                                                                                  </div>
                                                                              </div>
+
+
+
+                                                                             <!-- <div class="form-group-inner">
+                                                                                     <div class="row">
+                                                                                         <div
+                                                                                             class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                             <label class="login2">Main
+                                                                                                 Location</label>
+                                                                                         </div>
+                                                                                         <div
+                                                                                             class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                             <input type="text"
+                                                                                                 class="form-control"
+                                                                                                 placeholder="Enter Main Location"
+                                                                                                 name="mainlocation"
+                                                                                                 required />
+                                                                                         </div>
+                                                                                     </div>
+                                                                                 </div> -->
+
+
                                                                              <div class="form-group-inner">
                                                                                  <div class="row">
                                                                                      <div
@@ -1040,7 +1061,7 @@ $(function() {
                                                                                          <div class="login-horizental">
                                                                                              <button
                                                                                                  class="btn btn-sm btn-primary login-submit-cs"
-                                                                                                 type="submit" value="Save">Add
+                                                                                                 type="submit">Add
                                                                                                  Project</button>
 
                                                                                              <a data-dismiss="modal"
@@ -1092,16 +1113,16 @@ $(function() {
                                                                                              class="product-payment-inner-st">
                                                                                              <ul id="myTabedu1"
                                                                                                  class="tab-review-design">
-            <li class="active">
+                                                                                                 <li class="active">
                                                                                                                                                                                                           <a href="#View"><i
-       class="fas fa-search"></i>
-         View</a>
+                                                                                            class="fas fa-search"></i>
+                                                                                                         View</a>
                                                                                                                                                                                                       </li>
-       <li>
+                                                                                                 <li>
                                                                                                                                                                                                       </li>
-         <li>
+                                                                                                 <li>
                                                                                                                                                                                                       </li>
-      </ul>
+                                                                                             </ul>
    <div id="myTabContent" class="tab-content custom-product-edit"> 
 
    <div class="product-tab-list tab-pane fade active in" id="View">
@@ -1172,7 +1193,7 @@ $(function() {
             <div class="review-content-section">
                 <div class="row">
 
-                    <form method="post" action="/project/update" class="project_Edit">
+                    <form method="post" action="../Project/updatedata" class="project_Edit">
 
 
                         <div class="form-group-inner">
@@ -1195,7 +1216,7 @@ $(function() {
                                     <label class="login2">Project Name</label>
                                 </div>
                                 <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                    <input type="text" class="form-control" id="V_E_ProjectName" />
+                                    <input type="text" class="form-control" id="V_E_ProjectName" readonly  />
                                 </div>
                                 <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                     <input type="hidden" class="form-control" name="ProjectName"
@@ -1268,7 +1289,7 @@ $(function() {
             <div class="review-content-section">
                 <div class="row">
 
-                    <form action="/project/delete" method="post" accept-charset="utf-8">
+                    <form action="/bidBond/delete" method="post" accept-charset="utf-8">
 
                     <div class="form-group-inner">
                         <div class="row">
@@ -1295,6 +1316,11 @@ $(function() {
                             </div>
                         </div>
                     </div>
+
+
+
+
+
                     <div class="form-group-inner">
                         <div class="row">
                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
@@ -1306,7 +1332,10 @@ $(function() {
                             </div>
                         </div>
                     </div>
-     <div class="login-btn-inner dropup">
+
+
+
+                    <div class="login-btn-inner dropup">
                         <div class="row">
                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                             </div>
@@ -1386,8 +1415,9 @@ $(function() {
                                                 <li class="active">
                                                 <li><li>
                                                 </li></ul>
-        <div id="myTabContent" class="tab-content custom-product-edit">
-                 <div class="product-tab-list tab-pane fade" id="View1">
+                                            <div id="myTabContent" class="tab-content custom-product-edit">
+
+                                            <div class="product-tab-list tab-pane fade" id="View1">
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="review-content-section">
@@ -1453,7 +1483,7 @@ $(function() {
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="review-content-section">
                 <div class="row">
-                    <form method="post" action="/project/update" class="projectE_Edit">
+                    <form method="post" action="../Project/updatedata" class="projectE_Edit">
   
                         <div class="form-group-inner">
                             <div class="row">
@@ -1462,7 +1492,7 @@ $(function() {
                                 </div>
                                 <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                     <input type="hidden" class="form-control" placeholder="Enter Project Code"
-                                        id="E_E_H_ProjectCode" name="id" />
+                                        id="E_E_H_ProjectCode" name="ProjectCode" />
                                     <input type="text" class="form-control" placeholder="Enter Project Code"
                                         id="E_E_ProjectCode" name="ProjectCode" readonly />
                                 </div>
@@ -1475,11 +1505,11 @@ $(function() {
                                     <label class="login2">Project Name</label>
                                 </div>
                                 <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                    <input type="text" class="form-control" id="E_E_H_ProjectName"/>
+                                    <input type="text" class="form-control" id="E_E_ProjectName" readonly />
                                 </div>
                                 <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                    <input type="hidden" class="form-control" name="name"
-                                        id="E_E_ProjectName" />
+                                    <input type="hidden" class="form-control" name="ProjectName"
+                                        id="E_E_H_ProjectName" />
                                 </div>
                             </div>
                         </div>
@@ -1492,7 +1522,7 @@ $(function() {
                                 </div>
                                 <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                     <input type="text" class="form-control" placeholder="Enter Description"
-                                        name="description" id="E_E_Description" />
+                                        name="Description" id="E_E_Description" />
 
                                 </div>
                             </div>
@@ -1550,7 +1580,7 @@ $(function() {
             <div class="review-content-section">
                 <div class="row">
 
-                    <form action="/project/delete" method="post" accept-charset="utf-8">
+                    <form action="/bidBonds/delete" method="post" accept-charset="utf-8">
 
                     <div class="form-group-inner">
                         <div class="row">
@@ -1757,7 +1787,7 @@ $(function() {
                 <div class="row">
 
 
-                    <form method="post" action="/project/update" class="projectD_Edit">
+                    <form method="post" action="/bidBond/update" class="projectD_Edit">
 
                         <div class="form-group-inner">
                             <div class="row">
@@ -1768,7 +1798,7 @@ $(function() {
                                     <input type="hidden" class="form-control" placeholder="Enter Project Code"
                                         id="D_E_H_ProjectCode" name="ProjectCode" />
                                     <input type="text" class="form-control" placeholder="Enter Project Code"
-                                        id="D_E_ProjectCode" name="id" readonly />
+                                        id="D_E_ProjectCode" name="ProjectCode" readonly />
                                 </div>
                             </div>
                         </div>
@@ -1783,7 +1813,7 @@ $(function() {
                                     <input type="text" class="form-control" id="D_E_ProjectName" readonly />
                                 </div>
                                 <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                    <input type="hidden" class="form-control" name="name"
+                                    <input type="hidden" class="form-control" name="ProjectName"
                                         id="D_E_H_ProjectName" />
                                 </div>
                             </div>
@@ -1796,7 +1826,7 @@ $(function() {
                                 </div>
                                 <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                     <input type="text" class="form-control" placeholder="Enter Description"
-                                        name="description" id="D_E_Description" />
+                                        name="Description" id="D_E_Description" />
 
                                 </div>
                             </div>
@@ -1851,7 +1881,7 @@ $(function() {
             <div class="review-content-section">
                 <div class="row">
 
-                    <form action="project/delete" method="post" accept-charset="utf-8">
+                    <form action="/bidBond/delete" method="post" accept-charset="utf-8">
 
                     <div class="form-group-inner">
                         <div class="row">
@@ -1859,7 +1889,7 @@ $(function() {
                                 <label class="login2">Project Code</label>
                             </div>
                             <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                <input type="text" class="form-control" name="id" id="D_D_ProjectCode"
+                                <input type="text" class="form-control" name="ProjectCode" id="D_D_ProjectCode"
                                     readonly />
                             </div>
                         </div>
@@ -1873,7 +1903,7 @@ $(function() {
                             </div>
                             <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                 <input type="text" class="form-control" id="D_D_ProjectName" readonly />
-                                <input type="hidden" class="form-control" name="name" id="D_D_H_ProjectName"
+                                <input type="hidden" class="form-control" name="ProjectName" id="D_D_H_ProjectName"
                                     required />
                             </div>
                         </div>
@@ -1886,7 +1916,7 @@ $(function() {
                                 <label class="login2">Description</label>
                             </div>
                             <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                <input type="text" class="form-control" id="D_D_Description" name="description"
+                                <input type="text" class="form-control" id="D_D_Description" name="Description"
                                     readonly />
                             </div>
                         </div>
@@ -1912,7 +1942,7 @@ $(function() {
                                         </li>
                                         <li>
                                             <center><button type="submit" class="btn btn-sm btn-primary login-submit-cs"
-                                                   name="delete" id="btnSubmit">Yes</button>
+                                                    name="delete" id="btnSubmit">Yes</button>
 
                                                 <button type="button"
                                                     class="btn btn-sm btn-primary login-submit-cs">No</button>
@@ -1963,7 +1993,7 @@ $(function() {
 
                          <div class="row">
 
-                             <form name="bulk_action_form" action="/project/allProjects" method="GET">
+                             <form name="bulk_action_form" action="/bidBond/allBidBonds" method="get">
                                  <!-- <div style="height:580px; overflow:auto;"> -->
 
                                  <table id="table" class="table table-striped table-bordered" style="width:100%;">
@@ -1973,31 +2003,31 @@ $(function() {
                                              <td colspan="3">
                                                 
                                                   <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                      <h4 id="topic" style="color:#337ab7;">Project Details</h4>
+                                      <h4 id="topic" style="color:#337ab7;">Bid Bonds</h4>
                                      </div> 
                          
                                              </td>
                                          </tr>
+                                         
+                                        </thead>
 
-                                         <tr>
-                                             <th>Project Code</th>
-                                             <th>Project Name</th>
-                                             <th data-field="description">Description</th>
-                                         </tr>
-                                     </thead>
+                                 </table><br/>
+                                 
+                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 <button type="button" class="btn btn-success" style="height:150px;width: 300px;font-size: medium;"><b></b>
+                                    Akuressa-3<br/>Remaining days : 129<br/>Draft verified with Beneficiary</button>
 
-                                     <tbody>
-                                     <c:forEach var="pro" items="${listProjects}"> <tr>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 <tr>
-                                             <td><c:out value="${pro.id}" /></td>
-                                             <td><c:out value="${pro.name}" /></td>
-                                             <td><c:out value="${pro.description}" /></td>
-                                             <tr> 
-                                             </c:forEach>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
-                                     </tbody>
+                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-danger" 
+                                 style="height:150px;width: 300px;font-size: medium;">Mawanella-2<br/>Remaining days : 12<br/>
+                                 Invoice Submitted to Employer</button>
 
-                                 </table>
+                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-warning" 
+                                 style="height:150px;width: 300px;font-size: medium;">Matara-5<br/>Remaining days : 59<br/>
+                                 Original Submitted to the Beneficiary</button><br><br><br>
 
-                             </form>
+                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-success" 
+                                 style="height:150px;width: 300px;font-size: medium;">Marawila-2<br/>Remaining days : 145<br/>Details Submitted to the bank</button>
+                                </form></b>
 
                          </div>
                      </div>
@@ -2099,7 +2129,7 @@ for (var i = 2; i < table.rows.length; i++) {
                 <div class="footer-copy-right">
                     <div class="col-lg-5 col-md-6 col-sm-6 col-xs-6">
                         <p>NEM Constructions (Pvt) Ltd&nbsp;&nbsp;&nbsp;&nbsp;
-                            
+                            </p>
                     </div>
 
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
@@ -2144,7 +2174,7 @@ for (var i = 2; i < table.rows.length; i++) {
 <!-- mCustomScrollbar JS
 		============================================ -->
 <script type="text/javascript"
-    src="../js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    src="/js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
 <script type="text/javascript" src="../js/scrollbar/mCustomScrollbar-active.js">
 </script>
 <!-- metisMenu JS

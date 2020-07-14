@@ -3,6 +3,8 @@ package com.nem.docms.controllers;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -11,12 +13,10 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
-
 import com.nem.docms.entities.Retention;
 import com.nem.docms.servies.RetentionService;
 
-@RestController
+@Controller
 @RequestMapping("/retention")
 public class RetentionController {
 	
@@ -24,8 +24,13 @@ public class RetentionController {
 	RetentionService retentionService;
 	
 	@GetMapping("/allRetention")
-	public List<Retention> getAll(){
-		return retentionService.getAll();
+	public String getAll(Model model){
+		
+		System.out.println("Retention List Controller called");
+		List<Retention> listRetention = retentionService.getAll();
+		model.addAttribute("listRetention",listRetention);
+		
+		return "retention";
 	}
 	
 	@GetMapping("/getRetention/{id}")

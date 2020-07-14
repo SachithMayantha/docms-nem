@@ -546,8 +546,7 @@ display:none;
         <div class="">
             <nav class="sidebar-nav left-sidebar-menu-pro">
                 <ul class="metismenu" id="menu1">
-
-                    <li>
+<li>
                             <a href="${pageContext.request.contextPath}/project/allProjects">
                                 <img src="../images/project.png" style="height:25px;">
                                 <span class="mini-click-non" style='font-size:12px;'>Projects</span>
@@ -601,6 +600,7 @@ display:none;
                         <li>
                            <br>
                         </li>
+
                 </ul>
             </nav>
         </div>
@@ -957,7 +957,7 @@ $(function() {
                                              <div class="modal-dialog">
                                                  <div class="modal-content">
                                                      <div class="modal-header header-color-modal bg-color-1">
-                                                         <h4 class="modal-title">Add New Project</h4>
+                                                         <h4 class="modal-title">Add New User</h4>
                                                          <div class="modal-close-area modal-close-df">
                                                              <a class="close" data-dismiss="modal" href="#"><i
                                                                      class="fa fa-close"></i></a>
@@ -979,8 +979,7 @@ $(function() {
                                                                                  <div class="row">
                                                                                      <div
                                                                                          class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                                                                         <label class="login2">Project
-                                                                                             Code</label>
+                                                                                         <label class="login2">User ID</label>
                                                                                      </div>
                                                                                      <div
                                                                                          class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
@@ -998,15 +997,14 @@ $(function() {
                                                                                  <div class="row">
                                                                                      <div
                                                                                          class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                                                                         <label class="login2">Project
-                                                                                             Name</label>
+                                                                                         <label class="login2">User name</label>
                                                                                      </div>
                                                                                      <div
                                                                                          class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                                                          <input type="text"
                                                                                              class="form-control"
                                                                                              placeholder="Enter Project Name"
-                                                                                             name="name"
+                                                                                             name="username"
                                                                                              id="projectname1"
                                                                                              required />
                                                                                      </div>
@@ -1017,14 +1015,14 @@ $(function() {
                                                                                      <div
                                                                                          class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                                                                          <label
-                                                                                             class="login2">Description</label>
+                                                                                             class="login2">Password</label>
                                                                                      </div>
                                                                                      <div
                                                                                          class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                                                                         <input type="text"
+                                                                                         <input type="password"
                                                                                              class="form-control"
-                                                                                             placeholder="Enter Description"
-                                                                                             name="description" />
+                                                                                             placeholder="Enter Password"
+                                                                                             name="password" />
                                                                                      </div>
                                                                                  </div>
                                                                              </div>
@@ -1041,7 +1039,7 @@ $(function() {
                                                                                              <button
                                                                                                  class="btn btn-sm btn-primary login-submit-cs"
                                                                                                  type="submit" value="Save">Add
-                                                                                                 Project</button>
+                                                                                                 User</button>
 
                                                                                              <a data-dismiss="modal"
                                                                                                  href="#"><button
@@ -1068,7 +1066,7 @@ $(function() {
                                              <div class="modal-dialog">
                                                  <div class="modal-content">
                                                      <div class="modal-header header-color-modal bg-color-1">
-                                                         <h4 class="modal-title">Project</h4>
+                                                         <h4 class="modal-title">Users</h4>
                                                          <div class="modal-close-area modal-close-df">
                                                              <a class="close" data-dismiss="modal" href="#"><i
                                                                      class="fa fa-close"></i></a>
@@ -1113,10 +1111,10 @@ $(function() {
                     <div class="form-group-inner">
                         <div class="row">
                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                <label class="login2">Project Code</label>
+                                <label class="login2">User ID</label>
                             </div>
                             <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                <input type="text" class="form-control" name="Name" id="V_V_ProjectCode" readonly />
+                                <input type="text" class="form-control" name="id" id="V_V_ProjectCode" readonly />
                             </div>
                         </div>
                     </div>
@@ -1124,11 +1122,11 @@ $(function() {
                     <div class="form-group-inner">
                         <div class="row">
                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                <label class="login2">Project
+                                <label class="login2">User
                                     Name</label>
                             </div>
                             <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                <input type="text" class="form-control" name="UserName" id="V_V_ProjectName" readonly />
+                                <input type="text" class="form-control" name="userName" id="V_V_ProjectName" readonly />
                             </div>
                         </div>
                     </div>
@@ -1136,10 +1134,10 @@ $(function() {
                     <div class="form-group-inner">
                         <div class="row">
                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                <label class="login2">Description</label>
+                                <label class="login2">Password</label>
                             </div>
                             <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                <input type="text" class="form-control" id="V_V_Description" name="Description"
+                                <input type="password" class="form-control" id="V_V_Description" name="password"
                                     readonly />
                             </div>
                         </div>
@@ -1178,13 +1176,13 @@ $(function() {
                         <div class="form-group-inner">
                             <div class="row">
                                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                    <label class="login2">Project Code</label>
+                                    <label class="login2">User ID</label>
                                 </div>
                                 <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                     <input type="hidden" class="form-control" placeholder="Enter Project Code"
                                         id="V_E_H_ProjectCode" name="ProjectCode" />
-                                    <input type="text" class="form-control" placeholder="Enter Project Code"
-                                        id="V_E_ProjectCode" name="ProjectCode" readonly />
+                                    <input type="text" class="form-control" placeholder="Enter User ID"
+                                        id="V_E_ProjectCode" name="id" readonly />
                                 </div>
                             </div>
                         </div>
@@ -1192,13 +1190,13 @@ $(function() {
                         <div class="form-group-inner">
                             <div class="row">
                                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                    <label class="login2">Project Name</label>
+                                    <label class="login2">User Name</label>
                                 </div>
                                 <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                     <input type="text" class="form-control" id="V_E_ProjectName" />
                                 </div>
                                 <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                    <input type="hidden" class="form-control" name="ProjectName"
+                                    <input type="hidden" class="form-control" name="username"
                                         id="V_E_H_ProjectName" />
                                 </div>
                             </div>
@@ -1207,10 +1205,10 @@ $(function() {
                         <div class="form-group-inner">
                             <div class="row">
                                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                    <label class="login2">Description</label>
+                                    <label class="login2">Password</label>
                                 </div>
                                 <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                    <input type="text" class="form-control" placeholder="Enter Description"
+                                    <input type="password" class="form-control" placeholder="Enter Password"
                                         name="Description" id="V_E_Description" />
 
                                 </div>
@@ -1230,7 +1228,7 @@ $(function() {
                                         <ul class="dropdown-menu btn-dropdown-menu dropdown-menu-up" role="menu"
                                             style="min-width:130px;font-size:20px;padding:5px;">
                                             <li>
-                                                <center>Save the changes to the Project
+                                                <center>Save the changes to the User
                                                 </center><br>
                                             </li>
                                             <li>
@@ -1273,10 +1271,10 @@ $(function() {
                     <div class="form-group-inner">
                         <div class="row">
                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                <label class="login2">Project Code</label>
+                                <label class="login2">User ID</label>
                             </div>
                             <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                <input type="text" class="form-control" name="ProjectCode" id="V_D_ProjectCode"
+                                <input type="text" class="form-control" name="id" id="V_D_ProjectCode"
                                     readonly />
                             </div>
                         </div>
@@ -1285,12 +1283,12 @@ $(function() {
                     <div class="form-group-inner">
                         <div class="row">
                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                <label class="login2">Project
+                                <label class="login2">User
                                     Name</label>
                             </div>
                             <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                 <input type="text" class="form-control" id="V_D_ProjectName" readonly />
-                                <input type="hidden" class="form-control" name="ProjectName" id="V_D_H_ProjectName"
+                                <input type="hidden" class="form-control" name="username" id="V_D_H_ProjectName"
                                     required />
                             </div>
                         </div>
@@ -1298,10 +1296,10 @@ $(function() {
                     <div class="form-group-inner">
                         <div class="row">
                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                <label class="login2">Description</label>
+                                <label class="login2">Password</label>
                             </div>
                             <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                <input type="text" class="form-control" id="V_D_Description" name="Description"
+                                <input type="password" class="form-control" id="V_D_Description" name="password"
                                     readonly />
                             </div>
                         </div>
@@ -1319,7 +1317,7 @@ $(function() {
                                     <ul class="dropdown-menu btn-dropdown-menu dropdown-menu-up" role="menu"
                                         style="min-width:130px;font-size:20px;padding:5px;">
                                         <li>
-                                            <center>Delete Project ?
+                                            <center>Delete User ?
                                             </center><br>
                                         </li>
                                         <li>
@@ -1362,7 +1360,7 @@ $(function() {
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header header-color-modal bg-color-1">
-                    <h4 class="modal-title">Project</h4>
+                    <h4 class="modal-title">User</h4>
                         <div class="modal-close-area modal-close-df">
                             <a class="close" data-dismiss="modal" href="#">
                                 <i class="fa fa-close"></i></a>
@@ -1395,10 +1393,10 @@ $(function() {
                                     <div class="form-group-inner">
                                 <div class="row">
                                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                        <label class="login2">Project Code</label>
+                                        <label class="login2">User ID</label>
                                     </div>
                                     <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                        <input type="text" class="form-control" name="Name" id="E_V_ProjectCode" readonly />
+                                        <input type="text" class="form-control" name="id" id="E_V_ProjectCode" readonly />
                                     </div>
                                 </div>
                         </div>
@@ -1406,10 +1404,10 @@ $(function() {
                     <div class="form-group-inner">
                         <div class="row">
                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                <label class="login2">Project Name</label>
+                                <label class="login2">User Name</label>
                             </div>
                             <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                <input type="text" class="form-control" name="UserName" id="E_V_ProjectName" readonly />
+                                <input type="text" class="form-control" name="username" id="E_V_ProjectName" readonly />
                             </div>
                         </div>
                     </div>
@@ -1417,10 +1415,10 @@ $(function() {
                     <div class="form-group-inner">
                         <div class="row">
                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                <label class="login2">Description</label>
+                                <label class="login2">Password</label>
                             </div>
                             <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                <input type="text" class="form-control" id="E_V_Description" name="Description"
+                                <input type="password" class="form-control" id="E_V_Description" name="password"
                                     readonly />
                             </div>
                         </div>
@@ -1458,13 +1456,13 @@ $(function() {
                         <div class="form-group-inner">
                             <div class="row">
                                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                    <label class="login2">Project Code</label>
+                                    <label class="login2">User ID</label>
                                 </div>
                                 <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                     <input type="hidden" class="form-control" placeholder="Enter Project Code"
                                         id="E_E_H_ProjectCode" name="id" />
-                                    <input type="text" class="form-control" placeholder="Enter Project Code"
-                                        id="E_E_ProjectCode" name="ProjectCode" readonly />
+                                    <input type="text" class="form-control" placeholder="Enter User ID"
+                                        id="E_E_ProjectCode" name="id" readonly />
                                 </div>
                             </div>
                         </div>
@@ -1472,13 +1470,13 @@ $(function() {
                         <div class="form-group-inner">
                             <div class="row">
                                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                    <label class="login2">Project Name</label>
+                                    <label class="login2">User Name</label>
                                 </div>
                                 <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                     <input type="text" class="form-control" id="E_E_H_ProjectName"/>
                                 </div>
                                 <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                    <input type="hidden" class="form-control" name="name"
+                                    <input type="hidden" class="form-control" name="username"
                                         id="E_E_ProjectName" />
                                 </div>
                             </div>
@@ -1488,10 +1486,10 @@ $(function() {
                         <div class="form-group-inner">
                             <div class="row">
                                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                    <label class="login2">Description</label>
+                                    <label class="login2">Password</label>
                                 </div>
                                 <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                    <input type="text" class="form-control" placeholder="Enter Description"
+                                    <input type="password" class="form-control" placeholder="Enter Password"
                                         name="description" id="E_E_Description" />
 
                                 </div>
@@ -1514,7 +1512,7 @@ $(function() {
                                         <ul class="dropdown-menu btn-dropdown-menu dropdown-menu-up" role="menu"
                                             style="min-width:130px;font-size:20px;padding:5px;">
                                             <li>
-                                                <center>Save the changes to the Project
+                                                <center>Save the changes to the User
                                                 </center><br>
                                             </li>
                                             <li>
@@ -1555,10 +1553,10 @@ $(function() {
                     <div class="form-group-inner">
                         <div class="row">
                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                <label class="login2">Project Code</label>
+                                <label class="login2">User ID</label>
                             </div>
                             <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                <input type="text" class="form-control" name="ProjectCode" id="E_D_ProjectCode"
+                                <input type="text" class="form-control" name="id" id="E_D_ProjectCode"
                                     readonly />
                             </div>
                         </div>
@@ -1567,12 +1565,12 @@ $(function() {
                     <div class="form-group-inner">
                         <div class="row">
                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                <label class="login2">Project
+                                <label class="login2">User
                                     Name</label>
                             </div>
                             <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                 <input type="text" class="form-control" id="E_D_ProjectName" readonly />
-                                <input type="hidden" class="form-control" name="ProjectName" id="E_D_H_ProjectName"
+                                <input type="hidden" class="form-control" name="username" id="E_D_H_ProjectName"
                                     required />
                             </div>
                         </div>
@@ -1583,10 +1581,10 @@ $(function() {
                     <div class="form-group-inner">
                         <div class="row">
                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                <label class="login2">Description</label>
+                                <label class="login2">Password</label>
                             </div>
                             <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                <input type="text" class="form-control" id="E_D_Description" name="Description"
+                                <input type="password" class="form-control" id="E_D_Description" name="Description"
                                     readonly />
                             </div>
                         </div>
@@ -1607,7 +1605,7 @@ $(function() {
                                     <ul class="dropdown-menu btn-dropdown-menu dropdown-menu-up" role="menu"
                                         style="min-width:130px;font-size:20px;padding:5px;">
                                         <li>
-                                            <center>Delete Project ?
+                                            <center>Delete User ?
                                             </center><br>
                                         </li>
                                         <li>
@@ -1651,7 +1649,7 @@ $(function() {
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header header-color-modal bg-color-1">
-                        <h4 class="modal-title">Project</h4>
+                        <h4 class="modal-title">User</h4>
                             <div class="modal-close-area modal-close-df">
                                 <a class="close" data-dismiss="modal" href="#">
                                     <i class="fa fa-close"></i></a>
@@ -1690,10 +1688,10 @@ $(function() {
                     <div class="form-group-inner">
                         <div class="row">
                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                <label class="login2">Project Code</label>
+                                <label class="login2">User ID</label>
                             </div>
                             <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                <input type="text" class="form-control" name="Name" id="D_V_ProjectCode" readonly />
+                                <input type="text" class="form-control" name="id" id="D_V_ProjectCode" readonly />
                             </div>
                         </div>
                     </div>
@@ -1701,11 +1699,11 @@ $(function() {
                     <div class="form-group-inner">
                         <div class="row">
                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                <label class="login2">Project
+                                <label class="login2">User
                                     Name</label>
                             </div>
                             <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                <input type="text" class="form-control" name="UserName" id="D_V_ProjectName" readonly />
+                                <input type="text" class="form-control" name="username" id="D_V_ProjectName" readonly />
                             </div>
                         </div>
                     </div>
@@ -1716,10 +1714,10 @@ $(function() {
                     <div class="form-group-inner">
                         <div class="row">
                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                <label class="login2">Description</label>
+                                <label class="login2">Password</label>
                             </div>
                             <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                <input type="text" class="form-control" id="D_V_Description" name="Description"
+                                <input type="password" class="form-control" id="D_V_Description" name="password"
                                     readonly />
                             </div>
                         </div>
@@ -1762,12 +1760,12 @@ $(function() {
                         <div class="form-group-inner">
                             <div class="row">
                                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                    <label class="login2">Project Code</label>
+                                    <label class="login2">User ID</label>
                                 </div>
                                 <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                    <input type="hidden" class="form-control" placeholder="Enter Project Code"
-                                        id="D_E_H_ProjectCode" name="ProjectCode" />
-                                    <input type="text" class="form-control" placeholder="Enter Project Code"
+                                    <input type="hidden" class="form-control" placeholder="Enter User ID"
+                                        id="D_E_H_ProjectCode" name="id" />
+                                    <input type="text" class="form-control" placeholder="Enter User ID"
                                         id="D_E_ProjectCode" name="id" readonly />
                                 </div>
                             </div>
@@ -1777,13 +1775,13 @@ $(function() {
                         <div class="form-group-inner">
                             <div class="row">
                                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                    <label class="login2">Project Name</label>
+                                    <label class="login2">User Name</label>
                                 </div>
                                 <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                     <input type="text" class="form-control" id="D_E_ProjectName" readonly />
                                 </div>
                                 <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                    <input type="hidden" class="form-control" name="name"
+                                    <input type="hidden" class="form-control" name="username"
                                         id="D_E_H_ProjectName" />
                                 </div>
                             </div>
@@ -1792,11 +1790,11 @@ $(function() {
                         <div class="form-group-inner">
                             <div class="row">
                                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                    <label class="login2">Description</label>
+                                    <label class="login2">Password</label>
                                 </div>
                                 <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                    <input type="text" class="form-control" placeholder="Enter Description"
-                                        name="description" id="D_E_Description" />
+                                    <input type="password" class="form-control" placeholder="Enter Password"
+                                        name="password" id="D_E_Description" />
 
                                 </div>
                             </div>
@@ -1815,7 +1813,7 @@ $(function() {
                                         <ul class="dropdown-menu btn-dropdown-menu dropdown-menu-up" role="menu"
                                             style="min-width:130px;font-size:20px;padding:5px;">
                                             <li>
-                                                <center>Save the changes to the Project
+                                                <center>Save the changes to the User
                                                 </center><br>
                                             </li>
                                             <li>
@@ -1856,7 +1854,7 @@ $(function() {
                     <div class="form-group-inner">
                         <div class="row">
                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                <label class="login2">Project Code</label>
+                                <label class="login2">User ID</label>
                             </div>
                             <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                 <input type="text" class="form-control" name="id" id="D_D_ProjectCode"
@@ -1868,12 +1866,12 @@ $(function() {
                     <div class="form-group-inner">
                         <div class="row">
                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                <label class="login2">Project
+                                <label class="login2">User
                                     Name</label>
                             </div>
                             <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                 <input type="text" class="form-control" id="D_D_ProjectName" readonly />
-                                <input type="hidden" class="form-control" name="name" id="D_D_H_ProjectName"
+                                <input type="hidden" class="form-control" name="username" id="D_D_H_ProjectName"
                                     required />
                             </div>
                         </div>
@@ -1883,10 +1881,10 @@ $(function() {
                     <div class="form-group-inner">
                         <div class="row">
                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                <label class="login2">Description</label>
+                                <label class="login2">Password</label>
                             </div>
                             <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                <input type="text" class="form-control" id="D_D_Description" name="description"
+                                <input type="password" class="form-control" id="D_D_Description" name="password"
                                     readonly />
                             </div>
                         </div>
@@ -1907,7 +1905,7 @@ $(function() {
                                     <ul class="dropdown-menu btn-dropdown-menu dropdown-menu-up" role="menu"
                                         style="min-width:130px;font-size:20px;padding:5px;">
                                         <li>
-                                            <center>Delete Project ?
+                                            <center>Delete User ?
                                             </center><br>
                                         </li>
                                         <li>
@@ -1973,24 +1971,24 @@ $(function() {
                                              <td colspan="3">
                                                 
                                                   <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                      <h4 id="topic" style="color:#337ab7;">Project Details</h4>
+                                      <h4 id="topic" style="color:#337ab7;">User List</h4>
                                      </div> 
                          
                                              </td>
                                          </tr>
 
                                          <tr>
-                                             <th>Project Code</th>
-                                             <th>Project Name</th>
-                                             <th data-field="description">Description</th>
+                                             <th>User ID</th>
+                                             <th>User Name</th>
+                                             
                                          </tr>
                                      </thead>
 
                                      <tbody>
-                                     <c:forEach var="pro" items="${listProjects}"> <tr>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 <tr>
-                                             <td><c:out value="${pro.id}" /></td>
-                                             <td><c:out value="${pro.name}" /></td>
-                                             <td><c:out value="${pro.description}" /></td>
+                                     <c:forEach var="user" items="${listUser}"> <tr>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 <tr>
+                                             <td><c:out value="${user.id}" /></td>
+                                             <td><c:out value="${user.username}" /></td>
+                                            
                                              <tr> 
                                              </c:forEach>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
                                      </tbody>

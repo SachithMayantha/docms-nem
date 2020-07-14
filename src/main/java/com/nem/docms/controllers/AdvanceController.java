@@ -3,6 +3,8 @@ package com.nem.docms.controllers;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -11,12 +13,10 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
-
 import com.nem.docms.entities.Advance;
 import com.nem.docms.servies.AdvanceService;
 
-@RestController
+@Controller
 @RequestMapping("/advance")
 public class AdvanceController {
 	
@@ -24,8 +24,13 @@ public class AdvanceController {
 	AdvanceService advanceService;
 	
 	@GetMapping("/allAdvance")
-	public List<Advance> getAll(){
-		return advanceService.getAll();
+	public String getAll(Model model){
+		
+		System.out.println("Advance List Controller called");
+		List<Advance> listAdvance = advanceService.getAll();
+		model.addAttribute("listAdvance",listAdvance);
+		
+		return "advance";
 	}
 	
 	@GetMapping("/getAdvance/{id}")

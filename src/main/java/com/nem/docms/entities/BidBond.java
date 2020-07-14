@@ -12,7 +12,7 @@ public class BidBond {
 
 	@Id
 	private String id;
-	private Long amount;
+	private String amount;
 	//give a standard format and remove time
 	@JsonFormat(pattern = "yyyy-MM-dd")
 	private Date effective;
@@ -25,7 +25,7 @@ public class BidBond {
 		// TODO Auto-generated constructor stub
 	}
 
-	public BidBond(String id, Long amount, Date effective, Date expire, String status) {
+	public BidBond(String id, String amount, Date effective, Date expire, String status) {
 		super();
 		this.id = id;
 		this.amount = amount;
@@ -42,11 +42,11 @@ public class BidBond {
 		this.id = id;
 	}
 
-	public Long getAmount() {
+	public String getAmount() {
 		return amount;
 	}
 
-	public void setAmount(Long amount) {
+	public void setAmount(String amount) {
 		this.amount = amount;
 	}
 
