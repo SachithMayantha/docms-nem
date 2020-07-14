@@ -10,8 +10,30 @@ public class User {
 	private String id;
 	private String username;
 	private String password;
+	private boolean valid;
 	
 	
+	public User(String username, String password) {
+		super();
+		this.username = username;
+		this.password = password;
+	}
+
+	public User(String username, String password, boolean valid) {
+		super();
+		this.username = username;
+		this.password = password;
+		this.valid = valid;
+	}
+
+	public User(String id, String username, String password, boolean valid) {
+		super();
+		this.id = id;
+		this.username = username;
+		this.password = password;
+		this.valid = valid;
+	}
+
 	public User() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -22,6 +44,14 @@ public class User {
 		this.id = id;
 		this.username = username;
 		this.password = password;
+	}
+	
+	public boolean isValid() {
+		return valid;
+	}
+
+	public void setValid(boolean valid) {
+		this.valid = valid;
 	}
 
 	public String getId() {

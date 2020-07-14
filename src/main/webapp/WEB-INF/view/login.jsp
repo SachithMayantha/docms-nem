@@ -111,7 +111,7 @@
                     <h4 class="modal-title"><i class="fa fa-unlock-alt"></i>Login</h4>
                 </div>
                 <div class="modal-body">
-                    <form method="POST" action="/logining" accept-charset="utf-8">
+                    <form method="POST" action="/login" accept-charset="utf-8">
                     <span>${message}</span>
 	                    <div class="form-group">
 	                        <input type="text" placeholder="User Name" class="form-control" name="username" required>

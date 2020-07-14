@@ -1,5 +1,8 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" 
+    contentType="text/html; charset=windows-1256"
+    pageEncoding="windows-1256"
+%>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,31 +17,31 @@
 
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>NEM Construction : Home</title>
-    <!-- Latest compiled and minified CSS --> 
+    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
         integrity="sha384-PmY9l28YgO4JwMKbTvgaS7XNZJ30MK9FAZjjzXtlqyZCqBY6X6bXIkM++IkyinN+" crossorigin="anonymous">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="img/DocMS.png">
+    <link rel="shortcut icon" type="image/x-icon" href="/images/Logo.png">
     <!-- Font Awesome -->
-    <link href="http://192.243.108.248/mms/assets/css/font-awesome.css" rel="stylesheet">
+    <link href="/css/font-awesome.css" rel="stylesheet">
     <!-- Bootstrap -->
-    <link rel="stylesheet" type="text/css" href="http://192.243.108.248/mms/assets/css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/slick.css" />
     <!-- Fancybox slider -->
-    <link rel="stylesheet" href="http://192.243.108.248/mms/assets/css/jquery.fancybox.css" type="text/css"
-        media="screen"/>
+    <link rel="stylesheet" href="/css/jquery.fancybox.css" type="text/css"
+        media="screen" />
     <!-- Animate css -->
-    <link rel="stylesheet" type="text/css" href="http://192.243.108.248/mms/assets/css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="/css/animate.css" />
     <!-- Progress bar -->
-    <link rel="stylesheet" type="text/css" href="http://192.243.108.248/mms/assets/css/bootstrap-progressbar-3.3.4.css" />
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap-progressbar-3.3.4.css" />
     <!-- Theme color -->
-    <link id="switcher" href="http://192.243.108.248/mms/assets/css/theme-color/default-theme.css" rel="stylesheet">
+    <link id="switcher" href="/css/theme-color/default-theme.css" rel="stylesheet">
 
     <!-- Main Style -->
     <link href="/css/style.css" rel="stylesheet">
 
     <!-- Fonts -->
-    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'
+    <link href="/css/font-awesome.min.css" rel='stylesheet'
         type='text/css'>
     <!-- Open Sans for body font -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
@@ -92,7 +95,7 @@
     <!-- END PRELOADER -->
 
     <!-- SCROLL TOP BUTTON -->
-    <a class="scrollToTop" href="/html/main.jsp"><i class="fa fa-angle-up"></i></a>
+    <a class="scrollToTop"><i class="fa fa-angle-up"></i></a>
     <!-- END SCROLL TOP BUTTON -->
 
     <!-- Start login modal window -->
@@ -104,21 +107,22 @@
             <div id="login-content" class="modal-content">
                 <div class="modal-header">
                     <button aria-label="Close" data-dismiss="modal" class="close" type="button">
-                    <span aria-hidden="true">×</span></button>
+                    <span aria-hidden="true">Ã—</span></button>
                     <h4 class="modal-title"><i class="fa fa-unlock-alt"></i>Login</h4>
                 </div>
                 <div class="modal-body">
-                ${SPRING_SECURITY_LAST_EXCEPTION.message}
-                    <form action="login" method='POST' accept-charset="utf-8">
-                    <div class="form-group">
-                        <input type="text" placeholder="User Name" class="form-control" name="username" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="password" placeholder="Password" class="form-control" name="password" required>
-                    </div>
-                    <div class="loginbox">
-                        <button class="btn signin-btn" name="submit" type="submit" value="submit">SIGN IN</button>
-                    </div>
+                    <form method="POST" action="/logining" accept-charset="utf-8">
+                    <span>${message}</span>
+	                    <div class="form-group">
+	                        <input type="text" placeholder="User Name" class="form-control" name="username" required>
+	                    </div>
+	                    <div class="form-group">
+	                        <input type="password" placeholder="Password" class="form-control" name="password" required>
+	                    </div>
+	                    <span>${error}</span>
+	                    <div class="loginbox">
+	                        <button class="btn signin-btn" type="submit">SIGN IN</button>
+	                    </div>
                     </form>               
                 </div>
 
@@ -150,7 +154,7 @@
     <section id="slider">
         <div class="main-slider">
             <div class="single-slide">
-                <img src="http://192.243.108.248/mms/assets/images/Poster.jpg" alt="img">
+                <img src="/images/Poster.jpg" alt="img">
                 <div class="slide-content">
                     <div class="container">
                         <div class="row">
@@ -164,7 +168,7 @@
                                         <br>
                                         <a style="color:#ff9900; font-size:26px" class="login modal-form"
                                             data-target="#login-form" data-toggle="modal"
-                                            href="html/main.html">
+                                            href="#login-form">
                                             ENTRY
                                         </a>
 
@@ -189,24 +193,24 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <!-- Bootstrap -->
-    <script src="http://192.243.108.248/mms/assets/js/bootstrap.js"></script>
+    <script src="/js/bootstrap.js"></script>
     <!-- Slick Slider -->
-    <script type="text/javascript" src="http://192.243.108.248/mms/assets/js/slick.js"></script>
+    <script type="text/javascript" src="/js/slick.js"></script>
     <!-- mixit slider -->
-    <script type="text/javascript" src="http://192.243.108.248/mms/assets/js/jquery.mixitup.js"></script>
+    <script type="text/javascript" src="/js/jquery.mixitup.js"></script>
     <!-- Add fancyBox -->
-    <script type="text/javascript" src="http://192.243.108.248/mms/assets/js/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="/js/jquery.fancybox.pack.js"></script>
     <!-- counter -->
-    <script src="http://192.243.108.248/mms/assets/js/waypoints.js"></script>
-    <script src="http://192.243.108.248/mms/assets/js/jquery.counterup.js"></script>
+    <script src="/js/waypoints.js"></script>
+    <script src="/js/jquery.counterup.js"></script>
     <!-- Wow animation -->
-    <script type="text/javascript" src="http://192.243.108.248/mms/assets/js/wow.js"></script>
+    <script type="text/javascript" src="/js/wow.js"></script>
     <!-- progress bar   -->
-    <script type="text/javascript" src="http://192.243.108.248/mms/assets/js/bootstrap-progressbar.js"></script>
+    <script type="text/javascript" src="/js/bootstrap-progressbar.js"></script>
 
 
     <!-- Custom js -->
-    <script type="text/javascript" src="http://192.243.108.248/mms/assets/js/custom.js"></script>
+    <script type="text/javascript" src="/js/custom.js"></script>
 
     <script>
     var timeout = 2000; // in miliseconds (3*1000)

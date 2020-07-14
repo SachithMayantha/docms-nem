@@ -1,12 +1,8 @@
 package com.nem.docms.controllers;
 
-import javax.servlet.http.HttpServletRequest;
-
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-
-import com.nem.docms.entities.User;
 
 @Controller
 public class MainController {
@@ -15,6 +11,10 @@ public class MainController {
 	public String login() {
 		System.out.println("Main Controller login()");
 		return "login";
+	}
+	@GetMapping("/main")
+	public String main() {
+		return "main";
 	}
 //	@PostMapping("/login")
 //	public String loginSuccessHandler() {
@@ -27,14 +27,10 @@ public class MainController {
 //		return "login";
 //	}
 	
-	
-	public String logout() {
-		System.out.println("logout success");
-		return "login";
 //	}
 //	@GetMapping("/project/allProjects")
 //	public String projects() {
 //		System.out.println("Main Controller projects()");
 //		return "projects";
 //	}
-}}
+}
