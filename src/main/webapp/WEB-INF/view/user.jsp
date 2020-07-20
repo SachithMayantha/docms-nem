@@ -538,7 +538,7 @@ display:none;
     <div class="sidenav">
    
         <div class="">
-     <a href="main.html"><img class="main-logo" style="margin-top:5px"
+     <a href="${pageContext.request.contextPath}/main"><img class="main-logo" style="margin-top:5px"
                     src="../images/Logo.png" alt="" style="height:10px;"/></a>
            
         </div>
@@ -579,7 +579,7 @@ display:none;
                             </a>
 
                         <li>
-                            <a href="insurance.html"  aria-expanded="false">
+                            <a href="#"  aria-expanded="false">
                                 <img src="../images/insurance.png" style="height:25px;">
                                 <span class="mini-click-non" style='font-size:12px;'>Insurance</span></a>
 
@@ -703,9 +703,7 @@ display:none;
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header header-color-modal bg-color-1">
-                            <h4 class="modal-title">Change Password
-
-                            </h4>
+                            <h4 class="modal-title">Change Password</h4>
                             <div class="modal-close-area modal-close-df">
                                 <a class="close" data-dismiss="modal" href="#"><i class="fa fa-close"></i></a>
                             </div>
@@ -717,7 +715,7 @@ display:none;
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                         <div class="basic-login-inner modal-basic-inner">
 
-                                            <form method="post" action="../User/changepassword" class="changepassword">
+                                            <form method="post" action="#" class="changepassword">
                                                 <div class="form-group-inner">
                                                     <div class="row">
 
@@ -726,11 +724,8 @@ display:none;
                                                             <input type="hidden" class="form-control" name="UserName"
                                                                 value="Susl.r"
                                                                 required />
-
-                                                        </div>
-
+                                                       </div>
                                                     </div>
-
                                                 </div>
 
                                                 <!--Password changing form start-->
@@ -957,7 +952,7 @@ $(function() {
                                              <div class="modal-dialog">
                                                  <div class="modal-content">
                                                      <div class="modal-header header-color-modal bg-color-1">
-                                                         <h4 class="modal-title">Add New User</h4>
+                                                         <h4 class="modal-title">New User</h4>
                                                          <div class="modal-close-area modal-close-df">
                                                              <a class="close" data-dismiss="modal" href="#"><i
                                                                      class="fa fa-close"></i></a>
@@ -972,7 +967,7 @@ $(function() {
 
 
                                                                          <form method="post"
-                                                                             action="/project/addProject"
+                                                                             action="/user/addUser"
                                                                              class="projectAdd">
 
                                                                              <div class="form-group-inner">
@@ -1066,7 +1061,7 @@ $(function() {
                                              <div class="modal-dialog">
                                                  <div class="modal-content">
                                                      <div class="modal-header header-color-modal bg-color-1">
-                                                         <h4 class="modal-title">Users</h4>
+                                                         <h4 class="modal-title">View User</h4>
                                                          <div class="modal-close-area modal-close-df">
                                                              <a class="close" data-dismiss="modal" href="#"><i
                                                                      class="fa fa-close"></i></a>
@@ -1078,7 +1073,6 @@ $(function() {
                                                              <div class="row">
                                                                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                                      <div class="basic-login-inner modal-basic-inner">
-
                                                                          <!-- Single pro tab review Start-->
                                                                          <div
                                                                              class="single-pro-review-area mt-t-30 mg-b-15">
@@ -1092,8 +1086,7 @@ $(function() {
                                                                                                  class="tab-review-design">
             <li class="active">
                                                                                                                                                                                                           <a href="#View"><i
-       class="fas fa-search"></i>
-         View</a>
+ class="fas fa-search"></i>View</a>
                                                                                                                                                                                                       </li>
        <li>
                                                                                                                                                                                                       </li>
@@ -1130,19 +1123,6 @@ $(function() {
                             </div>
                         </div>
                     </div>
-
-                    <div class="form-group-inner">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                <label class="login2">Password</label>
-                            </div>
-                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                <input type="password" class="form-control" id="V_V_Description" name="password"
-                                    readonly />
-                            </div>
-                        </div>
-                    </div>
-
                     <div class="login-btn-inner">
                         <div class="row">
                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
@@ -1360,7 +1340,7 @@ $(function() {
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header header-color-modal bg-color-1">
-                    <h4 class="modal-title">User</h4>
+                    <h4 class="modal-title">Edit</h4>
                         <div class="modal-close-area modal-close-df">
                             <a class="close" data-dismiss="modal" href="#">
                                 <i class="fa fa-close"></i></a>
@@ -1379,8 +1359,8 @@ $(function() {
                                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                 <div class="product-payment-inner-st">
                                                     <ul id="myTabedu1" class="tab-review-design">
-                                                <li><a href="#View1"><iclass="fas fa-search"></i>View</a>
-                                                </li>
+                                                
+                                               
                                                 <li class="active">
                                                 <li><li>
                                                 </li></ul>
@@ -1391,6 +1371,7 @@ $(function() {
                             <div class="review-content-section">
                                 <div class="row">
                                     <div class="form-group-inner">
+                                    <form method="post" action="/user/update" class="userAdd">
                                 <div class="row">
                                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                         <label class="login2">User ID</label>

@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+ <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!-- page header -->
 <!doctype html>
 <html class="no-js" lang="en">
@@ -537,7 +538,7 @@ display:none;
     <div class="sidenav">
    
         <div class="">
-     <a href="main.html"><img class="main-logo" style="margin-top:5px"
+     <a href="${pageContext.request.contextPath}/main"><img class="main-logo" style="margin-top:5px"
                     src="../images/Logo.png" alt="" style="height:10px;"/></a>
            
         </div>
@@ -578,7 +579,7 @@ display:none;
                             </a>
 
                         <li>
-                            <a href="insurance.html"  aria-expanded="false">
+                            <a href="#"  aria-expanded="false">
                                 <img src="../images/insurance.png" style="height:25px;">
                                 <span class="mini-click-non" style='font-size:12px;'>Insurance</span></a>
 
@@ -667,7 +668,7 @@ display:none;
                             </a>
 
                         <li>
-                            <a href="insurance.html"  aria-expanded="false">
+                            <a href="#"  aria-expanded="false">
                                 <img src="../images/insurance.png" style="height:25px;">
                                 <span class="mini-click-non" style='font-size:12px;'>Insurance</span></a>
 
@@ -950,13 +951,12 @@ $(function() {
                                              </div>
                                          </div>
                                         <!--End of User button-->
-
-                                         <div id="zoomInDown1" class="modal modal-edu-general modal-zoomInDown fade"
+<div id="zoomInDown1" class="modal modal-edu-general modal-zoomInDown fade"
                                              role="dialog">
                                              <div class="modal-dialog">
                                                  <div class="modal-content">
                                                      <div class="modal-header header-color-modal bg-color-1">
-                                                         <h4 class="modal-title">Add New Project</h4>
+                                                         <h4 class="modal-title">New Performance Document</h4>
                                                          <div class="modal-close-area modal-close-df">
                                                              <a class="close" data-dismiss="modal" href="#"><i
                                                                      class="fa fa-close"></i></a>
@@ -970,23 +970,22 @@ $(function() {
                                                                      <div class="basic-login-inner modal-basic-inner">
 
 
-                                                                         <form method="post"
-                                                                             action="../Project/register"
+                                                                         <form method="POST"
+                                                                             action="/performance/addPerformance"
                                                                              class="projectAdd">
 
                                                                              <div class="form-group-inner">
                                                                                  <div class="row">
                                                                                      <div
                                                                                          class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                                                                         <label class="login2">Project
-                                                                                             Code</label>
+                                                                                         <label class="login2">Document ID</label>
                                                                                      </div>
                                                                                      <div
                                                                                          class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                                                          <input type="text"
                                                                                              class="form-control"
-                                                                                             placeholder="Enter Project Code"
-                                                                                             name="projectcode"
+                                                                                             placeholder="Enter BidBond ID"
+                                                                                             name="id"
                                                                                              id="projectcode1"
                                                                                              required />
                                                                                      </div>
@@ -997,59 +996,97 @@ $(function() {
                                                                                  <div class="row">
                                                                                      <div
                                                                                          class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                                                                         <label class="login2">Project
-                                                                                             Name</label>
+                                                                                         <label class="login2">Project Name</label>
                                                                                      </div>
                                                                                      <div
                                                                                          class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                                                          <input type="text"
                                                                                              class="form-control"
                                                                                              placeholder="Enter Project Name"
-                                                                                             name="projectname"
+                                                                                             name="name"
                                                                                              id="projectname1"
                                                                                              required />
                                                                                      </div>
                                                                                  </div>
                                                                              </div>
 
-
-
-                                                                             <!-- <div class="form-group-inner">
-                                                                                     <div class="row">
-                                                                                         <div
-                                                                                             class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                                                                             <label class="login2">Main
-                                                                                                 Location</label>
-                                                                                         </div>
-                                                                                         <div
-                                                                                             class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                                                                             <input type="text"
-                                                                                                 class="form-control"
-                                                                                                 placeholder="Enter Main Location"
-                                                                                                 name="mainlocation"
-                                                                                                 required />
-                                                                                         </div>
-                                                                                     </div>
-                                                                                 </div> -->
-
-
                                                                              <div class="form-group-inner">
                                                                                  <div class="row">
                                                                                      <div
                                                                                          class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                                                                          <label
-                                                                                             class="login2">Description</label>
+                                                                                             class="login2">Amount</label>
                                                                                      </div>
                                                                                      <div
                                                                                          class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                                                          <input type="text"
                                                                                              class="form-control"
-                                                                                             placeholder="Enter Description"
-                                                                                             name="description" />
+                                                                                             placeholder="Enter Amount"
+                                                                                             name="amount" />
                                                                                      </div>
                                                                                  </div>
                                                                              </div>
-
+																				 <div class="form-group-inner">
+                                                                                 <div class="row">
+                                                                                     <div
+                                                                                         class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                         <label class="login2">Effective
+                                                                                             Date</label>
+                                                                                     </div>
+                                                                                     <div
+                                                                                         class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                         <input type="date"
+                                                                                             class="form-control"
+                                                                                             placeholder="Format should be (yyyy-MM-dd)"
+                                                                                             name="effective"
+                                                                                             id="projectname1"
+                                                                                             required />
+                                                                                     </div>
+                                                                                 </div>
+                                                                             </div>
+                                                                              <div class="form-group-inner">
+                                                                                 <div class="row">
+                                                                                     <div
+                                                                                         class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                         <label class="login2">Expire
+                                                                                             Date</label>
+                                                                                     </div>
+                                                                                     <div
+                                                                                         class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                         <input type="date"
+                                                                                             class="form-control"
+                                                                                             placeholder="Format should be (yyyy-MM-dd)"
+                                                                                             name="expire"
+                                                                                             id="projectname1"
+                                                                                             required />
+                                                                                     </div>
+                                                                                 </div>
+                                                                             </div>
+                                                                             <div class="form-group-inner">
+                                                                                 <div class="row">
+                                                                                     <div
+                                                                                         class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                         <label class="login2">Status</label>
+                                                                                     </div>
+                                                                                     <div
+                                                                                         class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                         <input type="text"
+                                                                                             class="form-control" list="status"
+                                                                                             placeholder="Select current status"
+                                                                                             name="status"
+                                                                                             id="projectname1"
+                                                                                             required/>
+                                                                                             <datalist id="status">
+																							    <option value="Details submitted to Bank">
+																							    <option value="Draft copy submitted to the Beneficiary">
+																							    <option value="Draft verified with Beneficiary">
+																							    <option value="Original submitted to the Beneficiary">
+																							    <option value="Invoice Submitted to the Employer">
+																							    <option value="Payment received">
+																							  </datalist>
+                                                                                     </div>
+                                                                                 </div>
+                                                                             </div>
                                                                              <div class="login-btn-inner">
 
                                                                                  <div class="row">
@@ -1061,8 +1098,7 @@ $(function() {
                                                                                          <div class="login-horizental">
                                                                                              <button
                                                                                                  class="btn btn-sm btn-primary login-submit-cs"
-                                                                                                 type="submit">Add
-                                                                                                 Project</button>
+                                                                                                 type="submit">Add Document</button>
 
                                                                                              <a data-dismiss="modal"
                                                                                                  href="#"><button
@@ -1988,55 +2024,49 @@ $(function() {
                              </div>
                          </div>
                          <!-- End modal -->
-
-
-
-                         <div class="row">
-
-                             <form name="bulk_action_form" action="/performance/allPerformance" method="post">
+ <div class="row">
+                             <form name="bulk_action_form" action="/performance/allPerformance" method="GET">
                                  <!-- <div style="height:580px; overflow:auto;"> -->
-
                                  <table id="table" class="table table-striped table-bordered" style="width:100%;">
                                      <thead>
-
                                          <tr>
-                                             <td colspan="3">
-                                                
+                                             <td colspan="3">   
                                                   <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                      <h4 id="topic" style="color:#337ab7;">Performance Payments</h4>
+                                      <h4 id="topic" style="color:#337ab7;"><br>Performance Documents</h4>
                                      </div> 
-                         
                                              </td>
-                                         </tr>
-                                         
+                                         </tr>     
                                         </thead>
-
                                  </table><br/>
+                                
+                                 <c:forEach var="per" items="${listPerformance}">
                                  
-                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                 <button type="button" class="btn btn-success" style="height:150px;width: 300px;font-size: medium;"><b></b>
-                                    Akuressa-3<br/>Remaining days : 129<br/>Draft verified with Beneficiary</button>
-
-                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-danger" 
-                                 style="height:150px;width: 300px;font-size: medium;">Mawanella-2<br/>Remaining days : 12<br/>
-                                 Invoice Submitted to Employer</button>
-
-                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-warning" 
-                                 style="height:150px;width: 300px;font-size: medium;">Matara-5<br/>Remaining days : 59<br/>
-                                 Original Submitted to the Beneficiary</button><br><br><br>
-
-                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-success" 
-                                 style="height:150px;width: 300px;font-size: medium;">Marawila-2<br/>Remaining days : 145<br/>Details Submitted to the bank</button>
-                                </form></b>
-
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" style="padding-top: 1%;">
+                                 <c:if test="${per.remain>'50'}">
+                               
+                                 <button type="button" class="btn btn-success" style="height:150px;width: 300px;font-size: medium;"
+                                    value="${per.name}"><c:out value="${per.name}"/><br><c:out value="${per.amount}"/>
+                                    <br><c:out value="${per.remain}"/>&nbsp; days remaining<br><c:out value="${per.status}"/></button>
+                                  </c:if>
+                              
+                              	<c:if test="${per.remain<'50' && per.remain>'20'}"> 
+                                   
+                                 <button type="button" class="btn btn-warning" style="height:150px;width: 300px;font-size: medium;"
+                                    value="${per.name}"><c:out value="${per.name}"/><br><c:out value="${per.amount}"/>
+                                    <br><c:out value="${per.remain}"/>&nbsp; days remaining<br><c:out value="${per.status}"/></button>
+                                  </c:if> 
+                                  
+                                  <c:if test="${per.remain<'20'}">  
+                                    
+                                 <button type="button" class="btn btn-danger" style="height:150px;width: 300px;font-size: medium;"
+                                    value="${per.name}"><c:out value="${per.name}"/><br><c:out value="${per.amount}"/>
+                                    <br><c:out value="${per.remain}"/>&nbsp; days remaining<br><c:out value="${per.status}"/></button>
+								</c:if>
+								</div>
+								</c:forEach>
+       							
+                                </form>
                          </div>
-                     </div>
-                 </div>
-             </div>
-         </div>
-     </div>
- </div>
-
  <script>
 $(document).ready(function() {
     var table = $('#table').DataTable({

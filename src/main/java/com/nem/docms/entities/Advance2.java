@@ -1,24 +1,14 @@
 package com.nem.docms.entities;
 
-import java.util.Date;
-
 import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
-
-@Document(collection = "Bid_bond")
-public class BidBond {
-
+public class Advance2 {
 	@Id
 	private String id;
 	private String name;
-	private double amount;
-	//give a standard format and remove time
-	@JsonFormat(pattern = "yyyy-MM-dd")
-	private Date effective;
-	@JsonFormat(pattern = "yyyy-MM-dd")
-	private Date expire;
+	private Long amount;
+	private String effective;
+	private String expire;
 	private String status;
 	private long remain;
 	
@@ -38,12 +28,12 @@ public class BidBond {
 		this.name = name;
 	}
 
-	public BidBond() {
+	public Advance2() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public BidBond(String id,String name, double amount, Date effective, Date expire, String status, long remain) {
+	public Advance2(String id,String name, long amount, String effective, String expire, String status, long remain) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -62,27 +52,27 @@ public class BidBond {
 		this.id = id;
 	}
 
-	public Double getAmount() {
+	public Long getAmount() {
 		return amount;
 	}
 
-	public void setAmount(double amount) {
+	public void setAmount(long amount) {
 		this.amount = amount;
 	}
 
-	public Date getEffective() {
+	public String getEffective() {
 		return effective;
 	}
 
-	public void setEffective(Date effective) {
+	public void setEffective(String effective) {
 		this.effective = effective;
 	}
 
-	public Date getExpire() {
+	public String getExpire() {
 		return expire;
 	}
 
-	public void setExpire(Date expire) {
+	public void setExpire(String expire) {
 		this.expire = expire;
 	}
 
@@ -93,5 +83,4 @@ public class BidBond {
 	public void setStatus(String status) {
 		this.status = status;
 	}
-	
 }

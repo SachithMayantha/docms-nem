@@ -12,12 +12,14 @@ public class Retention {
 	
 	@Id
 	private String id;
+	private String name;
 	private Long amount;
 	//give a standard format and remove time
 	@JsonFormat(pattern = "yyyy-MM-dd")
 	private Date effective;
 	@JsonFormat(pattern = "yyyy-MM-dd")
 	private Date expire;
+	private Long remain;
 	private String status;
 	
 	public Retention() {
@@ -25,14 +27,44 @@ public class Retention {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Retention(String id, Long amount, Date effective, Date expire, String status) {
+	
+
+	public Retention(String id, String name, Long amount, Date effective, Date expire, Long remain, String status) {
 		super();
 		this.id = id;
+		this.name = name;
 		this.amount = amount;
 		this.effective = effective;
 		this.expire = expire;
+		this.remain = remain;
 		this.status = status;
 	}
+
+
+
+	public String getName() {
+		return name;
+	}
+
+
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+
+
+	public Long getRemain() {
+		return remain;
+	}
+
+
+
+	public void setRemain(Long remain) {
+		this.remain = remain;
+	}
+
+
 
 	public String getId() {
 		return id;

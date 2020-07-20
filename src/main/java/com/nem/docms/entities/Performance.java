@@ -12,6 +12,7 @@ public class Performance {
 
 	@Id
 	private String id;
+	private String name;
 	private Long amount;
 	//give a standard format and remove time
 	@JsonFormat(pattern = "yyyy-MM-dd")
@@ -19,20 +20,45 @@ public class Performance {
 	@JsonFormat(pattern = "yyyy-MM-dd")
 	private Date expire;
 	private String status;
+	private Long remain;
 	
 	public Performance() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
+	
 
-	public Performance(String id, Long amount, Date effective, Date expire, String status) {
+	public Performance(String id, String name, Long amount, Date effective, Date expire, String status, Long remain) {
 		super();
 		this.id = id;
+		this.name = name;
 		this.amount = amount;
 		this.effective = effective;
 		this.expire = expire;
 		this.status = status;
+		this.remain = remain;
 	}
+
+
+	public String getName() {
+		return name;
+	}
+
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+
+	public Long getRemain() {
+		return remain;
+	}
+
+
+	public void setRemain(Long remain) {
+		this.remain = remain;
+	}
+
 
 	public String getId() {
 		return id;

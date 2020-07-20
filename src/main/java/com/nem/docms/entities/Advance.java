@@ -12,6 +12,7 @@ public class Advance {
 	
 	@Id
 	private String id;
+	private String name;
 	private Long amount;
 	//give a standard format and remove time
 	@JsonFormat(pattern = "yyyy-MM-dd")
@@ -19,19 +20,28 @@ public class Advance {
 	@JsonFormat(pattern = "yyyy-MM-dd")
 	private Date expire;
 	private String status;
+	private Long remain;
 	
+	
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public Long getRemain() {
+		return remain;
+	}
+
+	public void setRemain(Long remain) {
+		this.remain = remain;
+	}
+
 	public Advance() {
 		super();
 		// TODO Auto-generated constructor stub
-	}
-
-	public Advance(String id, Long amount, Date effective, Date expire, String status) {
-		super();
-		this.id = id;
-		this.amount = amount;
-		this.effective = effective;
-		this.expire = expire;
-		this.status = status;
 	}
 
 	public String getId() {
@@ -72,6 +82,17 @@ public class Advance {
 
 	public void setStatus(String status) {
 		this.status = status;
+	}
+
+	public Advance(String id, String name, Long amount, Date effective, Date expire, String status, Long remain) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.amount = amount;
+		this.effective = effective;
+		this.expire = expire;
+		this.status = status;
+		this.remain = remain;
 	}
 	
 	

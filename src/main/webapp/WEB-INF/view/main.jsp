@@ -525,7 +525,7 @@ display:none;
   <div class="sidenav">
    
             <div class="">
-         <a href="main.html"><img class="main-logo" style="margin-top:5px"
+         <a href="${pageContext.request.contextPath}/main"><img class="main-logo" style="margin-top:5px"
                         src="../images/Logo.png" alt="" style="height:50px;"/></a>
                
             </div>
@@ -568,7 +568,7 @@ display:none;
                             </a>
 
                         <li>
-                            <a href="insurance.html"  aria-expanded="false">
+                            <a href="#"  aria-expanded="false">
                                 <img src="../images/insurance.png" style="height:25px;">
                                 <span class="mini-click-non" style='font-size:12px;'>Insurance</span></a>
 
