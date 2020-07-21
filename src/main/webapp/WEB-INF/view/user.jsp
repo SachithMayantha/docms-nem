@@ -980,7 +980,7 @@ $(function() {
                                                                                          class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                                                          <input type="text"
                                                                                              class="form-control"
-                                                                                             placeholder="Enter Project Code"
+                                                                                             placeholder="Enter User ID"
                                                                                              name="id"
                                                                                              id="projectcode1"
                                                                                              required />
@@ -998,7 +998,7 @@ $(function() {
                                                                                          class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                                                          <input type="text"
                                                                                              class="form-control"
-                                                                                             placeholder="Enter Project Name"
+                                                                                             placeholder="Enter User Name"
                                                                                              name="username"
                                                                                              id="projectname1"
                                                                                              required />
@@ -1368,10 +1368,10 @@ $(function() {
                  <div class="product-tab-list tab-pane fade" id="View1">
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <form method="post" action="/user/update" class="userAdd">
                             <div class="review-content-section">
                                 <div class="row">
-                                    <div class="form-group-inner">
-                                    <form method="post" action="/user/update" class="userAdd">
+                                  <div class="form-group-inner">  
                                 <div class="row">
                                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                         <label class="login2">User ID</label>
@@ -1405,7 +1405,6 @@ $(function() {
                         </div>
                     </div>
 
-
                     <div class="login-btn-inner">
                         <div class="row">
                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
@@ -1414,7 +1413,7 @@ $(function() {
                                 <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                     <div class="login-horizental">
                                         <a data-dismiss="modal" href="#"><button
-                                                class="btn btn-sm btn-primary login-submit-cs"
+                                           class="btn btn-sm btn-primary login-submit-cs"
                                                 type="button">Cancel</button></a>
                                     </div>
                                 </div>
@@ -1423,8 +1422,10 @@ $(function() {
                     </div>
                 </div>
             </div>
+            </form>
         </div>
     </div>
+   
 </div>
     <!--Edit1 start-->
     <div class="product-tab-list tab-pane fade active in" id="Edit1">
@@ -1651,7 +1652,7 @@ $(function() {
                                                             <div class="product-payment-inner-st">
                                                                 <ul id="myTabedu1" class="tab-review-design">
                                                                 <li><a href="#View2">
-                                                                    <i class="fas fa-search"></i>View</a>
+                                                                    <i class="fas fa-search"></i>Delete</a>
                                                                 </li>
                                                                 <li>
                                                                 </li>

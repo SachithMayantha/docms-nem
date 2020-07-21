@@ -112,14 +112,14 @@
                 </div>
                 <div class="modal-body">
                     <form method="POST" action="/login" accept-charset="utf-8">
-                    <span>${message}</span>
+                    
 	                    <div class="form-group">
 	                        <input type="text" placeholder="User Name" class="form-control" name="username" required>
 	                    </div>
 	                    <div class="form-group">
 	                        <input type="password" placeholder="Password" class="form-control" name="password" required>
 	                    </div>
-	                    <span>${error}</span>
+	                   
 	                    <div class="loginbox">
 	                        <button class="btn signin-btn" type="submit">SIGN IN</button>
 	                    </div>

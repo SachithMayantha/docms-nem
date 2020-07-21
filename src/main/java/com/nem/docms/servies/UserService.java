@@ -7,6 +7,9 @@ import org.springframework.stereotype.Service;
 
 import com.nem.docms.entities.User;
 import com.nem.docms.repositories.UserRepository;
+//spring.data.mongodb.port=27017
+//spring.data.mongodb.host=localhost
+//server.port = 8090
 
 @Service
 public class UserService {
