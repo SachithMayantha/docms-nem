@@ -546,7 +546,6 @@ display:none;
         <div class="">
             <nav class="sidebar-nav left-sidebar-menu-pro">
                 <ul class="metismenu" id="menu1">
-
                     <li>
                             <a href="${pageContext.request.contextPath}/project/allProjects">
                                 <img src="../images/project.png" style="height:25px;">
@@ -554,7 +553,7 @@ display:none;
                             </a>
 
                         </li>
-                                                                        <li>
+                        <li>
                             <a href="${pageContext.request.contextPath}/bidBond/allBidBonds"  aria-expanded="false">
                                 <img src="../images/bidbond.png" style="height:25px;"> <span
                                     class="mini-click-non" style='font-size:12px;'>Bid Bonds</span></a>
@@ -562,7 +561,7 @@ display:none;
                         
                         <li>
                             <a href="${pageContext.request.contextPath}/advance/allAdvance"
-                                 aria-expanded="false"></span>
+                                 aria-expanded="false">
                                 <img src="../images/payment.png" style="height:25px;">
                                 <span class="mini-click-non" style='font-size:12px;'>Advance Payments</span></a>
                         </li>
@@ -570,9 +569,7 @@ display:none;
                             <a href="${pageContext.request.contextPath}/performance/allPerformance"  aria-expanded="false">
                                 <img src="../images/payment.png" style="height:25px;">
                                 <span class="mini-click-non" style='font-size:12px;'>Performance Payments</span></a>
-
-                        </li>
-                        
+                        </li>                        
                         <li>
                             <a href="${pageContext.request.contextPath}/retention/allRetention">
                                 <img src="../images/retention.png" style="height:25px;">
@@ -594,7 +591,7 @@ display:none;
                         </li>
                         
                         <li>
-                            <a href="${pageContext.request.contextPath}/main" style="color:#337ab7;border:outset" ></span>
+                            <a href="${pageContext.request.contextPath}/main" style="color:#337ab7;border:outset" >
                                 <img src="../images/Home.png">
                                 <span class="mini-click-non" style='font-size:12px;'>Home</span></a>
                         </li>
@@ -795,18 +792,15 @@ display:none;
                                                                 </button>
                                                                 <ul class="dropdown-menu btn-dropdown-menu dropdown-menu-up" 
                                                                 role="menu" style="min-width:130px;font-size:20px"><li>
-                                                                        <center>
-                                                                            Are
-                                                                            You
-                                                                            sure to change the password?
-                                                                        </center><br></li>
-                                                                    <li><center><button type="submit"
+                                                                            Are You sure to change the password?
+                                                                        <br></li>
+                                                                    <li><button type="submit"
                                                                         class="btn btn-sm btn-primary login-submit-cs"
                                                                         id="btnSubmit">Yes</button>
 
                                                                     <button type="button"
                                                                         class="btn btn-sm btn-primary login-submit-cs">No</button>
-                                                                        </center></li></ul>
+                                                                        </li></ul>
                                                                 </form>
                                                         <a data-dismiss="modal" href="#"><button
                                                             class="btn btn-sm btn-primary login-submit-cs"
@@ -884,13 +878,7 @@ $(function() {
          <div class="row">
              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                  <div class="sparkline13-list">
-                     <!-- <div class="sparkline13-hd">
-                         <div class="main-sparkline13-hd">
-                             <div id="topic">
-                                 <h1>Project <span class="table-project-n">Details</span> </h1>
-                             </div>
-                         </div>
-                     </div> -->
+                     
                      <div class="sparkline13-graph">
                          <div class="datatable-dashv1-list custom-datatable-overright">
 
@@ -1810,21 +1798,15 @@ $(function() {
                                         </button>
                                         <ul class="dropdown-menu btn-dropdown-menu dropdown-menu-up" role="menu"
                                             style="min-width:130px;font-size:20px;padding:5px;">
-                                            <li>
-                                                <center>Save the changes to the Project
-                                                </center><br>
+                                            <li>>Save the changes to the Project<br>
                                             </li>
-                                            <li>
-                                                <center><button type="submit"
+                                            <li><button type="submit"
                                                         class="btn btn-sm btn-primary login-submit-cs"
                                                         id="btnSubmit">Yes</button>
 
                                                     <button type="button"
                                                         class="btn btn-sm btn-primary login-submit-cs">No</button>
-                                                </center>
                                             </li>
-
-
                                         </ul>
                     </form>
                     <a data-dismiss="modal" href="#"><button class="btn btn-sm btn-primary login-submit-cs"
@@ -1847,7 +1829,7 @@ $(function() {
             <div class="review-content-section">
                 <div class="row">
 
-                    <form action="project/delete" method="post" accept-charset="utf-8">
+                    <form action="/project/delete" method="post" accept-charset="utf-8">
 
                     <div class="form-group-inner">
                         <div class="row">
@@ -1902,20 +1884,12 @@ $(function() {
                                     </button>
                                     <ul class="dropdown-menu btn-dropdown-menu dropdown-menu-up" role="menu"
                                         style="min-width:130px;font-size:20px;padding:5px;">
-                                        <li>
-                                            <center>Delete Project ?
-                                            </center><br>
-                                        </li>
-                                        <li>
-                                            <center><button type="submit" class="btn btn-sm btn-primary login-submit-cs"
+                                        <li>Delete Project ?<br></li>
+                                        <li><button type="submit" class="btn btn-sm btn-primary login-submit-cs"
                                                    name="delete" id="btnSubmit">Yes</button>
-
-                                                <button type="button"
-                                                    class="btn btn-sm btn-primary login-submit-cs">No</button>
-                                            </center>
+                                              <button type="button"
+                                               class="btn btn-sm btn-primary login-submit-cs">No</button>
                                         </li>
-
-
                                     </ul>
                                     </form>                                    <a data-dismiss="modal" href="#"><button
                                             class="btn btn-sm btn-primary login-submit-cs"
@@ -1966,12 +1940,10 @@ $(function() {
                                      <thead>
 
                                          <tr>
-                                             <td colspan="3">
-                                                
+                                             <td colspan="3">                                               
                                                   <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"><br>
                                       <h4 id="topic" style="color:#337ab7;">Project Details</h4>
-                                     </div> 
-                         
+                                     </div>                         
                                              </td>
                                          </tr>
 
@@ -2247,36 +2219,6 @@ a.href = xUrl;
     e.preventDefault();
 }
 </script>
-
-<!-- End Excel Sheet Generator -->
-
-
-
-<!-- Username validation -->
-<!-- <script type="text/javascript">
-$(document).ready(function() {
-    $('#username1').change(function() {
-        var username1 = $('#username1').val();
-        if (username1 != '') {
-            $.ajax({
-                url: "checkUsername",
-                method: "POST",
-                data: {
-                    username1: username1
-                },
-                success: function(data) {
-                    $('#username_result').html(data);
-                }
-            });
-        }
-    });
-});
-</script> -->
-
-
-<!-- td.AAA { margin-bottom: 50px;} -->
-
-
 
 <!-- QR Code save as Doc -->
 <script>

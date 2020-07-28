@@ -5,6 +5,7 @@ import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,11 +37,14 @@ public class PerformanceController {
 		
 		System.out.println("Advance List Controller called");
 		List<Performance> listPerformance = performanceService.getAll();
+		List<Performance2> list = new ArrayList<Performance2>();
 		//get the remaining days
 				DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 				String String1 = java.time.LocalDate.now().toString();
 				Long remain;
-				for(int i=0;i<listPerformance.size();i++) {
+				int size = listPerformance.size();
+				for(int i=0;i<size;i++) {
+					Performance2 per2 = new Performance2();
 					String pattern = "yyyy-MM-dd";
 					SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
 				
@@ -52,12 +56,23 @@ public class PerformanceController {
 				    remain =  Duration.between(date1.atStartOfDay(), date2.atStartOfDay()).toDays();
 
 				    System.out.println(remain);
-				    listPerformance.get(i).setRemain(remain);
+				    per2.setRemain(remain);
 				  
 					}catch (Exception e) {
 						System.out.println(e);
 					}
-		model.addAttribute("listPerformance",listPerformance);
+					String ef = simpleDateFormat.format(listPerformance.get(i).getEffective());
+				    String ex = simpleDateFormat.format(listPerformance.get(i).getExpire());
+				    
+				    per2.setId(listPerformance.get(i).getId());
+				    per2.setName(listPerformance.get(i).getName());
+				    per2.setAmount(listPerformance.get(i).getAmount());
+				    per2.setEffective(ef);
+				    per2.setExpire(ex);
+					per2.setStatus(listPerformance.get(i).getStatus());
+					
+					list.add(per2);
+					model.addAttribute("list",list);
 	}
 		return "performance";
 	}

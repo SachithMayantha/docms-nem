@@ -35,6 +35,11 @@ public class UserService {
 		System.out.println("User update Service");
 		user.setPassword(user.getPassword());
 		user.setValid(true);
+//		System.out.println(user);
+		System.out.println(user.getId());
+		System.out.println(user.getPassword());
+		System.out.println(user.getUsername());
+		System.out.println(user.isValid());
 		return userRepository.save(user);
 	}
 

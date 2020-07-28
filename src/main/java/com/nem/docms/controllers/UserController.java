@@ -47,6 +47,11 @@ public class UserController {
 	
 	@PostMapping("/update") 
 	public RedirectView update(User user){
+		
+		System.out.println(user.getId());
+		System.out.println(user.getPassword());
+		System.out.println(user.getUsername());
+		System.out.println(user.isValid());
 		userService.update(user);
 		System.out.println("User update controller");
 		return new RedirectView("/user/allUsers");

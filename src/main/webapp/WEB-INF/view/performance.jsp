@@ -1286,21 +1286,14 @@ $(function() {
                                         </button>
                                         <ul class="dropdown-menu btn-dropdown-menu dropdown-menu-up" role="menu"
                                             style="min-width:130px;font-size:20px;padding:5px;">
-                                            <li>
-                                                <center>Save the changes to the Project
-                                                </center><br>
+                                            <li>Save the changes to the Project<br>
                                             </li>
-                                            <li>
-                                                <center><button type="submit"
+                                            <li><button type="submit"
                                                         class="btn btn-sm btn-primary login-submit-cs"
                                                         id="btnSubmit">Yes</button>
 
                                                     <button type="button"
-                                                        class="btn btn-sm btn-primary login-submit-cs">No</button>
-                                                </center>
-                                            </li>
-
-
+                                                        class="btn btn-sm btn-primary login-submit-cs">No</button></li>
                                         </ul>
                     </form>
                     <a data-dismiss="modal" href="#"><button class="btn btn-sm btn-primary login-submit-cs"
@@ -1383,20 +1376,13 @@ $(function() {
                                     </button>
                                     <ul class="dropdown-menu btn-dropdown-menu dropdown-menu-up" role="menu"
                                         style="min-width:130px;font-size:20px;padding:5px;">
-                                        <li>
-                                            <center>Delete Project ?
-                                            </center><br>
+                                        <li>Delete Project ?<br>
                                         </li>
-                                        <li>
-                                            <center><button type="submit" class="btn btn-sm btn-primary login-submit-cs"
+                                        <li><button type="submit" class="btn btn-sm btn-primary login-submit-cs"
                                                     name="delete" id="btnSubmit">Yes</button>
 
                                                 <button type="button"
-                                                    class="btn btn-sm btn-primary login-submit-cs">No</button>
-                                            </center>
-                                        </li>
-
-
+                                                    class="btn btn-sm btn-primary login-submit-cs">No</button></li>
                                     </ul>
                                     </form>                                    <a data-dismiss="modal" href="#"><button
                                             class="btn btn-sm btn-primary login-submit-cs"
@@ -1579,21 +1565,14 @@ $(function() {
                                         </button>
                                         <ul class="dropdown-menu btn-dropdown-menu dropdown-menu-up" role="menu"
                                             style="min-width:130px;font-size:20px;padding:5px;">
-                                            <li>
-                                                <center>Save the changes to the Project
-                                                </center><br>
+                                            <li>Save the changes to the Project<br>
                                             </li>
-                                            <li>
-                                                <center><button type="submit"
+                                            <li><button type="submit"
                                                         class="btn btn-sm btn-primary login-submit-cs"
                                                         id="btnSubmit">Yes</button>
 
                                                     <button type="button"
-                                                        class="btn btn-sm btn-primary login-submit-cs">No</button>
-                                                </center>
-                                            </li>
-
-
+                                                        class="btn btn-sm btn-primary login-submit-cs">No</button></li>
                                         </ul>
                     </form>
                     <a data-dismiss="modal" href="#"><button class="btn btn-sm btn-primary login-submit-cs"
@@ -1672,20 +1651,13 @@ $(function() {
                                     </button>
                                     <ul class="dropdown-menu btn-dropdown-menu dropdown-menu-up" role="menu"
                                         style="min-width:130px;font-size:20px;padding:5px;">
-                                        <li>
-                                            <center>Delete Project ?
-                                            </center><br>
+                                        <li>Delete Project ?<br>
                                         </li>
-                                        <li>
-                                            <center><button type="submit" class="btn btn-sm btn-primary login-submit-cs"
+                                        <li><button type="submit" class="btn btn-sm btn-primary login-submit-cs"
                                                     name="delete" id="btnSubmit">Yes</button>
 
                                                 <button type="button"
-                                                    class="btn btn-sm btn-primary login-submit-cs">No</button>
-                                            </center>
-                                        </li>
-
-
+                                                    class="btn btn-sm btn-primary login-submit-cs">No</button></li>
                                     </ul>
                                     </form><a data-dismiss="modal" href="#"><button
                                             class="btn btn-sm btn-primary login-submit-cs"
@@ -1880,21 +1852,14 @@ $(function() {
                                         </button>
                                         <ul class="dropdown-menu btn-dropdown-menu dropdown-menu-up" role="menu"
                                             style="min-width:130px;font-size:20px;padding:5px;">
-                                            <li>
-                                                <center>Save the changes to the Project
-                                                </center><br>
+                                            <li>Save the changes to the Project<br>
                                             </li>
-                                            <li>
-                                                <center><button type="submit"
+                                            <li><button type="submit"
                                                         class="btn btn-sm btn-primary login-submit-cs"
                                                         id="btnSubmit">Yes</button>
 
                                                     <button type="button"
-                                                        class="btn btn-sm btn-primary login-submit-cs">No</button>
-                                                </center>
-                                            </li>
-
-
+                                                        class="btn btn-sm btn-primary login-submit-cs">No</button></li>
                                         </ul>
                     </form>
                     <a data-dismiss="modal" href="#"><button class="btn btn-sm btn-primary login-submit-cs"
@@ -1972,20 +1937,13 @@ $(function() {
                                     </button>
                                     <ul class="dropdown-menu btn-dropdown-menu dropdown-menu-up" role="menu"
                                         style="min-width:130px;font-size:20px;padding:5px;">
-                                        <li>
-                                            <center>Delete Project ?
-                                            </center><br>
+                                        <li>Delete Project ?<br>
                                         </li>
-                                        <li>
-                                            <center><button type="submit" class="btn btn-sm btn-primary login-submit-cs"
+                                        <li><button type="submit" class="btn btn-sm btn-primary login-submit-cs"
                                                     name="delete" id="btnSubmit">Yes</button>
 
                                                 <button type="button"
-                                                    class="btn btn-sm btn-primary login-submit-cs">No</button>
-                                            </center>
-                                        </li>
-
-
+                                                    class="btn btn-sm btn-primary login-submit-cs">No</button></li>
                                     </ul>
                                     </form>                                    <a data-dismiss="modal" href="#"><button
                                             class="btn btn-sm btn-primary login-submit-cs"
@@ -2039,27 +1997,30 @@ $(function() {
                                         </thead>
                                  </table><br/>
                                 
-                                 <c:forEach var="per" items="${listPerformance}">
+                                 <c:forEach var="per" items="${list}">
                                  
                                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" style="padding-top: 1%;">
                                  <c:if test="${per.remain>'50'}">
                                
                                  <button type="button" class="btn btn-success" style="height:150px;width: 300px;font-size: medium;"
-                                    value="${per.name}"><c:out value="${per.name}"/><br><c:out value="${per.amount}"/>
+                                   data-toggle="modal" data-target="#modalForm" onclick="myClick('${per.id}','${per.name}',
+                                     '${per.amount}','${per.effective}','${per.expire}','${per.status}');"><c:out value="${per.name}"/><br><c:out value="${per.amount}"/>
                                     <br><c:out value="${per.remain}"/>&nbsp; days remaining<br><c:out value="${per.status}"/></button>
                                   </c:if>
                               
                               	<c:if test="${per.remain<'50' && per.remain>'20'}"> 
                                    
                                  <button type="button" class="btn btn-warning" style="height:150px;width: 300px;font-size: medium;"
-                                    value="${per.name}"><c:out value="${per.name}"/><br><c:out value="${per.amount}"/>
+                                    data-toggle="modal" data-target="#modalForm" onclick="myClick('${per.id}','${per.name}',
+                                     '${per.amount}','${per.effective}','${per.expire}','${per.status}');"><c:out value="${per.name}"/><br><c:out value="${per.amount}"/>
                                     <br><c:out value="${per.remain}"/>&nbsp; days remaining<br><c:out value="${per.status}"/></button>
                                   </c:if> 
                                   
                                   <c:if test="${per.remain<'20'}">  
                                     
                                  <button type="button" class="btn btn-danger" style="height:150px;width: 300px;font-size: medium;"
-                                    value="${per.name}"><c:out value="${per.name}"/><br><c:out value="${per.amount}"/>
+                                    data-toggle="modal" data-target="#modalForm" onclick="myClick('${per.id}','${per.name}',
+                                     '${per.amount}','${per.effective}','${per.expire}','${per.status}');"><c:out value="${per.name}"/><br><c:out value="${per.amount}"/>
                                     <br><c:out value="${per.remain}"/>&nbsp; days remaining<br><c:out value="${per.status}"/></button>
 								</c:if>
 								</div>
@@ -2067,6 +2028,175 @@ $(function() {
        							
                                 </form>
                          </div>
+                         <!-- Modal -->  
+						 <div id="modalForm" class="modal modal-edu-general modal-zoomInDown fade"
+                                             role="dialog">                                			
+                                             <div class="modal-dialog">
+                                                 <div class="modal-content">
+                                                     <div class="modal-header header-color-modal bg-color-1">
+                                                         <h4 class="modal-title">View</h4>
+                                                         <div class="modal-close-area modal-close-df">
+                                                             <a class="close" data-dismiss="modal" href="#"><i
+                                                                     class="fa fa-close"></i></a>
+                                                         </div>
+                                                     </div>
+                                                     <div class="modal-body">
+                                                         <div class="modal-login-form-inner">
+
+                                                             <div class="row">
+                                                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                     <div class="basic-login-inner modal-basic-inner">
+
+                                                                         <form method="POST"
+                                                                             action="/bidBond/addBidBond"
+                                                                             class="projectAdd">
+
+                                                                             <div class="form-group-inner">
+                                                                                 <div class="row">
+                                                                                     <div
+                                                                                         class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                         <label class="login2">Document ID</label>
+                                                                                     </div>
+                                                                                     <div
+                                                                                         class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                         <input type="text"
+                                                                                             class="form-control"
+                                                                                            
+                                                                                             name="id"
+                                                                                             id="bidId"
+                                                                                             readonly />
+                                                                                     </div>
+                                                                                 </div>
+                                                                             </div>
+
+                                                                             <div class="form-group-inner">
+                                                                                 <div class="row">
+                                                                                     <div
+                                                                                         class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                         <label class="login2">Project Name</label>
+                                                                                     </div>
+                                                                                     <div
+                                                                                         class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                         <input type="text"
+                                                                                             class="form-control"
+                                                                                             placeholder="Enter Project Name"
+                                                                                             name="name"
+                                                                                             id="bidName"
+                                                                                             readonly/>
+                                                                                     </div>
+                                                                                 </div>
+                                                                             </div>
+
+                                                                             <div class="form-group-inner">
+                                                                                 <div class="row">
+                                                                                     <div
+                                                                                         class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                         <label
+                                                                                             class="login2">Amount</label>
+                                                                                     </div>
+                                                                                     <div
+                                                                                         class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                         <input type="text"
+                                                                                             class="form-control"
+                                                                                             placeholder="Enter Amount"
+                                                                                             name="amount" id="bidAmount" readonly/>
+                                                                                     </div>
+                                                                                 </div>
+                                                                             </div>
+																				 <div class="form-group-inner">
+                                                                                 <div class="row">
+                                                                                     <div
+                                                                                         class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                         <label class="login2">Effective Date</label>
+                                                                                     </div>
+                                                                                     <div
+                                                                                         class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                         <input type="date" class="form-control"
+                                                                                             placeholder="Format should be (yyyy-MM-dd)"
+                                                                                             name="effective" id="bidEffective" readonly />
+                                                                                     </div>
+                                                                                 </div>
+                                                                             </div>
+                                                                              <div class="form-group-inner">
+                                                                                 <div class="row">
+                                                                                     <div
+                                                                                         class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                         <label class="login2">Expire Date</label>
+                                                                                     </div>
+                                                                                     <div
+                                                                                         class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                         <input type="date" class="form-control"
+                                                                                             placeholder="Format should be (yyyy-MM-dd)"
+                                                                                             
+                                                                                             name="expire" id="bidExpire" readonly />
+                                                                                     </div>
+                                                                                 </div>
+                                                                             </div>
+                                                                             <div class="form-group-inner">
+                                                                                 <div class="row">
+                                                                                     <div
+                                                                                         class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                         <label class="login2">Status</label>
+                                                                                     </div>
+                                                                                     <div
+                                                                                         class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                         <input type="text"
+                                                                                             class="form-control" list="status"
+                                                                                             placeholder="Select current status"
+                                                                                             name="status"
+                                                                                             id="bidStatus"
+                                                                                             readonly/>
+                                                                                           <!--  <datalist id="status">
+																							    <option value="Details submitted to Bank">
+																							    <option value="Draft copy submitted to the Beneficiary">
+																							    <option value="Draft verified with Beneficiary">
+																							    <option value="Original submitted to the Beneficiary">
+																							    <option value="Invoice Submitted to the Employer">
+																							    <option value="Payment received">
+																							  </datalist> -->  
+                                                                                     </div>
+                                                                                 </div>
+                                                                             </div>
+                                                                             <div class="login-btn-inner">
+
+                                                                                 <div class="row">
+                                                                                     <div
+                                                                                         class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                     </div>
+                                                                                     <div
+                                                                                         class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                         <div class="login-horizental">
+                                                                                           <!--   <button
+                                                                                                 class="btn btn-sm btn-primary login-submit-cs"
+                                                                                                 type="submit">Add Document</button> 
+
+                                                                                             <a data-dismiss="modal"
+                                                                                                 href="#"><button
+                                                                                                     class="btn btn-sm btn-primary login-submit-cs"
+                                                                                                     type="button">Cancel</button></a>  -->
+
+                                                                                         </div>
+                                                                                     </div>
+                                                                                 </div>
+                                                                             </div>
+                                                                         </form>
+                                                                     </div>
+                                                                 </div>
+                                                             </div>
+                                                         </div>
+                                                     </div>
+                                                 </div>
+                                             </div>                                            
+<script type="text/javascript">
+function myClick(id,name,amount,effective,expire,status){
+	document.getElementById('bidId').value = id;
+	document.getElementById('bidName').value = name;
+	document.getElementById('bidAmount').value = amount;	
+	document.getElementById('bidEffective').value = effective;
+	document.getElementById('bidExpire').value = expire;
+	document.getElementById('bidStatus').value = status;
+}
+</script>                                         
  <script>
 $(document).ready(function() {
     var table = $('#table').DataTable({

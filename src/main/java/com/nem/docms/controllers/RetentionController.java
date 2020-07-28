@@ -5,6 +5,7 @@ import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,11 +37,14 @@ public class RetentionController {
 		
 		System.out.println("Retention List Controller called");
 		List<Retention> listRetention = retentionService.getAll();
+		List<Retention2> list = new ArrayList<Retention2>();
 		//get the remaining days
 				DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 				String String1 = java.time.LocalDate.now().toString();
 				Long remain;
-				for(int i=0;i<listRetention.size();i++) {
+				int size = listRetention.size();
+				for(int i=0;i<size;i++) {
+					Retention2 ret2 = new Retention2();
 					String pattern = "yyyy-MM-dd";
 					SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
 				
@@ -52,13 +56,24 @@ public class RetentionController {
 				    remain =  Duration.between(date1.atStartOfDay(), date2.atStartOfDay()).toDays();
 
 				    System.out.println(remain);
-				    listRetention.get(i).setRemain(remain);
+				    ret2.setRemain(remain);
 				  
 					}catch (Exception e) {
 						System.out.println(e);
 					}
 					
-		model.addAttribute("listRetention",listRetention);
+					String ef = simpleDateFormat.format(listRetention.get(i).getEffective());
+				    String ex = simpleDateFormat.format(listRetention.get(i).getExpire());
+				    
+				    ret2.setId(listRetention.get(i).getId());
+				    ret2.setName(listRetention.get(i).getName());
+				    ret2.setAmount(listRetention.get(i).getAmount());
+				    ret2.setEffective(ef);
+				    ret2.setExpire(ex);
+				    ret2.setStatus(listRetention.get(i).getStatus());
+					
+					list.add(ret2);
+					model.addAttribute("list",list);
 				}
 		return "retention";
 	}

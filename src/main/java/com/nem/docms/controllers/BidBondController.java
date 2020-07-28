@@ -5,6 +5,7 @@ import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -35,29 +36,43 @@ public class BidBondController {
 		System.out.println("Bidbond List Controller called");
 		//get the object list
 		List<BidBond> listBidbonds = bidBondService.getAll();
+
+		List<BidBond2> list = new ArrayList<BidBond2>();
 		
 		//get the remaining days
 		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 		String String1 = java.time.LocalDate.now().toString();
 		Long remain;
-		for(int i=0;i<listBidbonds.size();i++) {
+		int size = listBidbonds.size();
+		for(int i=0;i<size;i++) {
+			BidBond2 bid2 =new BidBond2();
 			String pattern = "yyyy-MM-dd";
 			SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
 		
 			String String2 =simpleDateFormat.format(listBidbonds.get(i).getExpire());
-			try {
-				
+			
+			try {				
 			LocalDate date1 = LocalDate.parse(String1, dtf);
 		    LocalDate date2 = LocalDate.parse(String2, dtf);
 		    remain =  Duration.between(date1.atStartOfDay(), date2.atStartOfDay()).toDays();
 
 		    System.out.println(remain);
-		    listBidbonds.get(i).setRemain(remain);
-		  
+		    bid2.setRemain(remain);
 			}catch (Exception e) {
 				System.out.println(e);
 			}
-			model.addAttribute("listBidbonds",listBidbonds);
+		    String ef = simpleDateFormat.format(listBidbonds.get(i).getEffective());
+		    String ex = simpleDateFormat.format(listBidbonds.get(i).getExpire());
+		    
+			bid2.setId(listBidbonds.get(i).getId());
+			bid2.setName(listBidbonds.get(i).getName());
+			bid2.setAmount(listBidbonds.get(i).getAmount());
+			bid2.setEffective(ef);
+			bid2.setExpire(ex);
+			bid2.setStatus(listBidbonds.get(i).getStatus());
+			
+			list.add(bid2);
+			model.addAttribute("list",list);
 		}
 		
 		return "bidbond";
