@@ -13,15 +13,15 @@ import com.nem.docms.repositories.BidBondRepository;
 
 @Service
 public class BidBondService {
-	
+
 	@Autowired
 	BidBondRepository bidBondRepository;
-	
+
 	public List<BidBond> getAll() {
-		System.out.println("service bid bond list called ");
+//		System.out.println("service bid bond list called ");
 		return bidBondRepository.findAll();
 	}
-	
+
 	public BidBond getBidBond(String id) {
 		// TODO Auto-generated method stub
 		return bidBondRepository.findById(id).get();
@@ -38,7 +38,7 @@ public class BidBondService {
 		bid1.setRemain(bid.getRemain());
 		bid1.setStatus(bid.getStatus());
 		// TODO Auto-generated method stub
-		
+
 		return bidBondRepository.insert(bid1);
 	}
 

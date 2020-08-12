@@ -20,47 +20,47 @@ import com.nem.docms.servies.UserService;
 public class UserController {
 	@Autowired
 	UserService userService;
-	
+
 	@GetMapping("/allUsers")
-	public String getAll(Model model){
-		
-		System.out.println("User List Controller called");
+	public String getAll(Model model) {
+
+//		System.out.println("User List Controller called");
 		List<User> listUser = userService.getAll();
-		model.addAttribute("listUser",listUser);
-		
+		model.addAttribute("listUser", listUser);
+
 		return "user";
 	}
-	
+
 	@GetMapping("/getUser/{id}")
 	public User getProject(@PathVariable("id") String id) {
 		return userService.getUser(id);
 	}
-	
+
 	@PostMapping("/addUser")
-	//RequestBody for bind request HTTP body with a domain object 
-	public RedirectView  addUser(User user){
-		System.out.println("User controller addUser()");
-		//insert the retrieve data to database
+	// RequestBody for bind request HTTP body with a domain object
+	public RedirectView addUser(User user) {
+//		System.out.println("User controller addUser()");
+		// insert the retrieve data to database
 		userService.addUser(user);
 		return new RedirectView("/user/allUsers");
 	}
-	
-	@PostMapping("/update") 
-	public RedirectView update(User user){
-		
-		System.out.println(user.getId());
-		System.out.println(user.getPassword());
-		System.out.println(user.getUsername());
-		System.out.println(user.isValid());
+
+	@PostMapping("/update")
+	public RedirectView update(User user) {
+
+//		System.out.println(user.getId());
+//		System.out.println(user.getPassword());
+//		System.out.println(user.getUsername());
+//		System.out.println(user.isValid());
 		userService.update(user);
-		System.out.println("User update controller");
+//		System.out.println("User update controller");
 		return new RedirectView("/user/allUsers");
 	}
-	
+
 	@PostMapping("/delete")
-	//PathParam for map variable URI path to method call
-	public RedirectView delete(@RequestParam String id){
-		System.out.println("user Controller delete()");
+	// PathParam for map variable URI path to method call
+	public RedirectView delete(@RequestParam String id) {
+//		System.out.println("user Controller delete()");
 		userService.delete(id);
 		return new RedirectView("/user/allUsers");
 	}

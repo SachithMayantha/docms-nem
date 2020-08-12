@@ -1,4 +1,4 @@
-  package com.nem.docms.servies;
+package com.nem.docms.servies;
 
 import java.util.List;
 
@@ -8,18 +8,18 @@ import org.springframework.stereotype.Service;
 import com.nem.docms.entities.Project;
 import com.nem.docms.repositories.ProjectRepository;
 
-@Service 
+@Service
 public class ProjectService {
-	
+
 	@Autowired
 	ProjectRepository projectRepository;
 
 	public List<Project> getAll() {
 		// TODO Auto-generated method stub
-		System.out.println("project list service called");
+//		System.out.println("project list service called");
 		return projectRepository.findAll();
 	}
-	
+
 	public Project getProject(String id) {
 		// TODO Auto-generated method stub
 		return projectRepository.findById(id).get();

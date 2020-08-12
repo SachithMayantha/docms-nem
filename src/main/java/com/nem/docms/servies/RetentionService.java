@@ -13,15 +13,15 @@ import com.nem.docms.repositories.RetentionRepository;
 
 @Service
 public class RetentionService {
-	
+
 	@Autowired
 	RetentionRepository retentionRepository;
-	
+
 	public List<Retention> getAll() {
 		// TODO Auto-generated method stub
 		return retentionRepository.findAll();
 	}
-	
+
 	public Retention getRetention(String id) {
 		// TODO Auto-generated method stub
 		return retentionRepository.findById(id).get();
@@ -38,7 +38,7 @@ public class RetentionService {
 		ret1.setRemain(ret.getRemain());
 		ret1.setStatus(ret.getStatus());
 		// TODO Auto-generated method stub
-		
+
 		return retentionRepository.insert(ret1);
 	}
 

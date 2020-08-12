@@ -9,20 +9,19 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 
 @Document(collection = "Ad_payment")
 public class Advance {
-	
+
 	@Id
 	private String id;
 	private String name;
 	private Long amount;
-	//give a standard format and remove time
+	// give a standard format and remove time
 	@JsonFormat(pattern = "yyyy-MM-dd")
 	private Date effective;
 	@JsonFormat(pattern = "yyyy-MM-dd")
 	private Date expire;
 	private String status;
 	private Long remain;
-	
-	
+
 	public String getName() {
 		return name;
 	}
@@ -94,6 +93,5 @@ public class Advance {
 		this.status = status;
 		this.remain = remain;
 	}
-	
-	
+
 }

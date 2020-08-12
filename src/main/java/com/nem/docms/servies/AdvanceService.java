@@ -13,15 +13,15 @@ import com.nem.docms.repositories.AdvanceRepository;
 
 @Service
 public class AdvanceService {
-	
+
 	@Autowired
 	AdvanceRepository advanceRepository;
-	
+
 	public List<Advance> getAll() {
 		// TODO Auto-generated method stub
 		return advanceRepository.findAll();
 	}
-	
+
 	public Advance getAdvance(String id) {
 		// TODO Auto-generated method stub
 		return advanceRepository.findById(id).get();
@@ -38,7 +38,7 @@ public class AdvanceService {
 		ad1.setRemain(ad.getRemain());
 		ad1.setStatus(ad.getStatus());
 		// TODO Auto-generated method stub
-		
+
 		return advanceRepository.insert(ad1);
 	}
 

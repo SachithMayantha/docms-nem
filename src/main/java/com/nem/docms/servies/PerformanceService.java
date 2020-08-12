@@ -13,7 +13,7 @@ import com.nem.docms.repositories.PerformanceRepository;
 
 @Service
 public class PerformanceService {
-	
+
 	@Autowired
 	PerformanceRepository performanceRepository;
 
@@ -21,7 +21,7 @@ public class PerformanceService {
 		// TODO Auto-generated method stub
 		return performanceRepository.findAll();
 	}
-	
+
 	public Performance getPerformance(String id) {
 		// TODO Auto-generated method stub
 		return performanceRepository.findById(id).get();
@@ -38,7 +38,7 @@ public class PerformanceService {
 		per1.setRemain(per.getRemain());
 		per1.setStatus(per.getStatus());
 		// TODO Auto-generated method stub
-		
+
 		return performanceRepository.insert(per1);
 	}
 

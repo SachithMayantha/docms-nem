@@ -17,35 +17,34 @@ import com.nem.docms.servies.UserService;
 
 @Controller
 @RequestMapping("/login")
-public class LoginController extends HttpServlet{
-		
+public class LoginController extends HttpServlet {
+
 	private static final long serialVersionUID = 1L;
 	@Autowired
 	UserService userService;
-	
+
 	@PostMapping("")
-	public void login(HttpServletRequest request, HttpServletResponse response) 
-	           throws ServletException, java.io.IOException {
-			System.out.println("User List Controller called");
-			List<User> listUser = userService.getAll();
-				try{	  
-				String a = request.getParameter("username");
-				String b = request.getParameter("password");
-				System.out.println("login()");
-				int i=0;
-				do { 	    
-				if (a.equals(listUser.get(i).getUsername()) && b.equals(listUser.get(i).getPassword())){	
-					response.sendRedirect(request.getContextPath()+"/main");//logged-in page
-					System.out.println("login() if condition");
-				
-				}i++;
-				}while(i<listUser.size());
-				System.out.println("login() else");
-				response.sendRedirect(request.getContextPath()+"/login");//error page
+	public void login(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, java.io.IOException {
+//		System.out.println("User List Controller called");
+		List<User> listUser = userService.getAll();
+		try {
+			String a = request.getParameter("username");
+			String b = request.getParameter("password");
+//			System.out.println("login()");
+			int i = 0;
+			do {
+				if (a.equals(listUser.get(i).getUsername()) && b.equals(listUser.get(i).getPassword())) {
+					response.sendRedirect(request.getContextPath() + "/main");// logged-in page
+//					System.out.println("login() if condition");
+
 				}
-				catch (Throwable theException) 	    
-			{
-			System.out.println(theException); 
-			}
-		}		
+				i++;
+			} while (i < listUser.size());
+//			System.out.println("login() else");
+			response.sendRedirect(request.getContextPath() + "/login");// error page
+		} catch (Throwable theException) {
+			System.out.println(theException);
+		}
+	}
 }

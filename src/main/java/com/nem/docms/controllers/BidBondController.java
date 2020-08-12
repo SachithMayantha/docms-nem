@@ -31,74 +31,74 @@ public class BidBondController {
 	BidBondService bidBondService;
 
 	@GetMapping("/allBidBonds")
-	public String getAll(Model model){
-		
-		System.out.println("Bidbond List Controller called");
-		//get the object list
+	public String getAll(Model model) {
+
+//		System.out.println("Bidbond List Controller called");
+		// get the object list
 		List<BidBond> listBidbonds = bidBondService.getAll();
 
 		List<BidBond2> list = new ArrayList<BidBond2>();
-		
-		//get the remaining days
+
+		// get the remaining days
 		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 		String String1 = java.time.LocalDate.now().toString();
 		Long remain;
 		int size = listBidbonds.size();
-		for(int i=0;i<size;i++) {
-			BidBond2 bid2 =new BidBond2();
+		for (int i = 0; i < size; i++) {
+			BidBond2 bid2 = new BidBond2();
 			String pattern = "yyyy-MM-dd";
 			SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
-		
-			String String2 =simpleDateFormat.format(listBidbonds.get(i).getExpire());
-			
-			try {				
-			LocalDate date1 = LocalDate.parse(String1, dtf);
-		    LocalDate date2 = LocalDate.parse(String2, dtf);
-		    remain =  Duration.between(date1.atStartOfDay(), date2.atStartOfDay()).toDays();
 
-		    System.out.println(remain);
-		    bid2.setRemain(remain);
-			}catch (Exception e) {
+			String String2 = simpleDateFormat.format(listBidbonds.get(i).getExpire());
+
+			try {
+				LocalDate date1 = LocalDate.parse(String1, dtf);
+				LocalDate date2 = LocalDate.parse(String2, dtf);
+				remain = Duration.between(date1.atStartOfDay(), date2.atStartOfDay()).toDays();
+
+				System.out.println(remain);
+				bid2.setRemain(remain);
+			} catch (Exception e) {
 				System.out.println(e);
 			}
-		    String ef = simpleDateFormat.format(listBidbonds.get(i).getEffective());
-		    String ex = simpleDateFormat.format(listBidbonds.get(i).getExpire());
-		    
+			String ef = simpleDateFormat.format(listBidbonds.get(i).getEffective());
+			String ex = simpleDateFormat.format(listBidbonds.get(i).getExpire());
+
 			bid2.setId(listBidbonds.get(i).getId());
 			bid2.setName(listBidbonds.get(i).getName());
 			bid2.setAmount(listBidbonds.get(i).getAmount());
 			bid2.setEffective(ef);
 			bid2.setExpire(ex);
 			bid2.setStatus(listBidbonds.get(i).getStatus());
-			
+
 			list.add(bid2);
-			model.addAttribute("list",list);
+			model.addAttribute("list", list);
 		}
-		
+
 		return "bidbond";
 	}
-	
+
 	@GetMapping("/getBidBond/{id}")
 	public BidBond getBidBond(@PathVariable("id") String id) {
 		return bidBondService.getBidBond(id);
 	}
-	
+
 	@PostMapping("/addBidBond")
-	//RequestBody for bind request HTTP body with a domain object 
-		public RedirectView  addBidBond(BidBond2 bid) throws ParseException{
-			System.out.println("BidBond controller addBidBond()");
-			bidBondService.addBidBond(bid);
-			return new RedirectView("/bidBond/allBidBonds");
-		}
-	
-	@PutMapping("/update/{id}") 
-	public BidBond update(@RequestBody BidBond bid){
+	// RequestBody for bind request HTTP body with a domain object
+	public RedirectView addBidBond(BidBond2 bid) throws ParseException {
+//		System.out.println("BidBond controller addBidBond()");
+		bidBondService.addBidBond(bid);
+		return new RedirectView("/bidBond/allBidBonds");
+	}
+
+	@PutMapping("/update/{id}")
+	public BidBond update(@RequestBody BidBond bid) {
 		return bidBondService.update(bid);
 	}
-	
+
 	@DeleteMapping("/delete")
-	//PathParam for map variable URI path to method call
-	public void delete(@RequestParam String id){
+	// PathParam for map variable URI path to method call
+	public void delete(@RequestParam String id) {
 		bidBondService.delete(id);
 	}
 }
