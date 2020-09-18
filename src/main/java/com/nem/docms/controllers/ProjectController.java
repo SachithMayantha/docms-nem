@@ -24,7 +24,6 @@ public class ProjectController {
 
 	@GetMapping("/allProjects")
 	public String getAll(Model model) {
-
 //		System.out.println("Project List Controller called");
 		List<Project> listProjects = projectService.getAll();
 		model.addAttribute("listProjects", listProjects);
@@ -40,19 +39,20 @@ public class ProjectController {
 	@PostMapping("/addProject")
 	// RequestBody for bind request HTTP body with a domain object
 	public RedirectView addProject(Project pro) {
-//		System.out.println("Project controller addProject()");
-		// insert the retrieve data to database
 		projectService.addProject(pro);
 		return new RedirectView("/project/allProjects");
 	}
 
 	@PostMapping("/update")
 	public RedirectView update(Project pro) {
+		System.out.println("Project Update Controller called");
+		String[] parts = pro.getName().split(",");
+		pro.setName(parts[0]);
 		projectService.update(pro);
 		return new RedirectView("/project/allProjects");
 	}
 
-	@PostMapping("/project/delete")
+	@PostMapping("/delete")
 	// PathParam for map variable URI path to method call
 	public RedirectView delete(@RequestParam String id) {
 //		System.out.println("Project Controller delete()");

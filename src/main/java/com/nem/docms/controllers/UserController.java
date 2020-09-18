@@ -23,7 +23,6 @@ public class UserController {
 
 	@GetMapping("/allUsers")
 	public String getAll(Model model) {
-
 //		System.out.println("User List Controller called");
 		List<User> listUser = userService.getAll();
 		model.addAttribute("listUser", listUser);
@@ -39,21 +38,20 @@ public class UserController {
 	@PostMapping("/addUser")
 	// RequestBody for bind request HTTP body with a domain object
 	public RedirectView addUser(User user) {
-//		System.out.println("User controller addUser()");
-		// insert the retrieve data to database
 		userService.addUser(user);
 		return new RedirectView("/user/allUsers");
 	}
 
 	@PostMapping("/update")
 	public RedirectView update(User user) {
+		System.out.println("Update Controller");
+		String[] part1 = user.getUsername().split(",");
+		String[] part2 = user.getId().split(",");
 
-//		System.out.println(user.getId());
-//		System.out.println(user.getPassword());
-//		System.out.println(user.getUsername());
-//		System.out.println(user.isValid());
+		user.setUsername(part1[0]);
+		user.setId(part2[0]);
+		System.out.println(user.getUsername());
 		userService.update(user);
-//		System.out.println("User update controller");
 		return new RedirectView("/user/allUsers");
 	}
 

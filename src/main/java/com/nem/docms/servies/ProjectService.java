@@ -31,6 +31,9 @@ public class ProjectService {
 	}
 
 	public Project update(Project pro) {
+		System.out.println("Get Project Name "+pro.getName());
+		System.out.println("Get Project ID "+pro.getId());
+		System.out.println("Get Project Description "+pro.getDescription());
 		// TODO Auto-generated method stub
 		return projectRepository.save(pro);
 	}
