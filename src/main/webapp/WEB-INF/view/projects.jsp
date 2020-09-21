@@ -673,131 +673,131 @@
             </div>
         </div>
         <!-- Mobile Menu end -->
-<%--        <!-- change password modal start -->--%>
-<%--        <div id="zoomInDown10"--%>
-<%--             class="modal modal-edu-general modal-zoomInDown fade" role="dialog">--%>
-<%--            <div class="modal-dialog">--%>
-<%--                <div class="modal-content">--%>
-<%--                    <div class="modal-header header-color-modal bg-color-1">--%>
-<%--                        <h4 class="modal-title">Change Password</h4>--%>
-<%--                        <div class="modal-close-area modal-close-df">--%>
-<%--                            <a class="close" data-dismiss="modal" href="#"><i--%>
-<%--                                    class="fa fa-close"></i></a>--%>
-<%--                        </div>--%>
-<%--                    </div>--%>
-<%--                    <div class="modal-body">--%>
-<%--                        <div class="modal-login-form-inner">--%>
+        <%--        <!-- change password modal start -->--%>
+        <%--        <div id="zoomInDown10"--%>
+        <%--             class="modal modal-edu-general modal-zoomInDown fade" role="dialog">--%>
+        <%--            <div class="modal-dialog">--%>
+        <%--                <div class="modal-content">--%>
+        <%--                    <div class="modal-header header-color-modal bg-color-1">--%>
+        <%--                        <h4 class="modal-title">Change Password</h4>--%>
+        <%--                        <div class="modal-close-area modal-close-df">--%>
+        <%--                            <a class="close" data-dismiss="modal" href="#"><i--%>
+        <%--                                    class="fa fa-close"></i></a>--%>
+        <%--                        </div>--%>
+        <%--                    </div>--%>
+        <%--                    <div class="modal-body">--%>
+        <%--                        <div class="modal-login-form-inner">--%>
 
-<%--                            <div class="row">--%>
-<%--                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">--%>
-<%--                                    <div class="basic-login-inner modal-basic-inner">--%>
+        <%--                            <div class="row">--%>
+        <%--                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">--%>
+        <%--                                    <div class="basic-login-inner modal-basic-inner">--%>
 
-<%--                                        <form method="post" action="../User/changepassword"--%>
-<%--                                              class="changepassword">--%>
-<%--                                            <div class="form-group-inner">--%>
-<%--                                                <div class="row">--%>
+        <%--                                        <form method="post" action="../User/changepassword"--%>
+        <%--                                              class="changepassword">--%>
+        <%--                                            <div class="form-group-inner">--%>
+        <%--                                                <div class="row">--%>
 
-<%--                                                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">--%>
+        <%--                                                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">--%>
 
-<%--                                                        <input type="hidden" class="form-control" name="UserName"--%>
-<%--                                                               value="Susl.r" required/>--%>
+        <%--                                                        <input type="hidden" class="form-control" name="UserName"--%>
+        <%--                                                               value="Susl.r" required/>--%>
 
-<%--                                                    </div>--%>
+        <%--                                                    </div>--%>
 
-<%--                                                </div>--%>
+        <%--                                                </div>--%>
 
-<%--                                            </div>--%>
+        <%--                                            </div>--%>
 
-<%--                                            <!--Password changing form start-->--%>
-<%--                                            <div class="form-group-inner">--%>
-<%--                                                <div class="row">--%>
-<%--                                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">--%>
-<%--                                                        <label class="login2">Old Password </label>--%>
-<%--                                                    </div>--%>
-<%--                                                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">--%>
-<%--                                                        <input type="password" class="form-control"--%>
-<%--                                                               name="old_password" id="password1"--%>
-<%--                                                               placeholder="Old Password" required/>--%>
+        <%--                                            <!--Password changing form start-->--%>
+        <%--                                            <div class="form-group-inner">--%>
+        <%--                                                <div class="row">--%>
+        <%--                                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">--%>
+        <%--                                                        <label class="login2">Old Password </label>--%>
+        <%--                                                    </div>--%>
+        <%--                                                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">--%>
+        <%--                                                        <input type="password" class="form-control"--%>
+        <%--                                                               name="old_password" id="password1"--%>
+        <%--                                                               placeholder="Old Password" required/>--%>
 
-<%--                                                    </div>--%>
-<%--                                                </div>--%>
-<%--                                            </div>--%>
-<%--                                            <div class="form-group-inner">--%>
-<%--                                                <div class="row">--%>
-<%--                                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">--%>
-<%--                                                        <label class="login2">New Password </label>--%>
-<%--                                                    </div>--%>
-<%--                                                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">--%>
-<%--                                                        <input type="password" class="form-control"--%>
-<%--                                                               name="New_password" id="New_password1"--%>
-<%--                                                               placeholder="New Password" required/>--%>
+        <%--                                                    </div>--%>
+        <%--                                                </div>--%>
+        <%--                                            </div>--%>
+        <%--                                            <div class="form-group-inner">--%>
+        <%--                                                <div class="row">--%>
+        <%--                                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">--%>
+        <%--                                                        <label class="login2">New Password </label>--%>
+        <%--                                                    </div>--%>
+        <%--                                                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">--%>
+        <%--                                                        <input type="password" class="form-control"--%>
+        <%--                                                               name="New_password" id="New_password1"--%>
+        <%--                                                               placeholder="New Password" required/>--%>
 
-<%--                                                    </div>--%>
-<%--                                                </div>--%>
-<%--                                            </div>--%>
+        <%--                                                    </div>--%>
+        <%--                                                </div>--%>
+        <%--                                            </div>--%>
 
-<%--                                            <div class="form-group-inner">--%>
-<%--                                                <div class="row">--%>
-<%--                                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">--%>
-<%--                                                        <label class="login2">Confirm Password </label>--%>
-<%--                                                    </div>--%>
-<%--                                                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">--%>
-<%--                                                        <input type="password" class="form-control"--%>
-<%--                                                               name="re_password" id="password2"--%>
-<%--                                                               placeholder="Confirm Password" required/> <input--%>
-<%--                                                            type="hidden" class="form-control" name="current_url"--%>
-<%--                                                            placeholder="Confirm Password"--%>
-<%--                                                            value="http://192.243.108.248/mms/index.php/Project/projects"--%>
-<%--                                                            required/>--%>
-<%--                                                    </div>--%>
-<%--                                                </div>--%>
-<%--                                            </div>--%>
+        <%--                                            <div class="form-group-inner">--%>
+        <%--                                                <div class="row">--%>
+        <%--                                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">--%>
+        <%--                                                        <label class="login2">Confirm Password </label>--%>
+        <%--                                                    </div>--%>
+        <%--                                                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">--%>
+        <%--                                                        <input type="password" class="form-control"--%>
+        <%--                                                               name="re_password" id="password2"--%>
+        <%--                                                               placeholder="Confirm Password" required/> <input--%>
+        <%--                                                            type="hidden" class="form-control" name="current_url"--%>
+        <%--                                                            placeholder="Confirm Password"--%>
+        <%--                                                            value="http://192.243.108.248/mms/index.php/Project/projects"--%>
+        <%--                                                            required/>--%>
+        <%--                                                    </div>--%>
+        <%--                                                </div>--%>
+        <%--                                            </div>--%>
 
-<%--                                            <div class="login-btn-inner dropup">--%>
-<%--                                                <div class="row">--%>
-<%--                                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"></div>--%>
-<%--                                                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">--%>
-<%--                                                        <div class="login-horizental">--%>
-<%--                                                            <button type="button"--%>
-<%--                                                                    class="btn btn-sm btn-primary login-submit-cs"--%>
-<%--                                                                    data-toggle="dropdown">Save--%>
-<%--                                                            </button>--%>
-<%--                                                            <ul--%>
-<%--                                                                    class="dropdown-menu btn-dropdown-menu dropdown-menu-up"--%>
-<%--                                                                    role="menu"--%>
-<%--                                                                    style="min-width: 130px; font-size: 20px">--%>
-<%--                                                                <li>Are You sure to change the password? <br></li>--%>
-<%--                                                                <li>--%>
-<%--                                                                    <button type="submit"--%>
-<%--                                                                            class="btn btn-sm btn-primary login-submit-cs"--%>
-<%--                                                                            id="btnSubmit">Yes--%>
-<%--                                                                    </button>--%>
+        <%--                                            <div class="login-btn-inner dropup">--%>
+        <%--                                                <div class="row">--%>
+        <%--                                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"></div>--%>
+        <%--                                                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">--%>
+        <%--                                                        <div class="login-horizental">--%>
+        <%--                                                            <button type="button"--%>
+        <%--                                                                    class="btn btn-sm btn-primary login-submit-cs"--%>
+        <%--                                                                    data-toggle="dropdown">Save--%>
+        <%--                                                            </button>--%>
+        <%--                                                            <ul--%>
+        <%--                                                                    class="dropdown-menu btn-dropdown-menu dropdown-menu-up"--%>
+        <%--                                                                    role="menu"--%>
+        <%--                                                                    style="min-width: 130px; font-size: 20px">--%>
+        <%--                                                                <li>Are You sure to change the password? <br></li>--%>
+        <%--                                                                <li>--%>
+        <%--                                                                    <button type="submit"--%>
+        <%--                                                                            class="btn btn-sm btn-primary login-submit-cs"--%>
+        <%--                                                                            id="btnSubmit">Yes--%>
+        <%--                                                                    </button>--%>
 
-<%--                                                                    <button type="button"--%>
-<%--                                                                            class="btn btn-sm btn-primary login-submit-cs">--%>
-<%--                                                                        No--%>
-<%--                                                                    </button>--%>
-<%--                                                                </li>--%>
-<%--                                                            </ul>--%>
-<%--                                                            <a data-dismiss="modal" href="#">--%>
-<%--                                                                <button--%>
-<%--                                                                        class="btn btn-sm btn-primary login-submit-cs"--%>
-<%--                                                                        type="button">Cancel--%>
-<%--                                                                </button>--%>
-<%--                                                            </a>--%>
-<%--                                                        </div>--%>
-<%--                                                    </div>--%>
-<%--                                                </div>--%>
-<%--                                            </div>--%>
-<%--                                        </form>--%>
-<%--                                    </div>--%>
-<%--                                </div>--%>
-<%--                            </div>--%>
-<%--                        </div>--%>
-<%--                    </div>--%>
-<%--                </div>--%>
-<%--            </div>--%>
-<%--        </div>--%>
+        <%--                                                                    <button type="button"--%>
+        <%--                                                                            class="btn btn-sm btn-primary login-submit-cs">--%>
+        <%--                                                                        No--%>
+        <%--                                                                    </button>--%>
+        <%--                                                                </li>--%>
+        <%--                                                            </ul>--%>
+        <%--                                                            <a data-dismiss="modal" href="#">--%>
+        <%--                                                                <button--%>
+        <%--                                                                        class="btn btn-sm btn-primary login-submit-cs"--%>
+        <%--                                                                        type="button">Cancel--%>
+        <%--                                                                </button>--%>
+        <%--                                                            </a>--%>
+        <%--                                                        </div>--%>
+        <%--                                                    </div>--%>
+        <%--                                                </div>--%>
+        <%--                                            </div>--%>
+        <%--                                        </form>--%>
+        <%--                                    </div>--%>
+        <%--                                </div>--%>
+        <%--                            </div>--%>
+        <%--                        </div>--%>
+        <%--                    </div>--%>
+        <%--                </div>--%>
+        <%--            </div>--%>
+        <%--        </div>--%>
         <!--Password changing form end-->
 
 
@@ -921,7 +921,7 @@
                                                 <div class="modal-dialog">
                                                     <div class="modal-content">
                                                         <div class="modal-header header-color-modal bg-color-1">
-                                                            <h4 class="modal-title">Add New Project</h4>
+                                                            <h4 class="modal-title">New Project</h4>
                                                             <div class="modal-close-area modal-close-df">
                                                                 <a class="close" data-dismiss="modal" href="#"><i
                                                                         class="fa fa-close"></i></a>
@@ -961,7 +961,8 @@
                                                                                             <input type="text"
                                                                                                    class="form-control"
                                                                                                    placeholder="Enter Project Name"
-                                                                                                   name="name" required/>
+                                                                                                   name="name"
+                                                                                                   required/>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -1025,7 +1026,7 @@
                                                             <h4 class="modal-title">View Project</h4>
                                                             <div class="modal-close-area modal-close-df">
                                                                 <a class="close" data-dismiss="modal" href="#">
-																	<i class="fa fa-close"></i></a>
+                                                                    <i class="fa fa-close"></i></a>
                                                             </div>
                                                         </div>
                                                         <div class="modal-body">
@@ -1039,20 +1040,19 @@
                                                                             <div class="single-pro-review-area mt-t-30 mg-b-15">
                                                                                 <div class="container-fluid">
                                                                                     <div class="row">
-                                                                                        <div
-                                                                                                class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                                                             <div class="product-payment-inner-st">
-                                                                                                <ul id="myTabedu1"
-                                                                                                    class="tab-review-design">
-                                                                                                    <li class="active">
-                                                                                                        <a
-                                                                                                                href="#View"><i
-                                                                                                                class="fas fa-search"></i>
-                                                                                                            View</a>
-                                                                                                    </li>
-                                                                                                    <li></li>
-                                                                                                    <li></li>
-                                                                                                </ul>
+                                                                                                <%--                                                                                                <ul id="myTabedu1"--%>
+                                                                                                <%--                                                                                                    class="tab-review-design">--%>
+                                                                                                <%--                                                                                                    <li class="active">--%>
+                                                                                                <%--                                                                                                        <a--%>
+                                                                                                <%--                                                                                                                href="#View"><i--%>
+                                                                                                <%--                                                                                                                class="fas fa-search"></i>--%>
+                                                                                                <%--                                                                                                            View</a>--%>
+                                                                                                <%--                                                                                                    </li>--%>
+                                                                                                <%--                                                                                                    <li></li>--%>
+                                                                                                <%--                                                                                                    <li></li>--%>
+                                                                                                <%--                                                                                                </ul>--%>
                                                                                                 <div id="myTabContent"
                                                                                                      class="tab-content custom-product-edit">
 
@@ -1240,8 +1240,13 @@
                                                                                                                                                     role="menu"
                                                                                                                                                     style="min-width: 130px; font-size: 20px; padding: 5px;">
                                                                                                                                                 <li>
-                                                                                                                                                    <center>Save the changes to
-                                                                                                                                                        the Project
+                                                                                                                                                    <center>
+                                                                                                                                                        Save
+                                                                                                                                                        the
+                                                                                                                                                        changes
+                                                                                                                                                        to
+                                                                                                                                                        the
+                                                                                                                                                        Project
                                                                                                                                                     </center>
                                                                                                                                                     <br>
                                                                                                                                                 </li>
@@ -1364,8 +1369,11 @@
                                                                                                                                                 Delete
                                                                                                                                             </button>
                                                                                                                                             <ul class="dropdown-menu btn-dropdown-menu dropdown-menu-up"
-                                                                                                                                                    role="menu" style="min-width: 130px; font-size: 20px; padding: 5px;">
-                                                                                                                                                <li>Delete Project?
+                                                                                                                                                role="menu"
+                                                                                                                                                style="min-width: 130px; font-size: 20px; padding: 5px;">
+                                                                                                                                                <li>
+                                                                                                                                                    Delete
+                                                                                                                                                    Project?
                                                                                                                                                     <br>
                                                                                                                                                 </li>
                                                                                                                                                 <li>
@@ -1380,12 +1388,8 @@
                                                                                                                                                             class="btn btn-sm btn-primary login-submit-cs">
                                                                                                                                                         No
                                                                                                                                                     </button>
-
                                                                                                                                                 </li>
-
-
                                                                                                                                             </ul>
-
                                                                                                                                             <a data-dismiss="modal"
                                                                                                                                                href="#">
                                                                                                                                                 <button
@@ -1428,7 +1432,7 @@
                                                 <div class="modal-dialog">
                                                     <div class="modal-content">
                                                         <div class="modal-header header-color-modal bg-color-1">
-                                                            <h4 class="modal-title">Project</h4>
+                                                            <h4 class="modal-title"> Edit Project</h4>
                                                             <div class="modal-close-area modal-close-df">
                                                                 <a class="close" data-dismiss="modal" href="#"> <i
                                                                         class="fa fa-close"></i></a></div>
@@ -1444,17 +1448,6 @@
                                                                                     <div class="row">
                                                                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                                                             <div class="product-payment-inner-st">
-                                                                                                <ul id="myTabedu1"
-                                                                                                    class="tab-review-design">
-                                                                                                    <li>
-                                                                                                        <a href="#View1">
-                                                                                                            <i class="fasfa-search">
-                                                                                                            </i>View</a>
-                                                                                                    </li>
-                                                                                                    <li class="active">
-                                                                                                    <li>
-                                                                                                    <li></li>
-                                                                                                </ul>
                                                                                                 <div id="myTabContent"
                                                                                                      class="tab-content custom-product-edit">
                                                                                                     <div class="product-tab-list tab-pane fade"
@@ -1832,7 +1825,7 @@
                                                 <div class="modal-dialog">
                                                     <div class="modal-content">
                                                         <div class="modal-header header-color-modal bg-color-1">
-                                                            <h4 class="modal-title">Project</h4>
+                                                            <h4 class="modal-title">Delete Project</h4>
                                                             <div class="modal-close-area modal-close-df">
                                                                 <a class="close" data-dismiss="modal" href="#"> <i
                                                                         class="fa fa-close"></i></a>
@@ -1851,16 +1844,6 @@
                                                                                     <div class="row">
                                                                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                                                             <div class="product-payment-inner-st">
-                                                                                                <ul id="myTabedu1"
-                                                                                                    class="tab-review-design">
-                                                                                                    <li>
-                                                                                                        <a href="#View2">
-                                                                                                            <i
-                                                                                                                    class="fas fa-search"></i>View
-                                                                                                        </a></li>
-                                                                                                    <li></li>
-                                                                                                    <li class="active"></li>
-                                                                                                </ul>
                                                                                                 <div id="myTabContent"
                                                                                                      class="tab-content custom-product-edit">
 
@@ -1940,10 +1923,7 @@
                                                                                                                                 </div>
                                                                                                                             </div>
                                                                                                                         </div>
-
-
                                                                                                                     </div>
-
                                                                                                                 </div>
                                                                                                             </div>
                                                                                                         </div>
@@ -1955,8 +1935,6 @@
                                                                                                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                                                                                 <div class="review-content-section">
                                                                                                                     <div class="row">
-
-
                                                                                                                         <form method="post"
                                                                                                                               action="/project/update"
                                                                                                                               class="projectD_Edit">

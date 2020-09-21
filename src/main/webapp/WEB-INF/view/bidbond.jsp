@@ -988,7 +988,6 @@
                                                                                                class="form-control"
                                                                                                placeholder="Format should be (yyyy-MM-dd)"
                                                                                                name="effective"
-                                                                                               id="projectname1"
                                                                                                required/>
                                                                                     </div>
                                                                                 </div>
@@ -1004,7 +1003,6 @@
                                                                                                class="form-control"
                                                                                                placeholder="Format should be (yyyy-MM-dd)"
                                                                                                name="expire"
-                                                                                               id="projectname1"
                                                                                                required/>
                                                                                     </div>
                                                                                 </div>
@@ -1020,7 +1018,6 @@
                                                                                                list="status"
                                                                                                placeholder="Select current status"
                                                                                                name="status"
-                                                                                               id="projectname1"
                                                                                                required/>
                                                                                         <datalist id="status">
                                                                                             <option value="Details submitted to Bank">
@@ -1048,7 +1045,6 @@
                                                                                                     type="submit">Add
                                                                                                 Document
                                                                                             </button>
-
                                                                                             <a data-dismiss="modal"
                                                                                                href="#">
                                                                                                 <button
@@ -1057,7 +1053,6 @@
                                                                                                     Cancel
                                                                                                 </button>
                                                                                             </a>
-
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -1087,11 +1082,9 @@
                                                     </div>
                                                     <div class="modal-body">
                                                         <div class="modal-login-form-inner">
-
                                                             <div class="row">
                                                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                                     <div class="basic-login-inner modal-basic-inner">
-
                                                                         <!-- Single pro tab review Start-->
                                                                         <div class="single-pro-review-area mt-t-30 mg-b-15">
                                                                             <div class="container-fluid">
@@ -1099,15 +1092,6 @@
                                                                                     <div
                                                                                             class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                                                         <div class="product-payment-inner-st">
-                                                                                            <ul id="myTabedu1"
-                                                                                                class="tab-review-design">
-                                                                                                <li class="active"><a
-                                                                                                        href="#View"><i
-                                                                                                        class="fas fa-search"></i>
-                                                                                                    View</a>
-                                                                                                <li></li>
-                                                                                                <li></li>
-                                                                                            </ul>
                                                                                             <div id="myTabContent"
                                                                                                  class="tab-content custom-product-edit">
 
@@ -1155,7 +1139,6 @@
                                                                                                                             </div>
                                                                                                                         </div>
                                                                                                                     </div>
-
                                                                                                                     <div class="form-group-inner">
                                                                                                                         <div class="row">
                                                                                                                             <div
@@ -1202,403 +1185,16 @@
                                                                                                     </div>
                                                                                                 </div>
                                                                                                 <!--Start Edit-->
-                                                                                                <%--																									<div class="product-tab-list tab-pane fade"--%>
-                                                                                                <%--																										id="Edit">--%>
-                                                                                                <%--																										<div class="row">--%>
-                                                                                                <%--																											<div--%>
-                                                                                                <%--																												class="col-lg-12 col-md-12 col-sm-12 col-xs-12">--%>
-                                                                                                <%--																												<div class="review-content-section">--%>
-                                                                                                <%--																													<div class="row">--%>
-
-                                                                                                <%--																														<form method="post"--%>
-                                                                                                <%--																															action="../Project/updatedata"--%>
-                                                                                                <%--																															class="project_Edit">--%>
-
-
-                                                                                                <%--																															<div class="form-group-inner">--%>
-                                                                                                <%--																																<div class="row">--%>
-                                                                                                <%--																																	<div--%>
-                                                                                                <%--																																		class="col-lg-4 col-md-4 col-sm-4 col-xs-12">--%>
-                                                                                                <%--																																		<label class="login2">Project--%>
-                                                                                                <%--																																			Code</label>--%>
-                                                                                                <%--																																	</div>--%>
-                                                                                                <%--																																	<div--%>
-                                                                                                <%--																																		class="col-lg-8 col-md-8 col-sm-8 col-xs-12">--%>
-                                                                                                <%--																																		<input type="hidden"--%>
-                                                                                                <%--																																			class="form-control"--%>
-                                                                                                <%--																																			placeholder="Enter Project Code"--%>
-                                                                                                <%--																																			id="V_E_H_ProjectCode"--%>
-                                                                                                <%--																																			name="ProjectCode" /> <input--%>
-                                                                                                <%--																																			type="text" class="form-control"--%>
-                                                                                                <%--																																			placeholder="Enter Project Code"--%>
-                                                                                                <%--																																			id="V_E_ProjectCode"--%>
-                                                                                                <%--																																			name="ProjectCode" readonly />--%>
-                                                                                                <%--																																	</div>--%>
-                                                                                                <%--																																</div>--%>
-                                                                                                <%--																															</div>--%>
-
-                                                                                                <%--																															<div class="form-group-inner">--%>
-                                                                                                <%--																																<div class="row">--%>
-                                                                                                <%--																																	<div--%>
-                                                                                                <%--																																		class="col-lg-4 col-md-4 col-sm-4 col-xs-12">--%>
-                                                                                                <%--																																		<label class="login2">Project--%>
-                                                                                                <%--																																			Name</label>--%>
-                                                                                                <%--																																	</div>--%>
-                                                                                                <%--																																	<div--%>
-                                                                                                <%--																																		class="col-lg-8 col-md-8 col-sm-8 col-xs-12">--%>
-                                                                                                <%--																																		<input type="text"--%>
-                                                                                                <%--																																			class="form-control"--%>
-                                                                                                <%--																																			id="V_E_ProjectName" readonly />--%>
-                                                                                                <%--																																	</div>--%>
-                                                                                                <%--																																	<div--%>
-                                                                                                <%--																																		class="col-lg-8 col-md-8 col-sm-8 col-xs-12">--%>
-                                                                                                <%--																																		<input type="hidden"--%>
-                                                                                                <%--																																			class="form-control"--%>
-                                                                                                <%--																																			name="ProjectName"--%>
-                                                                                                <%--																																			id="V_E_H_ProjectName" />--%>
-                                                                                                <%--																																	</div>--%>
-                                                                                                <%--																																</div>--%>
-                                                                                                <%--																															</div>--%>
-
-                                                                                                <%--																															<div class="form-group-inner">--%>
-                                                                                                <%--																																<div class="row">--%>
-                                                                                                <%--																																	<div--%>
-                                                                                                <%--																																		class="col-lg-4 col-md-4 col-sm-4 col-xs-12">--%>
-                                                                                                <%--																																		<label class="login2">Description</label>--%>
-                                                                                                <%--																																	</div>--%>
-                                                                                                <%--																																	<div--%>
-                                                                                                <%--																																		class="col-lg-8 col-md-8 col-sm-8 col-xs-12">--%>
-                                                                                                <%--																																		<input type="text"--%>
-                                                                                                <%--																																			class="form-control"--%>
-                                                                                                <%--																																			placeholder="Enter Description"--%>
-                                                                                                <%--																																			name="Description"--%>
-                                                                                                <%--																																			id="V_E_Description" />--%>
-
-                                                                                                <%--																																	</div>--%>
-                                                                                                <%--																																</div>--%>
-                                                                                                <%--																															</div>--%>
-
-                                                                                                <%--																															<div class="login-btn-inner dropup">--%>
-                                                                                                <%--																																<div class="row">--%>
-                                                                                                <%--																																	<div--%>
-                                                                                                <%--																																		class="col-lg-4 col-md-4 col-sm-4 col-xs-12">--%>
-                                                                                                <%--																																	</div>--%>
-                                                                                                <%--																																	<div--%>
-                                                                                                <%--																																		class="col-lg-8 col-md-8 col-sm-8 col-xs-12">--%>
-                                                                                                <%--																																		<div class="login-horizental">--%>
-                                                                                                <%--																																			<button type="button"--%>
-                                                                                                <%--																																				class="btn btn-sm btn-primary login-submit-cs"--%>
-                                                                                                <%--																																				data-toggle="dropdown">Update--%>
-
-                                                                                                <%--																																			</button>--%>
-                                                                                                <%--																																			<ul--%>
-                                                                                                <%--																																				class="dropdown-menu btn-dropdown-menu dropdown-menu-up"--%>
-                                                                                                <%--																																				role="menu"--%>
-                                                                                                <%--																																				style="min-width: 130px; font-size: 20px; padding: 5px;">--%>
-                                                                                                <%--																																				<li>Save the changes to the--%>
-                                                                                                <%--																																					Project<br>--%>
-                                                                                                <%--																																				</li>--%>
-                                                                                                <%--																																				<li><button type="submit"--%>
-                                                                                                <%--																																						class="btn btn-sm btn-primary login-submit-cs"--%>
-                                                                                                <%--																																						id="btnSubmit">Yes</button>--%>
-
-                                                                                                <%--																																					<button type="button"--%>
-                                                                                                <%--																																						class="btn btn-sm btn-primary login-submit-cs">No</button>--%>
-                                                                                                <%--																																				</li>--%>
-                                                                                                <%--																																			</ul>--%>
-                                                                                                <%--																														</form>--%>
-                                                                                                <%--																														<a data-dismiss="modal" href="#"><button--%>
-                                                                                                <%--																																class="btn btn-sm btn-primary login-submit-cs"--%>
-                                                                                                <%--																																type="button">Cancel</button></a>--%>
-                                                                                                <%--																													</div>--%>
-                                                                                                <%--																												</div>--%>
-                                                                                                <%--																											</div>--%>
-                                                                                                <%--																										</div>--%>
-
-
-                                                                                                <%--																									</div>--%>
-
-                                                                                                <%--																								</div>--%>
-                                                                                                <%--																							</div>--%>
-                                                                                                <%--																						</div>--%>
-                                                                                                <%--																					</div>--%>
-                                                                                                <!--Start Delete-->
                                                                                                 <div class="product-tab-list tab-pane fade"
-                                                                                                     id="Delete">
+                                                                                                     id="Edit">
                                                                                                     <div class="row">
                                                                                                         <div
                                                                                                                 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                                                                             <div class="review-content-section">
                                                                                                                 <div class="row">
-
-                                                                                                                    <form action="/bidBond/delete"
-                                                                                                                          method="post"
-                                                                                                                          accept-charset="utf-8">
-
-                                                                                                                        <div class="form-group-inner">
-                                                                                                                            <div class="row">
-                                                                                                                                <div
-                                                                                                                                        class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                                                                                                                    <label class="login2">Project
-                                                                                                                                        Code</label>
-                                                                                                                                </div>
-                                                                                                                                <div
-                                                                                                                                        class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                                                                                                                    <input type="text"
-                                                                                                                                           class="form-control"
-                                                                                                                                           name="ProjectCode"
-                                                                                                                                           id="V_D_ProjectCode"
-                                                                                                                                           readonly/>
-                                                                                                                                </div>
-                                                                                                                            </div>
-                                                                                                                        </div>
-
-                                                                                                                        <div class="form-group-inner">
-                                                                                                                            <div class="row">
-                                                                                                                                <div
-                                                                                                                                        class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                                                                                                                    <label class="login2">Project
-                                                                                                                                        Name</label>
-                                                                                                                                </div>
-                                                                                                                                <div
-                                                                                                                                        class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                                                                                                                    <input type="text"
-                                                                                                                                           class="form-control"
-                                                                                                                                           id="V_D_ProjectName"
-                                                                                                                                           readonly/>
-                                                                                                                                    <input
-                                                                                                                                            type="hidden"
-                                                                                                                                            class="form-control"
-                                                                                                                                            name="ProjectName"
-                                                                                                                                            id="V_D_H_ProjectName"
-                                                                                                                                            required/>
-                                                                                                                                </div>
-                                                                                                                            </div>
-                                                                                                                        </div>
-
-                                                                                                                        <div class="form-group-inner">
-                                                                                                                            <div class="row">
-                                                                                                                                <div
-                                                                                                                                        class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                                                                                                                    <label class="login2">Description</label>
-                                                                                                                                </div>
-                                                                                                                                <div
-                                                                                                                                        class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                                                                                                                    <input type="text"
-                                                                                                                                           class="form-control"
-                                                                                                                                           id="V_D_Description"
-                                                                                                                                           name="Description"
-                                                                                                                                           readonly/>
-                                                                                                                                </div>
-                                                                                                                            </div>
-                                                                                                                        </div>
-
-
-                                                                                                                        <div class="login-btn-inner dropup">
-                                                                                                                            <div class="row">
-                                                                                                                                <div
-                                                                                                                                        class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                                                                                                                </div>
-                                                                                                                                <div
-                                                                                                                                        class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                                                                                                                    <div class="login-horizental">
-                                                                                                                                        <button type="button"
-                                                                                                                                                class="btn btn-sm btn-primary login-submit-cs"
-                                                                                                                                                data-toggle="dropdown">
-                                                                                                                                            Delete
-                                                                                                                                        </button>
-                                                                                                                                        <ul
-                                                                                                                                                class="dropdown-menu btn-dropdown-menu dropdown-menu-up"
-                                                                                                                                                role="menu"
-                                                                                                                                                style="min-width: 130px; font-size: 20px; padding: 5px;">
-                                                                                                                                            <li>
-                                                                                                                                                Delete
-                                                                                                                                                Project
-                                                                                                                                                ?<br>
-                                                                                                                                            </li>
-                                                                                                                                            <li>
-                                                                                                                                                <button type="submit"
-                                                                                                                                                        class="btn btn-sm btn-primary login-submit-cs"
-                                                                                                                                                        name="delete"
-                                                                                                                                                        id="btnSubmit">
-                                                                                                                                                    Yes
-                                                                                                                                                </button>
-                                                                                                                                                <button type="button"
-                                                                                                                                                        class="btn btn-sm btn-primary login-submit-cs">
-                                                                                                                                                    No
-                                                                                                                                                </button>
-                                                                                                                                            </li>
-                                                                                                                                        </ul>
-                                                                                                                                        <a data-dismiss="modal"
-                                                                                                                                           href="#">
-                                                                                                                                            <button
-                                                                                                                                                    class="btn btn-sm btn-primary login-submit-cs"
-                                                                                                                                                    type="button">
-                                                                                                                                                Cancel
-                                                                                                                                            </button>
-                                                                                                                                        </a>
-                                                                                                                                    </div>
-                                                                                                                                </div>
-                                                                                                                            </div>
-                                                                                                                        </div>
-                                                                                                                    </form>
-                                                                                                                </div>
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <!--END Single pro tab review Start-->
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--END View Model-->
-
-
-                                        <!--Edit Model Start-->
-                                        <div id="zoomInDown3"
-                                             class="modal modal-edu-general modal-zoomInDown fade" role="dialog">
-                                            <div class="modal-dialog">
-                                                <div class="modal-content">
-                                                    <div class="modal-header header-color-modal bg-color-1">
-                                                        <h4 class="modal-title">Project</h4>
-                                                        <div class="modal-close-area modal-close-df">
-                                                            <a class="close" data-dismiss="modal" href="#"> <i
-                                                                    class="fa fa-close"></i></a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <div class="modal-login-form-inner">
-                                                            <div class="row">
-                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                                    <div class="basic-login-inner modal-basic-inner">
-
-                                                                        <!-- Single pro tab review Start-->
-                                                                        <div class="single-pro-review-area mt-t-30 mg-b-15">
-                                                                            <div class="container-fluid">
-                                                                                <div class="row">
-                                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                                                        <div class="product-payment-inner-st">
-                                                                                            <ul id="myTabedu1"
-                                                                                                class="tab-review-design">
-                                                                                                <li><a href="#View1">
-                                                                                                    <iclass
-                                                                                                    ="fasfa-search">
-                                                                                                    </i>View</a></li>
-                                                                                                <li class="active">
-                                                                                                <li>
-                                                                                                <li></li>
-                                                                                            </ul>
-                                                                                            <div id="myTabContent"
-                                                                                                 class="tab-content custom-product-edit">
-
-                                                                                                <div class="product-tab-list tab-pane fade"
-                                                                                                     id="View1">
-                                                                                                    <div class="row">
-                                                                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                                                                            <div class="review-content-section">
-                                                                                                                <div class="row">
-                                                                                                                    <div class="form-group-inner">
-                                                                                                                        <div class="row">
-                                                                                                                            <div
-                                                                                                                                    class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                                                                                                                <label class="login2">Project
-                                                                                                                                    Code</label>
-                                                                                                                            </div>
-                                                                                                                            <div
-                                                                                                                                    class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                                                                                                                <input type="text"
-                                                                                                                                       class="form-control"
-                                                                                                                                       name="Name"
-                                                                                                                                       id="E_V_ProjectCode"
-                                                                                                                                       readonly/>
-                                                                                                                            </div>
-                                                                                                                        </div>
-                                                                                                                    </div>
-
-                                                                                                                    <div class="form-group-inner">
-                                                                                                                        <div class="row">
-                                                                                                                            <div
-                                                                                                                                    class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                                                                                                                <label class="login2">Project
-                                                                                                                                    Name</label>
-                                                                                                                            </div>
-                                                                                                                            <div
-                                                                                                                                    class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                                                                                                                <input type="text"
-                                                                                                                                       class="form-control"
-                                                                                                                                       name="UserName"
-                                                                                                                                       id="E_V_ProjectName"
-                                                                                                                                       readonly/>
-                                                                                                                            </div>
-                                                                                                                        </div>
-                                                                                                                    </div>
-
-                                                                                                                    <div class="form-group-inner">
-                                                                                                                        <div class="row">
-                                                                                                                            <div
-                                                                                                                                    class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                                                                                                                <label class="login2">Description</label>
-                                                                                                                            </div>
-                                                                                                                            <div
-                                                                                                                                    class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                                                                                                                <input type="text"
-                                                                                                                                       class="form-control"
-                                                                                                                                       id="E_V_Description"
-                                                                                                                                       name="Description"
-                                                                                                                                       readonly/>
-                                                                                                                            </div>
-                                                                                                                        </div>
-                                                                                                                    </div>
-                                                                                                                    <div class="login-btn-inner">
-                                                                                                                        <div class="row">
-                                                                                                                            <div
-                                                                                                                                    class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                                                                                                            </div>
-                                                                                                                            <div
-                                                                                                                                    class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                                                                                                                <div
-                                                                                                                                        class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                                                                                                                    <div class="login-horizental">
-                                                                                                                                        <a data-dismiss="modal"
-                                                                                                                                           href="#">
-                                                                                                                                            <button
-                                                                                                                                                    class="btn btn-sm btn-primary login-submit-cs"
-                                                                                                                                                    type="button">
-                                                                                                                                                Cancel
-                                                                                                                                            </button>
-                                                                                                                                        </a>
-                                                                                                                                    </div>
-                                                                                                                                </div>
-                                                                                                                            </div>
-                                                                                                                        </div>
-                                                                                                                    </div>
-                                                                                                                </div>
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                                <!--Edit1 start-->
-                                                                                                <div class="product-tab-list tab-pane fade active in"
-                                                                                                     id="Edit1">
-                                                                                                    <div class="row">
-                                                                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                                                                            <div class="review-content-section">
-                                                                                                                <div class="row">
                                                                                                                     <form method="post"
                                                                                                                           action="../Project/updatedata"
-                                                                                                                          class="projectE_Edit">
-
+                                                                                                                          class="project_Edit">
                                                                                                                         <div class="form-group-inner">
                                                                                                                             <div class="row">
                                                                                                                                 <div
@@ -1611,18 +1207,18 @@
                                                                                                                                     <input type="hidden"
                                                                                                                                            class="form-control"
                                                                                                                                            placeholder="Enter Project Code"
-                                                                                                                                           id="E_E_H_ProjectCode"
+                                                                                                                                           id="V_E_H_ProjectCode"
                                                                                                                                            name="ProjectCode"/>
-                                                                                                                                    <input type="text"
-                                                                                                                                           class="form-control"
-                                                                                                                                           placeholder="Enter Project Code"
-                                                                                                                                           id="E_E_ProjectCode"
-                                                                                                                                           name="ProjectCode"
-                                                                                                                                           readonly/>
+                                                                                                                                    <input
+                                                                                                                                            type="text"
+                                                                                                                                            class="form-control"
+                                                                                                                                            placeholder="Enter Project Code"
+                                                                                                                                            id="V_E_ProjectCode"
+                                                                                                                                            name="ProjectCode"
+                                                                                                                                            readonly/>
                                                                                                                                 </div>
                                                                                                                             </div>
                                                                                                                         </div>
-
                                                                                                                         <div class="form-group-inner">
                                                                                                                             <div class="row">
                                                                                                                                 <div
@@ -1634,7 +1230,7 @@
                                                                                                                                         class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                                                                                                     <input type="text"
                                                                                                                                            class="form-control"
-                                                                                                                                           id="E_E_ProjectName"
+                                                                                                                                           id="V_E_ProjectName"
                                                                                                                                            readonly/>
                                                                                                                                 </div>
                                                                                                                                 <div
@@ -1642,11 +1238,10 @@
                                                                                                                                     <input type="hidden"
                                                                                                                                            class="form-control"
                                                                                                                                            name="ProjectName"
-                                                                                                                                           id="E_E_H_ProjectName"/>
+                                                                                                                                           id="V_E_H_ProjectName"/>
                                                                                                                                 </div>
                                                                                                                             </div>
                                                                                                                         </div>
-
 
                                                                                                                         <div class="form-group-inner">
                                                                                                                             <div class="row">
@@ -1660,13 +1255,10 @@
                                                                                                                                            class="form-control"
                                                                                                                                            placeholder="Enter Description"
                                                                                                                                            name="Description"
-                                                                                                                                           id="E_E_Description"/>
-
+                                                                                                                                           id="V_E_Description"/>
                                                                                                                                 </div>
                                                                                                                             </div>
                                                                                                                         </div>
-
-
                                                                                                                         <div class="login-btn-inner dropup">
                                                                                                                             <div class="row">
                                                                                                                                 <div
@@ -1679,6 +1271,7 @@
                                                                                                                                                 class="btn btn-sm btn-primary login-submit-cs"
                                                                                                                                                 data-toggle="dropdown">
                                                                                                                                             Update
+
                                                                                                                                         </button>
                                                                                                                                         <ul
                                                                                                                                                 class="dropdown-menu btn-dropdown-menu dropdown-menu-up"
@@ -1704,9 +1297,11 @@
                                                                                                                                                     No
                                                                                                                                                 </button>
                                                                                                                                             </li>
-
-
                                                                                                                                         </ul>
+                                                                                                                                    </div>
+                                                                                                                                </div>
+                                                                                                                            </div>
+                                                                                                                        </div>
                                                                                                                     </form>
                                                                                                                     <a data-dismiss="modal"
                                                                                                                        href="#">
@@ -1720,84 +1315,84 @@
                                                                                                             </div>
                                                                                                         </div>
                                                                                                     </div>
-
                                                                                                 </div>
-
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
-                                                                                <!--Delete1 start-->
-                                                                                <div class="product-tab-list tab-pane fade "
-                                                                                     id="Delete1">
+                                                                                <!--Start Delete-->
+                                                                                <div class="product-tab-list tab-pane fade"
+                                                                                     id="Delete">
                                                                                     <div class="row">
-                                                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                                        <div
+                                                                                                class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                                                             <div class="review-content-section">
                                                                                                 <div class="row">
-
-                                                                                                    <form action="/bidBonds/delete"
+                                                                                                    <form action="/bidBond/delete"
                                                                                                           method="post"
                                                                                                           accept-charset="utf-8">
-
                                                                                                         <div class="form-group-inner">
                                                                                                             <div class="row">
-                                                                                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                                                <div
+                                                                                                                        class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                                                                                                     <label class="login2">Project
                                                                                                                         Code</label>
                                                                                                                 </div>
-                                                                                                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                                                <div
+                                                                                                                        class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                                                                                     <input type="text"
                                                                                                                            class="form-control"
                                                                                                                            name="ProjectCode"
-                                                                                                                           id="E_D_ProjectCode"
+                                                                                                                           id="V_D_ProjectCode"
                                                                                                                            readonly/>
                                                                                                                 </div>
                                                                                                             </div>
                                                                                                         </div>
-
                                                                                                         <div class="form-group-inner">
                                                                                                             <div class="row">
-                                                                                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                                                <div
+                                                                                                                        class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                                                                                                     <label class="login2">Project
                                                                                                                         Name</label>
                                                                                                                 </div>
-                                                                                                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                                                <div
+                                                                                                                        class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                                                                                     <input type="text"
                                                                                                                            class="form-control"
-                                                                                                                           id="E_D_ProjectName"
+                                                                                                                           id="V_D_ProjectName"
                                                                                                                            readonly/>
                                                                                                                     <input
                                                                                                                             type="hidden"
                                                                                                                             class="form-control"
                                                                                                                             name="ProjectName"
-                                                                                                                            id="E_D_H_ProjectName"
+                                                                                                                            id="V_D_H_ProjectName"
                                                                                                                             required/>
                                                                                                                 </div>
                                                                                                             </div>
                                                                                                         </div>
-
-
                                                                                                         <div class="form-group-inner">
                                                                                                             <div class="row">
-                                                                                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                                                <div
+                                                                                                                        class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                                                                                                     <label class="login2">Description</label>
                                                                                                                 </div>
-                                                                                                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                                                <div
+                                                                                                                        class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                                                                                     <input type="text"
                                                                                                                            class="form-control"
-                                                                                                                           id="E_D_Description"
+                                                                                                                           id="V_D_Description"
                                                                                                                            name="Description"
                                                                                                                            readonly/>
                                                                                                                 </div>
                                                                                                             </div>
                                                                                                         </div>
-
-
                                                                                                         <div class="login-btn-inner dropup">
                                                                                                             <div class="row">
-                                                                                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                                                <div
+                                                                                                                        class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                                                                                                 </div>
-                                                                                                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                                                <div
+                                                                                                                        class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                                                                                     <div class="login-horizental">
                                                                                                                         <button type="button"
                                                                                                                                 class="btn btn-sm btn-primary login-submit-cs"
@@ -1851,8 +1446,6 @@
                                                             </div>
                                                         </div>
                                                         <!--END Single pro tab review Start-->
-
-
                                                     </div>
                                                 </div>
                                             </div>
@@ -1861,11 +1454,10 @@
                                 </div>
                             </div>
                         </div>
-                        <!--END Edit Model-->
+                        <!--END View Model-->
 
-
-                        <!--Delete Model Start-->
-                        <div id="zoomInDown4"
+                        <!--Edit Model Start-->
+                        <div id="zoomInDown3"
                              class="modal modal-edu-general modal-zoomInDown fade" role="dialog">
                             <div class="modal-dialog">
                                 <div class="modal-content">
@@ -1878,46 +1470,47 @@
                                     </div>
                                     <div class="modal-body">
                                         <div class="modal-login-form-inner">
-
                                             <div class="row">
                                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                     <div class="basic-login-inner modal-basic-inner">
-
                                                         <!-- Single pro tab review Start-->
                                                         <div class="single-pro-review-area mt-t-30 mg-b-15">
                                                             <div class="container-fluid">
                                                                 <div class="row">
                                                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                                         <div class="product-payment-inner-st">
-                                                                            <ul id="myTabedu1"
-                                                                                class="tab-review-design">
-                                                                                <li><a href="#View2"> <i
-                                                                                        class="fas fa-search"></i>View
-                                                                                </a></li>
-                                                                                <li></li>
-                                                                                <li class="active"></li>
-                                                                            </ul>
+                                                                            <%--                                                                            <ul id="myTabedu1"--%>
+                                                                            <%--                                                                                class="tab-review-design">--%>
+                                                                            <%--                                                                                <li><a href="#View1">--%>
+                                                                            <%--                                                                                    <i class--%>
+                                                                            <%--                                                                                               ="fasfa-search">--%>
+                                                                            <%--                                                                                    </i>View</a></li>--%>
+                                                                            <%--                                                                                <li class="active">--%>
+                                                                            <%--                                                                                <li>--%>
+                                                                            <%--                                                                                <li></li>--%>
+                                                                            <%--                                                                            </ul>--%>
                                                                             <div id="myTabContent"
                                                                                  class="tab-content custom-product-edit">
 
                                                                                 <div class="product-tab-list tab-pane fade"
-                                                                                     id="View2">
+                                                                                     id="View1">
                                                                                     <div class="row">
                                                                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                                                             <div class="review-content-section">
                                                                                                 <div class="row">
-
                                                                                                     <div class="form-group-inner">
                                                                                                         <div class="row">
-                                                                                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                                            <div
+                                                                                                                    class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                                                                                                 <label class="login2">Project
                                                                                                                     Code</label>
                                                                                                             </div>
-                                                                                                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                                            <div
+                                                                                                                    class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                                                                                 <input type="text"
                                                                                                                        class="form-control"
                                                                                                                        name="Name"
-                                                                                                                       id="D_V_ProjectCode"
+                                                                                                                       id="E_V_ProjectCode"
                                                                                                                        readonly/>
                                                                                                             </div>
                                                                                                         </div>
@@ -1925,43 +1518,47 @@
 
                                                                                                     <div class="form-group-inner">
                                                                                                         <div class="row">
-                                                                                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                                            <div
+                                                                                                                    class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                                                                                                 <label class="login2">Project
                                                                                                                     Name</label>
                                                                                                             </div>
-                                                                                                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                                            <div
+                                                                                                                    class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                                                                                 <input type="text"
                                                                                                                        class="form-control"
                                                                                                                        name="UserName"
-                                                                                                                       id="D_V_ProjectName"
+                                                                                                                       id="E_V_ProjectName"
                                                                                                                        readonly/>
                                                                                                             </div>
                                                                                                         </div>
                                                                                                     </div>
 
-
                                                                                                     <div class="form-group-inner">
                                                                                                         <div class="row">
-                                                                                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                                            <div
+                                                                                                                    class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                                                                                                 <label class="login2">Description</label>
                                                                                                             </div>
-                                                                                                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                                            <div
+                                                                                                                    class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                                                                                 <input type="text"
                                                                                                                        class="form-control"
-                                                                                                                       id="D_V_Description"
+                                                                                                                       id="E_V_Description"
                                                                                                                        name="Description"
                                                                                                                        readonly/>
                                                                                                             </div>
                                                                                                         </div>
                                                                                                     </div>
-
-
                                                                                                     <div class="login-btn-inner">
                                                                                                         <div class="row">
-                                                                                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                                            <div
+                                                                                                                    class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                                                                                             </div>
-                                                                                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                                                                                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                                            <div
+                                                                                                                    class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                                                <div
+                                                                                                                        class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                                                                                     <div class="login-horizental">
                                                                                                                         <a data-dismiss="modal"
                                                                                                                            href="#">
@@ -1976,163 +1573,41 @@
                                                                                                             </div>
                                                                                                         </div>
                                                                                                     </div>
-
-
                                                                                                 </div>
-
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
-                                                                                <!--Edit 2 start-->
-                                                                                <%--                                                                <div class="product-tab-list tab-pane fade" id="Edit2">--%>
-                                                                                <%--                                                                    <div class="row">--%>
-                                                                                <%--                                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">--%>
-                                                                                <%--                                                                            <div class="review-content-section">--%>
-                                                                                <%--                                                                                <div class="row">--%>
-
-
-                                                                                <%--                                                                                    <form method="post"--%>
-                                                                                <%--                                                                                          action="/bidBond/update"--%>
-                                                                                <%--                                                                                          class="projectD_Edit">--%>
-
-                                                                                <%--                                                                                        <div class="form-group-inner">--%>
-                                                                                <%--                                                                                            <div class="row">--%>
-                                                                                <%--                                                                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">--%>
-                                                                                <%--                                                                                                    <label class="login2">Project--%>
-                                                                                <%--                                                                                                        Code</label>--%>
-                                                                                <%--                                                                                                </div>--%>
-                                                                                <%--                                                                                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">--%>
-                                                                                <%--                                                                                                    <input type="hidden"--%>
-                                                                                <%--                                                                                                           class="form-control"--%>
-                                                                                <%--                                                                                                           placeholder="Enter Project Code"--%>
-                                                                                <%--                                                                                                           id="D_E_H_ProjectCode"--%>
-                                                                                <%--                                                                                                           name="ProjectCode"/>--%>
-                                                                                <%--                                                                                                    <input--%>
-                                                                                <%--                                                                                                            type="text"--%>
-                                                                                <%--                                                                                                            class="form-control"--%>
-                                                                                <%--                                                                                                            placeholder="Enter Project Code"--%>
-                                                                                <%--                                                                                                            id="D_E_ProjectCode"--%>
-                                                                                <%--                                                                                                            name="ProjectCode"--%>
-                                                                                <%--                                                                                                            readonly/>--%>
-                                                                                <%--                                                                                                </div>--%>
-                                                                                <%--                                                                                            </div>--%>
-                                                                                <%--                                                                                        </div>--%>
-
-
-                                                                                <%--                                                                                        <div class="form-group-inner">--%>
-                                                                                <%--                                                                                            <div class="row">--%>
-                                                                                <%--                                                                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">--%>
-                                                                                <%--                                                                                                    <label class="login2">Project--%>
-                                                                                <%--                                                                                                        Name</label>--%>
-                                                                                <%--                                                                                                </div>--%>
-                                                                                <%--                                                                                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">--%>
-                                                                                <%--                                                                                                    <input type="text"--%>
-                                                                                <%--                                                                                                           class="form-control"--%>
-                                                                                <%--                                                                                                           id="D_E_ProjectName"--%>
-                                                                                <%--                                                                                                           readonly/>--%>
-                                                                                <%--                                                                                                </div>--%>
-                                                                                <%--                                                                                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">--%>
-                                                                                <%--                                                                                                    <input type="hidden"--%>
-                                                                                <%--                                                                                                           class="form-control"--%>
-                                                                                <%--                                                                                                           name="ProjectName"--%>
-                                                                                <%--                                                                                                           id="D_E_H_ProjectName"/>--%>
-                                                                                <%--                                                                                                </div>--%>
-                                                                                <%--                                                                                            </div>--%>
-                                                                                <%--                                                                                        </div>--%>
-
-                                                                                <%--                                                                                        <div class="form-group-inner">--%>
-                                                                                <%--                                                                                            <div class="row">--%>
-                                                                                <%--                                                                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">--%>
-                                                                                <%--                                                                                                    <label class="login2">Description</label>--%>
-                                                                                <%--                                                                                                </div>--%>
-                                                                                <%--                                                                                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">--%>
-                                                                                <%--                                                                                                    <input type="text"--%>
-                                                                                <%--                                                                                                           class="form-control"--%>
-                                                                                <%--                                                                                                           placeholder="Enter Description"--%>
-                                                                                <%--                                                                                                           name="Description"--%>
-                                                                                <%--                                                                                                           id="D_E_Description"/>--%>
-
-                                                                                <%--                                                                                                </div>--%>
-                                                                                <%--                                                                                            </div>--%>
-                                                                                <%--                                                                                        </div>--%>
-
-                                                                                <%--                                                                                        <div class="login-btn-inner dropup">--%>
-                                                                                <%--                                                                                            <div class="row">--%>
-                                                                                <%--                                                                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">--%>
-                                                                                <%--                                                                                                </div>--%>
-                                                                                <%--                                                                                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">--%>
-                                                                                <%--                                                                                                    <div class="login-horizental">--%>
-                                                                                <%--                                                                                                        <button type="button"--%>
-                                                                                <%--                                                                                                                class="btn btn-sm btn-primary login-submit-cs"--%>
-                                                                                <%--                                                                                                                data-toggle="dropdown">--%>
-                                                                                <%--                                                                                                            Update--%>
-                                                                                <%--                                                                                                        </button>--%>
-                                                                                <%--                                                                                                        <ul--%>
-                                                                                <%--                                                                                                                class="dropdown-menu btn-dropdown-menu dropdown-menu-up"--%>
-                                                                                <%--                                                                                                                role="menu"--%>
-                                                                                <%--                                                                                                                style="min-width: 130px; font-size: 20px; padding: 5px;">--%>
-                                                                                <%--                                                                                                            <li>Save the--%>
-                                                                                <%--                                                                                                                changes--%>
-                                                                                <%--                                                                                                                to the--%>
-                                                                                <%--                                                                                                                Project<br>--%>
-                                                                                <%--                                                                                                            </li>--%>
-                                                                                <%--                                                                                                            <li>--%>
-                                                                                <%--                                                                                                                <button type="submit"--%>
-                                                                                <%--                                                                                                                        class="btn btn-sm btn-primary login-submit-cs"--%>
-                                                                                <%--                                                                                                                        id="btnSubmit">--%>
-                                                                                <%--                                                                                                                    Yes--%>
-                                                                                <%--                                                                                                                </button>--%>
-
-                                                                                <%--                                                                                                                <button type="button"--%>
-                                                                                <%--                                                                                                                        class="btn btn-sm btn-primary login-submit-cs">--%>
-                                                                                <%--                                                                                                                    No--%>
-                                                                                <%--                                                                                                                </button>--%>
-                                                                                <%--                                                                                                            </li>--%>
-
-
-                                                                                <%--                                                                                                        </ul>--%>
-                                                                                <%--                                                                                    </form>--%>
-                                                                                <%--                                                                                    <a data-dismiss="modal" href="#">--%>
-                                                                                <%--                                                                                        <button--%>
-                                                                                <%--                                                                                                class="btn btn-sm btn-primary login-submit-cs"--%>
-                                                                                <%--                                                                                                type="button">Cancel--%>
-                                                                                <%--                                                                                        </button>--%>
-                                                                                <%--                                                                                    </a>--%>
-                                                                                <%--                                                                                </div>--%>
-                                                                                <%--                                                                            </div>--%>
-                                                                                <%--                                                                        </div>--%>
-                                                                                <%--                                                                    </div>--%>
-
-                                                                                <%--                                                                </div>--%>
-
-                                                                                <%--                                                            </div>--%>
-                                                                                <%--                                                        </div>--%>
-                                                                                <%--                                                    </div>--%>
-                                                                                <%--                                                </div>--%>
-                                                                                <!--Delete2 start-->
+                                                                                <!--Edit1 start-->
                                                                                 <div class="product-tab-list tab-pane fade active in"
-                                                                                     id="Delete2">
+                                                                                     id="Edit1">
                                                                                     <div class="row">
                                                                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                                                             <div class="review-content-section">
                                                                                                 <div class="row">
-
-                                                                                                    <form action="/bidBond/delete"
-                                                                                                          method="post"
-                                                                                                          accept-charset="utf-8">
+                                                                                                    <form method="post"
+                                                                                                          action="../Project/updatedata"
+                                                                                                          class="projectE_Edit">
 
                                                                                                         <div class="form-group-inner">
                                                                                                             <div class="row">
-                                                                                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                                                <div
+                                                                                                                        class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                                                                                                     <label class="login2">Project
                                                                                                                         Code</label>
                                                                                                                 </div>
-                                                                                                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                                                <div
+                                                                                                                        class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                                                    <input type="hidden"
+                                                                                                                           class="form-control"
+                                                                                                                           placeholder="Enter Project Code"
+                                                                                                                           id="E_E_H_ProjectCode"
+                                                                                                                           name="ProjectCode"/>
                                                                                                                     <input type="text"
                                                                                                                            class="form-control"
+                                                                                                                           placeholder="Enter Project Code"
+                                                                                                                           id="E_E_ProjectCode"
                                                                                                                            name="ProjectCode"
-                                                                                                                           id="D_D_ProjectCode"
                                                                                                                            readonly/>
                                                                                                                 </div>
                                                                                                             </div>
@@ -2140,21 +1615,24 @@
 
                                                                                                         <div class="form-group-inner">
                                                                                                             <div class="row">
-                                                                                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                                                <div
+                                                                                                                        class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                                                                                                     <label class="login2">Project
                                                                                                                         Name</label>
                                                                                                                 </div>
-                                                                                                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                                                <div
+                                                                                                                        class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                                                                                     <input type="text"
                                                                                                                            class="form-control"
-                                                                                                                           id="D_D_ProjectName"
+                                                                                                                           id="E_E_ProjectName"
                                                                                                                            readonly/>
-                                                                                                                    <input
-                                                                                                                            type="hidden"
-                                                                                                                            class="form-control"
-                                                                                                                            name="ProjectName"
-                                                                                                                            id="D_D_H_ProjectName"
-                                                                                                                            required/>
+                                                                                                                </div>
+                                                                                                                <div
+                                                                                                                        class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                                                    <input type="hidden"
+                                                                                                                           class="form-control"
+                                                                                                                           name="ProjectName"
+                                                                                                                           id="E_E_H_ProjectName"/>
                                                                                                                 </div>
                                                                                                             </div>
                                                                                                         </div>
@@ -2162,15 +1640,18 @@
 
                                                                                                         <div class="form-group-inner">
                                                                                                             <div class="row">
-                                                                                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                                                <div
+                                                                                                                        class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                                                                                                     <label class="login2">Description</label>
                                                                                                                 </div>
-                                                                                                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                                                <div
+                                                                                                                        class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                                                                                     <input type="text"
                                                                                                                            class="form-control"
-                                                                                                                           id="D_D_Description"
+                                                                                                                           placeholder="Enter Description"
                                                                                                                            name="Description"
-                                                                                                                           readonly/>
+                                                                                                                           id="E_E_Description"/>
+
                                                                                                                 </div>
                                                                                                             </div>
                                                                                                         </div>
@@ -2178,28 +1659,32 @@
 
                                                                                                         <div class="login-btn-inner dropup">
                                                                                                             <div class="row">
-                                                                                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                                                <div
+                                                                                                                        class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                                                                                                 </div>
-                                                                                                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                                                <div
+                                                                                                                        class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                                                                                     <div class="login-horizental">
                                                                                                                         <button type="button"
                                                                                                                                 class="btn btn-sm btn-primary login-submit-cs"
                                                                                                                                 data-toggle="dropdown">
-                                                                                                                            Delete
+                                                                                                                            Update
                                                                                                                         </button>
                                                                                                                         <ul
                                                                                                                                 class="dropdown-menu btn-dropdown-menu dropdown-menu-up"
                                                                                                                                 role="menu"
                                                                                                                                 style="min-width: 130px; font-size: 20px; padding: 5px;">
                                                                                                                             <li>
-                                                                                                                                Delete
-                                                                                                                                Project
-                                                                                                                                ?<br>
+                                                                                                                                Save
+                                                                                                                                the
+                                                                                                                                changes
+                                                                                                                                to
+                                                                                                                                the
+                                                                                                                                Project<br>
                                                                                                                             </li>
                                                                                                                             <li>
                                                                                                                                 <button type="submit"
                                                                                                                                         class="btn btn-sm btn-primary login-submit-cs"
-                                                                                                                                        name="delete"
                                                                                                                                         id="btnSubmit">
                                                                                                                                     Yes
                                                                                                                                 </button>
@@ -2209,23 +1694,141 @@
                                                                                                                                     No
                                                                                                                                 </button>
                                                                                                                             </li>
+
+
                                                                                                                         </ul>
-                                                                                                                        <a data-dismiss="modal"
-                                                                                                                           href="#">
-                                                                                                                            <button class="btn btn-sm btn-primary login-submit-cs"
-                                                                                                                                    type="button">
-                                                                                                                                Cancel
-                                                                                                                            </button>
-                                                                                                                        </a>
-                                                                                                                    </div>
-                                                                                                                </div>
-                                                                                                            </div>
-                                                                                                        </div>
                                                                                                     </form>
+                                                                                                    <a data-dismiss="modal"
+                                                                                                       href="#">
+                                                                                                        <button
+                                                                                                                class="btn btn-sm btn-primary login-submit-cs"
+                                                                                                                type="button">
+                                                                                                            Cancel
+                                                                                                        </button>
+                                                                                                    </a>
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>
+
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <!--Delete1 start-->
+                                                                <div class="product-tab-list tab-pane fade "
+                                                                     id="Delete1">
+                                                                    <div class="row">
+                                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                            <div class="review-content-section">
+                                                                                <div class="row">
+
+                                                                                    <form action="/bidBonds/delete"
+                                                                                          method="post"
+                                                                                          accept-charset="utf-8">
+
+                                                                                        <div class="form-group-inner">
+                                                                                            <div class="row">
+                                                                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                                    <label class="login2">Project
+                                                                                                        Code</label>
+                                                                                                </div>
+                                                                                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                                    <input type="text"
+                                                                                                           class="form-control"
+                                                                                                           name="ProjectCode"
+                                                                                                           id="E_D_ProjectCode"
+                                                                                                           readonly/>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+
+                                                                                        <div class="form-group-inner">
+                                                                                            <div class="row">
+                                                                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                                    <label class="login2">Project
+                                                                                                        Name</label>
+                                                                                                </div>
+                                                                                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                                    <input type="text"
+                                                                                                           class="form-control"
+                                                                                                           id="E_D_ProjectName"
+                                                                                                           readonly/>
+                                                                                                    <input
+                                                                                                            type="hidden"
+                                                                                                            class="form-control"
+                                                                                                            name="ProjectName"
+                                                                                                            id="E_D_H_ProjectName"
+                                                                                                            required/>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+
+
+                                                                                        <div class="form-group-inner">
+                                                                                            <div class="row">
+                                                                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                                    <label class="login2">Description</label>
+                                                                                                </div>
+                                                                                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                                    <input type="text"
+                                                                                                           class="form-control"
+                                                                                                           id="E_D_Description"
+                                                                                                           name="Description"
+                                                                                                           readonly/>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+
+
+                                                                                        <div class="login-btn-inner dropup">
+                                                                                            <div class="row">
+                                                                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                                </div>
+                                                                                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                                    <div class="login-horizental">
+                                                                                                        <button type="button"
+                                                                                                                class="btn btn-sm btn-primary login-submit-cs"
+                                                                                                                data-toggle="dropdown">
+                                                                                                            Delete
+                                                                                                        </button>
+                                                                                                        <ul
+                                                                                                                class="dropdown-menu btn-dropdown-menu dropdown-menu-up"
+                                                                                                                role="menu"
+                                                                                                                style="min-width: 130px; font-size: 20px; padding: 5px;">
+                                                                                                            <li>
+                                                                                                                Delete
+                                                                                                                Project
+                                                                                                                ?<br>
+                                                                                                            </li>
+                                                                                                            <li>
+                                                                                                                <button type="submit"
+                                                                                                                        class="btn btn-sm btn-primary login-submit-cs"
+                                                                                                                        name="delete"
+                                                                                                                        id="btnSubmit">
+                                                                                                                    Yes
+                                                                                                                </button>
+                                                                                                                <button type="button"
+                                                                                                                        class="btn btn-sm btn-primary login-submit-cs">
+                                                                                                                    No
+                                                                                                                </button>
+                                                                                                            </li>
+                                                                                                        </ul>
+                                                                                                        <a data-dismiss="modal"
+                                                                                                           href="#">
+                                                                                                            <button
+                                                                                                                    class="btn btn-sm btn-primary login-submit-cs"
+                                                                                                                    type="button">
+                                                                                                                Cancel
+                                                                                                            </button>
+                                                                                                        </a>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </form>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
@@ -2233,129 +1836,33 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <!--END Single pro tab review Start-->
-
-
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+                                        <!--END Single pro tab review Start-->
+
+
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!--END Delete Model-->
-
                     </div>
                 </div>
             </div>
         </div>
-        <!--END Single pro tab review Start-->
-        <div class="row">
-            <form name="bulk_action_form" action="/bidBond/allBidBonds"
-                  method="GET">
-                <!-- <div style="height:580px; overflow:auto;"> -->
-                <table id="table" class="table table-striped table-bordered"
-                       style="width: 100%;">
-                    <thead>
-                    <tr>
-                        <td colspan="3">
-                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                <h4 id="topic" style="color: #337ab7;">
-                                    <br>Bid Bond Documents
-                                </h4>
-                            </div>
-                        </td>
-                    </tr>
-                    </thead>
-                </table>
-                <br/>
+        <!--END Edit Model-->
 
-                <c:forEach var="bid" items="${list}">
 
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"
-                         style="padding-top: 1%;">
-                        <c:if test="${bid.remain>'50'}">
-
-                            <button type="button" class="btn btn-success"
-                                    style="height: 150px; width: 300px; font-size: medium;"
-                                    data-toggle="modal" data-target="#modalForm"
-                                    onclick="myClick('${bid.id}','${bid.name}',
-                                            '${bid.amount}','${bid.effective}','${bid.expire}','${bid.status}');">
-                                <c:out value="${bid.name}"/>
-                                <br>
-                                <c:out value="${bid.amount}"/>
-                                <br>
-                                <c:out value="${bid.remain}"/>
-                                &nbsp; days remaining<br>
-                                <c:out value="${bid.status}"/>
-                            </button>
-                        </c:if>
-
-                        <c:if test="${bid.remain<'50' && bid.remain>'20'}">
-
-                            <button type="button" class="btn btn-warning"
-                                    style="height: 150px; width: 300px; font-size: medium;"
-                                    data-toggle="modal" data-target="#modalForm"
-                                    onclick="myClick('${bid.id}','${bid.name}',
-                                            '${bid.amount}','${bid.effective}','${bid.expire}','${bid.status}');">
-                                <c:out value="${bid.name}"/>
-                                <br>
-                                <c:out value="${bid.amount}"/>
-                                <br>
-                                <c:out value="${bid.remain}"/>
-                                &nbsp; days remaining<br>
-                                <c:out value="${bid.status}"/>
-                            </button>
-                        </c:if>
-
-                        <c:if test="${bid.remain<'20' && bid.remain>'0'}">
-
-                            <button type="button" class="btn btn-danger"
-                                    style="height: 150px; width: 300px; font-size: medium;"
-                                    data-toggle="modal" data-target="#modalForm"
-                                    onclick="myClick('${bid.id}','${bid.name}',
-                                            '${bid.amount}','${bid.effective}','${bid.expire}','${bid.status}');">
-                                <c:out value="${bid.name}"/>
-                                <br>
-                                <c:out value="${bid.amount}"/>
-                                <br>
-                                <c:out value="${bid.remain}"/>
-                                &nbsp; days remaining<br>
-                                <c:out value="${bid.status}"/>
-                            </button>
-                        </c:if>
-
-                        <c:if test="${bid.remain<'1'}">
-
-                            <button type="button" class="btn btn-danger"
-                                    style="height: 150px; width: 300px; font-size: medium;"
-                                    data-toggle="modal" data-target="#modalForm"
-                                    onclick="myClick('${bid.id}','${bid.name}',
-                                            '${bid.amount}','${bid.effective}','${bid.expire}','${bid.status}');">
-                                <c:out value="${bid.name}"/>
-                                <br>
-                                <c:out value="${bid.amount}"/>
-                                <br>
-                                <c:out value="${bid.status}"/><br>
-                                <b>Expired.!</b>
-
-                            </button>
-                        </c:if>
-                    </div>
-                </c:forEach>
-
-            </form>
-        </div>
-        <!-- Modal -->
-        <div id="modalForm"
+        <!--Delete Model Start-->
+        <div id="zoomInDown4"
              class="modal modal-edu-general modal-zoomInDown fade" role="dialog">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header header-color-modal bg-color-1">
-                        <h4 class="modal-title">View</h4>
+                        <h4 class="modal-title">Project</h4>
                         <div class="modal-close-area modal-close-df">
-                            <a class="close" data-dismiss="modal" href="#"><i
+                            <a class="close" data-dismiss="modal" href="#"> <i
                                     class="fa fa-close"></i></a>
                         </div>
                     </div>
@@ -2366,9 +1873,497 @@
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <div class="basic-login-inner modal-basic-inner">
 
-                                        <form method="POST" action="/bidBond/addBidBond"
-                                              class="projectAdd">
+                                        <!-- Single pro tab review Start-->
+                                        <div class="single-pro-review-area mt-t-30 mg-b-15">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                        <div class="product-payment-inner-st">
+                                                            <%--                                                            <ul id="myTabedu1"--%>
+                                                            <%--                                                                class="tab-review-design">--%>
+                                                            <%--                                                                <li><a href="#View2"> <i--%>
+                                                            <%--                                                                        class="fas fa-search"></i>View--%>
+                                                            <%--                                                                </a></li>--%>
+                                                            <%--                                                                <li></li>--%>
+                                                            <%--                                                                <li class="active"></li>--%>
+                                                            <%--                                                            </ul>--%>
+                                                            <div id="myTabContent"
+                                                                 class="tab-content custom-product-edit">
 
+                                                                <div class="product-tab-list tab-pane fade"
+                                                                     id="View2">
+                                                                    <div class="row">
+                                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                            <div class="review-content-section">
+                                                                                <div class="row">
+
+                                                                                    <div class="form-group-inner">
+                                                                                        <div class="row">
+                                                                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                                <label class="login2">Project
+                                                                                                    Code</label>
+                                                                                            </div>
+                                                                                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                                <input type="text"
+                                                                                                       class="form-control"
+                                                                                                       name="Name"
+                                                                                                       id="D_V_ProjectCode"
+                                                                                                       readonly/>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                    <div class="form-group-inner">
+                                                                                        <div class="row">
+                                                                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                                <label class="login2">Project
+                                                                                                    Name</label>
+                                                                                            </div>
+                                                                                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                                <input type="text"
+                                                                                                       class="form-control"
+                                                                                                       name="UserName"
+                                                                                                       id="D_V_ProjectName"
+                                                                                                       readonly/>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                    <div class="form-group-inner">
+                                                                                        <div class="row">
+                                                                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                                <label class="login2">Description</label>
+                                                                                            </div>
+                                                                                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                                <input type="text"
+                                                                                                       class="form-control"
+                                                                                                       id="D_V_Description"
+                                                                                                       name="Description"
+                                                                                                       readonly/>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                    <div class="login-btn-inner">
+                                                                                        <div class="row">
+                                                                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                            </div>
+                                                                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                                    <div class="login-horizental">
+                                                                                                        <a data-dismiss="modal"
+                                                                                                           href="#">
+                                                                                                            <button
+                                                                                                                    class="btn btn-sm btn-primary login-submit-cs"
+                                                                                                                    type="button">
+                                                                                                                Cancel
+                                                                                                            </button>
+                                                                                                        </a>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <!--Edit 2 start-->
+                                                                <%--                                                                <div class="product-tab-list tab-pane fade" id="Edit2">--%>
+                                                                <%--                                                                    <div class="row">--%>
+                                                                <%--                                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">--%>
+                                                                <%--                                                                            <div class="review-content-section">--%>
+                                                                <%--                                                                                <div class="row">--%>
+
+
+                                                                <%--                                                                                    <form method="post"--%>
+                                                                <%--                                                                                          action="/bidBond/update"--%>
+                                                                <%--                                                                                          class="projectD_Edit">--%>
+
+                                                                <%--                                                                                        <div class="form-group-inner">--%>
+                                                                <%--                                                                                            <div class="row">--%>
+                                                                <%--                                                                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">--%>
+                                                                <%--                                                                                                    <label class="login2">Project--%>
+                                                                <%--                                                                                                        Code</label>--%>
+                                                                <%--                                                                                                </div>--%>
+                                                                <%--                                                                                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">--%>
+                                                                <%--                                                                                                    <input type="hidden"--%>
+                                                                <%--                                                                                                           class="form-control"--%>
+                                                                <%--                                                                                                           placeholder="Enter Project Code"--%>
+                                                                <%--                                                                                                           id="D_E_H_ProjectCode"--%>
+                                                                <%--                                                                                                           name="ProjectCode"/>--%>
+                                                                <%--                                                                                                    <input--%>
+                                                                <%--                                                                                                            type="text"--%>
+                                                                <%--                                                                                                            class="form-control"--%>
+                                                                <%--                                                                                                            placeholder="Enter Project Code"--%>
+                                                                <%--                                                                                                            id="D_E_ProjectCode"--%>
+                                                                <%--                                                                                                            name="ProjectCode"--%>
+                                                                <%--                                                                                                            readonly/>--%>
+                                                                <%--                                                                                                </div>--%>
+                                                                <%--                                                                                            </div>--%>
+                                                                <%--                                                                                        </div>--%>
+
+
+                                                                <%--                                                                                        <div class="form-group-inner">--%>
+                                                                <%--                                                                                            <div class="row">--%>
+                                                                <%--                                                                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">--%>
+                                                                <%--                                                                                                    <label class="login2">Project--%>
+                                                                <%--                                                                                                        Name</label>--%>
+                                                                <%--                                                                                                </div>--%>
+                                                                <%--                                                                                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">--%>
+                                                                <%--                                                                                                    <input type="text"--%>
+                                                                <%--                                                                                                           class="form-control"--%>
+                                                                <%--                                                                                                           id="D_E_ProjectName"--%>
+                                                                <%--                                                                                                           readonly/>--%>
+                                                                <%--                                                                                                </div>--%>
+                                                                <%--                                                                                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">--%>
+                                                                <%--                                                                                                    <input type="hidden"--%>
+                                                                <%--                                                                                                           class="form-control"--%>
+                                                                <%--                                                                                                           name="ProjectName"--%>
+                                                                <%--                                                                                                           id="D_E_H_ProjectName"/>--%>
+                                                                <%--                                                                                                </div>--%>
+                                                                <%--                                                                                            </div>--%>
+                                                                <%--                                                                                        </div>--%>
+
+                                                                <%--                                                                                        <div class="form-group-inner">--%>
+                                                                <%--                                                                                            <div class="row">--%>
+                                                                <%--                                                                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">--%>
+                                                                <%--                                                                                                    <label class="login2">Description</label>--%>
+                                                                <%--                                                                                                </div>--%>
+                                                                <%--                                                                                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">--%>
+                                                                <%--                                                                                                    <input type="text"--%>
+                                                                <%--                                                                                                           class="form-control"--%>
+                                                                <%--                                                                                                           placeholder="Enter Description"--%>
+                                                                <%--                                                                                                           name="Description"--%>
+                                                                <%--                                                                                                           id="D_E_Description"/>--%>
+
+                                                                <%--                                                                                                </div>--%>
+                                                                <%--                                                                                            </div>--%>
+                                                                <%--                                                                                        </div>--%>
+
+                                                                <%--                                                                                        <div class="login-btn-inner dropup">--%>
+                                                                <%--                                                                                            <div class="row">--%>
+                                                                <%--                                                                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">--%>
+                                                                <%--                                                                                                </div>--%>
+                                                                <%--                                                                                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">--%>
+                                                                <%--                                                                                                    <div class="login-horizental">--%>
+                                                                <%--                                                                                                        <button type="button"--%>
+                                                                <%--                                                                                                                class="btn btn-sm btn-primary login-submit-cs"--%>
+                                                                <%--                                                                                                                data-toggle="dropdown">--%>
+                                                                <%--                                                                                                            Update--%>
+                                                                <%--                                                                                                        </button>--%>
+                                                                <%--                                                                                                        <ul--%>
+                                                                <%--                                                                                                                class="dropdown-menu btn-dropdown-menu dropdown-menu-up"--%>
+                                                                <%--                                                                                                                role="menu"--%>
+                                                                <%--                                                                                                                style="min-width: 130px; font-size: 20px; padding: 5px;">--%>
+                                                                <%--                                                                                                            <li>Save the--%>
+                                                                <%--                                                                                                                changes--%>
+                                                                <%--                                                                                                                to the--%>
+                                                                <%--                                                                                                                Project<br>--%>
+                                                                <%--                                                                                                            </li>--%>
+                                                                <%--                                                                                                            <li>--%>
+                                                                <%--                                                                                                                <button type="submit"--%>
+                                                                <%--                                                                                                                        class="btn btn-sm btn-primary login-submit-cs"--%>
+                                                                <%--                                                                                                                        id="btnSubmit">--%>
+                                                                <%--                                                                                                                    Yes--%>
+                                                                <%--                                                                                                                </button>--%>
+
+                                                                <%--                                                                                                                <button type="button"--%>
+                                                                <%--                                                                                                                        class="btn btn-sm btn-primary login-submit-cs">--%>
+                                                                <%--                                                                                                                    No--%>
+                                                                <%--                                                                                                                </button>--%>
+                                                                <%--                                                                                                            </li>--%>
+
+
+                                                                <%--                                                                                                        </ul>--%>
+                                                                <%--                                                                                    </form>--%>
+                                                                <%--                                                                                    <a data-dismiss="modal" href="#">--%>
+                                                                <%--                                                                                        <button--%>
+                                                                <%--                                                                                                class="btn btn-sm btn-primary login-submit-cs"--%>
+                                                                <%--                                                                                                type="button">Cancel--%>
+                                                                <%--                                                                                        </button>--%>
+                                                                <%--                                                                                    </a>--%>
+                                                                <%--                                                                                </div>--%>
+                                                                <%--                                                                            </div>--%>
+                                                                <%--                                                                        </div>--%>
+                                                                <%--                                                                    </div>--%>
+
+                                                                <%--                                                                </div>--%>
+
+                                                                <%--                                                            </div>--%>
+                                                                <%--                                                        </div>--%>
+                                                                <%--                                                    </div>--%>
+                                                                <%--                                                </div>--%>
+                                                                <!--Delete2 start-->
+                                                                <div class="product-tab-list tab-pane fade active in"
+                                                                     id="Delete2">
+                                                                    <div class="row">
+                                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                            <div class="review-content-section">
+                                                                                <div class="row">
+
+                                                                                    <form action="/bidBond/delete"
+                                                                                          method="post"
+                                                                                          accept-charset="utf-8">
+
+                                                                                        <div class="form-group-inner">
+                                                                                            <div class="row">
+                                                                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                                    <label class="login2">Project
+                                                                                                        Code</label>
+                                                                                                </div>
+                                                                                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                                    <input type="text"
+                                                                                                           class="form-control"
+                                                                                                           name="ProjectCode"
+                                                                                                           id="D_D_ProjectCode"
+                                                                                                           readonly/>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+
+                                                                                        <div class="form-group-inner">
+                                                                                            <div class="row">
+                                                                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                                    <label class="login2">Project
+                                                                                                        Name</label>
+                                                                                                </div>
+                                                                                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                                    <input type="text"
+                                                                                                           class="form-control"
+                                                                                                           id="D_D_ProjectName"
+                                                                                                           readonly/>
+                                                                                                    <input
+                                                                                                            type="hidden"
+                                                                                                            class="form-control"
+                                                                                                            name="ProjectName"
+                                                                                                            id="D_D_H_ProjectName"
+                                                                                                            required/>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+
+
+                                                                                        <div class="form-group-inner">
+                                                                                            <div class="row">
+                                                                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                                    <label class="login2">Description</label>
+                                                                                                </div>
+                                                                                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                                    <input type="text"
+                                                                                                           class="form-control"
+                                                                                                           id="D_D_Description"
+                                                                                                           name="Description"
+                                                                                                           readonly/>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+
+
+                                                                                        <div class="login-btn-inner dropup">
+                                                                                            <div class="row">
+                                                                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                                </div>
+                                                                                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                                    <div class="login-horizental">
+                                                                                                        <button type="button"
+                                                                                                                class="btn btn-sm btn-primary login-submit-cs"
+                                                                                                                data-toggle="dropdown">
+                                                                                                            Delete
+                                                                                                        </button>
+                                                                                                        <ul
+                                                                                                                class="dropdown-menu btn-dropdown-menu dropdown-menu-up"
+                                                                                                                role="menu"
+                                                                                                                style="min-width: 130px; font-size: 20px; padding: 5px;">
+                                                                                                            <li>
+                                                                                                                Delete
+                                                                                                                Project
+                                                                                                                ?<br>
+                                                                                                            </li>
+                                                                                                            <li>
+                                                                                                                <button type="submit"
+                                                                                                                        class="btn btn-sm btn-primary login-submit-cs"
+                                                                                                                        name="delete"
+                                                                                                                        id="btnSubmit">
+                                                                                                                    Yes
+                                                                                                                </button>
+
+                                                                                                                <button type="button"
+                                                                                                                        class="btn btn-sm btn-primary login-submit-cs">
+                                                                                                                    No
+                                                                                                                </button>
+                                                                                                            </li>
+                                                                                                        </ul>
+                                                                                                        <a data-dismiss="modal"
+                                                                                                           href="#">
+                                                                                                            <button class="btn btn-sm btn-primary login-submit-cs"
+                                                                                                                    type="button">
+                                                                                                                Cancel
+                                                                                                            </button>
+                                                                                                        </a>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </form>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--END Single pro tab review Start-->
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--END Delete Model-->
+
+    </div>
+</div>
+</div>
+</div>
+<!--END Single pro tab review Start-->
+<div class="row">
+    <center>
+        <form name="bulk_action_form" action="/bidBond/allBidBonds"
+              method="GET">
+            <!-- <div style="height:580px; overflow:auto;"> -->
+            <table id="table" class="table table-striped table-bordered"
+                   style="width: 100%;">
+                <thead>
+                <tr>
+                    <td colspan="3">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <h4 id="topic" style="color: #337ab7;">
+                                <br>Bid Bond Documents
+                            </h4>
+                        </div>
+                    </td>
+                </tr>
+                </thead>
+            </table>
+            <br/>
+
+            <c:forEach var="bid" items="${list}">
+
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"
+                     style="padding-top: 1%;">
+                    <c:if test="${bid.remain>'50'}">
+
+                        <button type="button" class="btn btn-success"
+                                style="height: 150px; width: 300px; font-size: medium;"
+                                data-toggle="modal" data-target="#modalForm"
+                                onclick="myClick('${bid.id}','${bid.name}',
+                                        '${bid.amount}','${bid.effective}','${bid.expire}','${bid.status}');">
+                            <c:out value="${bid.name}"/>
+                            <br>
+                            <c:out value="${bid.amount}"/>
+                            <br>
+                            <c:out value="${bid.remain}"/>
+                            &nbsp; days remaining<br>
+                            <c:out value="${bid.status}"/>
+                        </button>
+                    </c:if>
+
+                    <c:if test="${bid.remain<'50' && bid.remain>'20'}">
+
+                        <button type="button" class="btn btn-warning"
+                                style="height: 150px; width: 300px; font-size: medium;"
+                                data-toggle="modal" data-target="#modalForm"
+                                onclick="myClick('${bid.id}','${bid.name}',
+                                        '${bid.amount}','${bid.effective}','${bid.expire}','${bid.status}');">
+                            <c:out value="${bid.name}"/>
+                            <br>
+                            <c:out value="${bid.amount}"/>
+                            <br>
+                            <c:out value="${bid.remain}"/>
+                            &nbsp; days remaining<br>
+                            <c:out value="${bid.status}"/>
+                        </button>
+                    </c:if>
+
+                    <c:if test="${bid.remain<'20' && bid.remain>'0'}">
+
+                        <button type="button" class="btn btn-danger"
+                                style="height: 150px; width: 300px; font-size: medium;"
+                                data-toggle="modal" data-target="#modalForm"
+                                onclick="myClick('${bid.id}','${bid.name}',
+                                        '${bid.amount}','${bid.effective}','${bid.expire}','${bid.status}');">
+                            <c:out value="${bid.name}"/>
+                            <br>
+                            <c:out value="${bid.amount}"/>
+                            <br>
+                            <c:out value="${bid.remain}"/>
+                            &nbsp; days remaining<br>
+                            <c:out value="${bid.status}"/>
+                        </button>
+                    </c:if>
+
+                    <c:if test="${bid.remain<'1'}">
+
+                        <button type="button" class="btn btn-danger"
+                                style="height: 150px; width: 300px; font-size: medium;"
+                                data-toggle="modal" data-target="#modalForm"
+                                onclick="myClick('${bid.id}','${bid.name}',
+                                        '${bid.amount}','${bid.effective}','${bid.expire}','${bid.status}');">
+                            <c:out value="${bid.name}"/>
+                            <br>
+                            <c:out value="${bid.amount}"/>
+                            <br>
+                            <c:out value="${bid.status}"/><br>
+                            <b>Expired.!</b>
+                        </button>
+                    </c:if>
+                </div>
+            </c:forEach>
+        </form>
+    </center>
+</div>
+<!-- Modal -->
+<div id="modalForm"
+     class="modal modal-edu-general modal-zoomInDown fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header header-color-modal bg-color-1">
+                <h4 class="modal-title">BidBond Document</h4>
+                <div class="modal-close-area modal-close-df">
+                    <a class="close" data-dismiss="modal" href="#"><i
+                            class="fa fa-close"></i></a>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div role="tabpanel">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#viewTab" aria-controls="viewTab" role="tab"
+                                                                  data-toggle="tab">View</a>
+                        </li>
+                        <li role="presentation"><a href="#editTab" aria-controls="editTab" role="tab" data-toggle="tab">Edit</a>
+                        </li>
+                        <li role="presentation"><a href="#deleteTab" aria-controls="deleteTab" role="tab"
+                                                   data-toggle="tab">Delete</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <br>
+                        <div role="tabpanel" class="tab-pane active" id="viewTab">
+                            <div class="modal-login-form-inner">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="basic-login-inner modal-basic-inner">
                                             <div class="form-group-inner">
                                                 <div class="row">
                                                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
@@ -2388,7 +2383,8 @@
                                                     </div>
                                                     <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                         <input type="text" class="form-control"
-                                                               placeholder="Enter Project Name" name="name" id="bidName"
+                                                               placeholder="Enter Project Name" name="name"
+                                                               id="bidName"
                                                                readonly/>
                                                     </div>
                                                 </div>
@@ -2401,7 +2397,8 @@
                                                     </div>
                                                     <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                         <input type="text" class="form-control"
-                                                               placeholder="Enter Amount" name="amount" id="bidAmount"
+                                                               placeholder="Enter Amount" name="amount"
+                                                               id="bidAmount"
                                                                readonly/>
                                                     </div>
                                                 </div>
@@ -2425,7 +2422,8 @@
                                                     </div>
                                                     <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                         <input type="date" class="form-control"
-                                                               placeholder="Format should be (yyyy-MM-dd)" name="expire"
+                                                               placeholder="Format should be (yyyy-MM-dd)"
+                                                               name="expire"
                                                                id="bidExpire" readonly/>
                                                     </div>
                                                 </div>
@@ -2439,14 +2437,7 @@
                                                         <input type="text" class="form-control" list="status"
                                                                placeholder="Select current status" name="status"
                                                                id="bidStatus" readonly/>
-                                                        <!--  <datalist id="status">
-                                                                                                        <option value="Details submitted to Bank">
-                                                                                                        <option value="Draft copy submitted to the Beneficiary">
-                                                                                                        <option value="Draft verified with Beneficiary">
-                                                                                                        <option value="Original submitted to the Beneficiary">
-                                                                                                        <option value="Invoice Submitted to the Employer">
-                                                                                                        <option value="Payment received">
-                                                                                                      </datalist> -->
+                                                        <!--  <datalist id="status">                                                          </datalist> -->
                                                     </div>
                                                 </div>
                                             </div>
@@ -2456,20 +2447,320 @@
                                                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"></div>
                                                     <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                         <div class="login-horizental">
-                                                            <!--   <button
-                                                                                                         class="btn btn-sm btn-primary login-submit-cs"
-                                                                                                         type="submit">Add Document</button>
-
-                                                                                                     <a data-dismiss="modal"
-                                                                                                         href="#"><button
-                                                                                                             class="btn btn-sm btn-primary login-submit-cs"
-                                                                                                             type="button">Cancel</button></a>  -->
-
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <%--                        View tab pane end--%>
+
+                        <%--                        Edit tab pane start--%>
+                        <br>
+                        <div role="tabpanel" class="tab-pane" id="editTab">
+                            <div class="modal-login-form-inner">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="basic-login-inner modal-basic-inner">
+                                            <form method="POST" action="/bidBond/editBidBond"
+                                                  class="projectAdd">
+                                                <div class="form-group-inner">
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                            <label class="login2">Document ID</label>
+                                                        </div>
+                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                            <input type="text" class="form-control" name="id"
+                                                                   id="bidId" readonly/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group-inner">
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                            <label class="login2">Project Name</label>
+                                                        </div>
+                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                            <input type="text" class="form-control"
+                                                                   placeholder="Enter Project Name" name="name"
+                                                                   id="bidName"
+                                                                   readonly/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group-inner">
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                            <label class="login2">Amount</label>
+                                                        </div>
+                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                            <input type="text" class="form-control"
+                                                                   placeholder="Enter Amount" name="amount"
+                                                                   id="bidAmount"
+                                                                   readonly/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group-inner">
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                            <label class="login2">Effective Date</label>
+                                                        </div>
+                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                            <input type="date" class="form-control"
+                                                                   placeholder="Format should be (yyyy-MM-dd)"
+                                                                   name="effective" id="bidEffective" readonly/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group-inner">
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                            <label class="login2">Expire Date</label>
+                                                        </div>
+                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                            <input type="date" class="form-control"
+                                                                   placeholder="Format should be (yyyy-MM-dd)"
+                                                                   name="expire"
+                                                                   id="bidExpire" readonly/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group-inner">
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                            <label class="login2">Status</label>
+                                                        </div>
+                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                            <input type="text" class="form-control" list="status"
+                                                                   placeholder="Select current status" name="status"
+                                                                   id="bidStatus" readonly/>
+                                                            <!--  <datalist id="status">                                                          </datalist> -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="login-btn-inner">
+
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"></div>
+                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                            <div class="login-horizental">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <%--                    Edit tab pane end--%>
+
+                        <%--                    Delete tab pane start--%>
+                        <br>
+                        <div role="tabpanel" class="tab-pane" id="deleteTab">
+                            <div class="modal-login-form-inner">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="basic-login-inner modal-basic-inner">
+
+                                            <form method="POST" action="/bidBond/deleteBidBond"
+                                                  class="projectAdd">
+
+                                                <div class="form-group-inner">
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                            <label class="login2">Document ID</label>
+                                                        </div>
+                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                            <input type="text" class="form-control" name="id"
+                                                                   readonly/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group-inner">
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                            <label class="login2">Project Name</label>
+                                                        </div>
+                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                            <input type="text" class="form-control"
+                                                                   placeholder="Enter Project Name" name="name"
+                                                                   readonly/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group-inner">
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                            <label class="login2">Amount</label>
+                                                        </div>
+                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                            <input type="text" class="form-control"
+                                                                   placeholder="Enter Amount" name="amount"
+                                                                   readonly/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group-inner">
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                            <label class="login2">Effective Date</label>
+                                                        </div>
+                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                            <input type="date" class="form-control"
+                                                                   placeholder="Format should be (yyyy-MM-dd)"
+                                                                   name="effective" readonly/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group-inner">
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                            <label class="login2">Expire Date</label>
+                                                        </div>
+                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                            <input type="date" class="form-control"
+                                                                   placeholder="Format should be (yyyy-MM-dd)"
+                                                                   name="expire" readonly/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group-inner">
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                            <label class="login2">Status</label>
+                                                        </div>
+                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                            <input type="text" class="form-control" list="status"
+                                                                   placeholder="Select current status" name="status"
+                                                                   readonly/>
+                                                            <!--  <datalist id="status">                                                          </datalist> -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="login-btn-inner">
+
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"></div>
+                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                            <div class="login-horizental">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="deleteTab">
+                            <div class="modal-login-form-inner">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="basic-login-inner modal-basic-inner">
+
+                                            <form method="POST" action="/bidBond/deleteBidBond"
+                                                  class="projectAdd">
+
+                                                <div class="form-group-inner">
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                            <label class="login2">Document ID</label>
+                                                        </div>
+                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                            <input type="text" class="form-control" name="id"
+                                                                   id="bidId" readonly/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group-inner">
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                            <label class="login2">Project Name</label>
+                                                        </div>
+                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                            <input type="text" class="form-control"
+                                                                   placeholder="Enter Project Name" name="name"
+                                                                   id="bidName"
+                                                                   readonly/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group-inner">
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                            <label class="login2">Amount</label>
+                                                        </div>
+                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                            <input type="text" class="form-control"
+                                                                   placeholder="Enter Amount" name="amount"
+                                                                   id="bidAmount"
+                                                                   readonly/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group-inner">
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                            <label class="login2">Effective Date</label>
+                                                        </div>
+                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                            <input type="date" class="form-control"
+                                                                   placeholder="Format should be (yyyy-MM-dd)"
+                                                                   name="effective" id="bidEffective" readonly/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group-inner">
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                            <label class="login2">Expire Date</label>
+                                                        </div>
+                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                            <input type="date" class="form-control"
+                                                                   placeholder="Format should be (yyyy-MM-dd)"
+                                                                   name="expire"
+                                                                   id="bidExpire" readonly/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group-inner">
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                            <label class="login2">Status</label>
+                                                        </div>
+                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                            <input type="text" class="form-control" list="status"
+                                                                   placeholder="Select current status" name="status"
+                                                                   id="bidStatus" readonly/>
+                                                            <!--  <datalist id="status">                                                          </datalist> -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="login-btn-inner">
+
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"></div>
+                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                            <div class="login-horizental">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -2477,2273 +2768,2272 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <script type="text/javascript">
-            function myClick(id, name, amount, effective, expire, status) {
-                document.getElementById('bidId').value = id;
-                document.getElementById('bidName').value = name;
-                document.getElementById('bidAmount').value = amount;
-                document.getElementById('bidEffective').value = effective;
-                document.getElementById('bidExpire').value = expire;
-                document.getElementById('bidStatus').value = status;
-            }
-        </script>
+            <script type="text/javascript">
+                function myClick(id, name, amount, effective, expire, status) {
+                    document.getElementById('bidId').value = id;
+                    document.getElementById('bidName').value = name;
+                    document.getElementById('bidAmount').value = amount;
+                    document.getElementById('bidEffective').value = effective;
+                    document.getElementById('bidExpire').value = expire;
+                    document.getElementById('bidStatus').value = status;
+                }
+            </script>
 
-        <script>
-            $(document).ready(function () {
-                var table = $('#table').DataTable({
-                    "pageLength": 10,
-                    //         "scrollY": 350,
-                    // "scrollX": true,
+            <script>
+                $(document).ready(function () {
+                    var table = $('#table').DataTable({
+                        "pageLength": 10,
+                        //         "scrollY": 350,
+                        // "scrollX": true,
 
-                    language: {
-                        search: "",
-                        searchPlaceholder: "Search..."
-                    },
-                    // lengthChange: true,
-                    aLengthMenu: [
-                        [10, 25, 50, 100, -1],
-                        [10, 25, 50, 100, "All"]
-                    ],
-                    iDisplayLength: -1
+                        language: {
+                            search: "",
+                            searchPlaceholder: "Search..."
+                        },
+                        // lengthChange: true,
+                        aLengthMenu: [
+                            [10, 25, 50, 100, -1],
+                            [10, 25, 50, 100, "All"]
+                        ],
+                        iDisplayLength: -1
+
+                    });
+
 
                 });
 
+                var table = document.getElementById('table');
 
-            });
+                for (var i = 2; i < table.rows.length; i++) {
+                    table.rows[i].onclick = function () {
+                        //rIndex = this.rowIndex;
+                        document.getElementById("V_V_ProjectName").value = this.cells[1].innerHTML;
+                        document.getElementById("V_V_ProjectCode").value = this.cells[0].innerHTML;
+                        //  document.getElementById("V_V_MainLocation").value = this.cells[2].innerHTML;
+                        document.getElementById("V_V_Description").value = this.cells[2].innerHTML;
+                        document.getElementById("V_E_ProjectName").value = this.cells[1].innerHTML;
+                        document.getElementById("V_E_H_ProjectName").value = this.cells[1].innerHTML;
+                        document.getElementById("V_E_ProjectCode").value = this.cells[0].innerHTML;
+                        document.getElementById("V_E_H_ProjectCode").value = this.cells[0].innerHTML;
+                        //  document.getElementById("V_E_MainLocation").value = this.cells[2].innerHTML;
+                        document.getElementById("V_E_Description").value = this.cells[2].innerHTML;
+                        document.getElementById("V_D_ProjectName").value = this.cells[1].innerHTML;
+                        document.getElementById("V_D_H_ProjectName").value = this.cells[1].innerHTML;
+                        document.getElementById("V_D_ProjectCode").value = this.cells[0].innerHTML;
+                        //  document.getElementById("V_D_MainLocation").value = this.cells[2].innerHTML;
+                        document.getElementById("V_D_Description").value = this.cells[2].innerHTML;
 
-            var table = document.getElementById('table');
+                        document.getElementById("E_V_ProjectName").value = this.cells[1].innerHTML;
+                        document.getElementById("E_V_ProjectCode").value = this.cells[0].innerHTML;
+                        //  document.getElementById("E_V_MainLocation").value = this.cells[2].innerHTML;
+                        document.getElementById("E_V_Description").value = this.cells[2].innerHTML;
+                        document.getElementById("E_E_ProjectName").value = this.cells[1].innerHTML;
+                        document.getElementById("E_E_H_ProjectName").value = this.cells[1].innerHTML;
+                        document.getElementById("E_E_ProjectCode").value = this.cells[0].innerHTML;
+                        document.getElementById("E_E_H_ProjectCode").value = this.cells[0].innerHTML;
+                        //  document.getElementById("E_E_MainLocation").value = this.cells[2].innerHTML;
+                        document.getElementById("E_E_Description").value = this.cells[2].innerHTML;
+                        document.getElementById("E_D_ProjectName").value = this.cells[1].innerHTML;
+                        document.getElementById("E_D_H_ProjectName").value = this.cells[1].innerHTML;
+                        document.getElementById("E_D_ProjectCode").value = this.cells[0].innerHTML;
+                        //  document.getElementById("E_D_MainLocation").value = this.cells[2].innerHTML;
+                        document.getElementById("E_D_Description").value = this.cells[2].innerHTML;
 
-            for (var i = 2; i < table.rows.length; i++) {
-                table.rows[i].onclick = function () {
-                    //rIndex = this.rowIndex;
-                    document.getElementById("V_V_ProjectName").value = this.cells[1].innerHTML;
-                    document.getElementById("V_V_ProjectCode").value = this.cells[0].innerHTML;
-                    //  document.getElementById("V_V_MainLocation").value = this.cells[2].innerHTML;
-                    document.getElementById("V_V_Description").value = this.cells[2].innerHTML;
-                    document.getElementById("V_E_ProjectName").value = this.cells[1].innerHTML;
-                    document.getElementById("V_E_H_ProjectName").value = this.cells[1].innerHTML;
-                    document.getElementById("V_E_ProjectCode").value = this.cells[0].innerHTML;
-                    document.getElementById("V_E_H_ProjectCode").value = this.cells[0].innerHTML;
-                    //  document.getElementById("V_E_MainLocation").value = this.cells[2].innerHTML;
-                    document.getElementById("V_E_Description").value = this.cells[2].innerHTML;
-                    document.getElementById("V_D_ProjectName").value = this.cells[1].innerHTML;
-                    document.getElementById("V_D_H_ProjectName").value = this.cells[1].innerHTML;
-                    document.getElementById("V_D_ProjectCode").value = this.cells[0].innerHTML;
-                    //  document.getElementById("V_D_MainLocation").value = this.cells[2].innerHTML;
-                    document.getElementById("V_D_Description").value = this.cells[2].innerHTML;
+                        document.getElementById("D_V_ProjectName").value = this.cells[1].innerHTML;
+                        document.getElementById("D_V_ProjectCode").value = this.cells[0].innerHTML;
+                        //  document.getElementById("D_V_MainLocation").value = this.cells[2].innerHTML;
+                        document.getElementById("D_V_Description").value = this.cells[2].innerHTML;
+                        document.getElementById("D_E_ProjectName").value = this.cells[1].innerHTML;
+                        document.getElementById("D_E_H_ProjectName").value = this.cells[1].innerHTML;
+                        document.getElementById("D_E_ProjectCode").value = this.cells[0].innerHTML;
+                        document.getElementById("D_E_H_ProjectCode").value = this.cells[0].innerHTML;
+                        //  document.getElementById("D_E_MainLocation").value = this.cells[2].innerHTML;
+                        document.getElementById("D_E_Description").value = this.cells[2].innerHTML;
+                        document.getElementById("D_D_ProjectName").value = this.cells[1].innerHTML;
+                        document.getElementById("D_D_H_ProjectName").value = this.cells[1].innerHTML;
+                        document.getElementById("D_D_ProjectCode").value = this.cells[0].innerHTML;
+                        //  document.getElementById("D_D_MainLocation").value = this.cells[2].innerHTML;
+                        document.getElementById("D_D_Description").value = this.cells[2].innerHTML;
 
-                    document.getElementById("E_V_ProjectName").value = this.cells[1].innerHTML;
-                    document.getElementById("E_V_ProjectCode").value = this.cells[0].innerHTML;
-                    //  document.getElementById("E_V_MainLocation").value = this.cells[2].innerHTML;
-                    document.getElementById("E_V_Description").value = this.cells[2].innerHTML;
-                    document.getElementById("E_E_ProjectName").value = this.cells[1].innerHTML;
-                    document.getElementById("E_E_H_ProjectName").value = this.cells[1].innerHTML;
-                    document.getElementById("E_E_ProjectCode").value = this.cells[0].innerHTML;
-                    document.getElementById("E_E_H_ProjectCode").value = this.cells[0].innerHTML;
-                    //  document.getElementById("E_E_MainLocation").value = this.cells[2].innerHTML;
-                    document.getElementById("E_E_Description").value = this.cells[2].innerHTML;
-                    document.getElementById("E_D_ProjectName").value = this.cells[1].innerHTML;
-                    document.getElementById("E_D_H_ProjectName").value = this.cells[1].innerHTML;
-                    document.getElementById("E_D_ProjectCode").value = this.cells[0].innerHTML;
-                    //  document.getElementById("E_D_MainLocation").value = this.cells[2].innerHTML;
-                    document.getElementById("E_D_Description").value = this.cells[2].innerHTML;
+                        document.getElementById("L_ProjectName").value = this.cells[1].innerHTML;
 
-                    document.getElementById("D_V_ProjectName").value = this.cells[1].innerHTML;
-                    document.getElementById("D_V_ProjectCode").value = this.cells[0].innerHTML;
-                    //  document.getElementById("D_V_MainLocation").value = this.cells[2].innerHTML;
-                    document.getElementById("D_V_Description").value = this.cells[2].innerHTML;
-                    document.getElementById("D_E_ProjectName").value = this.cells[1].innerHTML;
-                    document.getElementById("D_E_H_ProjectName").value = this.cells[1].innerHTML;
-                    document.getElementById("D_E_ProjectCode").value = this.cells[0].innerHTML;
-                    document.getElementById("D_E_H_ProjectCode").value = this.cells[0].innerHTML;
-                    //  document.getElementById("D_E_MainLocation").value = this.cells[2].innerHTML;
-                    document.getElementById("D_E_Description").value = this.cells[2].innerHTML;
-                    document.getElementById("D_D_ProjectName").value = this.cells[1].innerHTML;
-                    document.getElementById("D_D_H_ProjectName").value = this.cells[1].innerHTML;
-                    document.getElementById("D_D_ProjectCode").value = this.cells[0].innerHTML;
-                    //  document.getElementById("D_D_MainLocation").value = this.cells[2].innerHTML;
-                    document.getElementById("D_D_Description").value = this.cells[2].innerHTML;
+                    };
+                }
+            </script>
 
-                    document.getElementById("L_ProjectName").value = this.cells[1].innerHTML;
+            <!-- Static Table End -->
 
-                };
-            }
-        </script>
+            <!-- page footer -->
+            <div class="footer-copyright-area">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="footer-copy-right">
+                                <div class="col-lg-5 col-md-6 col-sm-6 col-xs-6">
+                                    <p>NEM Constructions (Pvt) Ltd&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                                </div>
 
-        <!-- Static Table End -->
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                    <p>Powered by NEM-ERP Engineering & Research Unit</p>
+                                </div>
 
-        <!-- page footer -->
-        <div class="footer-copyright-area">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div class="footer-copy-right">
-                            <div class="col-lg-5 col-md-6 col-sm-6 col-xs-6">
-                                <p>NEM Constructions (Pvt) Ltd&nbsp;&nbsp;&nbsp;&nbsp;</p>
                             </div>
-
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                <p>Powered by NEM-ERP Engineering & Research Unit</p>
-                            </div>
-
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
 
-        <!-- jquery
-                ============================================ -->
-        <script type="text/javascript" src="../js/vendor/jquery-1.12.4.min.js">
-        </script>
-        <!-- bootstrap JS
-                ============================================ -->
-        <script type="text/javascript" src="../js/bootstrap.min.js"></script>
-        <!-- wow JS
-                ============================================ -->
-        <script type="text/javascript" src="../js/wow.min.js"></script>
-        <!-- price-slider JS
-                ============================================ -->
+            <!-- jquery
+                            ============================================ -->
+            <script type="text/javascript" src="../js/vendor/jquery-1.12.4.min.js">
+            </script>
+            <!-- bootstrap JS
+                            ============================================ -->
+            <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+            <!-- wow JS
+                            ============================================ -->
+            <script type="text/javascript" src="../js/wow.min.js"></script>
+            <!-- price-slider JS
+                            ============================================ -->
 
-        <!-- meanmenu JS
-                ============================================ -->
-        <script type="text/javascript" src="../js/jquery.meanmenu.js"></script>
-        <!-- owl.carousel JS
-                ============================================ -->
+            <!-- meanmenu JS
+                            ============================================ -->
+            <script type="text/javascript" src="../js/jquery.meanmenu.js"></script>
+            <!-- owl.carousel JS
+                            ============================================ -->
 
-        <!-- sticky JS
-                ============================================ -->
-        <script type="text/javascript" src="../js/jquery.sticky.js"></script>
-        <!-- scrollUp JS
-                ============================================ -->
-        <script type="text/javascript" src="../js/jquery.scrollUp.min.js"></script>
-        <!-- mCustomScrollbar JS
-                ============================================ -->
-        <script type="text/javascript"
-                src="/js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
-        <script type="text/javascript"
-                src="../js/scrollbar/mCustomScrollbar-active.js">
-        </script>
-        <!-- metisMenu JS
-                ============================================ -->
-        <script type="text/javascript" src="../js/metisMenu/metisMenu.min.js"></script>
-        <script type="text/javascript"
-                src="../js/metisMenu/metisMenu-active.js">
-        </script>
-        <!-- data table JS
-                ============================================ -->
-        <script type="text/javascript"
-                src="../js/data-table/bootstrap-table.js">
-        </script>
+            <!-- sticky JS
+                            ============================================ -->
+            <script type="text/javascript" src="../js/jquery.sticky.js"></script>
+            <!-- scrollUp JS
+                            ============================================ -->
+            <script type="text/javascript" src="../js/jquery.scrollUp.min.js"></script>
+            <!-- mCustomScrollbar JS
+                            ============================================ -->
+            <script type="text/javascript"
+                    src="/js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+            <script type="text/javascript"
+                    src="../js/scrollbar/mCustomScrollbar-active.js">
+            </script>
+            <!-- metisMenu JS
+                            ============================================ -->
+            <script type="text/javascript" src="../js/metisMenu/metisMenu.min.js"></script>
+            <script type="text/javascript"
+                    src="../js/metisMenu/metisMenu-active.js">
+            </script>
+            <!-- data table JS
+                            ============================================ -->
+            <script type="text/javascript"
+                    src="../js/data-table/bootstrap-table.js">
+            </script>
 
-        <script type="text/javascript"
-                src="../js/data-table/data-table-active.js">
-        </script>
-
-
-        <script type="text/javascript"
-                src="../js/data-table/bootstrap-table-resizable.js">
-        </script>
-        <script type="text/javascript"
-                src="../js/data-table/colResizable-1.5.source.js">
-        </script>
-
-        <!--  editable JS
-                ============================================ -->
+            <script type="text/javascript"
+                    src="../js/data-table/data-table-active.js">
+            </script>
 
 
-        <!-- Chart JS
-                ============================================ -->
+            <script type="text/javascript"
+                    src="../js/data-table/bootstrap-table-resizable.js">
+            </script>
+            <script type="text/javascript"
+                    src="../js/data-table/colResizable-1.5.source.js">
+            </script>
 
-        <!-- tab JS
-                ============================================ -->
-        <script type="text/javascript" src="../js/tab.js"></script>
-        <!-- plugins JS
-                ============================================ -->
-        <script type="text/javascript" src="../js/plugins.js"></script>
-        <!-- main JS
-                ============================================ -->
-        <script type="text/javascript" src="../js/main.js"></script>
+            <!--  editable JS
+                            ============================================ -->
 
 
-        <!--  Excel JS
-                ============================================ -->
-        <script type="text/javascript"
-                src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
-        <script type="text/javascript"
-                src="https://code.jquery.com/jquery-3.3.1.js"></script>
-        <script type="text/javascript"
-                src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
-        <script type="text/javascript"
-                src="https://cdn.datatables.net/buttons/1.5.4/js/dataTables.buttons.min.js"></script>
-        <script type="text/javascript"
-                src="https://cdn.datatables.net/buttons/1.5.4/js/buttons.flash.min.js"></script>
+            <!-- Chart JS
+                            ============================================ -->
+
+            <!-- tab JS
+                            ============================================ -->
+            <script type="text/javascript" src="../js/tab.js"></script>
+            <!-- plugins JS
+                            ============================================ -->
+            <script type="text/javascript" src="../js/plugins.js"></script>
+            <!-- main JS
+                            ============================================ -->
+            <script type="text/javascript" src="../js/main.js"></script>
 
 
-        <!-- form validate JS
-                ============================================ -->
-        <script src="../js/form-validation/jquery.form.min.js"></script>
-        <script src="../js/form-validation/jquery.validate.min.js"></script>
-        <script src="../js/form-validation/form-active.js"></script>
+            <!--  Excel JS
+                            ============================================ -->
+            <script type="text/javascript"
+                    src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+            <script type="text/javascript"
+                    src="https://code.jquery.com/jquery-3.3.1.js"></script>
+            <script type="text/javascript"
+                    src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+            <script type="text/javascript"
+                    src="https://cdn.datatables.net/buttons/1.5.4/js/dataTables.buttons.min.js"></script>
+            <script type="text/javascript"
+                    src="https://cdn.datatables.net/buttons/1.5.4/js/buttons.flash.min.js"></script>
 
 
-        <!-- Excel Sheet Generator -->
-
-        <script type="text/javascript">
-            function exportExcel(topic) {
-
-
-                //getting values of current time for generating the file name
-                var dt = new Date();
-                var day = dt.getDate();
-                var month = dt.getMonth() + 1;
-                var year = dt.getFullYear();
-                var tableName = topic;
-
-                var postfix = day + "." + month + "." + year;
-                //creating a temporary HTML link element (they support setting file names)
-                var a = document.createElement('a');
-                //getting data from our div that contains the HTML table
-                var data_type = 'data:application/vnd.ms-excel;charset=utf-8';
-
-                var table_html = $('#table')[0].outerHTML;
-                //    table_html = table_html.replace(/ /g, '%20');
-                table_html = table_html.replace(/<tfoot[\s\S.]*tfoot>/gmi, '');
-
-                var css_html =
-                    '<style>td {border: 0.5pt solid #c0c0c0} .tRight { text-align:right} .tLeft { text-align:left} </style>';
-                //    css_html = css_html.replace(/ /g, '%20');
-
-                // a.href = data_type + ',' + encodeURIComponent('<html><head>' + css_html + '</' + 'head><body>' + table_html +
-                //     '</body></html>');
-
-                var xData = new Blob(['<html><head>' + css_html + '</' + 'head><body>' + table_html + '</body></html>'], {type: 'text/csv'});
-                var xUrl = URL.createObjectURL(xData);
-                a.href = xUrl;
-
-                //setting the file name
-                a.download = tableName + '  ' + postfix + '.xls';
-                //triggering the function
-                document.body.appendChild(a);
-                a.click();
-                //just in case, prevent default behaviour
-                e.preventDefault();
-            }
-        </script>
-
-        <!-- End Excel Sheet Generator -->
+            <!-- form validate JS
+                            ============================================ -->
+            <script src="../js/form-validation/jquery.form.min.js"></script>
+            <script src="../js/form-validation/jquery.validate.min.js"></script>
+            <script src="../js/form-validation/form-active.js"></script>
 
 
-        <!-- Username validation -->
-        <!-- <script type="text/javascript">
-        $(document).ready(function() {
-            $('#username1').change(function() {
-                var username1 = $('#username1').val();
-                if (username1 != '') {
-                    $.ajax({
-                        url: "checkUsername",
-                        method: "POST",
-                        data: {
-                            username1: username1
-                        },
-                        success: function(data) {
-                            $('#username_result').html(data);
+            <!-- Excel Sheet Generator -->
+
+            <script type="text/javascript">
+                function exportExcel(topic) {
+
+
+                    //getting values of current time for generating the file name
+                    var dt = new Date();
+                    var day = dt.getDate();
+                    var month = dt.getMonth() + 1;
+                    var year = dt.getFullYear();
+                    var tableName = topic;
+
+                    var postfix = day + "." + month + "." + year;
+                    //creating a temporary HTML link element (they support setting file names)
+                    var a = document.createElement('a');
+                    //getting data from our div that contains the HTML table
+                    var data_type = 'data:application/vnd.ms-excel;charset=utf-8';
+
+                    var table_html = $('#table')[0].outerHTML;
+                    //    table_html = table_html.replace(/ /g, '%20');
+                    table_html = table_html.replace(/<tfoot[\s\S.]*tfoot>/gmi, '');
+
+                    var css_html =
+                        '<style>td {border: 0.5pt solid #c0c0c0} .tRight { text-align:right} .tLeft { text-align:left} </style>';
+                    //    css_html = css_html.replace(/ /g, '%20');
+
+                    // a.href = data_type + ',' + encodeURIComponent('<html><head>' + css_html + '</' + 'head><body>' + table_html +
+                    //     '</body></html>');
+
+                    var xData = new Blob(['<html><head>' + css_html + '</' + 'head><body>' + table_html + '</body></html>'], {type: 'text/csv'});
+                    var xUrl = URL.createObjectURL(xData);
+                    a.href = xUrl;
+
+                    //setting the file name
+                    a.download = tableName + '  ' + postfix + '.xls';
+                    //triggering the function
+                    document.body.appendChild(a);
+                    a.click();
+                    //just in case, prevent default behaviour
+                    e.preventDefault();
+                }
+            </script>
+
+            <!-- End Excel Sheet Generator -->
+
+
+            <!-- Username validation -->
+            <!-- <script type="text/javascript">
+                    $(document).ready(function() {
+                        $('#username1').change(function() {
+                            var username1 = $('#username1').val();
+                            if (username1 != '') {
+                                $.ajax({
+                                    url: "checkUsername",
+                                    method: "POST",
+                                    data: {
+                                        username1: username1
+                                    },
+                                    success: function(data) {
+                                        $('#username_result').html(data);
+                                    }
+                                });
+                            }
+                        });
+                    });
+                    </script> -->
+
+
+            <!-- td.AAA { margin-bottom: 50px;} -->
+
+
+            <!-- QR Code save as Doc -->
+            <script>
+                function Export2Doc(element, filename = '') {
+
+                    var css_html =
+                        '<style>table .Qrno {margin-bottom: 150px;} table .Qrimg {margin-top: 150px;}  </style>';
+
+                    var preHtml =
+                        "<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'><head>" + css_html + "<meta charset='utf-8'><title>Export HTML To Doc</title></head><body><div class='col-lg-2 col-md-2 col-sm-2 col-xs-2'>";
+                    var postHtml = "</div></body></html>";
+                    var html = preHtml + document.getElementById(element).innerHTML + postHtml;
+
+                    var blob = new Blob(['\ufeff', html], {
+                        type: 'application/msword'
+                    });
+
+                    // Specify link url
+                    var url = 'data:application/vnd.ms-word;charset=utf-8,' + encodeURIComponent(html);
+
+                    // Specify file name
+                    filename = filename ? filename + '.doc' : 'document.doc';
+
+                    // Create download link element
+                    var downloadLink = document.createElement("a");
+
+                    document.body.appendChild(downloadLink);
+
+                    if (navigator.msSaveOrOpenBlob) {
+                        navigator.msSaveOrOpenBlob(blob, filename);
+                    } else {
+                        // Create a link to the file
+                        downloadLink.href = url;
+
+                        // Setting the file name
+                        downloadLink.download = filename;
+
+                        //triggering the function
+                        downloadLink.click();
+                    }
+
+                    document.body.removeChild(downloadLink);
+                }
+            </script>
+            <!--END QR Code save as Doc -->
+
+            <!-- Password length validation -->
+            <script>
+                var minLength = 5;
+                $(document).ready(function () {
+                    $('#password1').on('keydown keyup change', function () {
+                        var char = $(this).val();
+                        var charLength = $(this).val().length;
+                        if (charLength < minLength) {
+                            $('#pwd').css('color', 'red');
+                            $('#pwd').text('Length is short, minimum ' + minLength + ' required.');
+                        } else {
+                            $('#pwd').css('color', 'green');
+                            $('#pwd').text('Length is valid');
                         }
                     });
-                }
-            });
-        });
-        </script> -->
+                });
+            </Script>
 
 
-        <!-- td.AAA { margin-bottom: 50px;} -->
+            <!-- Username length validation -->
+            <script>
+                var minLength = 5;
+                $(document).ready(function () {
+                    $('#username1').on('keydown keyup change', function () {
+                        var char = $(this).val();
+                        var charLength = $(this).val().length;
+                        if (charLength < minLength) {
+                            $('#uname').css('color', 'red');
+                            $('#uname').text('Length is short, minimum ' + minLength + ' required.');
+                        } else {
+                            $('#uname').css('color', 'green');
+                            $('#uname').text('Length is valid');
+                        }
+                    });
+                });
+            </Script>
+
+            <!-- Contact number length validation -->
 
 
-        <!-- QR Code save as Doc -->
-        <script>
-            function Export2Doc(element, filename = '') {
+            <!-- Username validation -->
 
-                var css_html =
-                    '<style>table .Qrno {margin-bottom: 150px;} table .Qrimg {margin-top: 150px;}  </style>';
+            <script>
+                var minLength = 5;
+                $(document).ready(function () {
+                    $('#password1').on('keydown keyup change', function () {
+                        var char = $(this).val();
+                        var charLength = $(this).val().length;
+                        if (charLength < minLength) {
+                            $('#submit').attr('disabled', true);
+                            $('#pwd').css('color', 'red');
+                            $('#pwd').text('Length is short, minimum ' + minLength + ' required.');
+                        } else {
+                            $('#submit').removeAttr('disabled');
+                            $('#pwd').css('color', 'green');
+                            $('#pwd').text('Length is valid');
+                        }
+                    });
+                });
+            </Script>
 
-                var preHtml =
-                    "<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'><head>" + css_html + "<meta charset='utf-8'><title>Export HTML To Doc</title></head><body><div class='col-lg-2 col-md-2 col-sm-2 col-xs-2'>";
-                var postHtml = "</div></body></html>";
-                var html = preHtml + document.getElementById(element).innerHTML + postHtml;
 
-                var blob = new Blob(['\ufeff', html], {
-                    type: 'application/msword'
+            <!-- Username length validation -->
+            <script>
+                var minLength = 5;
+                $(document).ready(function () {
+                    $('#username1').on('keydown keyup change', function () {
+                        var char = $(this).val();
+                        var charLength = $(this).val().length;
+                        if (charLength < minLength) {
+                            $('#submit').attr('disabled', true);
+                            $('#uname').css('color', 'red');
+                            $('#uname').text('Length is short, minimum ' + minLength + ' required.');
+                        } else {
+                            $('#submit').removeAttr('disabled');
+                            $('#uname').css('color', 'green');
+                            $('#uname').text('Length is valid');
+                        }
+                    });
                 });
 
-                // Specify link url
-                var url = 'data:application/vnd.ms-word;charset=utf-8,' + encodeURIComponent(html);
+                var $input = $('input:text'),
+                    $register = $('#submit');
 
-                // Specify file name
-                filename = filename ? filename + '.doc' : 'document.doc';
 
-                // Create download link element
-                var downloadLink = document.createElement("a");
-
-                document.body.appendChild(downloadLink);
-
-                if (navigator.msSaveOrOpenBlob) {
-                    navigator.msSaveOrOpenBlob(blob, filename);
-                } else {
-                    // Create a link to the file
-                    downloadLink.href = url;
-
-                    // Setting the file name
-                    downloadLink.download = filename;
-
-                    //triggering the function
-                    downloadLink.click();
-                }
-
-                document.body.removeChild(downloadLink);
-            }
-        </script>
-        <!--END QR Code save as Doc -->
-
-        <!-- Password length validation -->
-        <script>
-            var minLength = 5;
-            $(document).ready(function () {
-                $('#password1').on('keydown keyup change', function () {
-                    var char = $(this).val();
-                    var charLength = $(this).val().length;
-                    if (charLength < minLength) {
-                        $('#pwd').css('color', 'red');
-                        $('#pwd').text('Length is short, minimum ' + minLength + ' required.');
-                    } else {
-                        $('#pwd').css('color', 'green');
-                        $('#pwd').text('Length is valid');
-                    }
+                $register.attr('disabled', true);
+                $input.keyup(function () {
+                    var trigger = false;
+                    $input.each(function () {
+                        if (!$(this).val()) {
+                            trigger = true;
+                        }
+                    });
+                    trigger ? $register.attr('disabled', true) : $register.removeAttr('disabled');
                 });
-            });
-        </Script>
+            </script>
+            <!-- End Submit button disable function-->
+            <script>
 
+            </script>
 
-        <!-- Username length validation -->
-        <script>
-            var minLength = 5;
-            $(document).ready(function () {
-                $('#username1').on('keydown keyup change', function () {
-                    var char = $(this).val();
-                    var charLength = $(this).val().length;
-                    if (charLength < minLength) {
-                        $('#uname').css('color', 'red');
-                        $('#uname').text('Length is short, minimum ' + minLength + ' required.');
-                    } else {
-                        $('#uname').css('color', 'green');
-                        $('#uname').text('Length is valid');
-                    }
+            <!-- Auto filling permission -->
+            <script>
+                $(document).ready(function () {
+                    $('#uname1').change(function () {
+                        var uname1 = $('#uname1').val();
+                        if (uname1 != '') {
+                            $.ajax({
+                                url: "autofill",
+                                method: "POST",
+                                data: {
+                                    uname1: uname1
+                                },
+                                success: function (data) {
+                                    $('#position').html(data);
+
+                                }
+                            })
+                        }
+                    })
                 });
-            });
-        </Script>
+            </script>
 
-        <!-- Contact number length validation -->
+            <script>
+                $(document).ready(function () {
+                    $('#projectcode').change(function () {
+                        var projectcode = $('#projectcode').val();
+                        if (projectcode != '') {
+                            $.ajax({
+                                url: "autofillProjectcode",
+                                method: "POST",
+                                data: {
+                                    projectcode: projectcode
+                                },
+                                success: function (data) {
+                                    $('#projectname').html(data);
 
-
-        <!-- Username validation -->
-
-        <script>
-            var minLength = 5;
-            $(document).ready(function () {
-                $('#password1').on('keydown keyup change', function () {
-                    var char = $(this).val();
-                    var charLength = $(this).val().length;
-                    if (charLength < minLength) {
-                        $('#submit').attr('disabled', true);
-                        $('#pwd').css('color', 'red');
-                        $('#pwd').text('Length is short, minimum ' + minLength + ' required.');
-                    } else {
-                        $('#submit').removeAttr('disabled');
-                        $('#pwd').css('color', 'green');
-                        $('#pwd').text('Length is valid');
-                    }
+                                }
+                            })
+                        }
+                    })
                 });
-            });
-        </Script>
+            </script>
 
+            <!--END Auto filling permission -->
 
-        <!-- Username length validation -->
-        <script>
-            var minLength = 5;
-            $(document).ready(function () {
-                $('#username1').on('keydown keyup change', function () {
-                    var char = $(this).val();
-                    var charLength = $(this).val().length;
-                    if (charLength < minLength) {
-                        $('#submit').attr('disabled', true);
-                        $('#uname').css('color', 'red');
-                        $('#uname').text('Length is short, minimum ' + minLength + ' required.');
-                    } else {
-                        $('#submit').removeAttr('disabled');
-                        $('#uname').css('color', 'green');
-                        $('#uname').text('Length is valid');
-                    }
+            <!-- Auto filling assign -->
+            <script>
+                $(document).ready(function () {
+                    $('#name1').change(function () {
+                        var name1 = $('#name1').val();
+                        if (name1 != '') {
+                            $.ajax({
+                                url: "autofillAssign",
+                                method: "POST",
+                                data: {
+                                    name1: name1
+                                },
+                                success: function (data) {
+                                    $('#uname').html(data);
+
+                                }
+                            })
+                        }
+                    })
                 });
-            });
+            </script>
+            <!--END Auto filling assign -->
 
-            var $input = $('input:text'),
-                $register = $('#submit');
+            <!-- Auto filling QR -->
+            <script>
+                $(document).ready(function () {
+                    $('#VehicleNo').change(function () {
+                        var VehicleNo = $('#VehicleNo').val();
+                        if (VehicleNo != '') {
+                            $.ajax({
+                                url: "autofillDescription",
+                                method: "POST",
+                                data: {
+                                    VehicleNo: VehicleNo
+                                },
+                                success: function (data) {
+                                    $('#Description').html(data);
 
-
-            $register.attr('disabled', true);
-            $input.keyup(function () {
-                var trigger = false;
-                $input.each(function () {
-                    if (!$(this).val()) {
-                        trigger = true;
-                    }
+                                }
+                            })
+                        }
+                    })
                 });
-                trigger ? $register.attr('disabled', true) : $register.removeAttr('disabled');
-            });
-        </script>
-        <!-- End Submit button disable function-->
-        <script>
 
-        </script>
+                $(document).ready(function () {
+                    $('#VehicleNo').change(function () {
+                        var VehicleNo = $('#VehicleNo').val();
+                        if (VehicleNo != '') {
+                            $.ajax({
+                                url: "autofillUOM",
+                                method: "POST",
+                                data: {
+                                    VehicleNo: VehicleNo
+                                },
+                                success: function (data) {
+                                    $('#UOM').html(data);
 
-        <!-- Auto filling permission -->
-        <script>
-            $(document).ready(function () {
-                $('#uname1').change(function () {
-                    var uname1 = $('#uname1').val();
-                    if (uname1 != '') {
-                        $.ajax({
-                            url: "autofill",
-                            method: "POST",
-                            data: {
-                                uname1: uname1
-                            },
-                            success: function (data) {
-                                $('#position').html(data);
+                                }
+                            })
+                        }
+                    })
+                });
 
-                            }
-                        })
-                    }
-                })
-            });
-        </script>
+                $(document).ready(function () {
+                    $('#VehicleNo').change(function () {
+                        var VehicleNo = $('#VehicleNo').val();
+                        if (VehicleNo != '') {
+                            $.ajax({
+                                url: "autofillType",
+                                method: "POST",
+                                data: {
+                                    VehicleNo: VehicleNo
+                                },
+                                success: function (data) {
+                                    $('#Type').html(data);
 
-        <script>
-            $(document).ready(function () {
-                $('#projectcode').change(function () {
-                    var projectcode = $('#projectcode').val();
-                    if (projectcode != '') {
-                        $.ajax({
-                            url: "autofillProjectcode",
-                            method: "POST",
-                            data: {
-                                projectcode: projectcode
-                            },
-                            success: function (data) {
-                                $('#projectname').html(data);
+                                }
+                            })
+                        }
+                    })
+                });
 
-                            }
-                        })
-                    }
-                })
-            });
-        </script>
+                $(document).ready(function () {
+                    $('#VehicleNo').change(function () {
+                        var VehicleNo = $('#VehicleNo').val();
+                        if (VehicleNo != '') {
+                            $.ajax({
+                                url: "autofillCapacity",
+                                method: "POST",
+                                data: {
+                                    VehicleNo: VehicleNo
+                                },
+                                success: function (data) {
+                                    $('#Capacity').html(data);
 
-        <!--END Auto filling permission -->
-
-        <!-- Auto filling assign -->
-        <script>
-            $(document).ready(function () {
-                $('#name1').change(function () {
-                    var name1 = $('#name1').val();
-                    if (name1 != '') {
-                        $.ajax({
-                            url: "autofillAssign",
-                            method: "POST",
-                            data: {
-                                name1: name1
-                            },
-                            success: function (data) {
-                                $('#uname').html(data);
-
-                            }
-                        })
-                    }
-                })
-            });
-        </script>
-        <!--END Auto filling assign -->
-
-        <!-- Auto filling QR -->
-        <script>
-            $(document).ready(function () {
-                $('#VehicleNo').change(function () {
-                    var VehicleNo = $('#VehicleNo').val();
-                    if (VehicleNo != '') {
-                        $.ajax({
-                            url: "autofillDescription",
-                            method: "POST",
-                            data: {
-                                VehicleNo: VehicleNo
-                            },
-                            success: function (data) {
-                                $('#Description').html(data);
-
-                            }
-                        })
-                    }
-                })
-            });
-
-            $(document).ready(function () {
-                $('#VehicleNo').change(function () {
-                    var VehicleNo = $('#VehicleNo').val();
-                    if (VehicleNo != '') {
-                        $.ajax({
-                            url: "autofillUOM",
-                            method: "POST",
-                            data: {
-                                VehicleNo: VehicleNo
-                            },
-                            success: function (data) {
-                                $('#UOM').html(data);
-
-                            }
-                        })
-                    }
-                })
-            });
-
-            $(document).ready(function () {
-                $('#VehicleNo').change(function () {
-                    var VehicleNo = $('#VehicleNo').val();
-                    if (VehicleNo != '') {
-                        $.ajax({
-                            url: "autofillType",
-                            method: "POST",
-                            data: {
-                                VehicleNo: VehicleNo
-                            },
-                            success: function (data) {
-                                $('#Type').html(data);
-
-                            }
-                        })
-                    }
-                })
-            });
-
-            $(document).ready(function () {
-                $('#VehicleNo').change(function () {
-                    var VehicleNo = $('#VehicleNo').val();
-                    if (VehicleNo != '') {
-                        $.ajax({
-                            url: "autofillCapacity",
-                            method: "POST",
-                            data: {
-                                VehicleNo: VehicleNo
-                            },
-                            success: function (data) {
-                                $('#Capacity').html(data);
-
-                            }
-                        })
-                    }
-                })
-            });
+                                }
+                            })
+                        }
+                    })
+                });
 
 
-            // auto fill verification data
+                // auto fill verification data
 
-            $(document).ready(function () {
-                $('#ProjectCode').change(function () {
-                    var ProjectCode = $('#ProjectCode').val();
-                    if (ProjectCode != '') {
-                        $.ajax({
-                            url: "autofill_v_location",
-                            method: "POST",
-                            data: {
-                                ProjectCode: ProjectCode
-                            },
-                            success: function (data) {
-                                $('#Location').html(data);
+                $(document).ready(function () {
+                    $('#ProjectCode').change(function () {
+                        var ProjectCode = $('#ProjectCode').val();
+                        if (ProjectCode != '') {
+                            $.ajax({
+                                url: "autofill_v_location",
+                                method: "POST",
+                                data: {
+                                    ProjectCode: ProjectCode
+                                },
+                                success: function (data) {
+                                    $('#Location').html(data);
 
-                            }
-                        })
-                    }
-                })
-            });
-
-
-            $(document).ready(function () {
-                $('#VehicleNo').change(function () {
-                    var VehicleNo = $('#VehicleNo').val();
-                    if (VehicleNo != '') {
-                        $.ajax({
-                            url: "autofill_v_capacity",
-                            method: "POST",
-                            data: {
-                                VehicleNo: VehicleNo
-                            },
-                            success: function (data) {
-                                $('#Capacity').html(data);
-
-                            }
-                        })
-                    }
-                })
-            });
-            $(document).ready(function () {
-                $('#VehicleNo').change(function () {
-                    var VehicleNo = $('#VehicleNo').val();
-                    if (VehicleNo != '') {
-                        $.ajax({
-                            url: "autofill_v_type",
-                            method: "POST",
-                            data: {
-                                VehicleNo: VehicleNo
-                            },
-                            success: function (data) {
-                                $('#Type').html(data);
-
-                            }
-                        })
-                    }
-                })
-            });
+                                }
+                            })
+                        }
+                    })
+                });
 
 
-            $(document).ready(function () {
-                $('#VehicleNo').change(function () {
-                    var VehicleNo = $('#VehicleNo').val();
-                    if (VehicleNo != '') {
-                        $.ajax({
-                            url: "autofill_v_UOM",
-                            method: "POST",
-                            data: {
-                                VehicleNo: VehicleNo
-                            },
-                            success: function (data) {
-                                $('#UOM').html(data);
+                $(document).ready(function () {
+                    $('#VehicleNo').change(function () {
+                        var VehicleNo = $('#VehicleNo').val();
+                        if (VehicleNo != '') {
+                            $.ajax({
+                                url: "autofill_v_capacity",
+                                method: "POST",
+                                data: {
+                                    VehicleNo: VehicleNo
+                                },
+                                success: function (data) {
+                                    $('#Capacity').html(data);
 
-                            }
-                        })
-                    }
-                })
-            });
-        </script>
+                                }
+                            })
+                        }
+                    })
+                });
+                $(document).ready(function () {
+                    $('#VehicleNo').change(function () {
+                        var VehicleNo = $('#VehicleNo').val();
+                        if (VehicleNo != '') {
+                            $.ajax({
+                                url: "autofill_v_type",
+                                method: "POST",
+                                data: {
+                                    VehicleNo: VehicleNo
+                                },
+                                success: function (data) {
+                                    $('#Type').html(data);
 
-        <script>
-            function sortTable(n) {
-                var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-                table = document.getElementById("testTable");
-                switching = true;
-                //Set the sorting direction to ascending:
-                dir = "asc";
-                /*Make a loop that will continue until
-            no switching has been done:*/
-                while (switching) {
-                    //start by saying: no switching is done:
-                    switching = false;
-                    rows = table.rows;
-                    /*Loop through all table rows (except the
-                first, which contains table headers):*/
-                    for (i = 1; i < (rows.length - 1); i++) {
-                        //start by saying there should be no switching:
-                        shouldSwitch = false;
-                        /*Get the two elements you want to compare,
-                    one from current row and one from the next:*/
-                        x = rows[i].getElementsByTagName("TD")[n];
-                        y = rows[i + 1].getElementsByTagName("TD")[n];
-                        /*check if the two rows should switch place,
-                    based on the direction, asc or desc:*/
-                        if (dir == "asc") {
-                            if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-                                //if so, mark as a switch and break the loop:
-                                shouldSwitch = true;
-                                break;
-                            }
-                        } else if (dir == "desc") {
-                            if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-                                //if so, mark as a switch and break the loop:
-                                shouldSwitch = true;
-                                break;
+                                }
+                            })
+                        }
+                    })
+                });
+
+
+                $(document).ready(function () {
+                    $('#VehicleNo').change(function () {
+                        var VehicleNo = $('#VehicleNo').val();
+                        if (VehicleNo != '') {
+                            $.ajax({
+                                url: "autofill_v_UOM",
+                                method: "POST",
+                                data: {
+                                    VehicleNo: VehicleNo
+                                },
+                                success: function (data) {
+                                    $('#UOM').html(data);
+
+                                }
+                            })
+                        }
+                    })
+                });
+            </script>
+
+            <script>
+                function sortTable(n) {
+                    var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+                    table = document.getElementById("testTable");
+                    switching = true;
+                    //Set the sorting direction to ascending:
+                    dir = "asc";
+                    /*Make a loop that will continue until
+                        no switching has been done:*/
+                    while (switching) {
+                        //start by saying: no switching is done:
+                        switching = false;
+                        rows = table.rows;
+                        /*Loop through all table rows (except the
+                            first, which contains table headers):*/
+                        for (i = 1; i < (rows.length - 1); i++) {
+                            //start by saying there should be no switching:
+                            shouldSwitch = false;
+                            /*Get the two elements you want to compare,
+                                one from current row and one from the next:*/
+                            x = rows[i].getElementsByTagName("TD")[n];
+                            y = rows[i + 1].getElementsByTagName("TD")[n];
+                            /*check if the two rows should switch place,
+                                based on the direction, asc or desc:*/
+                            if (dir == "asc") {
+                                if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                                    //if so, mark as a switch and break the loop:
+                                    shouldSwitch = true;
+                                    break;
+                                }
+                            } else if (dir == "desc") {
+                                if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                                    //if so, mark as a switch and break the loop:
+                                    shouldSwitch = true;
+                                    break;
+                                }
                             }
                         }
-                    }
-                    if (shouldSwitch) {
-                        /*If a switch has been marked, make the switch
-                    and mark that a switch has been done:*/
-                        rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-                        switching = true;
-                        //Each time a switch is done, increase this count by 1:
-                        switchcount++;
-                    } else {
-                        /*If no switching has been done AND the direction is "asc",
-                    set the direction to "desc" and run the while loop again.*/
-                        if (switchcount == 0 && dir == "asc") {
-                            dir = "desc";
+                        if (shouldSwitch) {
+                            /*If a switch has been marked, make the switch
+                                and mark that a switch has been done:*/
+                            rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
                             switching = true;
+                            //Each time a switch is done, increase this count by 1:
+                            switchcount++;
+                        } else {
+                            /*If no switching has been done AND the direction is "asc",
+                                set the direction to "desc" and run the while loop again.*/
+                            if (switchcount == 0 && dir == "asc") {
+                                dir = "desc";
+                                switching = true;
+                            }
                         }
                     }
                 }
-            }
-        </script>
+            </script>
 
-        <!-- QR Print -->
-        <script>
-            $(function () {
-                var buttons = $('#printButton');
-                var printStyle = $('#print');
-                var color, style;
+            <!-- QR Print -->
+            <script>
+                $(function () {
+                    var buttons = $('#printButton');
+                    var printStyle = $('#print');
+                    var color, style;
 
-                buttons.click(function () {
-                    color = $(this).attr('class');
-                    style = 'p { color: ' + color + '};';
-                    printStyle.text(style);
-                    window.print();
+                    buttons.click(function () {
+                        color = $(this).attr('class');
+                        style = 'p { color: ' + color + '};';
+                        printStyle.text(style);
+                        window.print();
+                    });
                 });
-            });
-        </script>
-        <!-- END QR Print -->
-        <!-- form validation -->
-        <script>
-            (function ($) {
-                "use strict";
+            </script>
+            <!-- END QR Print -->
+            <!-- form validation -->
+            <script>
+                (function ($) {
+                    "use strict";
 
 
-                jQuery.validator.addMethod("noSpace", function (value, element) {
-                    return value.indexOf(" ") < 0 && value != "";
-                }, '<span style="color: red ">Please Space are not allowed</span>');
-                jQuery.validator.addMethod("select", function (value, element) {
-                    return value != "-1";
-                }, '<span style="color: red ">Please select the field</span>');
+                    jQuery.validator.addMethod("noSpace", function (value, element) {
+                        return value.indexOf(" ") < 0 && value != "";
+                    }, '<span style="color: red ">Please Space are not allowed</span>');
+                    jQuery.validator.addMethod("select", function (value, element) {
+                        return value != "-1";
+                    }, '<span style="color: red ">Please select the field</span>');
 
 
-                // supplier validation
-                $(".supplierAdd").validate({
+                    // supplier validation
+                    $(".supplierAdd").validate({
 
-                    rules: {
-                        suppliername: {
-                            required: true,
+                        rules: {
+                            suppliername: {
+                                required: true,
 
-                            remote: {
-                                url: "register_suppliername_exists",
-                                type: "post",
-                                data: {
-                                    suppliername: function () {
-                                        return $("#suppliername1").val();
+                                remote: {
+                                    url: "register_suppliername_exists",
+                                    type: "post",
+                                    data: {
+                                        suppliername: function () {
+                                            return $("#suppliername1").val();
+                                        }
                                     }
                                 }
-                            }
-                        },
-                        suppliercode: {
-                            required: true,
-                            noSpace: true,
-                            remote: {
-                                url: "register_suppliercode_exists",
-                                type: "post",
-                                data: {
-                                    suppliercode: function () {
-                                        return $("#suppliercode1").val();
+                            },
+                            suppliercode: {
+                                required: true,
+                                noSpace: true,
+                                remote: {
+                                    url: "register_suppliercode_exists",
+                                    type: "post",
+                                    data: {
+                                        suppliercode: function () {
+                                            return $("#suppliercode1").val();
+                                        }
                                     }
                                 }
+                            },
+                            contactno: {
+                                required: false,
+                                number: true,
+                                minlength: 10,
+                                maxlength: 10
+
+                            },
+                            address: {
+                                required: false
                             }
-                        },
-                        contactno: {
-                            required: false,
-                            number: true,
-                            minlength: 10,
-                            maxlength: 10
+
 
                         },
-                        address: {
-                            required: false
+
+                        messages: {
+                            suppliername: {
+                                required: '<span style="color:red">Please enter supplier name</span>',
+                                remote: '<span style="color:red">Supplier name already exits</span>'
+                            },
+                            suppliercode: {
+                                required: '<span style="color:red" >Please enter supplier code</span>',
+                                remote: '<span style="color:red">Supplier Code already exits</span>'
+                            },
+                            contactno: {
+                                required: '<span style="color:red">Please enter contact number</span>',
+                                number: '<span style="color:red">Please enter a valid number</span>',
+                                minlength: '<span style="color:red">Your number must be contained with 10 numbers</span>',
+                                maxlength: '<span style="color:red">Exceeded 10 numbers</b></span>'
+                            },
+                            address: {
+                                required: '<span style="color:red">Please enter address</span>'
+                            }
+
+                        },
+
+                        errorPlacement: function (error, element) {
+                            error.insertAfter(element.parent());
                         }
+                    });
+
+                    $(".supplier_Edit").validate({
+
+                        rules: {
+
+                            SupplierCode: {
+                                required: true,
+                                noSpace: true,
+
+                            },
+                            ContactNo: {
+                                required: false,
+                                number: true,
+                                minlength: 10,
+                                maxlength: 10
+
+                            },
+                            Address: {
+                                required: false
+                            }
 
 
-                    },
+                        },
 
-                    messages: {
-                        suppliername: {
-                            required: '<span style="color:red">Please enter supplier name</span>',
-                            remote: '<span style="color:red">Supplier name already exits</span>'
+                        messages: {
+
+                            SupplierCode: {
+                                required: '<span style="color:red" >Please enter supplier code</span>',
+
+                            },
+                            ContactNo: {
+                                required: '<span style="color:red">Please enter contact number</span>',
+                                number: '<span style="color:red">Please enter a valid number</span>',
+                                minlength: '<span style="color:red">Your number must be contained with 10 numbers</span>',
+                                maxlength: '<span style="color:red">Exceeded 10 numbers</b></span>'
+                            },
+                            Address: {
+                                required: '<span style="color:red">Please enter address</span>'
+                            }
+
                         },
-                        suppliercode: {
-                            required: '<span style="color:red" >Please enter supplier code</span>',
-                            remote: '<span style="color:red">Supplier Code already exits</span>'
-                        },
-                        contactno: {
-                            required: '<span style="color:red">Please enter contact number</span>',
-                            number: '<span style="color:red">Please enter a valid number</span>',
-                            minlength: '<span style="color:red">Your number must be contained with 10 numbers</span>',
-                            maxlength: '<span style="color:red">Exceeded 10 numbers</b></span>'
-                        },
-                        address: {
-                            required: '<span style="color:red">Please enter address</span>'
+
+                        errorPlacement: function (error, element) {
+                            error.insertAfter(element.parent());
                         }
+                    });
 
-                    },
+                    $(".supplierD_Edit").validate({
 
-                    errorPlacement: function (error, element) {
-                        error.insertAfter(element.parent());
-                    }
-                });
+                        rules: {
 
-                $(".supplier_Edit").validate({
+                            SupplierCode: {
+                                required: true,
+                                noSpace: true,
 
-                    rules: {
+                            },
+                            ContactNo: {
+                                required: false,
+                                number: true,
+                                minlength: 10,
+                                maxlength: 10
 
-                        SupplierCode: {
-                            required: true,
-                            noSpace: true,
+                            },
+                            Address: {
+                                required: false
+                            }
+
 
                         },
-                        ContactNo: {
-                            required: false,
-                            number: true,
-                            minlength: 10,
-                            maxlength: 10
+
+                        messages: {
+
+                            SupplierCode: {
+                                required: '<span style="color:red" >Please enter supplier code</span>',
+
+                            },
+                            ContactNo: {
+                                required: '<span style="color:red">Please enter contact number</span>',
+                                number: '<span style="color:red">Please enter a valid number</span>',
+                                minlength: '<span style="color:red">Your number must be contained with 10 numbers</span>',
+                                maxlength: '<span style="color:red">Exceeded 10 numbers</b></span>'
+                            },
+                            Address: {
+                                required: '<span style="color:red">Please enter address</span>'
+                            }
 
                         },
-                        Address: {
-                            required: false
+
+                        errorPlacement: function (error, element) {
+                            error.insertAfter(element.parent());
                         }
+                    });
 
+                    $(".supplierE_Edit").validate({
 
-                    },
+                        rules: {
 
-                    messages: {
+                            SupplierCode: {
+                                required: true,
+                                noSpace: true,
 
-                        SupplierCode: {
-                            required: '<span style="color:red" >Please enter supplier code</span>',
+                            },
+                            ContactNo: {
+                                required: false,
+                                number: true,
+                                minlength: 10,
+                                maxlength: 10
+
+                            },
+                            Address: {
+                                required: false
+                            }
 
                         },
-                        ContactNo: {
-                            required: '<span style="color:red">Please enter contact number</span>',
-                            number: '<span style="color:red">Please enter a valid number</span>',
-                            minlength: '<span style="color:red">Your number must be contained with 10 numbers</span>',
-                            maxlength: '<span style="color:red">Exceeded 10 numbers</b></span>'
+
+                        messages: {
+
+                            SupplierCode: {
+                                required: '<span style="color:red" >Please enter supplier code</span>',
+
+                            },
+                            ContactNo: {
+                                required: '<span style="color:red">Please enter contact number</span>',
+                                number: '<span style="color:red">Please enter a valid number</span>',
+                                minlength: '<span style="color:red">Your number must be contained with 10 numbers</span>',
+                                maxlength: '<span style="color:red">Exceeded 10 numbers</b></span>'
+                            },
+                            Address: {
+                                required: '<span style="color:red">Please enter address</span>'
+                            }
+
                         },
-                        Address: {
-                            required: '<span style="color:red">Please enter address</span>'
+
+                        errorPlacement: function (error, element) {
+                            error.insertAfter(element.parent());
                         }
+                    });
 
-                    },
+                    // end supplier validation
+                    // start location validation
 
-                    errorPlacement: function (error, element) {
-                        error.insertAfter(element.parent());
-                    }
-                });
+                    $(".locationAdd").validate({
 
-                $(".supplierD_Edit").validate({
-
-                    rules: {
-
-                        SupplierCode: {
-                            required: true,
-                            noSpace: true,
-
-                        },
-                        ContactNo: {
-                            required: false,
-                            number: true,
-                            minlength: 10,
-                            maxlength: 10
-
-                        },
-                        Address: {
-                            required: false
-                        }
-
-
-                    },
-
-                    messages: {
-
-                        SupplierCode: {
-                            required: '<span style="color:red" >Please enter supplier code</span>',
-
-                        },
-                        ContactNo: {
-                            required: '<span style="color:red">Please enter contact number</span>',
-                            number: '<span style="color:red">Please enter a valid number</span>',
-                            minlength: '<span style="color:red">Your number must be contained with 10 numbers</span>',
-                            maxlength: '<span style="color:red">Exceeded 10 numbers</b></span>'
-                        },
-                        Address: {
-                            required: '<span style="color:red">Please enter address</span>'
-                        }
-
-                    },
-
-                    errorPlacement: function (error, element) {
-                        error.insertAfter(element.parent());
-                    }
-                });
-
-                $(".supplierE_Edit").validate({
-
-                    rules: {
-
-                        SupplierCode: {
-                            required: true,
-                            noSpace: true,
-
-                        },
-                        ContactNo: {
-                            required: false,
-                            number: true,
-                            minlength: 10,
-                            maxlength: 10
-
-                        },
-                        Address: {
-                            required: false
-                        }
-
-                    },
-
-                    messages: {
-
-                        SupplierCode: {
-                            required: '<span style="color:red" >Please enter supplier code</span>',
-
-                        },
-                        ContactNo: {
-                            required: '<span style="color:red">Please enter contact number</span>',
-                            number: '<span style="color:red">Please enter a valid number</span>',
-                            minlength: '<span style="color:red">Your number must be contained with 10 numbers</span>',
-                            maxlength: '<span style="color:red">Exceeded 10 numbers</b></span>'
-                        },
-                        Address: {
-                            required: '<span style="color:red">Please enter address</span>'
-                        }
-
-                    },
-
-                    errorPlacement: function (error, element) {
-                        error.insertAfter(element.parent());
-                    }
-                });
-
-                // end supplier validation
-                // start location validation
-
-                $(".locationAdd").validate({
-
-                    rules: {
-                        locationname: {
-                            required: true
-                        },
-                        locationcode: {
-                            required: true,
-                            noSpace: true,
-                            remote: {
-                                url: "register_location_exists",
-                                type: "post",
-                                data: {
-                                    locationcode: function () {
-                                        return $("#locationid1").val();
+                        rules: {
+                            locationname: {
+                                required: true
+                            },
+                            locationcode: {
+                                required: true,
+                                noSpace: true,
+                                remote: {
+                                    url: "register_location_exists",
+                                    type: "post",
+                                    data: {
+                                        locationcode: function () {
+                                            return $("#locationid1").val();
+                                        }
                                     }
                                 }
+                            },
+                            projectname: {
+                                select: true,
+                            },
+                            projectcode: {
+                                select: true,
+                            },
+                        },
+
+                        messages: {
+                            locationname: {
+                                required: '<span style="color:red">Please enter location name</span>'
+                            },
+                            locationcode: {
+                                required: '<span style="color:red">Please enter location code</span>',
+                                remote: '<span style="color:red">Location code already exits</span>'
                             }
                         },
-                        projectname: {
-                            select: true,
-                        },
-                        projectcode: {
-                            select: true,
-                        },
-                    },
 
-                    messages: {
-                        locationname: {
-                            required: '<span style="color:red">Please enter location name</span>'
-                        },
-                        locationcode: {
-                            required: '<span style="color:red">Please enter location code</span>',
-                            remote: '<span style="color:red">Location code already exits</span>'
+                        errorPlacement: function (error, element) {
+                            error.insertAfter(element.parent());
                         }
-                    },
+                    });
 
-                    errorPlacement: function (error, element) {
-                        error.insertAfter(element.parent());
-                    }
-                });
+                    $(".location_Edit").validate({
 
-                $(".location_Edit").validate({
+                        rules: {
+                            Location: {
+                                required: true
+                            },
+                            ProjectName: {
+                                required: true
+                            },
+                            ProjectCode: {
+                                select: true,
+                                required: true
+                            }
 
-                    rules: {
-                        Location: {
-                            required: true
                         },
-                        ProjectName: {
-                            required: true
+
+                        messages: {
+                            Location: {
+                                required: '<span style="color:red">Please enter location name</span>'
+                            },
+                            ProjectName: {
+                                required: '<span style="color:red">Please select Project Name</span>'
+                            },
+                            ProjectCode: {
+                                required: '<span style="color:red">Please select Project Code</span>'
+                            }
+
                         },
-                        ProjectCode: {
-                            select: true,
-                            required: true
+
+                        errorPlacement: function (error, element) {
+                            error.insertAfter(element.parent());
                         }
+                    });
 
-                    },
+                    $(".locationE_Edit").validate({
 
-                    messages: {
-                        Location: {
-                            required: '<span style="color:red">Please enter location name</span>'
+                        rules: {
+                            Location: {
+                                required: true
+                            },
+                            ProjectName: {
+                                required: true
+                            },
+                            ProjectCode: {
+                                select: true,
+                                required: true
+                            }
+
                         },
-                        ProjectName: {
-                            required: '<span style="color:red">Please select Project Name</span>'
+
+                        messages: {
+                            Location: {
+                                required: '<span style="color:red">Please enter location name</span>'
+                            },
+                            ProjectName: {
+                                required: '<span style="color:red">Please select Project Name</span>'
+                            },
+                            ProjectCode: {
+                                required: '<span style="color:red">Please select Project Code</span>'
+                            }
                         },
-                        ProjectCode: {
-                            required: '<span style="color:red">Please select Project Code</span>'
+
+                        errorPlacement: function (error, element) {
+                            error.insertAfter(element.parent());
                         }
+                    });
 
-                    },
+                    $(".locationD_Edit").validate({
 
-                    errorPlacement: function (error, element) {
-                        error.insertAfter(element.parent());
-                    }
-                });
+                        rules: {
+                            Location: {
+                                required: true
+                            },
+                            ProjectName: {
+                                required: true
+                            },
+                            ProjectCode: {
+                                select: true,
+                                required: true
+                            }
 
-                $(".locationE_Edit").validate({
-
-                    rules: {
-                        Location: {
-                            required: true
                         },
-                        ProjectName: {
-                            required: true
+
+                        messages: {
+                            Location: {
+                                required: '<span style="color:red">Please enter location name</span>'
+                            },
+                            ProjectName: {
+                                required: '<span style="color:red">Please select Project Name</span>'
+                            },
+                            ProjectCode: {
+                                required: '<span style="color:red">Please select Project Code</span>'
+                            }
                         },
-                        ProjectCode: {
-                            select: true,
-                            required: true
+
+                        errorPlacement: function (error, element) {
+                            error.insertAfter(element.parent());
                         }
+                    });
 
-                    },
+                    // end location validation
 
-                    messages: {
-                        Location: {
-                            required: '<span style="color:red">Please enter location name</span>'
+                    $(".QRConfigureV_Edit").validate({
+
+                        rules: {
+
+                            QrBlock: {
+                                required: true
+
+                            },
+                            SupplierName: {
+
+                                required: true
+                            },
+
                         },
-                        ProjectName: {
-                            required: '<span style="color:red">Please select Project Name</span>'
+
+                        messages: {
+                            QrBlock: {
+                                required: '<span style="color:red">Please select the Status</span>'
+                            },
+                            SupplierName: {
+                                required: '<span style="color:red">Please select Supplier Name</span>'
+                            }
                         },
-                        ProjectCode: {
-                            required: '<span style="color:red">Please select Project Code</span>'
+                        errorPlacement: function (error, element) {
+                            error.insertAfter(element.parent());
                         }
-                    },
+                    });
+                    $(".QRConfigureE_Edit").validate({
 
-                    errorPlacement: function (error, element) {
-                        error.insertAfter(element.parent());
-                    }
-                });
+                        rules: {
 
-                $(".locationD_Edit").validate({
+                            QrBlock: {
+                                required: true
 
-                    rules: {
-                        Location: {
-                            required: true
+                            },
+                            SupplierName: {
+
+                                required: true
+                            },
+
                         },
-                        ProjectName: {
-                            required: true
+
+                        messages: {
+                            QrBlock: {
+                                required: '<span style="color:red">Please select the Status</span>'
+                            },
+                            SupplierName: {
+                                required: '<span style="color:red">Please select Supplier Name</span>'
+                            }
                         },
-                        ProjectCode: {
-                            select: true,
-                            required: true
+                        errorPlacement: function (error, element) {
+                            error.insertAfter(element.parent());
                         }
+                    });
+                    $(".QRConfigureD_Edit").validate({
 
-                    },
+                        rules: {
 
-                    messages: {
-                        Location: {
-                            required: '<span style="color:red">Please enter location name</span>'
+                            QrBlock: {
+                                required: true
+
+                            },
+                            SupplierName: {
+
+                                required: true
+                            },
+
                         },
-                        ProjectName: {
-                            required: '<span style="color:red">Please select Project Name</span>'
+
+                        messages: {
+                            QrBlock: {
+                                required: '<span style="color:red">Please select the Status</span>'
+                            },
+                            SupplierName: {
+                                required: '<span style="color:red">Please select Supplier Name</span>'
+                            }
                         },
-                        ProjectCode: {
-                            required: '<span style="color:red">Please select Project Code</span>'
+                        errorPlacement: function (error, element) {
+                            error.insertAfter(element.parent());
                         }
-                    },
-
-                    errorPlacement: function (error, element) {
-                        error.insertAfter(element.parent());
-                    }
-                });
-
-                // end location validation
-
-                $(".QRConfigureV_Edit").validate({
-
-                    rules: {
-
-                        QrBlock: {
-                            required: true
-
-                        },
-                        SupplierName: {
-
-                            required: true
-                        },
-
-                    },
-
-                    messages: {
-                        QrBlock: {
-                            required: '<span style="color:red">Please select the Status</span>'
-                        },
-                        SupplierName: {
-                            required: '<span style="color:red">Please select Supplier Name</span>'
-                        }
-                    },
-                    errorPlacement: function (error, element) {
-                        error.insertAfter(element.parent());
-                    }
-                });
-                $(".QRConfigureE_Edit").validate({
-
-                    rules: {
-
-                        QrBlock: {
-                            required: true
-
-                        },
-                        SupplierName: {
-
-                            required: true
-                        },
-
-                    },
-
-                    messages: {
-                        QrBlock: {
-                            required: '<span style="color:red">Please select the Status</span>'
-                        },
-                        SupplierName: {
-                            required: '<span style="color:red">Please select Supplier Name</span>'
-                        }
-                    },
-                    errorPlacement: function (error, element) {
-                        error.insertAfter(element.parent());
-                    }
-                });
-                $(".QRConfigureD_Edit").validate({
-
-                    rules: {
-
-                        QrBlock: {
-                            required: true
-
-                        },
-                        SupplierName: {
-
-                            required: true
-                        },
-
-                    },
-
-                    messages: {
-                        QrBlock: {
-                            required: '<span style="color:red">Please select the Status</span>'
-                        },
-                        SupplierName: {
-                            required: '<span style="color:red">Please select Supplier Name</span>'
-                        }
-                    },
-                    errorPlacement: function (error, element) {
-                        error.insertAfter(element.parent());
-                    }
-                });
+                    });
 
 
-                // user master validation
+                    // user master validation
 
-                $(".userAdd").validate({
+                    $(".userAdd").validate({
 
-                    rules: {
-                        name: {
-                            required: true
-                        },
-                        username: {
-                            required: true,
-                            minlength: 5,
-                            noSpace: true,
+                        rules: {
+                            name: {
+                                required: true
+                            },
+                            username: {
+                                required: true,
+                                minlength: 5,
+                                noSpace: true,
 
 
-                            remote: {
-                                url: "register_username_exists",
-                                type: "post",
-                                data: {
-                                    username: function () {
-                                        return $("#username1").val();
+                                remote: {
+                                    url: "register_username_exists",
+                                    type: "post",
+                                    data: {
+                                        username: function () {
+                                            return $("#username1").val();
+                                        }
                                     }
                                 }
+
+
+                            },
+                            password: {
+                                required: true,
+                                minlength: 5
+                            },
+                            contact: {
+                                required: true,
+                                number: true,
+                                minlength: 10,
+                                maxlength: 10
+                            },
+
+
+                        },
+
+                        messages: {
+                            name: {
+                                required: '<span style="color:red">Please enter name</span>'
+                            },
+                            username: {
+                                required: '<span style="color:red">Please enter user name</span>',
+                                minlength: '<span style="color:red">User name must has at least 5 characters</span>',
+                                remote: '<span style="color:red">User name already exits</span>'
+
+                            },
+                            password: {
+                                required: '<span style="color:red">Please enter password</span>',
+                                minlength: '<span style="color:red">Password must has at least 5 characters</span>'
+                            },
+                            contact: {
+                                required: '<span style="color:red">Please enter contact number</span>',
+                                number: '<span style="color:red">Please enter a valid number</span>',
+                                minlength: '<span style="color:red">Your number must be contained with 10 numbers</span>',
+                                maxlength: '<span style="color:red">Exceeded 10 numbers</b></span>'
+                            }
+
+                        },
+
+                        errorPlacement: function (error, element) {
+                            error.insertAfter(element.parent());
+                        }
+                    });
+
+                    $(".userV_Edit").validate({
+
+                        rules: {
+                            Name: {
+                                required: true
+                            },
+
+
+                            ContactNumber: {
+                                required: true,
+                                number: true,
+                                minlength: 10,
+                                maxlength: 10
+                            },
+                            Position: {
+                                required: true,
+                            },
+                            Status: {
+                                required: true,
                             }
 
 
                         },
-                        password: {
-                            required: true,
-                            minlength: 5
-                        },
-                        contact: {
-                            required: true,
-                            number: true,
-                            minlength: 10,
-                            maxlength: 10
-                        },
 
+                        messages: {
+                            Name: {
+                                required: '<span style="color:red">Please enter name</span>'
+                            },
 
-                    },
-
-                    messages: {
-                        name: {
-                            required: '<span style="color:red">Please enter name</span>'
-                        },
-                        username: {
-                            required: '<span style="color:red">Please enter user name</span>',
-                            minlength: '<span style="color:red">User name must has at least 5 characters</span>',
-                            remote: '<span style="color:red">User name already exits</span>'
+                            ContactNumber: {
+                                required: '<span style="color:red">Please enter contact number</span>',
+                                number: '<span style="color:red">Please enter a valid number</span>',
+                                minlength: '<span style="color:red">Your number must be contained with 10 numbers</span>',
+                                maxlength: '<span style="color:red">Exceeded 10 numbers</b></span>'
+                            },
+                            Position: {
+                                required: '<span style="color:red">Please select the Position</span>',
+                            },
+                            Status: {
+                                required: '<span style="color:red">Please select the Status</span>',
+                            }
 
                         },
-                        password: {
-                            required: '<span style="color:red">Please enter password</span>',
-                            minlength: '<span style="color:red">Password must has at least 5 characters</span>'
-                        },
-                        contact: {
-                            required: '<span style="color:red">Please enter contact number</span>',
-                            number: '<span style="color:red">Please enter a valid number</span>',
-                            minlength: '<span style="color:red">Your number must be contained with 10 numbers</span>',
-                            maxlength: '<span style="color:red">Exceeded 10 numbers</b></span>'
+
+                        errorPlacement: function (error, element) {
+                            error.insertAfter(element.parent());
                         }
+                    });
+                    $(".userEdit").validate({
 
-                    },
+                        rules: {
+                            Name: {
+                                required: true
+                            },
 
-                    errorPlacement: function (error, element) {
-                        error.insertAfter(element.parent());
-                    }
-                });
 
-                $(".userV_Edit").validate({
+                            ContactNumber: {
+                                required: true,
+                                number: true,
+                                minlength: 10,
+                                maxlength: 10
+                            },
+                            Position: {
+                                required: true,
+                            },
+                            Status: {
+                                required: true,
+                            }
 
-                    rules: {
-                        Name: {
-                            required: true
+
                         },
 
+                        messages: {
+                            Name: {
+                                required: '<span style="color:red">Please enter name</span>'
+                            },
 
-                        ContactNumber: {
-                            required: true,
-                            number: true,
-                            minlength: 10,
-                            maxlength: 10
+                            ContactNumber: {
+                                required: '<span style="color:red">Please enter contact number</span>',
+                                number: '<span style="color:red">Please enter a valid number</span>',
+                                minlength: '<span style="color:red">Your number must be contained with 10 numbers</span>',
+                                maxlength: '<span style="color:red">Exceeded 10 numbers</b></span>'
+                            },
+                            Position: {
+                                required: '<span style="color:red">Please select the Position</span>',
+                            },
+                            Status: {
+                                required: '<span style="color:red">Please select the Status</span>',
+                            }
+
                         },
-                        Position: {
-                            required: true,
-                        },
-                        Status: {
-                            required: true,
+
+                        errorPlacement: function (error, element) {
+                            error.insertAfter(element.parent());
                         }
+                    });
+
+                    $(".userD_Edit").validate({
+
+                        rules: {
+                            Name: {
+                                required: true
+                            },
 
 
-                    },
+                            ContactNumber: {
+                                required: true,
+                                number: true,
+                                minlength: 10,
+                                maxlength: 10
+                            },
+                            Position: {
+                                required: true,
+                            },
+                            Status: {
+                                required: true,
+                            }
 
-                    messages: {
-                        Name: {
-                            required: '<span style="color:red">Please enter name</span>'
+
                         },
 
-                        ContactNumber: {
-                            required: '<span style="color:red">Please enter contact number</span>',
-                            number: '<span style="color:red">Please enter a valid number</span>',
-                            minlength: '<span style="color:red">Your number must be contained with 10 numbers</span>',
-                            maxlength: '<span style="color:red">Exceeded 10 numbers</b></span>'
+                        messages: {
+                            Name: {
+                                required: '<span style="color:red">Please enter name</span>'
+                            },
+
+                            ContactNumber: {
+                                required: '<span style="color:red">Please enter contact number</span>',
+                                number: '<span style="color:red">Please enter a valid number</span>',
+                                minlength: '<span style="color:red">Your number must be contained with 10 numbers</span>',
+                                maxlength: '<span style="color:red">Exceeded 10 numbers</b></span>'
+                            },
+                            Position: {
+                                required: '<span style="color:red">Please select the Position</span>',
+                            },
+                            Status: {
+                                required: '<span style="color:red">Please select the Status</span>',
+                            }
+
                         },
-                        Position: {
-                            required: '<span style="color:red">Please select the Position</span>',
-                        },
-                        Status: {
-                            required: '<span style="color:red">Please select the Status</span>',
+
+                        errorPlacement: function (error, element) {
+                            error.insertAfter(element.parent());
                         }
+                    });
 
-                    },
+                    // end user validation
 
-                    errorPlacement: function (error, element) {
-                        error.insertAfter(element.parent());
-                    }
-                });
-                $(".userEdit").validate({
+                    // start project validation
 
-                    rules: {
-                        Name: {
-                            required: true
-                        },
+                    $(".projectAdd").validate({
 
-
-                        ContactNumber: {
-                            required: true,
-                            number: true,
-                            minlength: 10,
-                            maxlength: 10
-                        },
-                        Position: {
-                            required: true,
-                        },
-                        Status: {
-                            required: true,
-                        }
-
-
-                    },
-
-                    messages: {
-                        Name: {
-                            required: '<span style="color:red">Please enter name</span>'
-                        },
-
-                        ContactNumber: {
-                            required: '<span style="color:red">Please enter contact number</span>',
-                            number: '<span style="color:red">Please enter a valid number</span>',
-                            minlength: '<span style="color:red">Your number must be contained with 10 numbers</span>',
-                            maxlength: '<span style="color:red">Exceeded 10 numbers</b></span>'
-                        },
-                        Position: {
-                            required: '<span style="color:red">Please select the Position</span>',
-                        },
-                        Status: {
-                            required: '<span style="color:red">Please select the Status</span>',
-                        }
-
-                    },
-
-                    errorPlacement: function (error, element) {
-                        error.insertAfter(element.parent());
-                    }
-                });
-
-                $(".userD_Edit").validate({
-
-                    rules: {
-                        Name: {
-                            required: true
-                        },
-
-
-                        ContactNumber: {
-                            required: true,
-                            number: true,
-                            minlength: 10,
-                            maxlength: 10
-                        },
-                        Position: {
-                            required: true,
-                        },
-                        Status: {
-                            required: true,
-                        }
-
-
-                    },
-
-                    messages: {
-                        Name: {
-                            required: '<span style="color:red">Please enter name</span>'
-                        },
-
-                        ContactNumber: {
-                            required: '<span style="color:red">Please enter contact number</span>',
-                            number: '<span style="color:red">Please enter a valid number</span>',
-                            minlength: '<span style="color:red">Your number must be contained with 10 numbers</span>',
-                            maxlength: '<span style="color:red">Exceeded 10 numbers</b></span>'
-                        },
-                        Position: {
-                            required: '<span style="color:red">Please select the Position</span>',
-                        },
-                        Status: {
-                            required: '<span style="color:red">Please select the Status</span>',
-                        }
-
-                    },
-
-                    errorPlacement: function (error, element) {
-                        error.insertAfter(element.parent());
-                    }
-                });
-
-                // end user validation
-
-                // start project validation
-
-                $(".projectAdd").validate({
-
-                    rules: {
-                        projectname: {
-                            required: true,
-                            // noSpace: true,
-                            remote: {
-                                url: "register_projectname_exists",
-                                type: "post",
-                                data: {
-                                    projectname: function () {
-                                        return $("#projectname1").val();
+                        rules: {
+                            projectname: {
+                                required: true,
+                                // noSpace: true,
+                                remote: {
+                                    url: "register_projectname_exists",
+                                    type: "post",
+                                    data: {
+                                        projectname: function () {
+                                            return $("#projectname1").val();
+                                        }
                                     }
                                 }
-                            }
-                        },
-                        projectcode: {
-                            required: true,
-                            noSpace: true,
-                            remote: {
-                                url: "register_projectcode_exists",
-                                type: "post",
-                                data: {
-                                    projectcode: function () {
-                                        return $("#projectcode1").val();
+                            },
+                            projectcode: {
+                                required: true,
+                                noSpace: true,
+                                remote: {
+                                    url: "register_projectcode_exists",
+                                    type: "post",
+                                    data: {
+                                        projectcode: function () {
+                                            return $("#projectcode1").val();
+                                        }
                                     }
                                 }
+                            },
+                            mainlocation: {
+                                required: true
                             }
                         },
-                        mainlocation: {
-                            required: true
+
+                        messages: {
+                            projectname: {
+                                required: '<span style="color:red">Please enter project name</span>',
+                                remote: '<span style="color:red">Project name already exits</span>'
+
+                            },
+                            projectcode: {
+                                required: '<span style="color:red">Please enter project code</span>',
+                                remote: '<span style="color:red">Project code already exits</span>'
+                            },
+                            mainlocation: {
+                                required: '<span style="color:red">Please enter main location</span>'
+                            }
+
+                        },
+
+                        errorPlacement: function (error, element) {
+                            error.insertAfter(element.parent());
                         }
-                    },
+                    });
 
-                    messages: {
-                        projectname: {
-                            required: '<span style="color:red">Please enter project name</span>',
-                            remote: '<span style="color:red">Project name already exits</span>'
+
+                    $(".project_Edit").validate({
+
+                        rules: {
+
+                            ProjectCode: {
+                                required: true,
+                                noSpace: true,
+
+                            },
+                            MainLocation: {
+                                required: true
+                            }
+                        },
+
+                        messages: {
+
+                            ProjectCode: {
+                                required: '<span style="color:red">Please enter project code</span>',
+
+                            },
+                            MainLocation: {
+                                required: '<span style="color:red">Please enter main location</span>'
+                            }
 
                         },
-                        projectcode: {
-                            required: '<span style="color:red">Please enter project code</span>',
-                            remote: '<span style="color:red">Project code already exits</span>'
-                        },
-                        mainlocation: {
-                            required: '<span style="color:red">Please enter main location</span>'
+
+                        errorPlacement: function (error, element) {
+                            error.insertAfter(element.parent());
                         }
+                    });
 
-                    },
+                    $(".projectE_Edit").validate({
 
-                    errorPlacement: function (error, element) {
-                        error.insertAfter(element.parent());
-                    }
-                });
+                        rules: {
 
+                            ProjectCode: {
+                                required: true,
+                                noSpace: true,
 
-                $(".project_Edit").validate({
+                            },
+                            MainLocation: {
+                                required: true
+                            }
+                        },
 
-                    rules: {
+                        messages: {
 
-                        ProjectCode: {
-                            required: true,
-                            noSpace: true,
+                            ProjectCode: {
+                                required: '<span style="color:red">Please enter project code</span>',
+
+                            },
+                            MainLocation: {
+                                required: '<span style="color:red">Please enter main location</span>'
+                            }
 
                         },
-                        MainLocation: {
-                            required: true
+
+                        errorPlacement: function (error, element) {
+                            error.insertAfter(element.parent());
                         }
-                    },
+                    });
 
-                    messages: {
+                    $(".projectD_Edit").validate({
 
-                        ProjectCode: {
-                            required: '<span style="color:red">Please enter project code</span>',
+                        rules: {
+
+                            ProjectCode: {
+                                required: true,
+                                noSpace: true,
+
+                            },
+                            MainLocation: {
+                                required: true
+                            }
+                        },
+
+                        messages: {
+
+                            ProjectCode: {
+                                required: '<span style="color:red">Please enter project code</span>',
+
+                            },
+                            MainLocation: {
+                                required: '<span style="color:red">Please enter main location</span>'
+                            }
 
                         },
-                        MainLocation: {
-                            required: '<span style="color:red">Please enter main location</span>'
+
+                        errorPlacement: function (error, element) {
+                            error.insertAfter(element.parent());
                         }
+                    });
 
-                    },
+                    // end project validation
+                    // QR code validation
+                    $(".qrAdd").validate({
 
-                    errorPlacement: function (error, element) {
-                        error.insertAfter(element.parent());
-                    }
-                });
+                        rules: {
 
-                $(".projectE_Edit").validate({
+                            QRCodeNo: {
+                                required: true,
+                                noSpace: true
 
-                    rules: {
+                            },
+                            VehicleNo: {
+                                required: true
 
-                        ProjectCode: {
-                            required: true,
-                            noSpace: true,
+                            },
+                            SupplierName: {
+                                required: true,
+
+                            }
+                        },
+
+                        messages: {
+                            QRCodeNo: {
+                                required: '<span style="color:red">Please enter QR Code Number</span>'
+
+                            },
+                            VehicleNo: {
+                                required: '<span style="color:red">Please enter Vehicle Number</span>'
+
+                            },
+                            SupplierName: {
+                                required: '<span style="color:red">Please enter Supplier Name</span>'
+                            }
 
                         },
-                        MainLocation: {
-                            required: true
+
+                        errorPlacement: function (error, element) {
+                            error.insertAfter(element.parent());
                         }
-                    },
+                    });
 
-                    messages: {
+                    // end  qr code validation
 
-                        ProjectCode: {
-                            required: '<span style="color:red">Please enter project code</span>',
+                    //  vehicle  validation
 
-                        },
-                        MainLocation: {
-                            required: '<span style="color:red">Please enter main location</span>'
-                        }
+                    $(".vehicleAdd").validate({
 
-                    },
+                        rules: {
 
-                    errorPlacement: function (error, element) {
-                        error.insertAfter(element.parent());
-                    }
-                });
-
-                $(".projectD_Edit").validate({
-
-                    rules: {
-
-                        ProjectCode: {
-                            required: true,
-                            noSpace: true,
-
-                        },
-                        MainLocation: {
-                            required: true
-                        }
-                    },
-
-                    messages: {
-
-                        ProjectCode: {
-                            required: '<span style="color:red">Please enter project code</span>',
-
-                        },
-                        MainLocation: {
-                            required: '<span style="color:red">Please enter main location</span>'
-                        }
-
-                    },
-
-                    errorPlacement: function (error, element) {
-                        error.insertAfter(element.parent());
-                    }
-                });
-
-                // end project validation
-                // QR code validation
-                $(".qrAdd").validate({
-
-                    rules: {
-
-                        QRCodeNo: {
-                            required: true,
-                            noSpace: true
-
-                        },
-                        VehicleNo: {
-                            required: true
-
-                        },
-                        SupplierName: {
-                            required: true,
-
-                        }
-                    },
-
-                    messages: {
-                        QRCodeNo: {
-                            required: '<span style="color:red">Please enter QR Code Number</span>'
-
-                        },
-                        VehicleNo: {
-                            required: '<span style="color:red">Please enter Vehicle Number</span>'
-
-                        },
-                        SupplierName: {
-                            required: '<span style="color:red">Please enter Supplier Name</span>'
-                        }
-
-                    },
-
-                    errorPlacement: function (error, element) {
-                        error.insertAfter(element.parent());
-                    }
-                });
-
-                // end  qr code validation
-
-                //  vehicle  validation
-
-                $(".vehicleAdd").validate({
-
-                    rules: {
-
-                        vehiclenumber: {
-                            required: true,
-                            noSpace: true,
-                            remote: {
-                                url: "register_vehiclenumber_exists",
-                                type: "post",
-                                data: {
-                                    vehiclenumber: function () {
-                                        return $("#vehiclenumber1").val();
+                            vehiclenumber: {
+                                required: true,
+                                noSpace: true,
+                                remote: {
+                                    url: "register_vehiclenumber_exists",
+                                    type: "post",
+                                    data: {
+                                        vehiclenumber: function () {
+                                            return $("#vehiclenumber1").val();
+                                        }
                                     }
                                 }
+                            },
+                            capacity: {
+                                required: true,
+                                number: true
+                            },
+                            uom: {
+                                required: true,
+
                             }
                         },
-                        capacity: {
-                            required: true,
-                            number: true
-                        },
-                        uom: {
-                            required: true,
 
-                        }
-                    },
-
-                    messages: {
-                        vehiclenumber: {
-                            required: '<span style="color:red">Please enter Vehicle Number</span>',
-                            remote: '<span style="color:red">Vehicle Number already exits</span>'
-                        },
-                        capacity: {
-                            required: '<span style="color:red">Please enter Capacity</span>',
-                            number: '<span style="color:red">Please enter valied number</span>'
-                        },
-                        uom: {
-                            required: '<span style="color:red">Please enter UOM</span>'
-                        }
-
-                    },
-
-                    errorPlacement: function (error, element) {
-                        error.insertAfter(element.parent());
-                    }
-                });
-
-                $(".vehicleE_Edit").validate({
-
-                    rules: {
-
-
-                        Capacity: {
-                            required: true,
-                            number: true
-                        },
-                        UOM: {
-                            required: true,
-
-                        },
-                        VehicleType: {
-                            required: true
-                        }
-                    },
-
-                    messages: {
-
-                        Capacity: {
-                            required: '<span style="color:red">Please enter Capacity</span>',
-                            number: '<span style="color:red">Please enter valied number</span>'
-                        },
-                        UOM: {
-                            required: '<span style="color:red">Please enter UOM</span>'
-                        },
-                        VehicleType: {
-                            required: '<span style="color:red">Please select Vehicle type</span>'
-                        },
-
-                    },
-
-                    errorPlacement: function (error, element) {
-                        error.insertAfter(element.parent());
-                    }
-                });
-
-                $(".vehicle_Edit").validate({
-
-                    rules: {
-
-
-                        Capacity: {
-                            required: true,
-                            number: true
-                        },
-                        UOM: {
-                            required: true,
-
-                        },
-                        VehicleType: {
-                            required: true
-                        }
-                    },
-
-                    messages: {
-
-                        Capacity: {
-                            required: '<span style="color:red">Please enter Capacity</span>',
-                            number: '<span style="color:red">Please enter valied number</span>'
-                        },
-                        UOM: {
-                            required: '<span style="color:red">Please enter UOM</span>'
-                        },
-                        VehicleType: {
-                            required: '<span style="color:red">Please select Vehicle type</span>'
-                        },
-
-                    },
-
-                    errorPlacement: function (error, element) {
-                        error.insertAfter(element.parent());
-                    }
-                });
-
-                $(".vehicleD_Edit").validate({
-
-                    rules: {
-
-
-                        Capacity: {
-                            required: true,
-                            number: true
-                        },
-                        UOM: {
-                            required: true,
-
-                        },
-                        VehicleType: {
-                            required: true
-                        }
-                    },
-
-                    messages: {
-
-                        Capacity: {
-                            required: '<span style="color:red">Please enter Capacity</span>',
-                            number: '<span style="color:red">Please enter valied number</span>'
-                        },
-                        UOM: {
-                            required: '<span style="color:red">Please enter UOM</span>'
-                        },
-                        VehicleType: {
-                            required: '<span style="color:red">Please select Vehicle type</span>'
-                        },
-
-                    },
-
-                    errorPlacement: function (error, element) {
-                        error.insertAfter(element.parent());
-                    }
-                });
-
-                // end vehicle validation
-                // start manual entry validation
-                $(".manualAdd").validate({
-
-                    rules: {
-                        Date: {
-                            required: true
-
-
-                        },
-                        Project: {
-                            required: true,
-                            select: true
-
-                        },
-                        VehicleNo: {
-                            required: true,
-                            select: true
-                        },
-                        Location: {
-                            select: true,
-                            required: true
-
-                        },
-
-                        Type: {
-                            select: true,
-                            required: true
-
-                        },
-                        Supplier: {
-                            select: true,
-                            required: true
-
-                        },
-                        Material: {
-                            select: true,
-                            required: true
-
-                        },
-                        Capacity: {
-                            select: true,
-                            required: true,
-                            number: true,
-
-
-                        },
-                        UOM: {
-                            noSpace: true,
-                            required: true
-
-                        }
-                    },
-
-                    messages: {
-                        Date: {
-                            required: '<span style="color:red">Please enter Date</span>'
-
-                        },
-                        Project: {
-                            required: '<span style="color:red">Please enter Project Name</span>'
-
-                        },
-                        VehicleNo: {
-                            required: '<span style="color:red">Please enter Vehicle Number</span>'
-
-                        },
-                        Capacity: {
-                            required: '<span style="color:red">Please enter Quentity</span>',
-                            number: '<span style="color:red">Please enter a valid number</span>',
-                        },
-                        UOM: {
-                            required: '<span style="color:red">Please enter UOM</span>'
-                        },
-                        Location: {
-                            required: '<span style="color:red">Please enter Project Location</span>'
-                        },
-                        Type: {
-                            required: '<span style="color:red">Please enter Vehicle Type</span>'
-                        },
-                        Material: {
-                            required: '<span style="color:red">Please enter Material Type</span>'
-                        }
-
-                    },
-
-                    errorPlacement: function (error, element) {
-                        error.insertAfter(element.parent());
-                    }
-                });
-
-                // end manual entry validation
-
-                // Supplier quentity validation
-
-                $(".quantityEdit1").validate({
-
-                    rules: {
-
-                        Quantity: {
-                            required: true,
-                            number: true,
-                            noSpace: true
-
-                        },
-
-                    },
-
-                    messages: {
-                        Quantity: {
-                            required: '<span style="color:red">Please enter Quentity</span>',
-                            number: '<span style="color:red">Please enter valied Number </span>'
-                        }
-
-
-                    },
-
-                    errorPlacement: function (error, element) {
-                        error.insertAfter(element.parent());
-                    }
-                });
-
-
-                // end Supplier quentity validation
-
-
-                $(".passwordUpdate").validate({
-
-                    rules: {
-                        password1: {
-                            required: true
-                        },
-                        password2: {
-                            required: true
-                        },
-                        password3: {
-                            required: true
-                        }
-                    },
-
-                    messages: {
-                        password1: {
-                            required: '<span style="color:red">Please enter project name</span>'
-                        },
-                        password2: {
-                            required: '<span style="color:red">Please enter project code</span>'
-                        },
-                        password3: {
-                            required: '<span style="color:red">Please enter main location</span>'
-                        }
-
-                    },
-
-                    errorPlacement: function (error, element) {
-                        error.insertAfter(element.parent());
-                    }
-                });
-
-                $("#projectD_Edit").validate({
-
-                    rules: {
-                        projectname1: {
-                            required: true
-                        },
-                        projectcode1: {
-                            required: true,
-                            minlength: 10
-                        },
-                        mainlocation1: {
-                            required: true
-                        },
-                        description1: {
-                            required: true
-                        }
-                    },
-
-                    messages: {
-                        projectname1: {
-                            required: '<span style="color:red">Please enter project name</span>'
-                        },
-                        projectcode1: {
-                            required: '<span style="color:red">Please enter project code</span>'
-                        },
-                        mainlocation1: {
-                            required: '<span style="color:red">Please enter main location</span>'
-                        },
-                        description1: {
-                            required: '<span style="color:red">Please enter description</span>'
-                        }
-                    },
-
-                    errorPlacement: function (error, element) {
-                        error.insertAfter(element.parent());
-                    }
-                });
-
-                $("#projectV_Edit").validate({
-
-                    rules: {
-                        projectname1: {
-                            required: true
-                        },
-                        projectcode1: {
-                            required: true,
-                            minlength: 10
-                        },
-                        mainlocation1: {
-                            required: true
-                        },
-                        description1: {
-                            required: true
-                        }
-                    },
-
-                    messages: {
-                        projectname1: {
-                            required: '<span style="color:red">Please enter project name</span>'
-                        },
-                        projectcode1: {
-                            required: '<span style="color:red">Please enter project code</span>'
-                        },
-                        mainlocation1: {
-                            required: '<span style="color:red">Please enter main location</span>'
-                        },
-                        description1: {
-                            required: '<span style="color:red">Please enter description</span>'
-                        }
-                    },
-
-                    errorPlacement: function (error, element) {
-                        error.insertAfter(element.parent());
-                    }
-                });
-
-                $("#projectE_Edit").validate({
-
-                    rules: {
-                        projectname1: {
-                            required: true
-                        },
-                        projectcode1: {
-                            required: true,
-                            minlength: 10
-                        },
-                        mainlocation1: {
-                            required: true
-                        },
-                        description1: {
-                            required: true
-                        }
-                    },
-
-                    messages: {
-                        projectname1: {
-                            required: '<span style="color:red">Please enter project name</span>'
-                        },
-                        projectcode1: {
-                            required: '<span style="color:red">Please enter project code</span>'
-                        },
-                        mainlocation1: {
-                            required: '<span style="color:red">Please enter main location</span>'
-                        },
-                        description1: {
-                            required: '<span style="color:red">Please enter description</span>'
-                        }
-                    },
-
-                    errorPlacement: function (error, element) {
-                        error.insertAfter(element.parent());
-                    }
-                });
-
-
-                $(".vehicleAdd").validate({
-
-                    rules: {
-                        vehiclenumber: {
-                            required: true
-                        },
-                        capacity: {
-                            required: true,
-                            number: true
-                        },
-                        uom: {
-                            required: true
-                        }
-                    },
-
-                    messages: {
-                        vehiclenumber: {
-                            required: '<span style="color:red">Please enter vehicle number</span>'
-                        },
-                        capacity: {
-                            required: '<span style="color:red">Please enter capacity</span>',
-                            number: '<span style="color:red">Please enter valid capacity</span>'
-                        },
-                        uom: {
-                            required: '<span style="color:red">Please enter UOM</span>'
-                        }
-                    },
-
-                    errorPlacement: function (error, element) {
-                        error.insertAfter(element.parent());
-                    }
-                });
-
-                $(".vehicleV_Edit").validate({
-
-                    rules: {
-                        vehiclenumber: {
-                            required: true
-                        },
-                        capacity: {
-                            required: true,
-                            number: true
-                        },
-                        uom: {
-                            required: true
-                        }
-                    },
-
-                    messages: {
-                        vehiclenumber: {
-                            required: '<span style="color:red">Please enter vehicle number</span>'
-                        },
-                        capacity: {
-                            required: '<span style="color:red">Please enter capacity</span>',
-                            number: '<span style="color:red">Please enter valid capacity</span>'
-                        },
-                        uom: {
-                            required: '<span style="color:red">Please enter UOM</span>'
-                        }
-                    },
-
-                    errorPlacement: function (error, element) {
-                        error.insertAfter(element.parent());
-                    }
-                });
-
-                $(".changepassword").validate({
-
-                    rules: {
-                        old_password: {
-                            required: true
-                        },
-                        New_password: {
-                            required: true,
-                            minlength: 5
-
-                        },
-                        re_password: {
-                            required: true,
-                            minlength: 5,
-                            equalTo: "#New_password1",
-
-                        }
-                    },
-
-                    messages: {
-                        old_password: {
-                            required: '<span style="color:red">Please enter Old Password </span>'
-                        },
-                        New_password: {
-                            required: '<span style="color:red">Please enter New Password</span>',
-                            minlength: '<span style="color:red">Password must has at least 5 characters</span>'
-
-                        },
-                        re_password: {
-                            required: '<span style="color:red">Please enter Confirm  Password</span>',
-                            minlength: '<span style="color:red">Password must has at least 5 characters</span>',
-                            equalTo: '<span style="color: red ">Enter Confirm Password Same as New Password</span>'
-                        }
-                    },
-
-                    errorPlacement: function (error, element) {
-                        error.insertAfter(element.parent());
-                    }
-                });
-                $(".reset").validate({
-
-                    rules: {
-
-                        password: {
-                            required: true,
-                            minlength: 5
-
-                        },
-                        Re_Password: {
-                            required: true,
-                            minlength: 5,
-                            equalTo: "#password5",
-
-                        }
-                    },
-
-                    messages: {
-
-                        password: {
-                            required: '<span style="color:red">Please enter New Password</span>',
-                            minlength: '<span style="color:red">Password must has at least 5 characters</span>'
-
-                        },
-                        Re_Password: {
-                            required: '<span style="color:red">Please enter Confirm  Password</span>',
-                            minlength: '<span style="color:red">Password must has at least 5 characters</span>',
-                            equalTo: '<span style="color: red ">Enter Confirm Password Same as New Password</span>'
-                        }
-                    },
-
-                    errorPlacement: function (error, element) {
-                        error.insertAfter(element.parent());
-                    }
-                });
-
-
-            })(jQuery);
-        </script>
-
-        <!-- end form validation -->
-
-        <!-- Sum of quantity -->
-        <script>
-            var sum = 0;
-            // iterate through each td based on class and add the values
-            $(".quantityTotal").each(function () {
-
-                var value = $(this).text();
-                // add only if the value is number
-                if (!isNaN(value) && value.length != 0) {
-                    sum += parseFloat(value);
-                }
-            });
-            $('#result').text(sum);
-        </script>
-        <!-- END Sum of quantity -->
-
-        <script>
-            function sortTable(n) {
-                var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-                table = document.getElementById("table");
-                switching = true;
-                // Set the sorting direction to ascending:
-                dir = "asc";
-                /* Make a loop that will continue until
-            no switching has been done: */
-                while (switching) {
-                    // Start by saying: no switching is done:
-                    switching = false;
-                    rows = table.rows;
-                    /* Loop through all table rows (except the
-                first, which contains table headers): */
-                    for (i = 1; i < (rows.length - 1); i++) {
-                        // Start by saying there should be no switching:
-                        shouldSwitch = false;
-                        /* Get the two elements you want to compare,
-                    one from current row and one from the next: */
-                        x = rows[i].getElementsByTagName("TD")[n];
-                        y = rows[i + 1].getElementsByTagName("TD")[n];
-                        /* Check if the two rows should switch place,
-                    based on the direction, asc or desc: */
-                        if (dir == "asc") {
-                            if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-                                // If so, mark as a switch and break the loop:
-                                shouldSwitch = true;
-                                break;
+                        messages: {
+                            vehiclenumber: {
+                                required: '<span style="color:red">Please enter Vehicle Number</span>',
+                                remote: '<span style="color:red">Vehicle Number already exits</span>'
+                            },
+                            capacity: {
+                                required: '<span style="color:red">Please enter Capacity</span>',
+                                number: '<span style="color:red">Please enter valied number</span>'
+                            },
+                            uom: {
+                                required: '<span style="color:red">Please enter UOM</span>'
                             }
-                        } else if (dir == "desc") {
-                            if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-                                // If so, mark as a switch and break the loop:
-                                shouldSwitch = true;
-                                break;
+
+                        },
+
+                        errorPlacement: function (error, element) {
+                            error.insertAfter(element.parent());
+                        }
+                    });
+
+                    $(".vehicleE_Edit").validate({
+
+                        rules: {
+
+
+                            Capacity: {
+                                required: true,
+                                number: true
+                            },
+                            UOM: {
+                                required: true,
+
+                            },
+                            VehicleType: {
+                                required: true
+                            }
+                        },
+
+                        messages: {
+
+                            Capacity: {
+                                required: '<span style="color:red">Please enter Capacity</span>',
+                                number: '<span style="color:red">Please enter valied number</span>'
+                            },
+                            UOM: {
+                                required: '<span style="color:red">Please enter UOM</span>'
+                            },
+                            VehicleType: {
+                                required: '<span style="color:red">Please select Vehicle type</span>'
+                            },
+
+                        },
+
+                        errorPlacement: function (error, element) {
+                            error.insertAfter(element.parent());
+                        }
+                    });
+
+                    $(".vehicle_Edit").validate({
+
+                        rules: {
+
+
+                            Capacity: {
+                                required: true,
+                                number: true
+                            },
+                            UOM: {
+                                required: true,
+
+                            },
+                            VehicleType: {
+                                required: true
+                            }
+                        },
+
+                        messages: {
+
+                            Capacity: {
+                                required: '<span style="color:red">Please enter Capacity</span>',
+                                number: '<span style="color:red">Please enter valied number</span>'
+                            },
+                            UOM: {
+                                required: '<span style="color:red">Please enter UOM</span>'
+                            },
+                            VehicleType: {
+                                required: '<span style="color:red">Please select Vehicle type</span>'
+                            },
+
+                        },
+
+                        errorPlacement: function (error, element) {
+                            error.insertAfter(element.parent());
+                        }
+                    });
+
+                    $(".vehicleD_Edit").validate({
+
+                        rules: {
+
+
+                            Capacity: {
+                                required: true,
+                                number: true
+                            },
+                            UOM: {
+                                required: true,
+
+                            },
+                            VehicleType: {
+                                required: true
+                            }
+                        },
+
+                        messages: {
+
+                            Capacity: {
+                                required: '<span style="color:red">Please enter Capacity</span>',
+                                number: '<span style="color:red">Please enter valied number</span>'
+                            },
+                            UOM: {
+                                required: '<span style="color:red">Please enter UOM</span>'
+                            },
+                            VehicleType: {
+                                required: '<span style="color:red">Please select Vehicle type</span>'
+                            },
+
+                        },
+
+                        errorPlacement: function (error, element) {
+                            error.insertAfter(element.parent());
+                        }
+                    });
+
+                    // end vehicle validation
+                    // start manual entry validation
+                    $(".manualAdd").validate({
+
+                        rules: {
+                            Date: {
+                                required: true
+
+
+                            },
+                            Project: {
+                                required: true,
+                                select: true
+
+                            },
+                            VehicleNo: {
+                                required: true,
+                                select: true
+                            },
+                            Location: {
+                                select: true,
+                                required: true
+
+                            },
+
+                            Type: {
+                                select: true,
+                                required: true
+
+                            },
+                            Supplier: {
+                                select: true,
+                                required: true
+
+                            },
+                            Material: {
+                                select: true,
+                                required: true
+
+                            },
+                            Capacity: {
+                                select: true,
+                                required: true,
+                                number: true,
+
+
+                            },
+                            UOM: {
+                                noSpace: true,
+                                required: true
+
+                            }
+                        },
+
+                        messages: {
+                            Date: {
+                                required: '<span style="color:red">Please enter Date</span>'
+
+                            },
+                            Project: {
+                                required: '<span style="color:red">Please enter Project Name</span>'
+
+                            },
+                            VehicleNo: {
+                                required: '<span style="color:red">Please enter Vehicle Number</span>'
+
+                            },
+                            Capacity: {
+                                required: '<span style="color:red">Please enter Quentity</span>',
+                                number: '<span style="color:red">Please enter a valid number</span>',
+                            },
+                            UOM: {
+                                required: '<span style="color:red">Please enter UOM</span>'
+                            },
+                            Location: {
+                                required: '<span style="color:red">Please enter Project Location</span>'
+                            },
+                            Type: {
+                                required: '<span style="color:red">Please enter Vehicle Type</span>'
+                            },
+                            Material: {
+                                required: '<span style="color:red">Please enter Material Type</span>'
+                            }
+
+                        },
+
+                        errorPlacement: function (error, element) {
+                            error.insertAfter(element.parent());
+                        }
+                    });
+
+                    // end manual entry validation
+
+                    // Supplier quentity validation
+
+                    $(".quantityEdit1").validate({
+
+                        rules: {
+
+                            Quantity: {
+                                required: true,
+                                number: true,
+                                noSpace: true
+
+                            },
+
+                        },
+
+                        messages: {
+                            Quantity: {
+                                required: '<span style="color:red">Please enter Quentity</span>',
+                                number: '<span style="color:red">Please enter valied Number </span>'
+                            }
+
+
+                        },
+
+                        errorPlacement: function (error, element) {
+                            error.insertAfter(element.parent());
+                        }
+                    });
+
+
+                    // end Supplier quentity validation
+
+
+                    $(".passwordUpdate").validate({
+
+                        rules: {
+                            password1: {
+                                required: true
+                            },
+                            password2: {
+                                required: true
+                            },
+                            password3: {
+                                required: true
+                            }
+                        },
+
+                        messages: {
+                            password1: {
+                                required: '<span style="color:red">Please enter project name</span>'
+                            },
+                            password2: {
+                                required: '<span style="color:red">Please enter project code</span>'
+                            },
+                            password3: {
+                                required: '<span style="color:red">Please enter main location</span>'
+                            }
+
+                        },
+
+                        errorPlacement: function (error, element) {
+                            error.insertAfter(element.parent());
+                        }
+                    });
+
+                    $("#projectD_Edit").validate({
+
+                        rules: {
+                            projectname1: {
+                                required: true
+                            },
+                            projectcode1: {
+                                required: true,
+                                minlength: 10
+                            },
+                            mainlocation1: {
+                                required: true
+                            },
+                            description1: {
+                                required: true
+                            }
+                        },
+
+                        messages: {
+                            projectname1: {
+                                required: '<span style="color:red">Please enter project name</span>'
+                            },
+                            projectcode1: {
+                                required: '<span style="color:red">Please enter project code</span>'
+                            },
+                            mainlocation1: {
+                                required: '<span style="color:red">Please enter main location</span>'
+                            },
+                            description1: {
+                                required: '<span style="color:red">Please enter description</span>'
+                            }
+                        },
+
+                        errorPlacement: function (error, element) {
+                            error.insertAfter(element.parent());
+                        }
+                    });
+
+                    $("#projectV_Edit").validate({
+
+                        rules: {
+                            projectname1: {
+                                required: true
+                            },
+                            projectcode1: {
+                                required: true,
+                                minlength: 10
+                            },
+                            mainlocation1: {
+                                required: true
+                            },
+                            description1: {
+                                required: true
+                            }
+                        },
+
+                        messages: {
+                            projectname1: {
+                                required: '<span style="color:red">Please enter project name</span>'
+                            },
+                            projectcode1: {
+                                required: '<span style="color:red">Please enter project code</span>'
+                            },
+                            mainlocation1: {
+                                required: '<span style="color:red">Please enter main location</span>'
+                            },
+                            description1: {
+                                required: '<span style="color:red">Please enter description</span>'
+                            }
+                        },
+
+                        errorPlacement: function (error, element) {
+                            error.insertAfter(element.parent());
+                        }
+                    });
+
+                    $("#projectE_Edit").validate({
+
+                        rules: {
+                            projectname1: {
+                                required: true
+                            },
+                            projectcode1: {
+                                required: true,
+                                minlength: 10
+                            },
+                            mainlocation1: {
+                                required: true
+                            },
+                            description1: {
+                                required: true
+                            }
+                        },
+
+                        messages: {
+                            projectname1: {
+                                required: '<span style="color:red">Please enter project name</span>'
+                            },
+                            projectcode1: {
+                                required: '<span style="color:red">Please enter project code</span>'
+                            },
+                            mainlocation1: {
+                                required: '<span style="color:red">Please enter main location</span>'
+                            },
+                            description1: {
+                                required: '<span style="color:red">Please enter description</span>'
+                            }
+                        },
+
+                        errorPlacement: function (error, element) {
+                            error.insertAfter(element.parent());
+                        }
+                    });
+
+
+                    $(".vehicleAdd").validate({
+
+                        rules: {
+                            vehiclenumber: {
+                                required: true
+                            },
+                            capacity: {
+                                required: true,
+                                number: true
+                            },
+                            uom: {
+                                required: true
+                            }
+                        },
+
+                        messages: {
+                            vehiclenumber: {
+                                required: '<span style="color:red">Please enter vehicle number</span>'
+                            },
+                            capacity: {
+                                required: '<span style="color:red">Please enter capacity</span>',
+                                number: '<span style="color:red">Please enter valid capacity</span>'
+                            },
+                            uom: {
+                                required: '<span style="color:red">Please enter UOM</span>'
+                            }
+                        },
+
+                        errorPlacement: function (error, element) {
+                            error.insertAfter(element.parent());
+                        }
+                    });
+
+                    $(".vehicleV_Edit").validate({
+
+                        rules: {
+                            vehiclenumber: {
+                                required: true
+                            },
+                            capacity: {
+                                required: true,
+                                number: true
+                            },
+                            uom: {
+                                required: true
+                            }
+                        },
+
+                        messages: {
+                            vehiclenumber: {
+                                required: '<span style="color:red">Please enter vehicle number</span>'
+                            },
+                            capacity: {
+                                required: '<span style="color:red">Please enter capacity</span>',
+                                number: '<span style="color:red">Please enter valid capacity</span>'
+                            },
+                            uom: {
+                                required: '<span style="color:red">Please enter UOM</span>'
+                            }
+                        },
+
+                        errorPlacement: function (error, element) {
+                            error.insertAfter(element.parent());
+                        }
+                    });
+
+                    $(".changepassword").validate({
+
+                        rules: {
+                            old_password: {
+                                required: true
+                            },
+                            New_password: {
+                                required: true,
+                                minlength: 5
+
+                            },
+                            re_password: {
+                                required: true,
+                                minlength: 5,
+                                equalTo: "#New_password1",
+
+                            }
+                        },
+
+                        messages: {
+                            old_password: {
+                                required: '<span style="color:red">Please enter Old Password </span>'
+                            },
+                            New_password: {
+                                required: '<span style="color:red">Please enter New Password</span>',
+                                minlength: '<span style="color:red">Password must has at least 5 characters</span>'
+
+                            },
+                            re_password: {
+                                required: '<span style="color:red">Please enter Confirm  Password</span>',
+                                minlength: '<span style="color:red">Password must has at least 5 characters</span>',
+                                equalTo: '<span style="color: red ">Enter Confirm Password Same as New Password</span>'
+                            }
+                        },
+
+                        errorPlacement: function (error, element) {
+                            error.insertAfter(element.parent());
+                        }
+                    });
+                    $(".reset").validate({
+
+                        rules: {
+
+                            password: {
+                                required: true,
+                                minlength: 5
+
+                            },
+                            Re_Password: {
+                                required: true,
+                                minlength: 5,
+                                equalTo: "#password5",
+
+                            }
+                        },
+
+                        messages: {
+
+                            password: {
+                                required: '<span style="color:red">Please enter New Password</span>',
+                                minlength: '<span style="color:red">Password must has at least 5 characters</span>'
+
+                            },
+                            Re_Password: {
+                                required: '<span style="color:red">Please enter Confirm  Password</span>',
+                                minlength: '<span style="color:red">Password must has at least 5 characters</span>',
+                                equalTo: '<span style="color: red ">Enter Confirm Password Same as New Password</span>'
+                            }
+                        },
+
+                        errorPlacement: function (error, element) {
+                            error.insertAfter(element.parent());
+                        }
+                    });
+
+
+                })(jQuery);
+            </script>
+
+            <!-- end form validation -->
+
+            <!-- Sum of quantity -->
+            <script>
+                var sum = 0;
+                // iterate through each td based on class and add the values
+                $(".quantityTotal").each(function () {
+
+                    var value = $(this).text();
+                    // add only if the value is number
+                    if (!isNaN(value) && value.length != 0) {
+                        sum += parseFloat(value);
+                    }
+                });
+                $('#result').text(sum);
+            </script>
+            <!-- END Sum of quantity -->
+
+            <script>
+                function sortTable(n) {
+                    var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+                    table = document.getElementById("table");
+                    switching = true;
+                    // Set the sorting direction to ascending:
+                    dir = "asc";
+                    /* Make a loop that will continue until
+                        no switching has been done: */
+                    while (switching) {
+                        // Start by saying: no switching is done:
+                        switching = false;
+                        rows = table.rows;
+                        /* Loop through all table rows (except the
+                            first, which contains table headers): */
+                        for (i = 1; i < (rows.length - 1); i++) {
+                            // Start by saying there should be no switching:
+                            shouldSwitch = false;
+                            /* Get the two elements you want to compare,
+                                one from current row and one from the next: */
+                            x = rows[i].getElementsByTagName("TD")[n];
+                            y = rows[i + 1].getElementsByTagName("TD")[n];
+                            /* Check if the two rows should switch place,
+                                based on the direction, asc or desc: */
+                            if (dir == "asc") {
+                                if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                                    // If so, mark as a switch and break the loop:
+                                    shouldSwitch = true;
+                                    break;
+                                }
+                            } else if (dir == "desc") {
+                                if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                                    // If so, mark as a switch and break the loop:
+                                    shouldSwitch = true;
+                                    break;
+                                }
                             }
                         }
-                    }
-                    if (shouldSwitch) {
-                        /* If a switch has been marked, make the switch
-                    and mark that a switch has been done: */
-                        rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-                        switching = true;
-                        // Each time a switch is done, increase this count by 1:
-                        switchcount++;
-                    } else {
-                        /* If no switching has been done AND the direction is "asc",
-                    set the direction to "desc" and run the while loop again. */
-                        if (switchcount == 0 && dir == "asc") {
-                            dir = "desc";
+                        if (shouldSwitch) {
+                            /* If a switch has been marked, make the switch
+                                and mark that a switch has been done: */
+                            rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
                             switching = true;
+                            // Each time a switch is done, increase this count by 1:
+                            switchcount++;
+                        } else {
+                            /* If no switching has been done AND the direction is "asc",
+                                set the direction to "desc" and run the while loop again. */
+                            if (switchcount == 0 && dir == "asc") {
+                                dir = "desc";
+                                switching = true;
+                            }
                         }
                     }
                 }
-            }
 
-            // Select clickable table
-            $("tbody tr").click(function () {
-                var selected = $(this).hasClass("highlight");
-                $("tr").removeClass("highlight");
+                // Select clickable table
+                $("tbody tr").click(function () {
+                    var selected = $(this).hasClass("highlight");
+                    $("tr").removeClass("highlight");
 
-                if (selected) {
-                    $(this).addClass("highlight");
+                    if (selected) {
+                        $(this).addClass("highlight");
 
-                }
-                if (!selected) {
-                    $(this).addClass("highlight");
+                    }
+                    if (!selected) {
+                        $(this).addClass("highlight");
 
-                }
-            });
-        </script>
+                    }
+                });
+            </script>
 
-        <script>
-            var timeout = 2000; // in miliseconds (3*1000)
+            <script>
+                var timeout = 2000; // in miliseconds (3*1000)
 
-            $('.callout').delay(timeout).fadeOut(1000);
-        </script>
+                $('.callout').delay(timeout).fadeOut(1000);
+            </script>
 
 </body>
 

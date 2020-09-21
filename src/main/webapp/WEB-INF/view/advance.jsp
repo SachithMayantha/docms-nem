@@ -2067,6 +2067,7 @@ $(function() {
 	</div>
 	<!-- End modal -->
 	<div class="row">
+		<center>
 		<form name="bulk_action_form" action="/advance/allAdvance"
 			method="GET">
 			<!-- <div style="height:580px; overflow:auto;"> -->
@@ -2160,8 +2161,8 @@ $(function() {
 					
 				</div>
 			</c:forEach>
-
 		</form>
+		</center>
 	</div>
 	<!-- Modal -->
 	<div id="modalForm"

@@ -981,7 +981,6 @@
                                                                                 </div>
 
                                                                                 <div class="login-btn-inner">
-
                                                                                     <div class="row">
                                                                                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                                                                         </div>
@@ -993,7 +992,6 @@
                                                                                                         value="Save">Add
                                                                                                     User
                                                                                                 </button>
-
                                                                                                 <a data-dismiss="modal"
                                                                                                    href="#">
                                                                                                     <button
@@ -1043,22 +1041,12 @@
                                                                                         <div
                                                                                                 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                                                             <div class="product-payment-inner-st">
-                                                                                                <ul id="myTabedu1"
-                                                                                                    class="tab-review-design">
-                                                                                                    <li class="active">
-                                                                                                        <a href="#View"><i
-                                                                                                                class="fas fa-search"></i>View</a>
-                                                                                                    </li>
-                                                                                                    <li></li>
-                                                                                                    <li></li>
-                                                                                                </ul>
                                                                                                 <div id="myTabContent"
                                                                                                      class="tab-content custom-product-edit">
 
                                                                                                     <div
                                                                                                             class="product-tab-list tab-pane fade active in"
                                                                                                             id="View">
-                                                                                                        <form action="/user/update">
                                                                                                             <div class="row">
                                                                                                                 <div
                                                                                                                         class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -1077,7 +1065,7 @@
                                                                                                                                         <input type="text"
                                                                                                                                                class="form-control"
                                                                                                                                                name="id"
-                                                                                                                                               id="V_V_ProjectCode"/>
+                                                                                                                                               id="V_V_ProjectCode" readonly/>
                                                                                                                                     </div>
                                                                                                                                 </div>
                                                                                                                             </div>
@@ -1094,7 +1082,7 @@
                                                                                                                                         <input type="text"
                                                                                                                                                class="form-control"
                                                                                                                                                name="userName"
-                                                                                                                                               id="V_V_ProjectName"/>
+                                                                                                                                               id="V_V_ProjectName" readonly/>
                                                                                                                                     </div>
                                                                                                                                 </div>
                                                                                                                             </div>
@@ -1325,7 +1313,6 @@
                                                                                                                                     </div>
                                                                                                                                 </div>
                                                                                                                             </div>
-
                                                                                                                     </div>
                                                                                                                     <div class="login-btn-inner dropup">
                                                                                                                         <div class="row">
@@ -1391,7 +1378,6 @@
                                                                             </div>
                                                                         </div>
                                                                         <!--END Single pro tab review Start-->
-
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -1410,7 +1396,7 @@
                                             <div class="modal-dialog">
                                                 <div class="modal-content">
                                                     <div class="modal-header header-color-modal bg-color-1">
-                                                        <h4 class="modal-title">Edit</h4>
+                                                        <h4 class="modal-title">Edit User</h4>
                                                         <div class="modal-close-area modal-close-df">
                                                             <a class="close" data-dismiss="modal" href="#"> <i
                                                                     class="fa fa-close"></i></a>
@@ -1428,14 +1414,6 @@
                                                                                 <div class="row">
                                                                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                                                         <div class="product-payment-inner-st">
-                                                                                            <ul id="myTabedu1"
-                                                                                                class="tab-review-design">
-
-
-                                                                                                <li class="active">
-                                                                                                <li>
-                                                                                                <li></li>
-                                                                                            </ul>
                                                                                             <div id="myTabContent"
                                                                                                  class="tab-content custom-product-edit">
                                                                                                 <div class="product-tab-list tab-pane fade"
@@ -1765,14 +1743,13 @@
                         </div>
                         <!--END Edit Model-->
 
-
                         <!--Delete Model Start-->
                         <div id="zoomInDown4"
                              class="modal modal-edu-general modal-zoomInDown fade" role="dialog">
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-header header-color-modal bg-color-1">
-                                        <h4 class="modal-title">User</h4>
+                                        <h4 class="modal-title">Delete User</h4>
                                         <div class="modal-close-area modal-close-df">
                                             <a class="close" data-dismiss="modal" href="#"> <i
                                                     class="fa fa-close"></i></a>
@@ -1791,17 +1768,8 @@
                                                                 <div class="row">
                                                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                                         <div class="product-payment-inner-st">
-                                                                            <ul id="myTabedu1"
-                                                                                class="tab-review-design">
-                                                                                <li><a href="#View2"> <i
-                                                                                        class="fas fa-search"></i>Delete
-                                                                                </a></li>
-                                                                                <li></li>
-                                                                                <li class="active"></li>
-                                                                            </ul>
                                                                             <div id="myTabContent"
                                                                                  class="tab-content custom-product-edit">
-
                                                                                 <div class="product-tab-list tab-pane fade"
                                                                                      id="View2">
                                                                                     <form action="user/delete">
@@ -1841,7 +1809,6 @@
                                                                                                                 </div>
                                                                                                             </div>
                                                                                                         </div>
-
                                                                                                         <div class="login-btn-inner">
                                                                                                             <div class="row">
                                                                                                                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
@@ -1863,10 +1830,7 @@
                                                                                                                 </div>
                                                                                                             </div>
                                                                                                         </div>
-
-
                                                                                                     </div>
-
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>

@@ -2041,6 +2041,7 @@ $(function() {
 	</div>
 	<!-- End modal -->
 	<div class="row">
+		<center>
 		<form name="bulk_action_form" action="/performance/allPerformance"
 			method="GET">
 			<!-- <div style="height:580px; overflow:auto;"> -->
@@ -2131,11 +2132,10 @@ $(function() {
 							
 						</button>
 					</c:if>
-					
 				</div>
 			</c:forEach>
-
 		</form>
+		</center>
 	</div>
 	<!-- Modal -->
 	<div id="modalForm"
@@ -2229,14 +2229,6 @@ $(function() {
 													<input type="text" class="form-control" list="status"
 														placeholder="Select current status" name="status"
 														id="bidStatus" readonly />
-													<!--  <datalist id="status">
-																							    <option value="Details submitted to Bank">
-																							    <option value="Draft copy submitted to the Beneficiary">
-																							    <option value="Draft verified with Beneficiary">
-																							    <option value="Original submitted to the Beneficiary">
-																							    <option value="Invoice Submitted to the Employer">
-																							    <option value="Payment received">
-																							  </datalist> -->
 												</div>
 											</div>
 										</div>
@@ -2246,15 +2238,6 @@ $(function() {
 												<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"></div>
 												<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
 													<div class="login-horizental">
-														<!--   <button
-                                                                                                 class="btn btn-sm btn-primary login-submit-cs"
-                                                                                                 type="submit">Add Document</button> 
-
-                                                                                             <a data-dismiss="modal"
-                                                                                                 href="#"><button
-                                                                                                     class="btn btn-sm btn-primary login-submit-cs"
-                                                                                                     type="button">Cancel</button></a>  -->
-
 													</div>
 												</div>
 											</div>
