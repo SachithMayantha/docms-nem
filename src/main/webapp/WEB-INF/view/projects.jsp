@@ -181,8 +181,11 @@
     <!-- responsive CSS
 		============================================ -->
     <link rel="stylesheet" href="../css/responsive.css" type="text/css">
-    <!-- modernizr JS
-		============================================ -->
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.1.7/css/fixedHeader.bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.6/css/responsive.bootstrap.min.css">
+    <!-- modernizr JS============================================ -->
     <script type="text/javascript" src="../js/vendor/modernizr-2.8.3.min.js"></script>
 
 
@@ -522,6 +525,8 @@
         transform: rotate(90deg);
     }
 </style>
+
+</head>
 <body>
 
 
@@ -840,11 +845,8 @@
     </style>
     <script>
         $(function () {
-            $("table ").on("click", "tbody", function () {
-
-
+            $("table").on("click", "tbody", function () {
                 $(':input[type="button"]').prop('disabled', false);
-
             });
         });
     </script>
@@ -2203,7 +2205,7 @@
                                       method="GET">
                                     <!-- <div style="height:580px; overflow:auto;"> -->
 
-                                    <table id="table" class="table table-striped table-bordered"
+                                    <table id="table" class="table table-striped table-bordered nowrap"
                                            style="width: 100%;">
                                         <thead>
 
@@ -2245,14 +2247,14 @@
             </div>
         </div>
     </div>
-
     <script>
+
+
         $(document).ready(function () {
             var table = $('#table').DataTable({
                 "pageLength": 10,
                 //         "scrollY": 350,
                 // "scrollX": true,
-
                 language: {
                     search: "",
                     searchPlaceholder: "Search..."

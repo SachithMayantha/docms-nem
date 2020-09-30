@@ -10,9 +10,17 @@ public class User {
 	private String id;
 	private String username;
 	private String password;
+	private String role;
 	private boolean valid;
-	
-	
+
+	public String getRole() {
+		return role;
+	}
+
+	public void setRole(String role) {
+		this.role = role;
+	}
+
 	public User(String username, String password) {
 		super();
 		this.username = username;

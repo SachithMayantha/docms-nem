@@ -3,6 +3,9 @@ package com.nem.docms.servies;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import com.nem.docms.entities.User;
@@ -13,6 +16,12 @@ import com.nem.docms.repositories.UserRepository;
 
 @Service
 public class UserService {
+
+	@Bean
+	public PasswordEncoder encoder() {
+		return new BCryptPasswordEncoder();
+	}
+
 	@Autowired
 	UserRepository userRepository;
 
@@ -28,6 +37,7 @@ public class UserService {
 
 	public User addUser(User user) {
 		// TODO Auto-generated method stub
+		user.setPassword(encoder().encode(user.getPassword()));
 		return userRepository.insert(user);
 	}
 
