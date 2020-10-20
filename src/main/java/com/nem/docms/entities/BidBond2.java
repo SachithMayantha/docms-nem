@@ -2,6 +2,7 @@ package com.nem.docms.entities;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.format.annotation.NumberFormat;
 
 @Document(collection = "Bid_bond")
 public class BidBond2 {
@@ -9,6 +10,7 @@ public class BidBond2 {
 	@Id
 	private String id;
 	private String name;
+	@NumberFormat(style = NumberFormat.Style.CURRENCY)
 	private double amount;
 	private String effective;
 	private String expire;

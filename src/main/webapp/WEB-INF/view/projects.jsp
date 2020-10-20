@@ -35,9 +35,18 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>NEM Constructions</title>
     <meta name="description" content="">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.1.7/css/fixedHeader.bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.6/css/responsive.bootstrap.min.css">
     <script src="../js/lib/jquery.js"></script>
     <script src="../js/lib/jquery.mockjax.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.6/js/dataTables.responsive.min.js"></script>
+
+    <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap.min.js"></script>
+    <script src="https://cdn.datatables.net/fixedheader/3.1.7/js/dataTables.fixedHeader.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.6/js/responsive.bootstrap.min.js"></script>
     <script
             src="http://192.243.108.248/mms/assets/new/js/lib/jquery.form.js"></script>
     <script src="../js/dist/jquery.validate.js"></script>
@@ -559,13 +568,13 @@
                         href="${pageContext.request.contextPath}/advance/allAdvance"
                         aria-expanded="false"> <img src="../images/payment.png"
                                                     style="height: 25px;"> <span class="mini-click-non"
-                                                                                 style='font-size: 12px;'>Advance Payments</span></a>
+                                                                                 style='font-size: 12px;'>Advance Guarantee</span></a>
                 </li>
                 <li><a
                         href="${pageContext.request.contextPath}/performance/allPerformance"
                         aria-expanded="false"> <img src="../images/payment.png"
                                                     style="height: 25px;"> <span class="mini-click-non"
-                                                                                 style='font-size: 12px;'>Performance Payments</span></a>
+                                                                                 style='font-size: 12px;'>Performance Guarantee</span></a>
                 </li>
                 <li><a
                         href="${pageContext.request.contextPath}/retention/allRetention">

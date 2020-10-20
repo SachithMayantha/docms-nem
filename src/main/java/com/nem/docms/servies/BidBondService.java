@@ -32,6 +32,7 @@ public class BidBondService {
 		BidBond bid1 = new BidBond();
 		bid1.setId(bid.getId());
 		bid1.setName(bid.getName());
+		System.out.println(bid.getAmount().toString().matches("([0-9]{1,3}\\.)*[0-9]{1,3}\\,[0-9]{2}"));
 		bid1.setAmount(bid.getAmount());
 		bid1.setEffective(simpleDateFormat.parse(bid.getEffective()));
 		bid1.setExpire(simpleDateFormat.parse(bid.getExpire()));

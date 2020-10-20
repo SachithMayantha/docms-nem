@@ -2,10 +2,12 @@ package com.nem.docms.entities;
 
 import java.util.Date;
 
+import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import org.springframework.format.annotation.NumberFormat;
 
 @Document(collection = "Bid_bond")
 public class BidBond {
@@ -13,6 +15,7 @@ public class BidBond {
 	@Id
 	private String id;
 	private String name;
+	@NumberFormat(style = NumberFormat.Style.CURRENCY)
 	private double amount;
 	//give a standard format and remove time
 	@JsonFormat(pattern = "yyyy-MM-dd")

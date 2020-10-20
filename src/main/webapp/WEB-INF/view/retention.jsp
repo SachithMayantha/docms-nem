@@ -553,13 +553,13 @@
                         href="${pageContext.request.contextPath}/advance/allAdvance"
                         aria-expanded="false"></span> <img src="../images/payment.png"
                                                            style="height: 25px;"> <span class="mini-click-non"
-                                                                                        style='font-size: 12px;'>Advance Payments</span></a>
+                                                                                        style='font-size: 12px;'>Advance Guarantee</span></a>
                 </li>
                 <li><a
                         href="${pageContext.request.contextPath}/performance/allPerformance"
                         aria-expanded="false"> <img src="../images/payment.png"
                                                     style="height: 25px;"> <span class="mini-click-non"
-                                                                                 style='font-size: 12px;'>Performance Payments</span></a>
+                                                                                 style='font-size: 12px;'>Performance Guarantee</span></a>
                 </li>
 
                 <li><a
@@ -940,7 +940,7 @@
                                             <div class="modal-dialog">
                                                 <div class="modal-content">
                                                     <div class="modal-header header-color-modal bg-color-1">
-                                                        <h4 class="modal-title">New Retention Document</h4>
+                                                        <h4 class="modal-title">New Retention Guarantee</h4>
                                                         <div class="modal-close-area modal-close-df">
                                                             <a class="close" data-dismiss="modal" href="#"><i
                                                                     class="fa fa-close"></i></a>

@@ -554,13 +554,13 @@
                         href="${pageContext.request.contextPath}/advance/allAdvance"
                         aria-expanded="false"> <img src="../images/payment.png"
                                                     style="height: 25px;"> <span class="mini-click-non"
-                                                                                 style='font-size: 12px;'>Advance Payments</span></a>
+                                                                                 style='font-size: 12px;'>Advance Guarantee</span></a>
                 </li>
                 <li><a
                         href="${pageContext.request.contextPath}/performance/allPerformance"
                         aria-expanded="false"> <img src="../images/payment.png"
                                                     style="height: 25px;"> <span class="mini-click-non"
-                                                                                 style='font-size: 12px;'>Performance Payments</span></a>
+                                                                                 style='font-size: 12px;'>Performance Guarantee</span></a>
                 </li>
 
                 <li><a
@@ -946,7 +946,8 @@
 
 
                                                                         <form method="POST" action="/bidBond/addBidBond"
-                                                                              class="projectAdd">
+                                                                              class="projectAdd"
+                                                                              enctype="multipart/form-data">
 
                                                                             <div class="form-group-inner">
                                                                                 <div class="row">
@@ -986,9 +987,9 @@
                                                                                         <label class="login2">Amount</label>
                                                                                     </div>
                                                                                     <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                                                                        <input type="text"
+                                                                                        <input type="number"
                                                                                                class="form-control"
-                                                                                               placeholder="Enter Amount"
+                                                                                               placeholder="Enter Amount" step=".01"
                                                                                                name="amount"/>
                                                                                     </div>
                                                                                 </div>
@@ -1046,6 +1047,18 @@
                                                                                                     value="Invoice Submitted to the Employer">
                                                                                             <option value="Payment received">
                                                                                         </datalist>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="form-group-inner">
+                                                                                <div class="row">
+                                                                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                        <label class="login2">Upload Document</label>
+                                                                                    </div>
+                                                                                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                        <input type="file" class="form-control"
+                                                                                               name="document"
+                                                                                               accept="*"/>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
@@ -2271,6 +2284,7 @@
                 </tr>
                 </thead>
             </table>
+                <h5>${message}</h5>
             <br/>
             <table>
                 <c:forEach var="bid" items="${list}">

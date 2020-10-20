@@ -547,12 +547,12 @@ span.step {
 						href="${pageContext.request.contextPath}/advance/allAdvance"
 						aria-expanded="false"></span> <img src="../images/payment.png"
 							style="height: 25px;"> <span class="mini-click-non"
-							style='font-size: 12px;'>Advance Payments</span></a></li>
+							style='font-size: 12px;'>Advance Guarantee</span></a></li>
 					<li><a
 						href="${pageContext.request.contextPath}/performance/allPerformance"
 						aria-expanded="false"> <img src="../images/payment.png"
 							style="height: 25px;"> <span class="mini-click-non"
-							style='font-size: 12px;'>Performance Payments</span></a></li>
+							style='font-size: 12px;'>Performance Guarantee</span></a></li>
 
 					<li><a
 						href="${pageContext.request.contextPath}/retention/allRetention">
@@ -623,12 +623,12 @@ span.step {
 												href="${pageContext.request.contextPath}/advance/allAdvance"
 												aria-expanded="false"></span> <img src="../images/payment.png"
 													style="height: 25px;"> <span class="mini-click-non"
-													style='font-size: 12px;'>Advance Payments</span></a></li>
+													style='font-size: 12px;'>Advance Guarantee</span></a></li>
 											<li><a
 												href="${pageContext.request.contextPath}/performance/allPerformance"
 												aria-expanded="false"> <img src="../images/payment.png"
 													style="height: 25px;"> <span class="mini-click-non"
-													style='font-size: 12px;'>Performance Payments</span></a></li>
+													style='font-size: 12px;'>Performance Guarantee</span></a></li>
 
 											<li><a
 												href="${pageContext.request.contextPath}/retention/allRetention">
@@ -916,7 +916,7 @@ $(function() {
 												<div class="modal-dialog">
 													<div class="modal-content">
 														<div class="modal-header header-color-modal bg-color-1">
-															<h4 class="modal-title">New Advance Payment Document</h4>
+															<h4 class="modal-title">New Advance Guarantee</h4>
 															<div class="modal-close-area modal-close-df">
 																<a class="close" data-dismiss="modal" href="#"><i
 																	class="fa fa-close"></i></a>
@@ -2078,7 +2078,7 @@ $(function() {
 						<td colspan="3">
 							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 								<h4 id="topic" style="color: #337ab7;">
-									<br>Advance Payment Documents
+									<br>Advance Guarantee Documents
 								</h4>
 							</div>
 						</td>

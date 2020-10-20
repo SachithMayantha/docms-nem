@@ -538,12 +538,12 @@ span.step {
 						href="${pageContext.request.contextPath}/advance/allAdvance"
 						aria-expanded="false"></span> <img src="../images/payment.png"
 							style="height: 25px;"> <span class="mini-click-non"
-							style='font-size: 12px;'>Advance Payments</span></a></li>
+							style='font-size: 12px;'>Advance Guarantee</span></a></li>
 					<li><a
 						href="${pageContext.request.contextPath}/performance/allPerformance"
 						aria-expanded="false"> <img src="../images/payment.png"
 							style="height: 25px;"> <span class="mini-click-non"
-							style='font-size: 12px;'>Performance Payments</span></a></li>
+							style='font-size: 12px;'>Performance Guarantee</span></a></li>
 
 					<li><a
 						href="${pageContext.request.contextPath}/retention/allRetention">
