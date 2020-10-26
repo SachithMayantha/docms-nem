@@ -1,27 +1,28 @@
 package com.nem.docms.controllers;
 
-import java.util.List;
+import com.nem.docms.entities.User;
+import com.nem.docms.servies.UserService;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-
-import com.nem.docms.entities.User;
-import com.nem.docms.servies.UserService;
+import java.util.List;
 
 @Controller
 @RequestMapping("/login")
 public class LoginController extends HttpServlet {
 
 	private static final long serialVersionUID = 1L;
-	@Autowired
-	UserService userService;
+
+	private final UserService userService;
+
+	public LoginController(UserService userService) {
+		this.userService = userService;
+	}
 
 	@PostMapping("")
 	public void login(HttpServletRequest request, HttpServletResponse response)

@@ -1,21 +1,22 @@
 package com.nem.docms.servies;
 
+import com.nem.docms.entities.BidBond;
+import com.nem.docms.entities.BidBond2;
+import com.nem.docms.repositories.BidBondRepository;
+import org.springframework.stereotype.Service;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
-import com.nem.docms.entities.BidBond;
-import com.nem.docms.entities.BidBond2;
-import com.nem.docms.repositories.BidBondRepository;
-
 @Service
 public class BidBondService {
 
-	@Autowired
-	BidBondRepository bidBondRepository;
+	private final BidBondRepository bidBondRepository;
+
+	public BidBondService(BidBondRepository bidBondRepository) {
+		this.bidBondRepository = bidBondRepository;
+	}
 
 	public List<BidBond> getAll() {
 //		System.out.println("service bid bond list called ");
@@ -32,7 +33,6 @@ public class BidBondService {
 		BidBond bid1 = new BidBond();
 		bid1.setId(bid.getId());
 		bid1.setName(bid.getName());
-		System.out.println(bid.getAmount().toString().matches("([0-9]{1,3}\\.)*[0-9]{1,3}\\,[0-9]{2}"));
 		bid1.setAmount(bid.getAmount());
 		bid1.setEffective(simpleDateFormat.parse(bid.getEffective()));
 		bid1.setExpire(simpleDateFormat.parse(bid.getExpire()));

@@ -1,21 +1,22 @@
 package com.nem.docms.servies;
 
+import com.nem.docms.entities.Retention;
+import com.nem.docms.entities.Retention2;
+import com.nem.docms.repositories.RetentionRepository;
+import org.springframework.stereotype.Service;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
-import com.nem.docms.entities.Retention;
-import com.nem.docms.entities.Retention2;
-import com.nem.docms.repositories.RetentionRepository;
-
 @Service
 public class RetentionService {
 
-	@Autowired
-	RetentionRepository retentionRepository;
+	private final RetentionRepository retentionRepository;
+
+	public RetentionService(RetentionRepository retentionRepository) {
+		this.retentionRepository = retentionRepository;
+	}
 
 	public List<Retention> getAll() {
 		// TODO Auto-generated method stub

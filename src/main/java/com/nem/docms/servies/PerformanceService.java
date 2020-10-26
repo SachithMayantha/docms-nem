@@ -1,21 +1,22 @@
 package com.nem.docms.servies;
 
+import com.nem.docms.entities.Performance;
+import com.nem.docms.entities.Performance2;
+import com.nem.docms.repositories.PerformanceRepository;
+import org.springframework.stereotype.Service;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
-import com.nem.docms.entities.Performance;
-import com.nem.docms.entities.Performance2;
-import com.nem.docms.repositories.PerformanceRepository;
-
 @Service
 public class PerformanceService {
 
-	@Autowired
-	PerformanceRepository performanceRepository;
+	private final PerformanceRepository performanceRepository;
+
+	public PerformanceService(PerformanceRepository performanceRepository) {
+		this.performanceRepository = performanceRepository;
+	}
 
 	public List<Performance> getAll() {
 		// TODO Auto-generated method stub

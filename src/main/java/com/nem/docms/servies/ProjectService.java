@@ -1,18 +1,19 @@
 package com.nem.docms.servies;
 
-import java.util.List;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
 import com.nem.docms.entities.Project;
 import com.nem.docms.repositories.ProjectRepository;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Service
 public class ProjectService {
 
-	@Autowired
-	ProjectRepository projectRepository;
+	private final ProjectRepository projectRepository;
+
+	public ProjectService(ProjectRepository projectRepository) {
+		this.projectRepository = projectRepository;
+	}
 
 	public List<Project> getAll() {
 		// TODO Auto-generated method stub

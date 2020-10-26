@@ -1,9 +1,13 @@
 package com.nem.docms.entities;
 
+import lombok.Getter;
+import lombok.Setter;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.format.annotation.NumberFormat;
 
+@Getter
+@Setter
 @Document(collection = "Bid_bond")
 public class BidBond2 {
 
@@ -16,22 +20,6 @@ public class BidBond2 {
 	private String expire;
 	private String status;
 	private long remain;
-	
-	public long getRemain() {
-		return remain;
-	}
-
-	public void setRemain(long remain) {
-		this.remain = remain;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
 
 	public BidBond2() {
 		super();
@@ -48,45 +36,4 @@ public class BidBond2 {
 		this.status = status;
 		this.remain = remain;
 	}
-
-	public String getId() {
-		return id;
-	}
-
-	public void setId(String id) {
-		this.id = id;
-	}
-
-	public Double getAmount() {
-		return amount;
-	}
-
-	public void setAmount(double amount) {
-		this.amount = amount;
-	}
-
-	public String getEffective() {
-		return effective;
-	}
-
-	public void setEffective(String effective) {
-		this.effective = effective;
-	}
-
-	public String getExpire() {
-		return expire;
-	}
-
-	public void setExpire(String expire) {
-		this.expire = expire;
-	}
-
-	public String getStatus() {
-		return status;
-	}
-
-	public void setStatus(String status) {
-		this.status = status;
-	}
-	
 }

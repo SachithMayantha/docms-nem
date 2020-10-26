@@ -1,12 +1,15 @@
 package com.nem.docms.entities;
 
-import java.util.Date;
-
+import com.fasterxml.jackson.annotation.JsonFormat;
+import lombok.Getter;
+import lombok.Setter;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
+import java.util.Date;
 
+@Getter
+@Setter
 @Document(collection = "Retention")
 public class Retention {
 	
@@ -27,8 +30,6 @@ public class Retention {
 		// TODO Auto-generated constructor stub
 	}
 
-	
-
 	public Retention(String id, String name, Long amount, Date effective, Date expire, Long remain, String status) {
 		super();
 		this.id = id;
@@ -39,71 +40,4 @@ public class Retention {
 		this.remain = remain;
 		this.status = status;
 	}
-
-
-
-	public String getName() {
-		return name;
-	}
-
-
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-
-
-	public Long getRemain() {
-		return remain;
-	}
-
-
-
-	public void setRemain(Long remain) {
-		this.remain = remain;
-	}
-
-
-
-	public String getId() {
-		return id;
-	}
-
-	public void setId(String id) {
-		this.id = id;
-	}
-
-	public Long getAmount() {
-		return amount;
-	}
-
-	public void setAmount(Long amount) {
-		this.amount = amount;
-	}
-
-	public Date getEffective() {
-		return effective;
-	}
-
-	public void setEffective(Date effective) {
-		this.effective = effective;
-	}
-
-	public Date getExpire() {
-		return expire;
-	}
-
-	public void setExpire(Date expire) {
-		this.expire = expire;
-	}
-
-	public String getStatus() {
-		return status;
-	}
-
-	public void setStatus(String status) {
-		this.status = status;
-	}
-	
 }

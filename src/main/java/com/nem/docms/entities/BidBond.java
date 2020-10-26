@@ -1,14 +1,16 @@
 package com.nem.docms.entities;
 
-import java.util.Date;
-
-import org.springframework.data.annotation.CreatedDate;
+import com.fasterxml.jackson.annotation.JsonFormat;
+import lombok.Getter;
+import lombok.Setter;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
-
-import com.fasterxml.jackson.annotation.JsonFormat;
 import org.springframework.format.annotation.NumberFormat;
 
+import java.util.Date;
+
+@Getter
+@Setter
 @Document(collection = "Bid_bond")
 public class BidBond {
 
@@ -24,22 +26,6 @@ public class BidBond {
 	private Date expire;
 	private String status;
 	private long remain;
-	
-	public long getRemain() {
-		return remain;
-	}
-
-	public void setRemain(long remain) {
-		this.remain = remain;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
 
 	public BidBond() {
 		super();
@@ -56,45 +42,4 @@ public class BidBond {
 		this.status = status;
 		this.remain = remain;
 	}
-
-	public String getId() {
-		return id;
-	}
-
-	public void setId(String id) {
-		this.id = id;
-	}
-
-	public Double getAmount() {
-		return amount;
-	}
-
-	public void setAmount(double amount) {
-		this.amount = amount;
-	}
-
-	public Date getEffective() {
-		return effective;
-	}
-
-	public void setEffective(Date effective) {
-		this.effective = effective;
-	}
-
-	public Date getExpire() {
-		return expire;
-	}
-
-	public void setExpire(Date expire) {
-		this.expire = expire;
-	}
-
-	public String getStatus() {
-		return status;
-	}
-
-	public void setStatus(String status) {
-		this.status = status;
-	}
-	
 }
