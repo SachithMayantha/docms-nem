@@ -39,7 +39,7 @@
     <script src="../js/lib/jquery.js"></script>
     <script src="../js/lib/jquery.mockjax.js"></script>
     <script
-            src="http://192.243.108.248/mms/assets/new/js/lib/jquery.form.js"></script>
+            src="../js/lib/jquery.form.js"></script>
     <script src="../js/dist/jquery.validate.js"></script>
     <!--  -->
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
@@ -342,7 +342,7 @@
     .sidebar-nav .metismenu {
         /* top: -4px; */
         margin-top: 4px;
-        ba ckground: #c2dce624;
+        background: #c2dce624;
         /* position: absolute; */
         border: none;
         /* height: 100%; */
@@ -975,7 +975,27 @@
                                                                                             <input type="password"
                                                                                                    class="form-control"
                                                                                                    placeholder="Enter Password"
-                                                                                                   name="password"/>
+                                                                                                   name="password"
+                                                                                                   required/>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="form-group-inner">
+                                                                                    <div class="row">
+                                                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                            <label class="login2">User
+                                                                                                Role</label>
+                                                                                        </div>
+                                                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                            <select class="form-control"
+                                                                                                    name="role">
+                                                                                                <option value="USER">
+                                                                                                    USER
+                                                                                                </option>
+                                                                                                <option value="ADMIN">
+                                                                                                    ADMIN
+                                                                                                </option>
+                                                                                            </select>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -1047,64 +1067,81 @@
                                                                                                     <div
                                                                                                             class="product-tab-list tab-pane fade active in"
                                                                                                             id="View">
-                                                                                                            <div class="row">
-                                                                                                                <div
-                                                                                                                        class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                                                                                    <div class="review-content-section">
-                                                                                                                        <div class="row">
+                                                                                                        <div class="row">
+                                                                                                            <div
+                                                                                                                    class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                                                                <div class="review-content-section">
+                                                                                                                    <div class="row">
 
-                                                                                                                            <div class="form-group-inner">
-                                                                                                                                <div class="row">
-                                                                                                                                    <div
-                                                                                                                                            class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                                                                                                                        <label class="login2">User
-                                                                                                                                            ID</label>
-                                                                                                                                    </div>
-                                                                                                                                    <div
-                                                                                                                                            class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                                                                                                                        <input type="text"
-                                                                                                                                               class="form-control"
-                                                                                                                                               name="id"
-                                                                                                                                               id="V_V_ProjectCode" readonly/>
-                                                                                                                                    </div>
+                                                                                                                        <div class="form-group-inner">
+                                                                                                                            <div class="row">
+                                                                                                                                <div
+                                                                                                                                        class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                                                                    <label class="login2">User
+                                                                                                                                        ID</label>
+                                                                                                                                </div>
+                                                                                                                                <div
+                                                                                                                                        class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                                                                    <input type="text"
+                                                                                                                                           class="form-control"
+                                                                                                                                           name="id"
+                                                                                                                                           id="V_V_ProjectCode"
+                                                                                                                                           readonly/>
                                                                                                                                 </div>
                                                                                                                             </div>
+                                                                                                                        </div>
 
-                                                                                                                            <div class="form-group-inner">
-                                                                                                                                <div class="row">
-                                                                                                                                    <div
-                                                                                                                                            class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                                                                                                                        <label class="login2">User
-                                                                                                                                            Name</label>
-                                                                                                                                    </div>
-                                                                                                                                    <div
-                                                                                                                                            class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                                                                                                                        <input type="text"
-                                                                                                                                               class="form-control"
-                                                                                                                                               name="userName"
-                                                                                                                                               id="V_V_ProjectName" readonly/>
-                                                                                                                                    </div>
+                                                                                                                        <div class="form-group-inner">
+                                                                                                                            <div class="row">
+                                                                                                                                <div
+                                                                                                                                        class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                                                                    <label class="login2">User
+                                                                                                                                        Name</label>
+                                                                                                                                </div>
+                                                                                                                                <div
+                                                                                                                                        class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                                                                    <input type="text"
+                                                                                                                                           class="form-control"
+                                                                                                                                           name="userName"
+                                                                                                                                           id="V_V_ProjectName"
+                                                                                                                                           readonly/>
                                                                                                                                 </div>
                                                                                                                             </div>
-                                                                                                                            <div class="login-btn-inner">
-                                                                                                                                <div class="row">
+                                                                                                                        </div>
+                                                                                                                        <div class="form-group-inner">
+                                                                                                                            <div class="row">
+                                                                                                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                                                                    <label class="login2">User
+                                                                                                                                        Role</label>
+                                                                                                                                </div>
+                                                                                                                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                                                                    <input type="text"
+                                                                                                                                           class="form-control"
+                                                                                                                                           name="role"
+                                                                                                                                           id="V_V_Role"
+                                                                                                                                           readonly>
+                                                                                                                                    </input>
+                                                                                                                                </div>
+                                                                                                                            </div>
+                                                                                                                        </div>
+                                                                                                                        <div class="login-btn-inner">
+                                                                                                                            <div class="row">
+                                                                                                                                <div
+                                                                                                                                        class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                                                                </div>
+                                                                                                                                <div
+                                                                                                                                        class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                                                                                                                     <div
-                                                                                                                                            class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                                                                                                                    </div>
-                                                                                                                                    <div
-                                                                                                                                            class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                                                                                                                        <div
-                                                                                                                                                class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                                                                                                                            <div class="login-horizental">
-                                                                                                                                                <a data-dismiss="modal"
-                                                                                                                                                   href="#">
-                                                                                                                                                    <button
-                                                                                                                                                            class="btn btn-sm btn-primary login-submit-cs"
-                                                                                                                                                            type="button">
-                                                                                                                                                        Cancel
-                                                                                                                                                    </button>
-                                                                                                                                                </a>
-                                                                                                                                            </div>
+                                                                                                                                            class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                                                                        <div class="login-horizental">
+                                                                                                                                            <a data-dismiss="modal"
+                                                                                                                                               href="#">
+                                                                                                                                                <button
+                                                                                                                                                        class="btn btn-sm btn-primary login-submit-cs"
+                                                                                                                                                        type="button">
+                                                                                                                                                    Cancel
+                                                                                                                                                </button>
+                                                                                                                                            </a>
                                                                                                                                         </div>
                                                                                                                                     </div>
                                                                                                                                 </div>
@@ -1113,6 +1150,7 @@
                                                                                                                     </div>
                                                                                                                 </div>
                                                                                                             </div>
+                                                                                                        </div>
                                                                                                         </form>
                                                                                                     </div>
                                                                                                     <!--Start Edit-->
@@ -1177,25 +1215,29 @@
                                                                                                                                     </div>
                                                                                                                                 </div>
                                                                                                                             </div>
-
                                                                                                                             <div class="form-group-inner">
                                                                                                                                 <div class="row">
                                                                                                                                     <div
                                                                                                                                             class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                                                                                                                        <label class="login2">Password</label>
+                                                                                                                                        <label class="login2">User
+                                                                                                                                            Role</label>
                                                                                                                                     </div>
                                                                                                                                     <div
                                                                                                                                             class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                                                                                                                        <input type="password"
+                                                                                                                                        <input type="text"
                                                                                                                                                class="form-control"
-                                                                                                                                               placeholder="Enter Password"
-                                                                                                                                               name="Description"
-                                                                                                                                               id="V_E_Description"/>
-
+                                                                                                                                               name="role"
+                                                                                                                                               id="V_E_Role"/>
+                                                                                                                                    </div>
+                                                                                                                                    <div
+                                                                                                                                            class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                                                                        <input type="hidden"
+                                                                                                                                               class="form-control"
+                                                                                                                                               name="role"
+                                                                                                                                               id="V_E_H_Role"/>
                                                                                                                                     </div>
                                                                                                                                 </div>
                                                                                                                             </div>
-
                                                                                                                             <div class="login-btn-inner dropup">
                                                                                                                                 <div class="row">
                                                                                                                                     <div
@@ -1313,413 +1355,82 @@
                                                                                                                                     </div>
                                                                                                                                 </div>
                                                                                                                             </div>
-                                                                                                                    </div>
-                                                                                                                    <div class="login-btn-inner dropup">
-                                                                                                                        <div class="row">
-                                                                                                                            <div
-                                                                                                                                    class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                                                                                                            </div>
-                                                                                                                            <div
-                                                                                                                                    class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                                                                                                                <div class="login-horizental">
-                                                                                                                                    <button type="button"
-                                                                                                                                            class="btn btn-sm btn-primary login-submit-cs"
-                                                                                                                                            data-toggle="dropdown">
-                                                                                                                                        Delete
-                                                                                                                                    </button>
-                                                                                                                                    <ul
-                                                                                                                                            class="dropdown-menu btn-dropdown-menu dropdown-menu-up"
-                                                                                                                                            role="menu"
-                                                                                                                                            style="min-width: 130px; font-size: 20px; padding: 5px;">
-                                                                                                                                        <li>
-                                                                                                                                            Delete
-                                                                                                                                            User
-                                                                                                                                            ?<br>
-                                                                                                                                        </li>
-                                                                                                                                        <li>
-                                                                                                                                            <button type="submit"
-                                                                                                                                                    class="btn btn-sm btn-primary login-submit-cs"
-                                                                                                                                                    name="delete"
-                                                                                                                                                    id="btnSubmit">
-                                                                                                                                                Yes
-                                                                                                                                            </button>
-
-                                                                                                                                            <button type="button"
-                                                                                                                                                    class="btn btn-sm btn-primary login-submit-cs">
-                                                                                                                                                No
-                                                                                                                                            </button>
-                                                                                                                                        </li>
-
-
-                                                                                                                                    </ul>
-                                                                                                                                    </form>
-                                                                                                                                    <a data-dismiss="modal"
-                                                                                                                                       href="#">
-                                                                                                                                        <button
-                                                                                                                                                class="btn btn-sm btn-primary login-submit-cs"
-                                                                                                                                                type="button">
-                                                                                                                                            Cancel
-                                                                                                                                        </button>
-                                                                                                                                    </a>
+                                                                                                                            <div class="form-group-inner">
+                                                                                                                                <div class="row">
+                                                                                                                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                                                                        <label class="login2">User
+                                                                                                                                            Role</label>
+                                                                                                                                    </div>
+                                                                                                                                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                                                                        <input type="text"
+                                                                                                                                               class="form-control"
+                                                                                                                                               id="V_D_Role"
+                                                                                                                                               readonly/>
+                                                                                                                                        <input
+                                                                                                                                                type="hidden"
+                                                                                                                                                class="form-control"
+                                                                                                                                                name="username"
+                                                                                                                                                id="V_D_H_Role"
+                                                                                                                                                required/>
+                                                                                                                                    </div>
                                                                                                                                 </div>
                                                                                                                             </div>
-                                                                                                                        </div>
-                                                                                                                    </div>
-                                                                                                                </div>
-
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <!--END Single pro tab review Start-->
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--END View Model-->
-
-
-                                        <!--Edit Model Start-->
-                                        <div id="zoomInDown3"
-                                             class="modal modal-edu-general modal-zoomInDown fade"
-                                             role="dialog">
-                                            <div class="modal-dialog">
-                                                <div class="modal-content">
-                                                    <div class="modal-header header-color-modal bg-color-1">
-                                                        <h4 class="modal-title">Edit User</h4>
-                                                        <div class="modal-close-area modal-close-df">
-                                                            <a class="close" data-dismiss="modal" href="#"> <i
-                                                                    class="fa fa-close"></i></a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <div class="modal-login-form-inner">
-                                                            <div class="row">
-                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                                    <div class="basic-login-inner modal-basic-inner">
-
-                                                                        <!-- Single pro tab review Start-->
-                                                                        <div class="single-pro-review-area mt-t-30 mg-b-15">
-                                                                            <div class="container-fluid">
-                                                                                <div class="row">
-                                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                                                        <div class="product-payment-inner-st">
-                                                                                            <div id="myTabContent"
-                                                                                                 class="tab-content custom-product-edit">
-                                                                                                <div class="product-tab-list tab-pane fade"
-                                                                                                     id="View1">
-                                                                                                    <div class="row">
-                                                                                                        <div
-                                                                                                                class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                                                                            <form method="post"
-                                                                                                                  action="/user/update"
-                                                                                                                  class="userAdd">
-                                                                                                                <div class="review-content-section">
-                                                                                                                    <div class="row">
-                                                                                                                        <div class="form-group-inner">
-                                                                                                                            <div class="row">
-                                                                                                                                <div
-                                                                                                                                        class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                                                                                                                    <label class="login2">User
-                                                                                                                                        ID</label>
-                                                                                                                                </div>
-                                                                                                                                <div
-                                                                                                                                        class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                                                                                                                    <input type="text"
-                                                                                                                                           class="form-control"
-                                                                                                                                           name="id"
-                                                                                                                                           id="E_V_ProjectCode"/>
-                                                                                                                                </div>
-                                                                                                                            </div>
-                                                                                                                        </div>
-
-                                                                                                                        <div class="form-group-inner">
-                                                                                                                            <div class="row">
-                                                                                                                                <div
-                                                                                                                                        class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                                                                                                                    <label class="login2">User
-                                                                                                                                        Name</label>
-                                                                                                                                </div>
-                                                                                                                                <div
-                                                                                                                                        class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                                                                                                                    <input type="text"
-                                                                                                                                           class="form-control"
-                                                                                                                                           name="username"
-                                                                                                                                           id="E_V_ProjectName"/>
-                                                                                                                                </div>
-                                                                                                                            </div>
-                                                                                                                        </div>
-
-                                                                                                                        <div class="login-btn-inner">
-                                                                                                                            <div class="row">
-                                                                                                                                <div
-                                                                                                                                        class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                                                                                                                </div>
-                                                                                                                                <div
-                                                                                                                                        class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                                                            <div class="login-btn-inner dropup">
+                                                                                                                                <div class="row">
+                                                                                                                                    <div
+                                                                                                                                            class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                                                                    </div>
                                                                                                                                     <div
                                                                                                                                             class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                                                                                                         <div class="login-horizental">
-                                                                                                                                            <a data-dismiss="modal"
-                                                                                                                                               href="#">
-                                                                                                                                                <button
-                                                                                                                                                        class="btn btn-sm btn-primary login-submit-cs"
-                                                                                                                                                        type="button">
-                                                                                                                                                    Cancel
-                                                                                                                                                </button>
-                                                                                                                                            </a>
+                                                                                                                                            <button type="button"
+                                                                                                                                                    class="btn btn-sm btn-primary login-submit-cs"
+                                                                                                                                                    data-toggle="dropdown">
+                                                                                                                                                Delete
+                                                                                                                                            </button>
+                                                                                                                                            <ul
+                                                                                                                                                    class="dropdown-menu btn-dropdown-menu dropdown-menu-up"
+                                                                                                                                                    role="menu"
+                                                                                                                                                    style="min-width: 130px; font-size: 20px; padding: 5px;">
+                                                                                                                                                <li>
+                                                                                                                                                    Delete
+                                                                                                                                                    User
+                                                                                                                                                    ?<br>
+                                                                                                                                                </li>
+                                                                                                                                                <li>
+                                                                                                                                                    <button type="submit"
+                                                                                                                                                            class="btn btn-sm btn-primary login-submit-cs"
+                                                                                                                                                            name="delete"
+                                                                                                                                                            id="btnSubmit">
+                                                                                                                                                        Yes
+                                                                                                                                                    </button>
+
+                                                                                                                                                    <button type="button"
+                                                                                                                                                            class="btn btn-sm btn-primary login-submit-cs">
+                                                                                                                                                        No
+                                                                                                                                                    </button>
+                                                                                                                                                </li>
+                                                                                                                                            </ul>
                                                                                                                                         </div>
                                                                                                                                     </div>
                                                                                                                                 </div>
                                                                                                                             </div>
-                                                                                                                        </div>
+                                                                                                                        </form>
+                                                                                                                        <a data-dismiss="modal"
+                                                                                                                           href="#">
+                                                                                                                            <button
+                                                                                                                                    class="btn btn-sm btn-primary login-submit-cs"
+                                                                                                                                    type="button">
+                                                                                                                                Cancel
+                                                                                                                            </button>
+                                                                                                                        </a>
                                                                                                                     </div>
                                                                                                                 </div>
-                                                                                                            </form>
-                                                                                                        </div>
-                                                                                                    </div>
-
-                                                                                                </div>
-                                                                                                <!--Edit1 start-->
-                                                                                                <div
-                                                                                                        class="product-tab-list tab-pane fade active in"
-                                                                                                        id="Edit1">
-                                                                                                    <div class="row">
-                                                                                                        <div
-                                                                                                                class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                                                                            <div class="review-content-section">
-                                                                                                                <div class="row">
-                                                                                                                    <form method="post"
-                                                                                                                          action="/user/update"
-                                                                                                                          class="projectE_Edit">
-
-                                                                                                                        <div class="form-group-inner">
-                                                                                                                            <div class="row">
-                                                                                                                                <div
-                                                                                                                                        class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                                                                                                                    <label class="login2">User
-                                                                                                                                        ID</label>
-                                                                                                                                </div>
-                                                                                                                                <div
-                                                                                                                                        class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                                                                                                                    <input type="hidden"
-                                                                                                                                           class="form-control"
-                                                                                                                                           placeholder="Enter User ID"
-                                                                                                                                           id="E_E_H_ProjectCode"
-                                                                                                                                           name="id"/>
-                                                                                                                                    <input
-                                                                                                                                            type="text"
-                                                                                                                                            class="form-control"
-                                                                                                                                            placeholder="Enter User ID"
-                                                                                                                                            id="E_E_ProjectCode"
-                                                                                                                                            name="id"
-                                                                                                                                            readonly/>
-                                                                                                                                </div>
-                                                                                                                            </div>
-                                                                                                                        </div>
-
-                                                                                                                        <div class="form-group-inner">
-                                                                                                                            <div class="row">
-                                                                                                                                <div
-                                                                                                                                        class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                                                                                                                    <label class="login2">User
-                                                                                                                                        Name</label>
-                                                                                                                                </div>
-                                                                                                                                <div
-                                                                                                                                        class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                                                                                                                    <input type="text"
-                                                                                                                                           class="form-control"
-                                                                                                                                           name="username"
-                                                                                                                                           id="E_E_H_ProjectName"/>
-                                                                                                                                </div>
-                                                                                                                                <div
-                                                                                                                                        class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                                                                                                                    <input type="hidden"
-                                                                                                                                           class="form-control"
-                                                                                                                                           name="username"
-                                                                                                                                           id="E_E_ProjectName"/>
-                                                                                                                                </div>
-                                                                                                                            </div>
-                                                                                                                        </div>
-
-                                                                                                                        <div class="login-btn-inner dropup">
-                                                                                                                            <div class="row">
-                                                                                                                                <div
-                                                                                                                                        class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                                                                                                                </div>
-                                                                                                                                <div
-                                                                                                                                        class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                                                                                                                    <div class="login-horizental">
-                                                                                                                                        <button type="button"
-                                                                                                                                                class="btn btn-sm btn-primary login-submit-cs"
-                                                                                                                                                data-toggle="dropdown">
-                                                                                                                                            Update
-                                                                                                                                        </button>
-                                                                                                                                        <ul
-                                                                                                                                                class="dropdown-menu btn-dropdown-menu dropdown-menu-up"
-                                                                                                                                                role="menu"
-                                                                                                                                                style="min-width: 130px; font-size: 20px; padding: 5px;">
-                                                                                                                                            <li>
-                                                                                                                                                Save
-                                                                                                                                                the
-                                                                                                                                                changes
-                                                                                                                                                to
-                                                                                                                                                the
-                                                                                                                                                User
-                                                                                                                                                <br>
-                                                                                                                                            </li>
-                                                                                                                                            <li>
-                                                                                                                                                <button type="submit"
-                                                                                                                                                        class="btn btn-sm btn-primary login-submit-cs"
-                                                                                                                                                        id="btnSubmit">
-                                                                                                                                                    Yes
-                                                                                                                                                </button>
-
-                                                                                                                                                <button type="button"
-                                                                                                                                                        class="btn btn-sm btn-primary login-submit-cs">
-                                                                                                                                                    No
-                                                                                                                                                </button>
-
-                                                                                                                                            </li>
-
-
-                                                                                                                                        </ul>
-                                                                                                                                        <a data-dismiss="modal"
-                                                                                                                                           href="#">
-                                                                                                                                            <button
-                                                                                                                                                    class="btn btn-sm btn-primary login-submit-cs"
-                                                                                                                                                    type="button">
-                                                                                                                                                Cancel
-                                                                                                                                            </button>
-                                                                                                                                        </a>
-                                                                                                                                    </div>
-                                                                                                                                </div>
-                                                                                                                            </div>
-                                                                                                                        </div>
-                                                                                                                    </form>
-                                                                                                                </div>
-
                                                                                                             </div>
                                                                                                         </div>
                                                                                                     </div>
+
                                                                                                 </div>
-                                                                                                <!--Delete1 start-->
-                                                                                                <div class="product-tab-list tab-pane fade "
-                                                                                                     id="Delete1">
-                                                                                                    <div class="row">
-                                                                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                                                                            <div class="review-content-section">
-                                                                                                                <div class="row">
-
-                                                                                                                    <form action="/user/delete"
-                                                                                                                          method="post"
-                                                                                                                          accept-charset="utf-8">
-
-                                                                                                                        <div class="form-group-inner">
-                                                                                                                            <div class="row">
-                                                                                                                                <div
-                                                                                                                                        class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                                                                                                                    <label class="login2">User
-                                                                                                                                        ID</label>
-                                                                                                                                </div>
-                                                                                                                                <div
-                                                                                                                                        class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                                                                                                                    <input type="text"
-                                                                                                                                           class="form-control"
-                                                                                                                                           name="id"
-                                                                                                                                           id="E_D_ProjectCode"
-                                                                                                                                           readonly/>
-                                                                                                                                </div>
-                                                                                                                            </div>
-                                                                                                                        </div>
-
-                                                                                                                        <div class="form-group-inner">
-                                                                                                                            <div class="row">
-                                                                                                                                <div
-                                                                                                                                        class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                                                                                                                    <label class="login2">User
-                                                                                                                                        Name</label>
-                                                                                                                                </div>
-                                                                                                                                <div
-                                                                                                                                        class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                                                                                                                    <input type="text"
-                                                                                                                                           class="form-control"
-                                                                                                                                           id="E_D_ProjectName"
-                                                                                                                                           readonly/>
-                                                                                                                                    <input
-                                                                                                                                            type="hidden"
-                                                                                                                                            class="form-control"
-                                                                                                                                            name="username"
-                                                                                                                                            id="E_D_H_ProjectName"
-                                                                                                                                            required/>
-                                                                                                                                </div>
-                                                                                                                            </div>
-                                                                                                                        </div>
-                                                                                                                        <div class="login-btn-inner dropup">
-                                                                                                                            <div class="row">
-                                                                                                                                <div
-                                                                                                                                        class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                                                                                                                </div>
-                                                                                                                                <div
-                                                                                                                                        class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                                                                                                                    <div class="login-horizental">
-                                                                                                                                        <button type="button"
-                                                                                                                                                class="btn btn-sm btn-primary login-submit-cs"
-                                                                                                                                                data-toggle="dropdown">
-                                                                                                                                            Delete
-                                                                                                                                        </button>
-                                                                                                                                        <ul
-                                                                                                                                                class="dropdown-menu btn-dropdown-menu dropdown-menu-up"
-                                                                                                                                                role="menu"
-                                                                                                                                                style="min-width: 130px; font-size: 20px; padding: 5px;">
-                                                                                                                                            <li>
-                                                                                                                                                Delete
-                                                                                                                                                User
-                                                                                                                                                ?
-                                                                                                                                                <br>
-                                                                                                                                            </li>
-                                                                                                                                            <li>
-                                                                                                                                                <button type="submit"
-                                                                                                                                                        class="btn btn-sm btn-primary login-submit-cs"
-                                                                                                                                                        name="delete"
-                                                                                                                                                        id="btnSubmit">
-                                                                                                                                                    Yes
-                                                                                                                                                </button>
-
-                                                                                                                                                <button type="button"
-                                                                                                                                                        class="btn btn-sm btn-primary login-submit-cs">
-                                                                                                                                                    No
-                                                                                                                                                </button>
-
-                                                                                                                                            </li>
-
-
-                                                                                                                                        </ul>
-                                                                                                                    </form>
-                                                                                                                    <a data-dismiss="modal"
-                                                                                                                       href="#">
-                                                                                                                        <button
-                                                                                                                                class="btn btn-sm btn-primary login-submit-cs"
-                                                                                                                                type="button">
-                                                                                                                            Cancel
-                                                                                                                        </button>
-                                                                                                                    </a>
-                                                                                                                </div>
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                </div>
-
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>
@@ -1729,10 +1440,8 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
+                                                            <!--END Single pro tab review Start-->
                                                         </div>
-                                                        <!--END Single pro tab review Start-->
-
-
                                                     </div>
                                                 </div>
                                             </div>
@@ -1740,83 +1449,266 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <!--END Edit Model-->
+                            <!--END View Model-->
 
-                        <!--Delete Model Start-->
-                        <div id="zoomInDown4"
-                             class="modal modal-edu-general modal-zoomInDown fade" role="dialog">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header header-color-modal bg-color-1">
-                                        <h4 class="modal-title">Delete User</h4>
-                                        <div class="modal-close-area modal-close-df">
-                                            <a class="close" data-dismiss="modal" href="#"> <i
-                                                    class="fa fa-close"></i></a>
+
+                            <!--Edit Model Start-->
+                            <div id="zoomInDown3"
+                                 class="modal modal-edu-general modal-zoomInDown fade"
+                                 role="dialog">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header header-color-modal bg-color-1">
+                                            <h4 class="modal-title">Edit User</h4>
+                                            <div class="modal-close-area modal-close-df">
+                                                <a class="close" data-dismiss="modal" href="#"> <i
+                                                        class="fa fa-close"></i></a>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="modal-login-form-inner">
+                                        <div class="modal-body">
+                                            <div class="modal-login-form-inner">
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                        <div class="basic-login-inner modal-basic-inner">
 
-                                            <div class="row">
-                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                    <div class="basic-login-inner modal-basic-inner">
-
-                                                        <!-- Single pro tab review Start-->
-                                                        <div class="single-pro-review-area mt-t-30 mg-b-15">
-                                                            <div class="container-fluid">
-                                                                <div class="row">
-                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                                        <div class="product-payment-inner-st">
-                                                                            <div id="myTabContent"
-                                                                                 class="tab-content custom-product-edit">
-                                                                                <div class="product-tab-list tab-pane fade"
-                                                                                     id="View2">
-                                                                                    <form action="user/delete">
+                                                            <!-- Single pro tab review Start-->
+                                                            <div class="single-pro-review-area mt-t-30 mg-b-15">
+                                                                <div class="container-fluid">
+                                                                    <div class="row">
+                                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                            <div class="product-payment-inner-st">
+                                                                                <div id="myTabContent"
+                                                                                     class="tab-content custom-product-edit">
+                                                                                    <div class="product-tab-list tab-pane fade"
+                                                                                         id="View1">
                                                                                         <div class="row">
-                                                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                                            <div
+                                                                                                    class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                                                <form method="post"
+                                                                                                      action="/user/update"
+                                                                                                      class="userAdd">
+                                                                                                    <div class="review-content-section">
+                                                                                                        <div class="row">
+                                                                                                            <div class="form-group-inner">
+                                                                                                                <div class="row">
+                                                                                                                    <div
+                                                                                                                            class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                                                        <label class="login2">User
+                                                                                                                            ID</label>
+                                                                                                                    </div>
+                                                                                                                    <div
+                                                                                                                            class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                                                        <input type="text"
+                                                                                                                               class="form-control"
+                                                                                                                               name="id"
+                                                                                                                               id="E_V_ProjectCode"/>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+
+                                                                                                            <div class="form-group-inner">
+                                                                                                                <div class="row">
+                                                                                                                    <div
+                                                                                                                            class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                                                        <label class="login2">User
+                                                                                                                            Name</label>
+                                                                                                                    </div>
+                                                                                                                    <div
+                                                                                                                            class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                                                        <input type="text"
+                                                                                                                               class="form-control"
+                                                                                                                               name="username"
+                                                                                                                               id="E_V_ProjectName"/>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            <div class="form-group-inner">
+                                                                                                                <div class="row">
+                                                                                                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                                                        <label class="login2">User
+                                                                                                                            Role</label>
+                                                                                                                    </div>
+                                                                                                                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                                                        <select class="form-control"
+                                                                                                                                name="role"
+                                                                                                                                id="E_V_Role">
+                                                                                                                            <option value="USER">
+                                                                                                                                USER
+                                                                                                                            </option>
+                                                                                                                            <option value="ADMIN">
+                                                                                                                                ADMIN
+                                                                                                                            </option>
+                                                                                                                        </select>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+
+                                                                                                            <div class="login-btn-inner">
+                                                                                                                <div class="row">
+                                                                                                                    <div
+                                                                                                                            class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                                                    </div>
+                                                                                                                    <div
+                                                                                                                            class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                                                        <div
+                                                                                                                                class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                                                            <div class="login-horizental">
+                                                                                                                                <a data-dismiss="modal"
+                                                                                                                                   href="#">
+                                                                                                                                    <button
+                                                                                                                                            class="btn btn-sm btn-primary login-submit-cs"
+                                                                                                                                            type="button">
+                                                                                                                                        Cancel
+                                                                                                                                    </button>
+                                                                                                                                </a>
+                                                                                                                            </div>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </form>
+                                                                                            </div>
+                                                                                        </div>
+
+                                                                                    </div>
+                                                                                    <!--Edit1 start-->
+                                                                                    <div
+                                                                                            class="product-tab-list tab-pane fade active in"
+                                                                                            id="Edit1">
+                                                                                        <div class="row">
+                                                                                            <div
+                                                                                                    class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                                                                 <div class="review-content-section">
                                                                                                     <div class="row">
+                                                                                                        <form method="post"
+                                                                                                              action="/user/update"
+                                                                                                              class="projectE_Edit">
 
-                                                                                                        <div class="form-group-inner">
-                                                                                                            <div class="row">
-                                                                                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                                                                                                    <label class="login2">User
-                                                                                                                        ID</label>
-                                                                                                                </div>
-                                                                                                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                                                                                                    <input type="text"
-                                                                                                                           class="form-control"
-                                                                                                                           name="id"
-                                                                                                                           id="D_V_ProjectCode"
-                                                                                                                           readonly/>
+                                                                                                            <div class="form-group-inner">
+                                                                                                                <div class="row">
+                                                                                                                    <div
+                                                                                                                            class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                                                        <label class="login2">User
+                                                                                                                            ID</label>
+                                                                                                                    </div>
+                                                                                                                    <div
+                                                                                                                            class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                                                        <input type="hidden"
+                                                                                                                               class="form-control"
+                                                                                                                               placeholder="Enter User ID"
+                                                                                                                               id="E_E_H_ProjectCode"
+                                                                                                                               name="id"/>
+                                                                                                                        <input
+                                                                                                                                type="text"
+                                                                                                                                class="form-control"
+                                                                                                                                placeholder="Enter User ID"
+                                                                                                                                id="E_E_ProjectCode"
+                                                                                                                                name="id"
+                                                                                                                                readonly/>
+                                                                                                                    </div>
                                                                                                                 </div>
                                                                                                             </div>
-                                                                                                        </div>
 
-                                                                                                        <div class="form-group-inner">
-                                                                                                            <div class="row">
-                                                                                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                                                                                                    <label class="login2">User
-                                                                                                                        Name</label>
-                                                                                                                </div>
-                                                                                                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                                                                                                    <input type="text"
-                                                                                                                           class="form-control"
-                                                                                                                           name="username"
-                                                                                                                           id="D_V_ProjectName"
-                                                                                                                           readonly/>
+                                                                                                            <div class="form-group-inner">
+                                                                                                                <div class="row">
+                                                                                                                    <div
+                                                                                                                            class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                                                        <label class="login2">User
+                                                                                                                            Name</label>
+                                                                                                                    </div>
+                                                                                                                    <div
+                                                                                                                            class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                                                        <input type="text"
+                                                                                                                               class="form-control"
+                                                                                                                               name="username"
+                                                                                                                               id="E_E_H_ProjectName"/>
+                                                                                                                    </div>
+                                                                                                                    <div
+                                                                                                                            class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                                                        <input type="hidden"
+                                                                                                                               class="form-control"
+                                                                                                                               name="username"
+                                                                                                                               id="E_E_ProjectName"/>
+                                                                                                                    </div>
                                                                                                                 </div>
                                                                                                             </div>
-                                                                                                        </div>
-                                                                                                        <div class="login-btn-inner">
-                                                                                                            <div class="row">
-                                                                                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                                            <div class="form-group-inner">
+                                                                                                                <div class="row">
+                                                                                                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                                                        <label class="login2">User
+                                                                                                                            Role</label>
+                                                                                                                    </div>
+                                                                                                                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                                                        <select class="form-control"
+                                                                                                                                name="role"
+                                                                                                                                id="E_E_H_Role">
+                                                                                                                            <option value="USER">
+                                                                                                                                USER
+                                                                                                                            </option>
+                                                                                                                            <option value="ADMIN">
+                                                                                                                                ADMIN
+                                                                                                                            </option>
+                                                                                                                        </select>
+                                                                                                                    </div>
+                                                                                                                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                                                        <select class="form-control"
+                                                                                                                                type="hidden"
+                                                                                                                                name="role"
+                                                                                                                                id="E_E_Role">
+                                                                                                                            <option value="USER">
+                                                                                                                                USER
+                                                                                                                            </option>
+                                                                                                                            <option value="ADMIN">
+                                                                                                                                ADMIN
+                                                                                                                            </option>
+                                                                                                                        </select>
+                                                                                                                    </div>
                                                                                                                 </div>
-                                                                                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                                            </div>
+                                                                                                            <div class="login-btn-inner dropup">
+                                                                                                                <div class="row">
+                                                                                                                    <div
+                                                                                                                            class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                                                    </div>
                                                                                                                     <div
                                                                                                                             class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                                                                                         <div class="login-horizental">
+                                                                                                                            <button type="button"
+                                                                                                                                    class="btn btn-sm btn-primary login-submit-cs"
+                                                                                                                                    data-toggle="dropdown">
+                                                                                                                                Update
+                                                                                                                            </button>
+                                                                                                                            <ul
+                                                                                                                                    class="dropdown-menu btn-dropdown-menu dropdown-menu-up"
+                                                                                                                                    role="menu"
+                                                                                                                                    style="min-width: 130px; font-size: 20px; padding: 5px;">
+                                                                                                                                <li>
+                                                                                                                                    Save
+                                                                                                                                    the
+                                                                                                                                    changes
+                                                                                                                                    to
+                                                                                                                                    the
+                                                                                                                                    User
+                                                                                                                                    <br>
+                                                                                                                                </li>
+                                                                                                                                <li>
+                                                                                                                                    <button type="submit"
+                                                                                                                                            class="btn btn-sm btn-primary login-submit-cs"
+                                                                                                                                            id="btnSubmit">
+                                                                                                                                        Yes
+                                                                                                                                    </button>
+
+                                                                                                                                    <button type="button"
+                                                                                                                                            class="btn btn-sm btn-primary login-submit-cs">
+                                                                                                                                        No
+                                                                                                                                    </button>
+
+                                                                                                                                </li>
+
+
+                                                                                                                            </ul>
                                                                                                                             <a data-dismiss="modal"
                                                                                                                                href="#">
                                                                                                                                 <button
@@ -1829,229 +1721,521 @@
                                                                                                                     </div>
                                                                                                                 </div>
                                                                                                             </div>
+                                                                                                        </form>
+                                                                                                    </div>
+
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <!--Delete1 start-->
+                                                                                    <div class="product-tab-list tab-pane fade "
+                                                                                         id="Delete1">
+                                                                                        <div class="row">
+                                                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                                                <div class="review-content-section">
+                                                                                                    <div class="row">
+
+                                                                                                        <form action="/user/delete"
+                                                                                                              method="post"
+                                                                                                              accept-charset="utf-8">
+
+                                                                                                            <div class="form-group-inner">
+                                                                                                                <div class="row">
+                                                                                                                    <div
+                                                                                                                            class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                                                        <label class="login2">User
+                                                                                                                            ID</label>
+                                                                                                                    </div>
+                                                                                                                    <div
+                                                                                                                            class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                                                        <input type="text"
+                                                                                                                               class="form-control"
+                                                                                                                               name="id"
+                                                                                                                               id="E_D_ProjectCode"
+                                                                                                                               readonly/>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+
+                                                                                                            <div class="form-group-inner">
+                                                                                                                <div class="row">
+                                                                                                                    <div
+                                                                                                                            class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                                                        <label class="login2">User
+                                                                                                                            Name</label>
+                                                                                                                    </div>
+                                                                                                                    <div
+                                                                                                                            class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                                                        <input type="text"
+                                                                                                                               class="form-control"
+                                                                                                                               id="E_D_ProjectName"
+                                                                                                                               readonly/>
+                                                                                                                        <input
+                                                                                                                                type="hidden"
+                                                                                                                                class="form-control"
+                                                                                                                                name="username"
+                                                                                                                                id="E_D_H_ProjectName"
+                                                                                                                                required/>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            <div class="form-group-inner">
+                                                                                                                <div class="row">
+                                                                                                                    <div
+                                                                                                                            class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                                                        <label class="login2">User
+                                                                                                                            Role</label>
+                                                                                                                    </div>
+                                                                                                                    <div
+                                                                                                                            class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                                                        <input type="text"
+                                                                                                                               class="form-control"
+                                                                                                                               id="E_D_Role"
+                                                                                                                               readonly/>
+                                                                                                                        <input
+                                                                                                                                type="hidden"
+                                                                                                                                class="form-control"
+                                                                                                                                name="role"
+                                                                                                                                id="E_D_H_Role"
+                                                                                                                                required/>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            <div class="login-btn-inner dropup">
+                                                                                                                <div class="row">
+                                                                                                                    <div
+                                                                                                                            class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                                                    </div>
+                                                                                                                    <div
+                                                                                                                            class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                                                        <div class="login-horizental">
+                                                                                                                            <button type="button"
+                                                                                                                                    class="btn btn-sm btn-primary login-submit-cs"
+                                                                                                                                    data-toggle="dropdown">
+                                                                                                                                Delete
+                                                                                                                            </button>
+                                                                                                                            <ul
+                                                                                                                                    class="dropdown-menu btn-dropdown-menu dropdown-menu-up"
+                                                                                                                                    role="menu"
+                                                                                                                                    style="min-width: 130px; font-size: 20px; padding: 5px;">
+                                                                                                                                <li>
+                                                                                                                                    Delete
+                                                                                                                                    User
+                                                                                                                                    ?
+                                                                                                                                    <br>
+                                                                                                                                </li>
+                                                                                                                                <li>
+                                                                                                                                    <button type="submit"
+                                                                                                                                            class="btn btn-sm btn-primary login-submit-cs"
+                                                                                                                                            name="delete"
+                                                                                                                                            id="btnSubmit">
+                                                                                                                                        Yes
+                                                                                                                                    </button>
+
+                                                                                                                                    <button type="button"
+                                                                                                                                            class="btn btn-sm btn-primary login-submit-cs">
+                                                                                                                                        No
+                                                                                                                                    </button>
+                                                                                                                                </li>
+                                                                                                                            </ul>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </form>
+                                                                                                        <a data-dismiss="modal"
+                                                                                                           href="#">
+                                                                                                            <button
+                                                                                                                    class="btn btn-sm btn-primary login-submit-cs"
+                                                                                                                    type="button">
+                                                                                                                Cancel
+                                                                                                            </button>
+                                                                                                        </a>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--END Single pro tab review Start-->
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--END Edit Model-->
+
+            <!--Delete Model Start-->
+            <div id="zoomInDown4"
+                 class="modal modal-edu-general modal-zoomInDown fade" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header header-color-modal bg-color-1">
+                            <h4 class="modal-title">Delete User</h4>
+                            <div class="modal-close-area modal-close-df">
+                                <a class="close" data-dismiss="modal" href="#"> <i
+                                        class="fa fa-close"></i></a>
+                            </div>
+                        </div>
+                        <div class="modal-body">
+                            <div class="modal-login-form-inner">
+
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="basic-login-inner modal-basic-inner">
+
+                                            <!-- Single pro tab review Start-->
+                                            <div class="single-pro-review-area mt-t-30 mg-b-15">
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                            <div class="product-payment-inner-st">
+                                                                <div id="myTabContent"
+                                                                     class="tab-content custom-product-edit">
+                                                                    <div class="product-tab-list tab-pane fade"
+                                                                         id="View2">
+                                                                        <form action="user/delete">
+                                                                            <div class="row">
+                                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                                    <div class="review-content-section">
+                                                                                        <div class="row">
+
+                                                                                            <div class="form-group-inner">
+                                                                                                <div class="row">
+                                                                                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                                        <label class="login2">User
+                                                                                                            ID</label>
+                                                                                                    </div>
+                                                                                                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                                        <input type="text"
+                                                                                                               class="form-control"
+                                                                                                               name="id"
+                                                                                                               id="D_V_ProjectCode"
+                                                                                                               readonly/>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+
+                                                                                            <div class="form-group-inner">
+                                                                                                <div class="row">
+                                                                                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                                        <label class="login2">User
+                                                                                                            Name</label>
+                                                                                                    </div>
+                                                                                                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                                        <input type="text"
+                                                                                                               class="form-control"
+                                                                                                               name="username"
+                                                                                                               id="D_V_ProjectName"
+                                                                                                               readonly/>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="form-group-inner">
+                                                                                                <div class="row">
+                                                                                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                                        <label class="login2">User
+                                                                                                            Role</label>
+                                                                                                    </div>
+                                                                                                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                                        <input class="form-control"
+                                                                                                               name="role"
+                                                                                                               id="D_V_Role"
+                                                                                                               readonly>
+                                                                                                        </input>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="login-btn-inner">
+                                                                                                <div class="row">
+                                                                                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                                    </div>
+                                                                                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                                        <div
+                                                                                                                class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                                            <div class="login-horizental">
+                                                                                                                <a data-dismiss="modal"
+                                                                                                                   href="#">
+                                                                                                                    <button
+                                                                                                                            class="btn btn-sm btn-primary login-submit-cs"
+                                                                                                                            type="button">
+                                                                                                                        Cancel
+                                                                                                                    </button>
+                                                                                                                </a>
+                                                                                                            </div>
                                                                                                         </div>
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
-                                                                                    </form>
-                                                                                </div>
-                                                                                <!--Edit 2 start-->
-                                                                                <div class="product-tab-list tab-pane fade"
-                                                                                     id="Edit2">
-                                                                                    <div class="row">
-                                                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                                                            <div class="review-content-section">
-                                                                                                <div class="row">
-
-
-                                                                                                    <form method="post"
-                                                                                                          action="/user/update"
-                                                                                                          class="projectD_Edit">
-
-                                                                                                        <div class="form-group-inner">
-                                                                                                            <div class="row">
-                                                                                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                                                                                                    <label class="login2">User
-                                                                                                                        ID</label>
-                                                                                                                </div>
-                                                                                                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                                                                                                    <input type="hidden"
-                                                                                                                           class="form-control"
-                                                                                                                           placeholder="Enter User ID"
-                                                                                                                           id="D_E_H_ProjectCode"
-                                                                                                                           name="id"/>
-                                                                                                                    <input
-                                                                                                                            type="text"
-                                                                                                                            class="form-control"
-                                                                                                                            placeholder="Enter User ID"
-                                                                                                                            id="D_E_ProjectCode"
-                                                                                                                            name="id"
-                                                                                                                            readonly/>
-                                                                                                                </div>
-                                                                                                            </div>
-                                                                                                        </div>
-
-
-                                                                                                        <div class="form-group-inner">
-                                                                                                            <div class="row">
-                                                                                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                                                                                                    <label class="login2">User
-                                                                                                                        Name</label>
-                                                                                                                </div>
-                                                                                                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                                                                                                    <input type="text"
-                                                                                                                           class="form-control"
-                                                                                                                           id="D_E_ProjectName"
-                                                                                                                           name="username"
-                                                                                                                           readonly/>
-                                                                                                                </div>
-                                                                                                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                                                                                                    <input type="hidden"
-                                                                                                                           class="form-control"
-                                                                                                                           name="username"
-                                                                                                                           id="D_E_H_ProjectName"/>
-                                                                                                                </div>
-                                                                                                            </div>
-                                                                                                        </div>
-
-                                                                                                        <div class="login-btn-inner dropup">
-                                                                                                            <div class="row">
-                                                                                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                                                                                                </div>
-                                                                                                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                                                                                                    <div class="login-horizental">
-                                                                                                                        <button type="button"
-                                                                                                                                class="btn btn-sm btn-primary login-submit-cs"
-                                                                                                                                data-toggle="dropdown">
-                                                                                                                            Update
-                                                                                                                        </button>
-                                                                                                                        <ul
-                                                                                                                                class="dropdown-menu btn-dropdown-menu dropdown-menu-up"
-                                                                                                                                role="menu"
-                                                                                                                                style="min-width: 130px; font-size: 20px; padding: 5px;">
-                                                                                                                            <li>
-                                                                                                                                Save
-                                                                                                                                the
-                                                                                                                                changes
-                                                                                                                                to
-                                                                                                                                the
-                                                                                                                                User<br>
-                                                                                                                            </li>
-                                                                                                                            <li>
-                                                                                                                                <button type="submit"
-                                                                                                                                        class="btn btn-sm btn-primary login-submit-cs"
-                                                                                                                                        id="btnSubmit">
-                                                                                                                                    Yes
-                                                                                                                                </button>
-
-                                                                                                                                <button type="button"
-                                                                                                                                        class="btn btn-sm btn-primary login-submit-cs">
-                                                                                                                                    No
-                                                                                                                                </button>
-
-                                                                                                                            </li>
-
-
-                                                                                                                        </ul>
-                                                                                                                        <a data-dismiss="modal"
-                                                                                                                           href="#">
-                                                                                                                            <button
-                                                                                                                                    class="btn btn-sm btn-primary login-submit-cs"
-                                                                                                                                    type="button">
-                                                                                                                                Cancel
-                                                                                                                            </button>
-                                                                                                                        </a>
-                                                                                                                    </div>
-                                                                                                                </div>
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                                    </form>
-                                                                                                </div>
-
-                                                                                            </div>
-                                                                                        </div>
                                                                                     </div>
                                                                                 </div>
-                                                                                <!--Delete2 start-->
-                                                                                <div class="product-tab-list tab-pane fade active in"
-                                                                                     id="Delete2">
+                                                                            </div>
+                                                                        </form>
+                                                                    </div>
+                                                                    <!--Edit 2 start-->
+                                                                    <div class="product-tab-list tab-pane fade"
+                                                                         id="Edit2">
+                                                                        <div class="row">
+                                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                                <div class="review-content-section">
                                                                                     <div class="row">
-                                                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                                                            <div class="review-content-section">
+
+
+                                                                                        <form method="post"
+                                                                                              action="/user/update"
+                                                                                              class="projectD_Edit">
+
+                                                                                            <div class="form-group-inner">
                                                                                                 <div class="row">
-
-                                                                                                    <form action="/user/delete"
-                                                                                                          method="post"
-                                                                                                          accept-charset="utf-8">
-
-                                                                                                        <div class="form-group-inner">
-                                                                                                            <div class="row">
-                                                                                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                                                                                                    <label class="login2">User
-                                                                                                                        ID</label>
-                                                                                                                </div>
-                                                                                                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                                                                                                    <input type="text"
-                                                                                                                           class="form-control"
-                                                                                                                           name="id"
-                                                                                                                           id="D_D_ProjectCode"
-                                                                                                                           readonly/>
-                                                                                                                </div>
-                                                                                                            </div>
-                                                                                                        </div>
-
-                                                                                                        <div class="form-group-inner">
-                                                                                                            <div class="row">
-                                                                                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                                                                                                    <label class="login2">User
-                                                                                                                        Name</label>
-                                                                                                                </div>
-                                                                                                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                                                                                                    <input type="text"
-                                                                                                                           class="form-control"
-                                                                                                                           id="D_D_ProjectName"
-                                                                                                                           readonly/>
-                                                                                                                    <input
-                                                                                                                            type="hidden"
-                                                                                                                            class="form-control"
-                                                                                                                            name="username"
-                                                                                                                            id="D_D_H_ProjectName"
-                                                                                                                            required/>
-                                                                                                                </div>
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                                        <div class="login-btn-inner dropup">
-                                                                                                            <div class="row">
-                                                                                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                                                                                                </div>
-                                                                                                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                                                                                                    <div class="login-horizental">
-                                                                                                                        <button type="button"
-                                                                                                                                class="btn btn-sm btn-primary login-submit-cs"
-                                                                                                                                data-toggle="dropdown">
-                                                                                                                            Delete
-                                                                                                                        </button>
-                                                                                                                        <ul
-                                                                                                                                class="dropdown-menu btn-dropdown-menu dropdown-menu-up"
-                                                                                                                                role="menu"
-                                                                                                                                style="min-width: 130px; font-size: 20px; padding: 5px;">
-                                                                                                                            <li>
-                                                                                                                                Delete
-                                                                                                                                User
-                                                                                                                                ?<br>
-                                                                                                                            </li>
-                                                                                                                            <li>
-                                                                                                                                <button type="submit"
-                                                                                                                                        class="btn btn-sm btn-primary login-submit-cs"
-                                                                                                                                        name="delete"
-                                                                                                                                        id="btnSubmit">
-                                                                                                                                    Yes
-                                                                                                                                </button>
-
-                                                                                                                                <button type="button"
-                                                                                                                                        class="btn btn-sm btn-primary login-submit-cs">
-                                                                                                                                    No
-                                                                                                                                </button>
-
-                                                                                                                            </li>
-                                                                                                                        </ul>
-                                                                                                                        <a data-dismiss="modal"
-                                                                                                                           href="#">
-                                                                                                                            <button
-                                                                                                                                    class="btn btn-sm btn-primary login-submit-cs"
-                                                                                                                                    type="button">
-                                                                                                                                Cancel
-                                                                                                                            </button>
-                                                                                                                        </a>
-                                                                                                                    </div>
-                                                                                                                </div>
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                                    </form>
+                                                                                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                                        <label class="login2">User
+                                                                                                            ID</label>
+                                                                                                    </div>
+                                                                                                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                                        <input type="hidden"
+                                                                                                               class="form-control"
+                                                                                                               placeholder="Enter User ID"
+                                                                                                               id="D_E_H_ProjectCode"
+                                                                                                               name="id"/>
+                                                                                                        <input
+                                                                                                                type="text"
+                                                                                                                class="form-control"
+                                                                                                                placeholder="Enter User ID"
+                                                                                                                id="D_E_ProjectCode"
+                                                                                                                name="id"
+                                                                                                                readonly/>
+                                                                                                    </div>
                                                                                                 </div>
                                                                                             </div>
-                                                                                        </div>
+
+
+                                                                                            <div class="form-group-inner">
+                                                                                                <div class="row">
+                                                                                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                                        <label class="login2">User
+                                                                                                            Name</label>
+                                                                                                    </div>
+                                                                                                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                                        <input type="text"
+                                                                                                               class="form-control"
+                                                                                                               id="D_E_ProjectName"
+                                                                                                               name="username"
+                                                                                                               readonly/>
+                                                                                                    </div>
+                                                                                                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                                        <input type="hidden"
+                                                                                                               class="form-control"
+                                                                                                               name="username"
+                                                                                                               id="D_E_H_ProjectName"/>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+
+                                                                                            <div class="form-group-inner">
+                                                                                                <div class="row">
+                                                                                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                                        <label class="login2">User
+                                                                                                            Role</label>
+                                                                                                    </div>
+                                                                                                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                                            <select class="form-control"
+                                                                                                                    name="role"
+                                                                                                                    id="D_E_Role">
+                                                                                                                <option value="USER">
+                                                                                                                    USER
+                                                                                                                </option>
+                                                                                                                <option value="ADMIN">
+                                                                                                                    ADMIN
+                                                                                                                </option>
+                                                                                                            </select>
+                                                                                                        </div>
+                                                                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                                            <select class="form-control" type="hidden"
+                                                                                                                    name="role"
+                                                                                                                    id="D_E_H_Role">
+                                                                                                                <option value="USER">
+                                                                                                                    USER
+                                                                                                                </option>
+                                                                                                                <option value="ADMIN">
+                                                                                                                    ADMIN
+                                                                                                                </option>
+                                                                                                            </select>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="login-btn-inner dropup">
+                                                                                                <div class="row">
+                                                                                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                                    </div>
+                                                                                                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                                        <div class="login-horizental">
+                                                                                                            <button type="button"
+                                                                                                                    class="btn btn-sm btn-primary login-submit-cs"
+                                                                                                                    data-toggle="dropdown">
+                                                                                                                Update
+                                                                                                            </button>
+                                                                                                            <ul
+                                                                                                                    class="dropdown-menu btn-dropdown-menu dropdown-menu-up"
+                                                                                                                    role="menu"
+                                                                                                                    style="min-width: 130px; font-size: 20px; padding: 5px;">
+                                                                                                                <li>
+                                                                                                                    Save
+                                                                                                                    the
+                                                                                                                    changes
+                                                                                                                    to
+                                                                                                                    the
+                                                                                                                    User<br>
+                                                                                                                </li>
+                                                                                                                <li>
+                                                                                                                    <button type="submit"
+                                                                                                                            class="btn btn-sm btn-primary login-submit-cs"
+                                                                                                                            id="btnSubmit">
+                                                                                                                        Yes
+                                                                                                                    </button>
+
+                                                                                                                    <button type="button"
+                                                                                                                            class="btn btn-sm btn-primary login-submit-cs">
+                                                                                                                        No
+                                                                                                                    </button>
+
+                                                                                                                </li>
+
+
+                                                                                                            </ul>
+                                                                                                            <a data-dismiss="modal"
+                                                                                                               href="#">
+                                                                                                                <button
+                                                                                                                        class="btn btn-sm btn-primary login-submit-cs"
+                                                                                                                        type="button">
+                                                                                                                    Cancel
+                                                                                                                </button>
+                                                                                                            </a>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </form>
+                                                                                    </div>
+
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <!--Delete2 start-->
+                                                                    <div class="product-tab-list tab-pane fade active in"
+                                                                         id="Delete2">
+                                                                        <div class="row">
+                                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                                <div class="review-content-section">
+                                                                                    <div class="row">
+
+                                                                                        <form action="/user/delete"
+                                                                                              method="post"
+                                                                                              accept-charset="utf-8">
+
+                                                                                            <div class="form-group-inner">
+                                                                                                <div class="row">
+                                                                                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                                        <label class="login2">User
+                                                                                                            ID</label>
+                                                                                                    </div>
+                                                                                                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                                        <input type="text"
+                                                                                                               class="form-control"
+                                                                                                               name="id"
+                                                                                                               id="D_D_ProjectCode"
+                                                                                                               readonly/>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+
+                                                                                            <div class="form-group-inner">
+                                                                                                <div class="row">
+                                                                                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                                        <label class="login2">User
+                                                                                                            Name</label>
+                                                                                                    </div>
+                                                                                                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                                        <input type="text"
+                                                                                                               class="form-control"
+                                                                                                               id="D_D_ProjectName"
+                                                                                                               readonly/>
+                                                                                                        <input
+                                                                                                                type="hidden"
+                                                                                                                class="form-control"
+                                                                                                                name="username"
+                                                                                                                id="D_D_H_ProjectName"
+                                                                                                                required/>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="login-btn-inner dropup">
+                                                                                                <div class="row">
+                                                                                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                                    </div>
+                                                                                                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                                        <div class="login-horizental">
+                                                                                                            <button type="button"
+                                                                                                                    class="btn btn-sm btn-primary login-submit-cs"
+                                                                                                                    data-toggle="dropdown">
+                                                                                                                Delete
+                                                                                                            </button>
+                                                                                                            <ul
+                                                                                                                    class="dropdown-menu btn-dropdown-menu dropdown-menu-up"
+                                                                                                                    role="menu"
+                                                                                                                    style="min-width: 130px; font-size: 20px; padding: 5px;">
+                                                                                                                <li>
+                                                                                                                    Delete
+                                                                                                                    User
+                                                                                                                    ?<br>
+                                                                                                                </li>
+                                                                                                                <li>
+                                                                                                                    <button type="submit"
+                                                                                                                            class="btn btn-sm btn-primary login-submit-cs"
+                                                                                                                            name="delete"
+                                                                                                                            id="btnSubmit">
+                                                                                                                        Yes
+                                                                                                                    </button>
+
+                                                                                                                    <button type="button"
+                                                                                                                            class="btn btn-sm btn-primary login-submit-cs">
+                                                                                                                        No
+                                                                                                                    </button>
+
+                                                                                                                </li>
+                                                                                                            </ul>
+                                                                                                            <a data-dismiss="modal"
+                                                                                                               href="#">
+                                                                                                                <button
+                                                                                                                        class="btn btn-sm btn-primary login-submit-cs"
+                                                                                                                        type="button">
+                                                                                                                    Cancel
+                                                                                                                </button>
+                                                                                                            </a>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </form>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
@@ -2060,66 +2244,70 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <!--END Single pro tab review Start-->
                                                     </div>
                                                 </div>
                                             </div>
+                                            <!--END Single pro tab review Start-->
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!--END Delete Model-->
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- End modal -->
-
-
-        <div class="row">
-
-            <form name="bulk_action_form" action="/user/allUsers" method="GET">
-                <!-- <div style="height:580px; overflow:auto;"> -->
-
-                <table id="table" class="table table-striped table-bordered"
-                       style="width: 100%;">
-                    <thead>
-
-                    <tr>
-                        <td colspan="3">
-
-                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                <br>
-                                <h4 id="topic" style="color: #337ab7;">User Details</h4>
-                            </div>
-
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <th>User ID</th>
-                        <th>User Name</th>
-
-                    </tr>
-                    </thead>
-
-                    <tbody>
-                    <c:forEach var="user" items="${listUser}">
-                    <tr>
-                    <tr>
-                        <td><c:out value="${user.id}"/></td>
-                        <td><c:out value="${user.username}"/></td>
-                    <tr>
-                        </c:forEach>
-                    </tbody>
-
-                </table>
-
-            </form>
-
+            <!--END Delete Model-->
         </div>
     </div>
+</div>
+</div>
+<!-- End modal -->
+
+
+<div class="row">
+
+    <form name="bulk_action_form" action="/user/allUsers" method="GET">
+        <!-- <div style="height:580px; overflow:auto;"> -->
+
+        <table id="table" class="table table-striped table-bordered"
+               style="width: 100%;">
+            <thead>
+
+            <tr>
+                <td colspan="3">
+
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <br>
+                        <h4 id="topic" style="color: #337ab7;">User Details</h4>
+                    </div>
+
+                </td>
+            </tr>
+
+            <tr>
+                <th>User ID</th>
+                <th>User Name</th>
+                <th>User Role</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <c:forEach var="user" items="${listUser}">
+            <tr>
+            <tr>
+                <td><c:out value="${user.id}"/></td>
+                <td><c:out value="${user.username}"/></td>
+                <td><c:out value="${user.role}"></c:out></td>
+            <tr>
+                </c:forEach>
+            </tbody>
+
+        </table>
+
+    </form>
+
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -2151,30 +2339,36 @@
 
     var table = document.getElementById('table');
 
-    for (var i = 2; i < table.rows.length; i++) {
+    for (var i = 3; i < table.rows.length; i++) {
         table.rows[i].onclick = function () {
             //rIndex = this.rowIndex;
             document.getElementById("V_V_ProjectName").value = this.cells[1].innerHTML;
             document.getElementById("V_V_ProjectCode").value = this.cells[0].innerHTML;
+            document.getElementById("V_V_Role").value = this.cells[2].innerHTML;
             //  document.getElementById("V_V_MainLocation").value = this.cells[2].innerHTML;
             //document.getElementById("V_V_Description").value = this.cells[2].innerHTML;
             document.getElementById("V_E_ProjectName").value = this.cells[1].innerHTML;
             document.getElementById("V_E_H_ProjectName").value = this.cells[1].innerHTML;
             document.getElementById("V_E_ProjectCode").value = this.cells[0].innerHTML;
             document.getElementById("V_E_H_ProjectCode").value = this.cells[0].innerHTML;
+            document.getElementById("V_E_Role").value = this.cells[2].innerHTML;
+            document.getElementById("V_E_H_Role").value = this.cells[2].innerHTML;
             //  document.getElementById("V_E_MainLocation").value = this.cells[2].innerHTML;
             //document.getElementById("V_E_Description").value = this.cells[2].innerHTML;
-            document.getElementById("V_D_ProjectName").value = this.cells[1].innerHTML;
+            document.getElementById("V_D_Role").value = this.cells[2].innerHTML;
             document.getElementById("V_D_H_ProjectName").value = this.cells[1].innerHTML;
             document.getElementById("V_D_ProjectCode").value = this.cells[0].innerHTML;
             //  document.getElementById("V_D_MainLocation").value = this.cells[2].innerHTML;
             //document.getElementById("V_D_Description").value = this.cells[2].innerHTML;
             document.getElementById("E_V_ProjectName").value = this.cells[1].innerHTML;
             document.getElementById("E_V_ProjectCode").value = this.cells[0].innerHTML;
+            document.getElementById("E_V_Role").value = this.cells[2].innerHTML;
             //  document.getElementById("E_V_MainLocation").value = this.cells[2].innerHTML;
             //document.getElementById("E_V_Description").value = this.cells[2].innerHTML;
             document.getElementById("E_E_ProjectName").value = this.cells[1].innerHTML;
             document.getElementById("E_E_H_ProjectName").value = this.cells[1].innerHTML;
+            document.getElementById("E_E_Role").value = this.cells[2].innerHTML;
+            document.getElementById("E_E_H_Role").value = this.cells[2].innerHTML;
             document.getElementById("E_E_ProjectCode").value = this.cells[0].innerHTML;
             document.getElementById("E_E_H_ProjectCode").value = this.cells[0].innerHTML;
             //  document.getElementById("E_E_MainLocation").value = this.cells[2].innerHTML;
@@ -2182,22 +2376,29 @@
             document.getElementById("E_D_ProjectName").value = this.cells[1].innerHTML;
             document.getElementById("E_D_H_ProjectName").value = this.cells[1].innerHTML;
             document.getElementById("E_D_ProjectCode").value = this.cells[0].innerHTML;
+            document.getElementById("E_D_Role").value = this.cells[2].innerHTML;
+            document.getElementById("E_D_H_Role").value = this.cells[2].innerHTML;
             //  document.getElementById("E_D_MainLocation").value = this.cells[2].innerHTML;
             //document.getElementById("E_D_Description").value = this.cells[2].innerHTML;
 
             document.getElementById("D_V_ProjectName").value = this.cells[1].innerHTML;
             document.getElementById("D_V_ProjectCode").value = this.cells[0].innerHTML;
+            document.getElementById("D_V_Role").value = this.cells[2].innerHTML;
             //  document.getElementById("D_V_MainLocation").value = this.cells[2].innerHTML;
             //document.getElementById("D_V_Description").value = this.cells[2].innerHTML;
             document.getElementById("D_E_ProjectName").value = this.cells[1].innerHTML;
             document.getElementById("D_E_H_ProjectName").value = this.cells[1].innerHTML;
             document.getElementById("D_E_ProjectCode").value = this.cells[0].innerHTML;
             document.getElementById("D_E_H_ProjectCode").value = this.cells[0].innerHTML;
+            document.getElementById("D_E_Role").value = this.cells[2].innerHTML;
+            document.getElementById("D_E_H_Role").value = this.cells[2].innerHTML;
             //  document.getElementById("D_E_MainLocation").value = this.cells[2].innerHTML;
             //document.getElementById("D_E_Description").value = this.cells[2].innerHTML;
             document.getElementById("D_D_ProjectName").value = this.cells[1].innerHTML;
             document.getElementById("D_D_H_ProjectName").value = this.cells[1].innerHTML;
             document.getElementById("D_D_ProjectCode").value = this.cells[0].innerHTML;
+            document.getElementById("D_D_Role").value = this.cells[2].innerHTML;
+            document.getElementById("D_D_H_Role").value = this.cells[2].innerHTML;
             //  document.getElementById("D_D_MainLocation").value = this.cells[2].innerHTML;
             //document.getElementById("D_D_Description").value = this.cells[2].innerHTML;
 
@@ -2400,7 +2601,7 @@ $(document).ready(function() {
 
 <!-- QR Code save as Doc -->
 <script>
-    function Export2Doc(element, filename = '') {
+    function Export2Doc(element, filename) {
 
         var css_html =
             '<style>table .Qrno {margin-bottom: 150px;} table .Qrimg {margin-top: 150px;}  </style>';

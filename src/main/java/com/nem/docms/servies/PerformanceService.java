@@ -24,11 +24,16 @@ public class PerformanceService {
 	}
 
 	public Performance getPerformance(String id) {
-		// TODO Auto-generated method stub
+		try{
 		return performanceRepository.findById(id).get();
+	}catch (Exception e){
+		e.printStackTrace();
+		return new Performance();
+		}
 	}
 
 	public Performance addPerformance(Performance2 per) throws ParseException {
+		try{
 		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
 		Performance per1 = new Performance();
 		per1.setId(per.getId());
@@ -38,10 +43,12 @@ public class PerformanceService {
 		per1.setExpire(simpleDateFormat.parse(per.getExpire()));
 		per1.setRemain(per.getRemain());
 		per1.setStatus(per.getStatus());
-		// TODO Auto-generated method stub
 
 		return performanceRepository.insert(per1);
-	}
+	}catch (Exception e){
+			e.printStackTrace();
+			return new Performance();
+		}}
 
 	public Performance update(Performance per) {
 		// TODO Auto-generated method stub

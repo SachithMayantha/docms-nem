@@ -33,16 +33,18 @@ public class AdvanceService {
     public Advance addAdvance(Advance2 ad) throws ParseException {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
         Advance ad1 = new Advance();
-        ad1.setId(ad.getId());
-        ad1.setName(ad.getName());
-        ad1.setAmount(ad.getAmount());
-        ad1.setEffective(simpleDateFormat.parse(ad.getEffective()));
-        ad1.setExpire(simpleDateFormat.parse(ad.getExpire()));
-        ad1.setRemain(ad.getRemain());
-        ad1.setStatus(ad.getStatus());
-        // TODO Auto-generated method stub
-
-        return advanceRepository.insert(ad1);
+        try {
+            ad1.setId(ad.getId());
+            ad1.setName(ad.getName());
+            ad1.setAmount(ad.getAmount());
+            ad1.setEffective(simpleDateFormat.parse(ad.getEffective()));
+            ad1.setExpire(simpleDateFormat.parse(ad.getExpire()));
+            ad1.setRemain(ad.getRemain());
+            ad1.setStatus(ad.getStatus());
+            return advanceRepository.insert(ad1);
+        }catch (Exception e){
+            return ad1;
+        }
     }
 
     public Advance update(Advance ad) {

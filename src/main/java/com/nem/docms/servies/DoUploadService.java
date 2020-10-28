@@ -14,10 +14,7 @@ import java.io.IOException;
 @Service
 public class DoUploadService {
     private final DoUploadRepository doUploadRepository;
-
-
     private final GridFsTemplate gridFsTemplate;
-
     private final GridFsOperations gridFsOperations;
 
     public DoUploadService(DoUploadRepository doUploadRepository, GridFsTemplate gridFsTemplate, GridFsOperations gridFsOperations) {

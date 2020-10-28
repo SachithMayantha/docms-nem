@@ -16,4 +16,15 @@ public class MainController {
 	public String main() {
 		return "main";
 	}
+
+	@GetMapping("/errors")
+	public String errors() {
+		return "errors";
+	}
+
+
+//	private int getErrorCode(HttpServletRequest httpRequest) {
+//		return (Integer) httpRequest
+//				.getAttribute("javax.servlet.error.status_code");
+//	}
 }
