@@ -16,10 +16,10 @@ import java.util.List;
 @Service
 public class UserService {
 
-    @Bean
-    public PasswordEncoder encoder() {
-        return new BCryptPasswordEncoder();
-    }
+//    @Bean
+//    public PasswordEncoder encoder() {
+//        return new BCryptPasswordEncoder();
+//    }
 
     @Autowired
     UserRepository userRepository;
@@ -38,7 +38,7 @@ public class UserService {
     }
 
     public User addUser(User user) {
-        user.setPassword(encoder().encode(user.getPassword()));
+//        user.setPassword(encoder().encode(user.getPassword()));
         return userRepository.insert(user);
     }
 

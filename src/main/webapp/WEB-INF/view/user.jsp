@@ -1653,8 +1653,7 @@
                                                                                                                         </select>
                                                                                                                     </div>
                                                                                                                     <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                                                                                                        <select class="form-control"
-                                                                                                                                type="hidden"
+                                                                                                                        <select class="form-control" style="display: none;"
                                                                                                                                 name="role"
                                                                                                                                 id="E_E_Role">
                                                                                                                             <option value="USER">
@@ -2269,8 +2268,8 @@
     <form name="bulk_action_form" action="/user/allUsers" method="GET">
         <!-- <div style="height:580px; overflow:auto;"> -->
 
-        <table id="table" class="table table-striped table-bordered"
-               style="width: 100%;">
+        <table id="table" class="table table-striped table-bordered nowrap"
+               style="width: 80%;margin-left: 300px;">
             <thead>
 
             <tr>

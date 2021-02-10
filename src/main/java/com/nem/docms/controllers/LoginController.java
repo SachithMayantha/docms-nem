@@ -48,4 +48,7 @@ public class LoginController extends HttpServlet {
 			System.out.println(theException);
 		}
 	}
+	public String getLoggedUser( ){
+		return "";
+	}
 }

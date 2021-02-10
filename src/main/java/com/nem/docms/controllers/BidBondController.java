@@ -12,6 +12,9 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import org.springframework.web.servlet.view.RedirectView;
 
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
@@ -91,13 +94,14 @@ public class BidBondController {
     // RequestBody for bind request HTTP body with a domain object
     public RedirectView addBidBond(BidBond2 bid,
 								   @RequestParam("document") MultipartFile document, RedirectAttributes modelRedirect) throws ParseException, IOException {
-        String title = document.getOriginalFilename();
-		System.out.println(document.getResource()+" Resource");
-		System.out.println(document.getSize()+" Size");
-        String id = bid.getId();
         System.out.println("Document --- " + document.getOriginalFilename() + " --- " + document.getContentType());
+
         try {
 //            doUploadService.addDocument(title, document,id);
+            byte[] bytes = document.getBytes();
+            Path path = Paths.get("//FERNANDO/Users/acer/Desktop/Industrial Traning",document.getOriginalFilename());
+            Files.write(path,bytes);
+
             bidBondService.addBidBond(bid);
         } catch (Exception e) {
             e.printStackTrace();
